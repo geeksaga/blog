@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ifconfig on Try to write anyway</title>
+    <link>http://geeksaga.com/tags/ifconfig/</link>
+    <description>Recent content in ifconfig on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/ifconfig/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ifconfig</title>
+      <link>http://geeksaga.com/post/linux/command/2020-08-11-ifconfig/</link>
+      <pubDate>Tue, 11 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/linux/command/2020-08-11-ifconfig/</guid>
+      <description>linux의 ifconfig는 시스템에 설정된 네트워크 인터페이스의 상태를 확인 할 수 있는 명령어 입니다.
+$&amp;gt; ifconfig docker0 Link encap:Ethernet HWaddr 02:42:ed:b0:91:f2 inet addr:172.17.0.1 Bcast:172.17.255.255 Mask:255.255.0.0 UP BROADCAST MULTICAST MTU:1500 Metric:1 RX packets:0 errors:0 dropped:0 overruns:0 frame:0 TX packets:0 errors:0 dropped:0 overruns:0 carrier:0 collisions:0 txqueuelen:0 RX bytes:0 (0.0 B) TX bytes:0 (0.0 B) enp3s0 Link encap:Ethernet HWaddr 74:d4:35:1e:a9:87 inet addr:192.168.0.50 Bcast:192.168.0.255 Mask:255.255.255.0 inet6 addr: fe80::3be5:4edf:81f5:2037/64 Scope:Link UP BROADCAST RUNNING MULTICAST MTU:1500 Metric:1 RX packets:11149676 errors:0 dropped:0 overruns:0 frame:0 TX packets:9835684 errors:0 dropped:0 overruns:0 carrier:0 collisions:0 txqueuelen:1000 RX bytes:3583344722 (3.</description>
+    </item>
+    
+  </channel>
+</rss>

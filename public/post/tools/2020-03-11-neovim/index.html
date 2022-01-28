@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <meta name="generator" content="Hugo 0.92.0" />
+
+  <title>neovim | Try to write anyway</title>
+  <meta name="description"
+        content="VI &amp; VIM &amp; NEOVIM">
+
+  
+  <meta name="robots" content="noindex, nofollow">
+  
+
+  
+
+  
+  
+  
+  <link href="/output/css/main.1f8814d7216a63bc687e121e32f1783a28327b8373042decced922d34475a007.css" integrity="sha256-H4gU1yFqY7xofhIeMvF4Oigye4NzBC3sztki00R1oAc=" rel="stylesheet" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,200,600' rel='stylesheet' type='text/css'>
+  <meta property="og:title" content="neovim" />
+<meta property="og:description" content="VI &amp; VIM &amp; NEOVIM" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://geeksaga.com/post/tools/2020-03-11-neovim/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-03-11T11:14:02+00:00" />
+<meta property="article:modified_time" content="2020-03-11T11:14:02+00:00" />
+
+<meta itemprop="name" content="neovim">
+<meta itemprop="description" content="VI &amp; VIM &amp; NEOVIM"><meta itemprop="datePublished" content="2020-03-11T11:14:02+00:00" />
+<meta itemprop="dateModified" content="2020-03-11T11:14:02+00:00" />
+<meta itemprop="wordCount" content="911">
+<meta itemprop="keywords" content="ide,editor," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="neovim"/>
+<meta name="twitter:description" content="VI &amp; VIM &amp; NEOVIM"/>
+
+
+  
+</head>
+
+<body class="bg-gray-800 font-sans text-gray-400 subpixel-antialiased flex flex-col h-screen justify-between tracking-wide">
+  <header class="bg-gray-700 py-3">
+    <div class="container flex justify-between items-center flex-wrap">
+  <div class="text-lg font-bold">
+    <a href="/">
+      
+      Try to write anyway
+      
+    </a>
+  </div>
+  <div class="flex items-center flex-wrap">
+    
+
+    
+  </div>
+</div>
+
+  </header>
+  
+  <main class="container mb-auto mt-20">
+  
+  <article>
+    <header class="text-center py-20">
+      <h1 class="text-5xl pb-2">neovim</h1>
+
+      <div class="flex place-content-center">
+        
+
+        <time datetime="2020-03-11T11:14:02Z">
+          March 11, 2020
+        </time>
+      </div>
+    </header>
+
+    <section>
+      <p>{% include figure image_path=&quot;/assets/images/neovim-logo.png&quot; caption=&ldquo;최근 주로 사용하는 Neovim.&rdquo; %}</p>
+<p>잊지 않기 위해서 적어둔다.</p>
+<h2 id="text-objects">Text Objects</h2>
+<pre><code>w  - words
+s  - sentences
+p  - paragraphs
+t  - tags
+iw - inner word
+it - inner tag
+</code></pre>
+<h2 id="motions">Motions</h2>
+<pre><code>a - all
+i - in
+t - `til
+f - find forward
+</code></pre>
+<h2 id="navigation">Navigation</h2>
+<pre><code>h        - 왼쪽으로 커서 이동
+j        - 아래쪽으로 커서 이동
+k        - 위쪽으로 커서 이동
+l        - 오론쪽으로 커서 이동
+w        - 단어 첫 글자로 이동
+b        - 역방향으로 단어의 첫 글자로 이동
+e        - 단어의 마지막 글자로 이동
+ge       - 역방향으로 단어의 마지막 글자로 이동
+0        - 라인의 제일 앞으로 이동
+f[str]   - 라인에서 [str] 위치로 이동. ; 를 통해 다음 [str]로 이동
+F[str]   - 라인에서 역방향으로 [str] 위치로 이동
+t[str]   - 라인에서 [str]의 앞 위치로 이동
+T[str]   - 라인에서 역방향으로 [str]의 앞 위치로 이동
+CTRL + E - scroll the window down
+CTRL + Y - scroll the window up
+CTRL + F - scroll down one page
+CTRL + B - scroll up one page
+CTRL + D - scroll down half page
+CTRL + U - scroll up half pag
+H        - move cursor to the top of the window
+M        - move cursor to the middle of the window
+L        - move cursor to the bottom of the window
+gg       - go to top of file
+G        - go to end of file
+</code></pre>
+<h2 id="multi-file-edit">Multi File Edit</h2>
+<pre><code>:n move to next file
+:prev, :N move to pre file
+:ls
+:bNumber
+:bdNumber 현재 열린 vi 목록에서 해당 파일 제거
+:bw 현재 편집 중인 파일 제거
+</code></pre>
+<h2 id="comands">Comands</h2>
+<pre><code>d - delete (also cut)
+c - change (delete, then place in insert mode)
+y - yank (copy)
+v - visually select
+&lt; - Shift {motion} lines one 'shiftwitdth' leftwards.(indent)
+&gt; - Shift {motion} lines one 'shiftwitdth' rightwards.(indent)
+. - repeat last change
+</code></pre>
+<h2 id="additional-commands">Additional commands</h2>
+<pre><code>dd/yy - delete/yank the current line
+D/C   - delete/change until end of line
+^/$   - move to the beginning/end of line
+I/A   - move to the beginning/end of line and insert
+o/O   - insert new line above/below current line and insert
+</code></pre>
+<h2 id="combine-with-commands">combine with commands</h2>
+<pre><code>{command}{text object or motion}
+
+diw
+delete in workd
+dts
+
+caw
+change all word
+yi)
+yank all text inside parentheses
+va&quot;
+visually select all inside doublequotes
+
+DOT command repeat the last command
+</code></pre>
+<h2 id="화면분할">화면분할</h2>
+<h3 id="window">Window</h3>
+<p>Window는 Buffer를 출력하는 방법을 나타냅니다.
+분할된 Window는 어떤 Buffer라도 출력 할 수 있습니다.</p>
+<p>모든 Window 명령은 <code>CTRL-W</code>로 시작합니다.
+<code>CTRL + W</code>를 입력한 후 Window 명령을 입력하여 사용합니다.</p>
+<blockquote>
+<p>:help CTRL-W</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim"><span style="color:#a6e22e">CTRL</span> + <span style="color:#a6e22e">W</span> <span style="color:#a6e22e">n</span>  - <span style="color:#a6e22e">새로운</span> <span style="color:#a6e22e">윈도우를</span> <span style="color:#a6e22e">만듭니다</span>.<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">CTRL</span> + <span style="color:#a6e22e">W</span> <span style="color:#a6e22e">s</span>  - <span style="color:#a6e22e">윈도우를</span> <span style="color:#a6e22e">가로로</span> <span style="color:#a6e22e">분할</span> <span style="color:#a6e22e">합니다</span>.<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>  :<span style="color:#a6e22e">sp</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">CTRL</span> + <span style="color:#a6e22e">W</span> <span style="color:#a6e22e">v</span>  - <span style="color:#a6e22e">윈도우를</span> <span style="color:#a6e22e">세로로</span> <span style="color:#a6e22e">분할</span> <span style="color:#a6e22e">합니다</span>.<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>  :<span style="color:#a6e22e">vs</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">CTRL</span> + <span style="color:#a6e22e">W</span> ^  - <span style="color:#a6e22e">윈도우를</span> <span style="color:#a6e22e">가로로</span> <span style="color:#a6e22e">나누고</span> <span style="color:#a6e22e">이전</span> <span style="color:#a6e22e">파일을</span> <span style="color:#a6e22e">열어</span> <span style="color:#a6e22e">줍니다</span>.<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">CTRL</span> + <span style="color:#a6e22e">W</span> <span style="color:#a6e22e">f</span>  - <span style="color:#a6e22e">윈도우를</span> <span style="color:#a6e22e">가로로</span> <span style="color:#a6e22e">나누고</span> <span style="color:#a6e22e">커서</span> <span style="color:#a6e22e">위치의</span> <span style="color:#a6e22e">파일을</span> <span style="color:#a6e22e">열어</span> <span style="color:#a6e22e">줍니다</span>.<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">CTRL</span> + <span style="color:#a6e22e">W</span> <span style="color:#a6e22e">i</span>  - <span style="color:#a6e22e">윈도우를</span> <span style="color:#a6e22e">나누고</span> <span style="color:#a6e22e">커서</span> <span style="color:#a6e22e">위치의</span> <span style="color:#a6e22e">단어가</span> <span style="color:#a6e22e">정의된</span> <span style="color:#a6e22e">파일을</span> <span style="color:#a6e22e">열어</span> <span style="color:#a6e22e">줍니다</span>.<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">CTRL</span> + <span style="color:#a6e22e">W</span> <span style="color:#a6e22e">gf</span> - <span style="color:#a6e22e">커서</span> <span style="color:#a6e22e">위치의</span> <span style="color:#a6e22e">파일명을</span> <span style="color:#a6e22e">탭에</span> <span style="color:#a6e22e">열어</span> <span style="color:#a6e22e">줍니다</span>.<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">CTRL</span> + <span style="color:#a6e22e">W</span> <span style="color:#a6e22e">h</span>  - <span style="color:#a6e22e">현재</span> <span style="color:#a6e22e">윈도우에서</span> <span style="color:#a6e22e">왼쪽으로</span> <span style="color:#a6e22e">이동</span> <span style="color:#a6e22e">합니다</span>.<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">CTRL</span> + <span style="color:#a6e22e">W</span> <span style="color:#a6e22e">l</span>  - <span style="color:#a6e22e">현재</span> <span style="color:#a6e22e">윈도우에서</span> <span style="color:#a6e22e">오른쪽으로</span> <span style="color:#a6e22e">이동</span> <span style="color:#a6e22e">합니다</span>.<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">CTRL</span> + <span style="color:#a6e22e">W</span> <span style="color:#a6e22e">j</span>  - <span style="color:#a6e22e">현재</span> <span style="color:#a6e22e">윈도우에서</span> <span style="color:#a6e22e">아래로</span> <span style="color:#a6e22e">이동</span> <span style="color:#a6e22e">합니다</span>.<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">CTRL</span> + <span style="color:#a6e22e">W</span> <span style="color:#a6e22e">k</span>  - <span style="color:#a6e22e">현재</span> <span style="color:#a6e22e">윈도우에서</span> <span style="color:#a6e22e">위로</span> <span style="color:#a6e22e">이동</span> <span style="color:#a6e22e">합니다</span>.<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">CTRL</span> + <span style="color:#a6e22e">W</span> <span style="color:#a6e22e">w</span>  - <span style="color:#a6e22e">현재</span> <span style="color:#a6e22e">윈도우에서</span> <span style="color:#a6e22e">다음</span> <span style="color:#a6e22e">윈도우로</span> <span style="color:#a6e22e">이동</span> <span style="color:#a6e22e">합니다</span>.<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">CTRL</span> + <span style="color:#a6e22e">W</span> -  - <span style="color:#a6e22e">현재</span> <span style="color:#a6e22e">윈도우</span> <span style="color:#a6e22e">크기를</span> <span style="color:#a6e22e">줄입니다</span>.<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">CTRL</span> + <span style="color:#a6e22e">W</span> +  - <span style="color:#a6e22e">현재</span> <span style="color:#a6e22e">윈도우</span> <span style="color:#a6e22e">크기를</span> <span style="color:#a6e22e">늘립니다</span>.<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">CTRL</span> + <span style="color:#a6e22e">W</span> =  - <span style="color:#a6e22e">윈도우</span> <span style="color:#a6e22e">크기를</span> <span style="color:#a6e22e">동일하게</span> <span style="color:#a6e22e">조절합니다</span>.<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">CTRL</span> + <span style="color:#a6e22e">W</span> <span style="color:#a6e22e">q</span>  - <span style="color:#a6e22e">현재</span> <span style="color:#a6e22e">커서의</span> <span style="color:#a6e22e">윈도우를</span> <span style="color:#a6e22e">종료합니다</span>.<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>  :<span style="color:#a6e22e">q</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">CTRL</span> + <span style="color:#a6e22e">W</span> <span style="color:#a6e22e">c</span>  - <span style="color:#a6e22e">현재</span> <span style="color:#a6e22e">커서의</span> <span style="color:#a6e22e">윈도우를</span> <span style="color:#a6e22e">종료합니다</span>.<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>  :<span style="color:#a6e22e">close</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">CTRL</span> + <span style="color:#a6e22e">W</span> <span style="color:#a6e22e">o</span>  - <span style="color:#a6e22e">현재</span> <span style="color:#a6e22e">커서의</span> <span style="color:#a6e22e">윈도우를</span> <span style="color:#a6e22e">제외하고</span> <span style="color:#a6e22e">나머지</span> <span style="color:#a6e22e">윈도우를</span> <span style="color:#a6e22e">모두</span> <span style="color:#a6e22e">종료합니다</span>.<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>  :<span style="color:#a6e22e">on</span>[<span style="color:#a6e22e">ly</span>]<span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><h3 id="buffers">Buffers</h3>
+<p>Buffer는 파일 내용이 메모리 상태에 있거나 새로 편집 중인 문서를 의미 합니다.</p>
+<ul>
+<li>Buffer 목록에서 표시되는 기호들은 다음을 나타냅니다.
+<ul>
+<li><code>%</code> - 현재 편집 중인 버퍼</li>
+<li><code>#</code> - 바로 이전에 열렸던 버퍼</li>
+<li><code>a</code> - 현재 화면에 보이는 활성화된 버퍼</li>
+<li><code>+</code> - 변경된 내용이 있는 버퍼</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#a6e22e">ls</span>        - <span style="color:#a6e22e">현재</span> <span style="color:#a6e22e">Buffer</span> <span style="color:#a6e22e">목록을</span> <span style="color:#a6e22e">보여</span> <span style="color:#a6e22e">줍니다</span>.<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>  :<span style="color:#a6e22e">files</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>  :<span style="color:#a6e22e">buffers</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">b</span>[<span style="color:#a6e22e">N</span>] - <span style="color:#a6e22e">N</span> <span style="color:#a6e22e">번째</span> <span style="color:#a6e22e">버퍼를</span> <span style="color:#a6e22e">이동</span> <span style="color:#a6e22e">합니다</span>.<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">bn</span>        - <span style="color:#a6e22e">다음</span> <span style="color:#a6e22e">버퍼로</span> <span style="color:#a6e22e">이동</span> <span style="color:#a6e22e">합니다</span>.<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">bp</span>        - <span style="color:#a6e22e">이전</span> <span style="color:#a6e22e">버퍼로</span> <span style="color:#a6e22e">이동</span> <span style="color:#a6e22e">합니다</span>.<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#a6e22e">bd</span>        - <span style="color:#a6e22e">버퍼를</span> <span style="color:#a6e22e">제거</span> <span style="color:#a6e22e">합니다</span>.<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>:<span style="color:#ae81ff">0</span>f        - <span style="color:#a6e22e">현재</span> <span style="color:#a6e22e">버퍼를</span> <span style="color:#a6e22e">목록에서</span> <span style="color:#a6e22e">제거</span> <span style="color:#a6e22e">합니다</span>.<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>             <span style="color:#a6e22e">연결된</span> <span style="color:#a6e22e">파일이</span> <span style="color:#a6e22e">있다면</span> <span style="color:#a6e22e">해제하여</span> [<span style="color:#a6e22e">No</span> <span style="color:#a6e22e">Name</span>] <span style="color:#a6e22e">버퍼로</span> <span style="color:#a6e22e">만듭니다</span>.<span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><h2 id="모드">모드</h2>
+<p>VI는 3가지 일반(Normal), 입력(Insert), 명령(Command or Colon) 모드를 가지고 있다.</p>
+<h3 id="command-mode">Command Mode</h3>
+<p><code>:</code>(colon)을 입력하여 명령어를 입력한다.</p>
+<pre><code>:w             - 파일 저장
+:w [filename]  - 지정한 파일 이름으로 저장
+:pwd           - 현재 디렉토리 경로를 보여준다.
+:q             - 종료
+</code></pre>
+<h3 id="normal-mode">Normal Mode</h3>
+<p>명령 또는 입력 모드에서 <code>&lt;Esc&gt;</code> 키를 통해 선택이 가능하다.</p>
+<pre><code>p        - 붙이기
+u        - 명령어 취소(undo)
+CTRL + r - 취소한 명령어 다시 실행 하기*(redo)
+v        - 범위 지정
+x        - 현재 커서의 글자 삭제
+J        - 아래 라인을 위로 합치기
+</code></pre>
+<h3 id="insert-mode">Insert Mode</h3>
+<p>기본적으로 <code>i</code> 키를 통해 선택 가능하나 여러 키를 통해서도 선택이 가능하다.</p>
+<pre><code>a   - 현재 커서 위치에서 한 칸 뒤로 이동한 후 입력 모드로 변경된다.
+A   - 현재 라인의 제일 끝으로 이동 후 입력 모드로 변경된다.
+i   - 현재 커서 위치에서 입력 모드로 변경된다.
+I   - 현재 라인의 제일 앞으로 이동 후 입력 모드로 변경된다.
+o   - 현재 라인 아래에 새 라인을 만든 후 입력 모드로 변경된다.
+O   - 현재 라인 위에 새 라인을 만든 후 입력 모드로 변경된다.
+R   - 수정 모드로 작동하여 입력하는 모든 글자가 덮어 써진다.
+</code></pre>
+<h3 id="강제로-명령어를-실행-할-수-있는-">강제로 명령어를 실행 할 수 있는 <code>!</code></h3>
+<h3 id="기타">기타</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">#        - <span style="color:#a6e22e">현재</span> <span style="color:#a6e22e">커서</span> <span style="color:#a6e22e">위치</span> <span style="color:#a6e22e">단어</span> <span style="color:#a6e22e">검색</span>(<span style="color:#a6e22e">backword</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>*        - <span style="color:#a6e22e">현재</span> <span style="color:#a6e22e">커서</span> <span style="color:#a6e22e">위치</span> <span style="color:#a6e22e">단어</span> <span style="color:#a6e22e">검색</span>(<span style="color:#a6e22e">forward</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>?        - <span style="color:#a6e22e">검색</span>(<span style="color:#a6e22e">backword</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>/        - <span style="color:#a6e22e">검색</span>(<span style="color:#a6e22e">forward</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>.       - <span style="color:#a6e22e">마지막</span> <span style="color:#a6e22e">변경을</span> <span style="color:#a6e22e">반복한다</span>.(<span style="color:#a6e22e">이전</span> <span style="color:#a6e22e">명령어</span> <span style="color:#a6e22e">반복실행</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#a6e22e">gf</span>      - <span style="color:#a6e22e">커서</span> <span style="color:#a6e22e">위치의</span> <span style="color:#a6e22e">파일명을</span> <span style="color:#a6e22e">열어</span> <span style="color:#a6e22e">줍니다</span>.<span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p>marks
+ma
+`a</p>
+<h2 id="참고링크">참고링크</h2>
+<ul>
+<li><a href="https://neovim.io/" title="neovim">neovim</a></li>
+<li><a href="https://dougblack.io/words/a-good-vimrc.html" title="A Good Vimrc">A Good Vimrc</a></li>
+<li><a href="https://statico.github.io/vim.html" title="VIM AFTER 11 YEARS">VIM AFTER 11 YEARS</a></li>
+<li><a href="https://statico.github.io/vim2.html" title="EVERYTHING I MISSED IN 'VIM AFTER 11 YEARS'">EVERYTHING I MISSED IN &ldquo;VIM AFTER 11 YEARS&rdquo;</a></li>
+<li><a href="https://statico.github.io/vim3.html" title="VIM AFTER 15 YEARS">VIM AFTER 15 YEARS</a></li>
+<li><a href="https://www.youtube.com/watch?v=XA2WjJbmmoM&amp;feature=youtu.be" title="How to Do 90% of What Plugins Do">How to Do 90% of What Plugins Do (With Just Vim)</a></li>
+<li><a href="http://vimcasts.org/" title="VIM CASTS">VIM CASTS</a></li>
+</ul>
+
+      <ul class="flex list-none mt-20 ml-0 p-0">
+  
+   <li class="mr-3">
+     <a class="px-4 py-2" href="/tags/ide">
+       ide
+     </a>
+   </li>
+  
+   <li class="mr-3">
+     <a class="px-4 py-2" href="/tags/editor">
+       editor
+     </a>
+   </li>
+  
+</ul>
+
+    </section>
+
+    <div class="mt-20">
+
+
+</div>
+  </article>
+</main>
+  <footer class="container mt-20 py-10 border-t border-gray-700">
+    <a class="flex items-center flex-wrap" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+  <span class="pr-2">
+  This work is licensed under CC BY-SA 4.0
+  </span>
+  
+  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="22px" height="22px" viewBox="5.5 -3.5 64 64" enable-background="new 5.5 -3.5 64 64" xml:space="preserve">
+<g>
+	<circle fill="#FFFFFF" cx="37.785" cy="28.501" r="28.836"/>
+	<path d="M37.441-3.5c8.951,0,16.572,3.125,22.857,9.372c3.008,3.009,5.295,6.448,6.857,10.314
+		c1.561,3.867,2.344,7.971,2.344,12.314c0,4.381-0.773,8.486-2.314,12.313c-1.543,3.828-3.82,7.21-6.828,10.143
+		c-3.123,3.085-6.666,5.448-10.629,7.086c-3.961,1.638-8.057,2.457-12.285,2.457s-8.276-0.808-12.143-2.429
+		c-3.866-1.618-7.333-3.961-10.4-7.027c-3.067-3.066-5.4-6.524-7-10.372S5.5,32.767,5.5,28.5c0-4.229,0.809-8.295,2.428-12.2
+		c1.619-3.905,3.972-7.4,7.057-10.486C21.08-0.394,28.565-3.5,37.441-3.5z M37.557,2.272c-7.314,0-13.467,2.553-18.458,7.657
+		c-2.515,2.553-4.448,5.419-5.8,8.6c-1.354,3.181-2.029,6.505-2.029,9.972c0,3.429,0.675,6.734,2.029,9.913
+		c1.353,3.183,3.285,6.021,5.8,8.516c2.514,2.496,5.351,4.399,8.515,5.715c3.161,1.314,6.476,1.971,9.943,1.971
+		c3.428,0,6.75-0.665,9.973-1.999c3.219-1.335,6.121-3.257,8.713-5.771c4.99-4.876,7.484-10.99,7.484-18.344
+		c0-3.543-0.648-6.895-1.943-10.057c-1.293-3.162-3.18-5.98-5.654-8.458C50.984,4.844,44.795,2.272,37.557,2.272z M37.156,23.187
+		l-4.287,2.229c-0.458-0.951-1.019-1.619-1.685-2c-0.667-0.38-1.286-0.571-1.858-0.571c-2.856,0-4.286,1.885-4.286,5.657
+		c0,1.714,0.362,3.084,1.085,4.113c0.724,1.029,1.791,1.544,3.201,1.544c1.867,0,3.181-0.915,3.944-2.743l3.942,2
+		c-0.838,1.563-2,2.791-3.486,3.686c-1.484,0.896-3.123,1.343-4.914,1.343c-2.857,0-5.163-0.875-6.915-2.629
+		c-1.752-1.752-2.628-4.19-2.628-7.313c0-3.048,0.886-5.466,2.657-7.257c1.771-1.79,4.009-2.686,6.715-2.686
+		C32.604,18.558,35.441,20.101,37.156,23.187z M55.613,23.187l-4.229,2.229c-0.457-0.951-1.02-1.619-1.686-2
+		c-0.668-0.38-1.307-0.571-1.914-0.571c-2.857,0-4.287,1.885-4.287,5.657c0,1.714,0.363,3.084,1.086,4.113
+		c0.723,1.029,1.789,1.544,3.201,1.544c1.865,0,3.18-0.915,3.941-2.743l4,2c-0.875,1.563-2.057,2.791-3.541,3.686
+		c-1.486,0.896-3.105,1.343-4.857,1.343c-2.896,0-5.209-0.875-6.941-2.629c-1.736-1.752-2.602-4.19-2.602-7.313
+		c0-3.048,0.885-5.466,2.658-7.257c1.77-1.79,4.008-2.686,6.713-2.686C51.117,18.558,53.938,20.101,55.613,23.187z"/>
+</g>
+</svg>
+
+  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="22px" height="22px" viewBox="5.5 -3.5 64 64" enable-background="new 5.5 -3.5 64 64" xml:space="preserve">
+<g>
+	<circle fill="#FFFFFF" cx="37.637" cy="28.806" r="28.276"/>
+	<g>
+		<path d="M37.443-3.5c8.988,0,16.57,3.085,22.742,9.257C66.393,11.967,69.5,19.548,69.5,28.5c0,8.991-3.049,16.476-9.145,22.456
+			C53.879,57.319,46.242,60.5,37.443,60.5c-8.649,0-16.153-3.144-22.514-9.43C8.644,44.784,5.5,37.262,5.5,28.5
+			c0-8.761,3.144-16.342,9.429-22.742C21.101-0.415,28.604-3.5,37.443-3.5z M37.557,2.272c-7.276,0-13.428,2.553-18.457,7.657
+			c-5.22,5.334-7.829,11.525-7.829,18.572c0,7.086,2.59,13.22,7.77,18.398c5.181,5.182,11.352,7.771,18.514,7.771
+			c7.123,0,13.334-2.607,18.629-7.828c5.029-4.838,7.543-10.952,7.543-18.343c0-7.276-2.553-13.465-7.656-18.571
+			C50.967,4.824,44.795,2.272,37.557,2.272z M46.129,20.557v13.085h-3.656v15.542h-9.944V33.643h-3.656V20.557
+			c0-0.572,0.2-1.057,0.599-1.457c0.401-0.399,0.887-0.6,1.457-0.6h13.144c0.533,0,1.01,0.2,1.428,0.6
+			C45.918,19.5,46.129,19.986,46.129,20.557z M33.042,12.329c0-3.008,1.485-4.514,4.458-4.514s4.457,1.504,4.457,4.514
+			c0,2.971-1.486,4.457-4.457,4.457S33.042,15.3,33.042,12.329z"/>
+	</g>
+</g>
+</svg>
+
+  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="22px" height="22px" viewBox="5.5 -3.5 64 64" enable-background="new 5.5 -3.5 64 64" xml:space="preserve">
+<g>
+	<circle fill="#FFFFFF" cx="36.944" cy="28.631" r="29.105"/>
+	<g>
+		<path d="M37.443-3.5c8.951,0,16.531,3.105,22.742,9.315C66.393,11.987,69.5,19.548,69.5,28.5c0,8.954-3.049,16.457-9.145,22.514
+			C53.918,57.338,46.279,60.5,37.443,60.5c-8.649,0-16.153-3.143-22.514-9.429C8.644,44.786,5.5,37.264,5.5,28.501
+			c0-8.723,3.144-16.285,9.429-22.685C21.138-0.395,28.643-3.5,37.443-3.5z M37.557,2.272c-7.276,0-13.428,2.572-18.457,7.715
+			c-5.22,5.296-7.829,11.467-7.829,18.513c0,7.125,2.59,13.257,7.77,18.4c5.181,5.182,11.352,7.771,18.514,7.771
+			c7.123,0,13.334-2.609,18.629-7.828c5.029-4.876,7.543-10.99,7.543-18.343c0-7.313-2.553-13.485-7.656-18.513
+			C51.004,4.842,44.832,2.272,37.557,2.272z M23.271,23.985c0.609-3.924,2.189-6.962,4.742-9.114
+			c2.552-2.152,5.656-3.228,9.314-3.228c5.027,0,9.029,1.62,12,4.856c2.971,3.238,4.457,7.391,4.457,12.457
+			c0,4.915-1.543,9-4.627,12.256c-3.088,3.256-7.086,4.886-12.002,4.886c-3.619,0-6.743-1.085-9.371-3.257
+			c-2.629-2.172-4.209-5.257-4.743-9.257H31.1c0.19,3.886,2.533,5.829,7.029,5.829c2.246,0,4.057-0.972,5.428-2.914
+			c1.373-1.942,2.059-4.534,2.059-7.771c0-3.391-0.629-5.971-1.885-7.743c-1.258-1.771-3.066-2.657-5.43-2.657
+			c-4.268,0-6.667,1.885-7.2,5.656h2.343l-6.342,6.343l-6.343-6.343L23.271,23.985L23.271,23.985z"/>
+	</g>
+</g>
+</svg>
+
+
+</a>
+
+  </footer>
+</body>
+
+</html>

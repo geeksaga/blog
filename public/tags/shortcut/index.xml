@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shortcut on Try to write anyway</title>
+    <link>http://geeksaga.com/tags/shortcut/</link>
+    <description>Recent content in shortcut on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/shortcut/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bash &amp; zsh Shortcuts</title>
+      <link>http://geeksaga.com/post/linux/shell/2020-08-05-zsh-shortcut/</link>
+      <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/linux/shell/2020-08-05-zsh-shortcut/</guid>
+      <description>자주 사용하는 단축키 목록  CTRL + A : 라인 시작으로 이동 CTRL + E : 라인 끝으로 이동 CTRL + Left Arrow : 한단어 왼쪽으로 이동  ALT + B   CTRL + Right Arrow : 한단어 오른쪽으로 이동  ALT + F   CTRL + U (bash) : 라인 시작 부터 현재 커서까지 삭제 CTRL + U (zsh) : 라인 삭제 CTRL + K : 현재 커서 위치 부터 라인 끝까지 삭제 CTRL + W : 커서 앞 단어 삭제 CTRL + R : 히스토리 검색 CTRL + G : 히스토리 검색 빠져나오기 CTRL + + : 콘솔 폰트 키우기 CTRL + - : 콘솔 폰트 줄이기  zsh 사용시 bindkey 명령어를 이용하여 단축키 목록을 볼 수 있다.</description>
+    </item>
+    
+  </channel>
+</rss>

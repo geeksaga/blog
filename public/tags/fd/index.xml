@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fd on Try to write anyway</title>
+    <link>http://geeksaga.com/tags/fd/</link>
+    <description>Recent content in fd on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/fd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>fd command</title>
+      <link>http://geeksaga.com/post/linux/command/2020-09-07-fd/</link>
+      <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/linux/command/2020-09-07-fd/</guid>
+      <description>linux의 fd 명령어는 find명령어를 대체할 수 있는 사용자 친화적인 CLI 입니다.
+기본 사용법 $&amp;gt; fd test/1.txt ... TLDR $&amp;gt; tldr fd fd An alternative to find. Aims to be faster and easier to use than find. More information: https://github.com/sharkdp/fd. - Find files matching the given pattern in the current directory: fd pattern - Find files that begin with &amp;#34;foo&amp;#34;: fd &amp;#39;^foo&amp;#39; - Find files with a specific extension: fd --extension txt - Find files in a specific directory: fd pattern path/to/dir - Include ignored and hidden files in the search: fd --hidden --no-ignore pattern See also: find Help $&amp;gt; fd --help fd 8.</description>
+    </item>
+    
+  </channel>
+</rss>

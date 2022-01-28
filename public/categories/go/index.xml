@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>go on Try to write anyway</title>
+    <link>http://geeksaga.com/categories/go/</link>
+    <description>Recent content in go on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 Jun 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/categories/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go lang install</title>
+      <link>http://geeksaga.com/post/go/2018-06-12-go-install/</link>
+      <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/go/2018-06-12-go-install/</guid>
+      <description>Go lang 다운로드 및 설치하기. 먼저 Download Go{:target=&amp;ldquo;blank&amp;rdquo;} 에서 해당 환경에 맞는 Go 버전을 다운로드하여 설치한다.
+현재 기준으로 최신 Stable version은 1.10.3 버전이다.
+Linux를 기준으로 설치 방법은 다운받은 Go 파일의 압축을 해제하기만 하면 된다. 시작하기 가이드에 있는 경로에 설치 하기 위해 다음 명령어를 이용하여 압축을 해지한다.
+sudo tar -C /usr/local -xzf go1.10.3.linux-amd64.tar.gz chown -R [OWNER]:[GROUP] go 설치후 환경변수에 패스를 등록해준다.
+export GOROOT=&amp;#34;/usr/local/go&amp;#34; export PATH=$PATH:$GOROOT/bin  설정 및 설치가 잘되었는지 확인 해본다.</description>
+    </item>
+    
+  </channel>
+</rss>

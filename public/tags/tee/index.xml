@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tee on Try to write anyway</title>
+    <link>http://geeksaga.com/tags/tee/</link>
+    <description>Recent content in tee on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 24 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/tee/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tee</title>
+      <link>http://geeksaga.com/post/linux/command/2020-07-24-tee/</link>
+      <pubDate>Fri, 24 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/linux/command/2020-07-24-tee/</guid>
+      <description>linux 의 tee 명령어는 표준 입력을 받아 표준 출력(Console)과 파일을 만들어주는 명령어입니다.
+$&amp;gt; tee --help Usage: tee [OPTION]... [FILE]... Copy standard input to each FILE, and also to standard output. -a, --append append to the given FILEs, do not overwrite -i, --ignore-interrupts ignore interrupt signals -p diagnose errors writing to non pipes --output-error[=MODE] set behavior on write error. See MODE below --help display this help and exit --version output version information and exit MODE determines behavior with write errors on the outputs: &amp;#39;warn&amp;#39; diagnose errors writing to any output &amp;#39;warn-nopipe&amp;#39; diagnose errors writing to any output not a pipe &amp;#39;exit&amp;#39; exit on error writing to any output &amp;#39;exit-nopipe&amp;#39; exit on error writing to any output not a pipe The default MODE for the -p option is &amp;#39;warn-nopipe&amp;#39;.</description>
+    </item>
+    
+  </channel>
+</rss>

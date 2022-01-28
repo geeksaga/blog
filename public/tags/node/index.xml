@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>node on Try to write anyway</title>
+    <link>http://geeksaga.com/tags/node/</link>
+    <description>Recent content in node on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Mar 2020 10:50:07 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/node/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>node.js의 module.exports, exports</title>
+      <link>http://geeksaga.com/post/node/2020-03-23-module.exports-and-exports/</link>
+      <pubDate>Mon, 23 Mar 2020 10:50:07 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/node/2020-03-23-module.exports-and-exports/</guid>
+      <description>모든게 새로운 Node 기반의 프로그래밍을 하다 보니 exports는 적당히 사용해 보면서 테스트 중이였는데 정확히 먼가 싶어서 검색해 봤다.
+잘정리된 내용이 있어서 링크를 걸어두고 요약 부분만 기록해 둔다.
+요약 아래는 발췌 내용이다.
+ module.exports는 require() 함수를 사용했을 때 반환 받는 변수라고 생각해봅시다. 비어 있는 객체가 기본값이며 어떤 것으로도 자유롭게 변경할 수 있습니다. exports 자체는 절대 반환되지 않습니다! exports는 단순히 module.exports를 참조하고 있습니다. 이 편리한 변수를 사용하면 모듈을 작성할 때 더 적은 양의 코드로 작성할 수 있습니다.</description>
+    </item>
+    
+  </channel>
+</rss>

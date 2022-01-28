@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>grep on Try to write anyway</title>
+    <link>http://geeksaga.com/tags/grep/</link>
+    <description>Recent content in grep on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/grep/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>grep command</title>
+      <link>http://geeksaga.com/post/linux/command/2020-08-03-grep/</link>
+      <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/linux/command/2020-08-03-grep/</guid>
+      <description>linux의 grep은 파일 또는 표준 입력(Standard input)에 대해서 특정 패턴을 통해 검색 해주는 명령어 입니다.
+패턴에 대해서는 기본값으로 기본 정규 표현식(basic regular expression - BRE)을 지원 합니다.
+기본적인 사용 법은 다음과 같습니다.
+$&amp;gt; grep Usage: grep [OPTION]... PATTERN [FILE]... Try &amp;#39;grep --help&amp;#39; for more information. $&amp;gt; grep Error /var/log/syslog Aug 3 10:20:25 geeksaga org.a11y.Bus[4449]: ** (process:4467): WARNING **: Failed to register client: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .</description>
+    </item>
+    
+  </channel>
+</rss>

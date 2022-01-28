@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>watch on Try to write anyway</title>
+    <link>http://geeksaga.com/tags/watch/</link>
+    <description>Recent content in watch on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/watch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>watch command</title>
+      <link>http://geeksaga.com/post/linux/command/2020-08-03-watch/</link>
+      <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/linux/command/2020-08-03-watch/</guid>
+      <description>linux의 watch 명령어는 특정 명령어를 반복하여 실행할 때 유용한 명령어 입니다.
+$&amp;gt; watch -n 3 df 간단한 쉘스크립트를 이용해도 비슷한 효과를 볼 수 있습니다.
+$&amp;gt; while true \n do \n df \n sleep 3 \n done help watch $&amp;gt; watch --help Usage: watch [options] command Options: -b, --beep beep if command has a non-zero exit -c, --color interpret ANSI color and style sequences -d, --differences[=&amp;lt;permanent&amp;gt;] highlight changes between updates -e, --errexit exit if command has a non-zero exit -g, --chgexit exit when output from command changes -n, --interval &amp;lt;secs&amp;gt; seconds to wait between updates -p, --precise attempt run command in precise intervals -t, --no-title turn off header -x, --exec pass command to exec instead of &amp;#34;sh -c&amp;#34; -h, --help display this help and exit -v, --version output version information and exit For more details see watch(1 Usage: uptime [options] Options: -p, --pretty show uptime in pretty format -h, --help display this help and exit -s, --since system up since -V, --version output version information and exit For more details see uptime(1).</description>
+    </item>
+    
+  </channel>
+</rss>

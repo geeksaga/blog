@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>uname on Try to write anyway</title>
+    <link>http://geeksaga.com/tags/uname/</link>
+    <description>Recent content in uname on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/uname/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>uname command</title>
+      <link>http://geeksaga.com/post/linux/command/2020-07-29-uname/</link>
+      <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/linux/command/2020-07-29-uname/</guid>
+      <description>linux의 uname 명령를 사용하면 현재 실행중인 머신과 OS(Operating System) 등의 시스템 정보를 확인 할 수 있습니다.
+$&amp;gt;uname Linux -a 옵션을 통해 가능한 모든 시스템 정보(hardware, software, nodename)를 보여 줍니다.
+$&amp;gt;uname -a Linux geeksaga 4.15.0-107-generic #108~16.04.1-Ubuntu SMP Fri Jun 12 02:57:13 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux 위에 출력된 내용은 부분별로 다음 정보를 의미 합니다.
+ Linux : 커널 이름 geeksaga : 노드 이름 4.15.0-107-generic : 커널 릴리즈 정보 #108~16.04.1-Ubuntu SMP Fri Jun 12 02:57:13 UTC 2020 : 커널 버전 정보 x86_64 : 하드웨어 이름 x86_64 : 프로세서 타입 x86_64 : 하드웨어 플랫폼 GNU/Linux : 운영체제  uname &amp;ndash;help $&amp;gt;uname --help Usage: uname [OPTION].</description>
+    </item>
+    
+  </channel>
+</rss>

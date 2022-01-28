@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>index on Try to write anyway</title>
+    <link>http://geeksaga.com/categories/index/</link>
+    <description>Recent content in index on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 08 Jun 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/categories/index/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>less</title>
+      <link>http://geeksaga.com/post/linux/command/2018-06-08-less/</link>
+      <pubDate>Fri, 08 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/linux/command/2018-06-08-less/</guid>
+      <description>linux 의 less 명령어는 파일 내용을 확인하는 명령어들 중에 하나로 파일을 읽어 화면에 출력하는 명령어이다. 비슷한 명령어로 cat, more가 있다. more는 파일 내용을 확인 할 떄 위에서 아래 방향으로만 출력되어 지나간 내용을 다시 볼 수 없지만 less는 한 번에 보여지는 만큼만 읽어서 출력하기 때문에 크기가 큰 파일을 볼 때 유용하게 사용할 수 있다.
+기본 사용법은 다음과 같다.
+$&amp;gt;less [filename] 기본동작은 엔터키를 입력하면 한줄씩 출력되고 스페이스바를 입력하면 한 화면씩 출력된다.
+옵션  텍스트 모드 단축키  q : 프로그램 종료 엔터 : 1라인 아래로 이동 방향키 업 : 위로 1라인 이동 방향키 다운 : 아래로 1라인 이동 b or page up : 위로 1페이지 이동 space bar or page down : 아래로 1페이지 이동 G : 텍스트 파일의 제일 마지막으로 이동 1G or g : 텍스트 파일의 맨 처음으로 이동 /문자열 : 아래 방향으로 진행하며 입력된 문자열 찾기 n : 이전 검색어의 다음 찾기 z : 아래로 한 화면 이동 w : 위로 한 화면 이동 d : 아래로 화면의 절반 이동 u : 위로 화면의 절반 이동 h : 도움말 보기   +[linenumber] : 지정된 라인부터 내용을 출력 +G : 텍스트 파일의 제일 마지막 내용을 출력  </description>
+    </item>
+    
+    <item>
+      <title>Docker 설치</title>
+      <link>http://geeksaga.com/post/docker/2017-04-25-docker-install/</link>
+      <pubDate>Tue, 25 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/docker/2017-04-25-docker-install/</guid>
+      <description>Docker 설치 설치 환경 : Mint 17 (Ubuntu)
+$&amp;gt; sudo apt-get install docker.io $&amp;gt; sudo apt-get install docker.io Reading package lists... Done Building dependency tree Reading state information... Done The following package was automatically installed and is no longer required: python3-pyqt4 Use &amp;#39;apt-get autoremove&amp;#39; to remove it. Suggested packages: btrfs-tools debootstrap lxc rinse Recommended packages: aufs-tools The following packages will be REMOVED: docker-engine The following NEW packages will be installed: docker.</description>
+    </item>
+    
+    <item>
+      <title>Docker 옵션</title>
+      <link>http://geeksaga.com/post/docker/2017-04-25-docker-options/</link>
+      <pubDate>Tue, 25 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/docker/2017-04-25-docker-options/</guid>
+      <description>Docker 옵션 $&amp;gt; docker docker info Containers: 1 Images: 3 Storage Driver: aufs Root Dir: /var/lib/docker/aufs Backing Filesystem: extfs Dirs: 5 Dirperm1 Supported: false Execution Driver: native-0.2 Kernel Version: 3.13.0-24-generic Operating System: Ubuntu 14.04.3 LTS CPUs: 8 Total Memory: 15.56 GiB Name: geeksaga ID: LABC:D6KO:QT4K:WOXZ:YLE4:CPBY:DFM2:2SKJ:A6ZG:MTLJ:M6NC:ANFW WARNING: No swap limit support Docker 설정 파일 /etc/default/docker
+$&amp;gt; cat /etc/default/docker # Docker Upstart and SysVinit configuration file # Customize location of Docker binary (especially for development testing).</description>
+    </item>
+    
+    <item>
+      <title>Strategy Pattern</title>
+      <link>http://geeksaga.com/post/design-pattern/2017-01-10-strategy-pattern/</link>
+      <pubDate>Tue, 10 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/design-pattern/2017-01-10-strategy-pattern/</guid>
+      <description>###Strategy Pattern Strategy Pattern 은 알고리즘군을 정의하고 각각의 알고리즘 클래스 별로 캡슐화하여 동적으로 알고리즘을 변경할 수 있는 구조로된 패턴이다.</description>
+    </item>
+    
+    <item>
+      <title>Design Pattern Catalog</title>
+      <link>http://geeksaga.com/post/2017-01-09-pattern-index/</link>
+      <pubDate>Mon, 09 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/2017-01-09-pattern-index/</guid>
+      <description>(Object) Behavioral Patterns
+  [Strategy Pattern]({% post_url design-pattern/2017-01-10-strategy-pattern %})
+ 클래스 내부의 알고리즘을 캡슐화한다.    [Template method Pattern]
+  </description>
+    </item>
+    
+    <item>
+      <title>git 설정</title>
+      <link>http://geeksaga.com/post/tools/2016-12-16-git-setting/</link>
+      <pubDate>Fri, 16 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/tools/2016-12-16-git-setting/</guid>
+      <description>git config git config --global user.name &amp;#34;name&amp;#34; git config --global user.email &amp;#34;email address&amp;#34; 사용중인 gitconfig 기본 설정(~/.gitconfig)
+[user] name = name email = email address [core] autocrlf = input eol = native [color] ui = auto [alias] tree = log --oneline --decorate --all --graph </description>
+    </item>
+    
+  </channel>
+</rss>

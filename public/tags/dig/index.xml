@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dig on Try to write anyway</title>
+    <link>http://geeksaga.com/tags/dig/</link>
+    <description>Recent content in dig on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 11 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/dig/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>dig</title>
+      <link>http://geeksaga.com/post/linux/command/2020-03-11-dig/</link>
+      <pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/linux/command/2020-03-11-dig/</guid>
+      <description>linux 의 dig 명령어는
+기본 사용법은 다음과 같다.
+$&amp;gt;dig www.geeksaga.com ; &amp;lt;&amp;lt;&amp;gt;&amp;gt; DiG 9.10.3-P4-Ubuntu &amp;lt;&amp;lt;&amp;gt;&amp;gt; www.geeksaga.com ;; global options: +cmd ;; Got answer: ;; -&amp;gt;&amp;gt;HEADER&amp;lt;&amp;lt;- opcode: QUERY, status: NOERROR, id: 29343 ;; flags: qr rd ra; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1 ;; OPT PSEUDOSECTION: ; EDNS: version: 0, flags:; udp: 1452 ;; QUESTION SECTION: ;www.geeksaga.com.	IN	A ;; ANSWER SECTION: www.geeksaga.com.	10331	IN	A	185.199.109.153 www.geeksaga.com.	10331	IN	A	185.</description>
+    </item>
+    
+  </channel>
+</rss>

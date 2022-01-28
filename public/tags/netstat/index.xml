@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>netstat on Try to write anyway</title>
+    <link>http://geeksaga.com/tags/netstat/</link>
+    <description>Recent content in netstat on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 18 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/netstat/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>netstat command</title>
+      <link>http://geeksaga.com/post/linux/command/2020-08-18-netstat/</link>
+      <pubDate>Tue, 18 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/linux/command/2020-08-18-netstat/</guid>
+      <description>linux의 netstat 명령어를 통해 현재 연결된 네트워크 상태, 라우팅 테이블, 인터페이스 상태, IP Masquerade, 멀티캐스트 멤버쉽 등을 확인 할 수 있습니다.
+기본 사용법 $&amp;gt; netstat Active Internet connections (w/o servers) Proto Recv-Q Send-Q Local Address Foreign Address State tcp 0 0 192.168.0.50:38608 nrt20s21-in-f10.1:https ESTABLISHED ... Active UNIX domain sockets (w/o servers) Proto RefCnt Flags Type State I-Node Path unix 2 [ ] DGRAM 34946 /run/user/1000/systemd/notify unix 3 [ ] DGRAM 19785 /run/systemd/notify unix 3 [ ] SEQPACKET CONNECTED 238454 @0002d .</description>
+    </item>
+    
+  </channel>
+</rss>

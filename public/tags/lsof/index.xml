@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>lsof on Try to write anyway</title>
+    <link>http://geeksaga.com/tags/lsof/</link>
+    <description>Recent content in lsof on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/lsof/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>lsof command</title>
+      <link>http://geeksaga.com/post/linux/command/2020-09-09-lsof/</link>
+      <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/linux/command/2020-09-09-lsof/</guid>
+      <description>linux의 lsof 명령어는 열려 있는 파일과 해당하는 프로세스 목록을 보여줍니다.
+기본 사용법 $&amp;gt; lsof COMMAND PID TID USER FD TYPE DEVICE SIZE/OFF NODE NAME ... chrome 687 geeksaga 15r CHR 1,9 0t0 11 /dev/urandom chrome 687 geeksaga 16r FIFO 0,12 0t0 114907104 pipe chrome 687 geeksaga 17w FIFO 0,12 0t0 114907104 pipe chrome 687 geeksaga 18u unix 0x0000000000000000 0t0 114913656 type=STREAM chrome 687 geeksaga 19u unix 0x0000000000000000 0t0 66804623 type=SEQPACKET .</description>
+    </item>
+    
+  </channel>
+</rss>

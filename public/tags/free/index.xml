@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>free on Try to write anyway</title>
+    <link>http://geeksaga.com/tags/free/</link>
+    <description>Recent content in free on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/free/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>free command</title>
+      <link>http://geeksaga.com/post/linux/command/2020-08-12-free/</link>
+      <pubDate>Wed, 12 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/linux/command/2020-08-12-free/</guid>
+      <description>linux의 free 명령어를 통해 메모리에 대한 정보를 확인 할 수 있습니다.
+기본 사용법 $&amp;gt; free total used free shared buff/cache available Mem: 16309896 8769820 983176 423232 6556900 6621048 Swap: 16658428 768 16657660 출력된 정보는 다음과 같습니다.
+ Mem : 실제 메모리 Swap : 가상 메모리 total : 전체 메모리 크기(MemTotal and SwapTotal /proc/meminfo) used : 사용중인 메모리 크기(used = total - free -buffers - cache) free : 사용되지 않은 메모리(MemFree and SwapFree /proc/meminfo) shared : buff/cache : 버퍼와 캐시의 합  buffers : 커널이 사용중인 버퍼 크기(Buffers /proc/meminfo) cache : 페이지 캐시와 Slab(Cached and Slab /proc/meminfo)   available : 사용가능한 메모리 크기  help free $&amp;gt; free --help Usage: free [options] Options: -b, --bytes show output in bytes -k, --kilo show output in kilobytes -m, --mega show output in megabytes -g, --giga show output in gigabytes --tera show output in terabytes -h, --human show human-readable output --si use powers of 1000 not 1024 -l, --lohi show detailed low and high memory statistics -t, --total show total for RAM + swap -s N, --seconds N repeat printing every N seconds -c N, --count N repeat printing N times, then exit -w, --wide wide output --help display this help and exit -V, --version output version information and exit For more details see free(1).</description>
+    </item>
+    
+  </channel>
+</rss>

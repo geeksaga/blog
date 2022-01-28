@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pgrep on Try to write anyway</title>
+    <link>http://geeksaga.com/tags/pgrep/</link>
+    <description>Recent content in pgrep on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/pgrep/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>pgrep</title>
+      <link>http://geeksaga.com/post/linux/command/2020-04-27-pgrep/</link>
+      <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/linux/command/2020-04-27-pgrep/</guid>
+      <description>linux 의 pgrep 명령어는 확장 정규 표현식 패턴으로 모든 프로세스의 이름을 검색할 수 있으며 기본적으로 프로세스 ID를 반환한다.
+기본 사용법은 다음과 같다.
+λ pgrep zsh 1353 1541 Usage: pgrep [options] &amp;lt;pattern&amp;gt; Options: -d, --delimiter &amp;lt;string&amp;gt; specify output delimiter -l, --list-name list PID and process name -a, --list-full list PID and full command line -v, --inverse negates the matching -w, --lightweight list all TID -c, --count count of matching processes -f, --full use full process name to match -g, --pgroup &amp;lt;PGID,.</description>
+    </item>
+    
+  </channel>
+</rss>

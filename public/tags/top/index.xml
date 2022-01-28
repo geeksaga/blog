@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>top on Try to write anyway</title>
+    <link>http://geeksaga.com/tags/top/</link>
+    <description>Recent content in top on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/top/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>top command</title>
+      <link>http://geeksaga.com/post/linux/command/2020-07-30-top/</link>
+      <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/linux/command/2020-07-30-top/</guid>
+      <description>linux의 top 명령을 통해 실시간 수행중인 프로세스들에 대한 정보를 볼 수 있습니다.
+top 자체 명령어가 많기 때문에 Man page를 이용하면 좋습니다.
+$&amp;gt; top top - 15:01:58 up 3 days, 51 min, 1 user, load average: 0.32, 0.21, 0.15 Tasks: 370 total, 1 running, 298 sleeping, 0 stopped, 0 zombie %Cpu(s): 1.6 us, 1.0 sy, 0.0 ni, 97.4 id, 0.0 wa, 0.0 hi, 0.0 si, 0.0 st KiB Mem : 16309896 total, 5783464 free, 5049060 used, 5477372 buff/cache KiB Swap: 16658428 total, 16234492 free, 423936 used.</description>
+    </item>
+    
+  </channel>
+</rss>

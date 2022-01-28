@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>lsblk on Try to write anyway</title>
+    <link>http://geeksaga.com/tags/lsblk/</link>
+    <description>Recent content in lsblk on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/lsblk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>lsblk command</title>
+      <link>http://geeksaga.com/post/linux/command/2020-09-11-lsblk/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/linux/command/2020-09-11-lsblk/</guid>
+      <description>linux의 lsblk 명령어를 통해 장치 정보를 확인 할 수 있습니다.
+기본 사용법 $&amp;gt; lsblk NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT loop1 7:1 0 97M 1 loop /snap/core/9665 loop8 7:8 0 96.6M 1 loop /snap/core/9804 loop6 7:6 0 55.3M 1 loop /snap/core18/1885 loop4 7:4 0 50.4M 1 loop /snap/bpftrace/63 loop2 7:2 0 9.8M 1 loop /snap/helm/265 loop0 7:0 0 55M 1 loop /snap/core18/1880 loop7 7:7 0 26.1M 1 loop /snap/taskbook/23 sda 8:0 0 238.</description>
+    </item>
+    
+  </channel>
+</rss>

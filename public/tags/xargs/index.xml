@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>xargs on Try to write anyway</title>
+    <link>http://geeksaga.com/tags/xargs/</link>
+    <description>Recent content in xargs on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/xargs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>xargs command</title>
+      <link>http://geeksaga.com/post/linux/command/2020-08-05-xargs/</link>
+      <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/linux/command/2020-08-05-xargs/</guid>
+      <description>linux의 xargs 명령어는 출력된 결과를 인자값으로 이용하여 다른 명령어를 활용할 수 있게 만들어 주는 명령어입니다.
+$&amp;gt; find /etc -name &amp;#34;*.conf&amp;#34; | xargs ls -l 위 명령어는 /etc 경로 밑에 있는 .conf로 끝나는 모든 파일을 찾은 다음 파이프(|)를 통해 xargs에 인자값으로 넘겨 주고 ls -l 명령어를 통해서 출력하도록 하는 조합입니다.
+응용으로 다음 처럼 특정 파일들만 찾은 후에 파일을 압축하는데 사용할 수도 있습니다.
+$&amp;gt; find ~/Downloads -name &amp;#34;*.jpg&amp;#34; -type f | xargs tar -cvzf jpg-images.</description>
+    </item>
+    
+  </channel>
+</rss>

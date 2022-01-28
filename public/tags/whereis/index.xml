@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>whereis on Try to write anyway</title>
+    <link>http://geeksaga.com/tags/whereis/</link>
+    <description>Recent content in whereis on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/whereis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>whereis command</title>
+      <link>http://geeksaga.com/post/linux/command/2020-07-28-whereis/</link>
+      <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/linux/command/2020-07-28-whereis/</guid>
+      <description>linux의 whereis는 입력한 명령어(command)의 실행파일, 소스, Man 페이지 위치를 찾는 명령어입니다.
+whereis &amp;ndash;help $&amp;gt; whereis --help Usage: whereis [options] [-BMS &amp;lt;dir&amp;gt;... -f] &amp;lt;name&amp;gt; Locate the binary, source, and manual-page files for a command. Options: -b search only for binaries -B &amp;lt;dirs&amp;gt; define binaries lookup path -m search only for manuals and infos -M &amp;lt;dirs&amp;gt; define man and info lookup path -s search only for sources -S &amp;lt;dirs&amp;gt; define sources lookup path -f terminate &amp;lt;dirs&amp;gt; argument list -u search for unusual entries -l output effective lookup paths For more details see whereis(1).</description>
+    </item>
+    
+  </channel>
+</rss>

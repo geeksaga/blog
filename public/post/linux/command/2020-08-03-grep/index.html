@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <meta name="generator" content="Hugo 0.92.0" />
+
+  <title>grep command | Try to write anyway</title>
+  <meta name="description"
+        content="grep command description">
+
+  
+  <meta name="robots" content="noindex, nofollow">
+  
+
+  
+
+  
+  
+  
+  <link href="/output/css/main.1f8814d7216a63bc687e121e32f1783a28327b8373042decced922d34475a007.css" integrity="sha256-H4gU1yFqY7xofhIeMvF4Oigye4NzBC3sztki00R1oAc=" rel="stylesheet" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,200,600' rel='stylesheet' type='text/css'>
+  <meta property="og:title" content="grep command" />
+<meta property="og:description" content="grep command description" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://geeksaga.com/post/linux/command/2020-08-03-grep/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-08-03T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-08-03T00:00:00+00:00" />
+
+<meta itemprop="name" content="grep command">
+<meta itemprop="description" content="grep command description"><meta itemprop="datePublished" content="2020-08-03T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-08-03T00:00:00+00:00" />
+<meta itemprop="wordCount" content="807">
+<meta itemprop="keywords" content="command,linux,grep," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="grep command"/>
+<meta name="twitter:description" content="grep command description"/>
+
+
+  
+</head>
+
+<body class="bg-gray-800 font-sans text-gray-400 subpixel-antialiased flex flex-col h-screen justify-between tracking-wide">
+  <header class="bg-gray-700 py-3">
+    <div class="container flex justify-between items-center flex-wrap">
+  <div class="text-lg font-bold">
+    <a href="/">
+      
+      Try to write anyway
+      
+    </a>
+  </div>
+  <div class="flex items-center flex-wrap">
+    
+
+    
+  </div>
+</div>
+
+  </header>
+  
+  <main class="container mb-auto mt-20">
+  
+  <article>
+    <header class="text-center py-20">
+      <h1 class="text-5xl pb-2">grep command</h1>
+
+      <div class="flex place-content-center">
+        
+
+        <time datetime="2020-08-03T00:00:00Z">
+          August 3, 2020
+        </time>
+      </div>
+    </header>
+
+    <section>
+      <p>linux의 grep은 파일 또는 표준 입력(Standard input)에 대해서 특정 패턴을 통해 검색 해주는 명령어 입니다.</p>
+<p>패턴에 대해서는 기본값으로 기본 정규 표현식(basic regular expression - BRE)을 지원 합니다.</p>
+<p>기본적인 사용 법은 다음과 같습니다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$&gt; grep
+Usage: grep <span style="color:#f92672">[</span>OPTION<span style="color:#f92672">]</span>... PATTERN <span style="color:#f92672">[</span>FILE<span style="color:#f92672">]</span>...
+Try <span style="color:#e6db74">&#39;grep --help&#39;</span> <span style="color:#66d9ef">for</span> more information.
+
+$&gt; grep Error /var/log/syslog
+Aug  <span style="color:#ae81ff">3</span> 10:20:25 geeksaga org.a11y.Bus<span style="color:#f92672">[</span>4449<span style="color:#f92672">]</span>: ** <span style="color:#f92672">(</span>process:4467<span style="color:#f92672">)</span>: WARNING **: Failed to register client: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+Aug  <span style="color:#ae81ff">3</span> 10:20:25 geeksaga org.freedesktop.systemd1<span style="color:#f92672">[</span>4449<span style="color:#f92672">]</span>: ** <span style="color:#f92672">(</span>process:4476<span style="color:#f92672">)</span>: WARNING **: cgmanager method call org.linuxcontainers.cgmanager0_0.MovePidAbs failed: GDBus.Error:org.freedesktop.DBus.Error.InvalidArgs: invalid request.  Use G_DBUS_DEBUG<span style="color:#f92672">=</span>message <span style="color:#66d9ef">for</span> more info.
+...
+</code></pre></div><p>표준 입력(Standard input)을 이용한 방법</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$&gt; dmesg | grep random
+<span style="color:#f92672">[</span>    0.000000<span style="color:#f92672">]</span> random: get_random_bytes called from start_kernel+0x99/0x51e with crng_init<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+<span style="color:#f92672">[</span>    1.035100<span style="color:#f92672">]</span> random: systemd-udevd: uninitialized urandom read <span style="color:#f92672">(</span><span style="color:#ae81ff">16</span> bytes read<span style="color:#f92672">)</span>
+<span style="color:#f92672">[</span>    1.035156<span style="color:#f92672">]</span> random: systemd-udevd: uninitialized urandom read <span style="color:#f92672">(</span><span style="color:#ae81ff">16</span> bytes read<span style="color:#f92672">)</span>
+<span style="color:#f92672">[</span>    1.035164<span style="color:#f92672">]</span> random: systemd-udevd: uninitialized urandom read <span style="color:#f92672">(</span><span style="color:#ae81ff">16</span> bytes read<span style="color:#f92672">)</span>
+<span style="color:#f92672">[</span>    1.991103<span style="color:#f92672">]</span> random: fast init <span style="color:#66d9ef">done</span>
+<span style="color:#f92672">[</span>   45.515726<span style="color:#f92672">]</span> random: crng init <span style="color:#66d9ef">done</span>
+<span style="color:#f92672">[</span>   45.515727<span style="color:#f92672">]</span> random: <span style="color:#ae81ff">7</span> urandom warning<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span> missed due to ratelimiting
+</code></pre></div><h2 id="help-grep">help grep</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$&gt; grep --help
+Usage: grep <span style="color:#f92672">[</span>OPTION<span style="color:#f92672">]</span>... PATTERN <span style="color:#f92672">[</span>FILE<span style="color:#f92672">]</span>...
+Search <span style="color:#66d9ef">for</span> PATTERN in each FILE or standard input.
+PATTERN is, by default, a basic regular expression <span style="color:#f92672">(</span>BRE<span style="color:#f92672">)</span>.
+Example: grep -i <span style="color:#e6db74">&#39;hello world&#39;</span> menu.h main.c
+
+Regexp selection and interpretation:
+  -E, --extended-regexp     PATTERN is an extended regular expression <span style="color:#f92672">(</span>ERE<span style="color:#f92672">)</span>
+  -F, --fixed-strings       PATTERN is a set of newline-separated strings
+  -G, --basic-regexp        PATTERN is a basic regular expression <span style="color:#f92672">(</span>BRE<span style="color:#f92672">)</span>
+  -P, --perl-regexp         PATTERN is a Perl regular expression
+  -e, --regexp<span style="color:#f92672">=</span>PATTERN      use PATTERN <span style="color:#66d9ef">for</span> matching
+  -f, --file<span style="color:#f92672">=</span>FILE           obtain PATTERN from FILE
+  -i, --ignore-case         ignore <span style="color:#66d9ef">case</span> distinctions
+  -w, --word-regexp         force PATTERN to match only whole words
+  -x, --line-regexp         force PATTERN to match only whole lines
+  -z, --null-data           a data line ends in <span style="color:#ae81ff">0</span> byte, not newline
+
+Miscellaneous:
+  -s, --no-messages         suppress error messages
+  -v, --invert-match        <span style="color:#66d9ef">select</span> non-matching lines
+  -V, --version             display version information and exit
+      --help                display this help text and exit
+
+Output control:
+  -m, --max-count<span style="color:#f92672">=</span>NUM       stop after NUM matches
+  -b, --byte-offset         print the byte offset with output lines
+  -n, --line-number         print line number with output lines
+      --line-buffered       flush output on every line
+  -H, --with-filename       print the file name <span style="color:#66d9ef">for</span> each match
+  -h, --no-filename         suppress the file name prefix on output
+      --label<span style="color:#f92672">=</span>LABEL         use LABEL as the standard input file name prefix
+  -o, --only-matching       show only the part of a line matching PATTERN
+  -q, --quiet, --silent     suppress all normal output
+      --binary-files<span style="color:#f92672">=</span>TYPE   assume that binary files are TYPE;
+                            TYPE is <span style="color:#e6db74">&#39;binary&#39;</span>, <span style="color:#e6db74">&#39;text&#39;</span>, or <span style="color:#e6db74">&#39;without-match&#39;</span>
+  -a, --text                equivalent to --binary-files<span style="color:#f92672">=</span>text
+  -I                        equivalent to --binary-files<span style="color:#f92672">=</span>without-match
+  -d, --directories<span style="color:#f92672">=</span>ACTION  how to handle directories;
+                            ACTION is <span style="color:#e6db74">&#39;read&#39;</span>, <span style="color:#e6db74">&#39;recurse&#39;</span>, or <span style="color:#e6db74">&#39;skip&#39;</span>
+  -D, --devices<span style="color:#f92672">=</span>ACTION      how to handle devices, FIFOs and sockets;
+                            ACTION is <span style="color:#e6db74">&#39;read&#39;</span> or <span style="color:#e6db74">&#39;skip&#39;</span>
+  -r, --recursive           like --directories<span style="color:#f92672">=</span>recurse
+  -R, --dereference-recursive  likewise, but follow all symlinks
+      --include<span style="color:#f92672">=</span>FILE_PATTERN  search only files that match FILE_PATTERN
+      --exclude<span style="color:#f92672">=</span>FILE_PATTERN  skip files and directories matching FILE_PATTERN
+      --exclude-from<span style="color:#f92672">=</span>FILE   skip files matching any file pattern from FILE
+      --exclude-dir<span style="color:#f92672">=</span>PATTERN  directories that match PATTERN will be skipped.
+  -L, --files-without-match  print only names of FILEs containing no match
+  -l, --files-with-matches  print only names of FILEs containing matches
+  -c, --count               print only a count of matching lines per FILE
+  -T, --initial-tab         make tabs line up <span style="color:#f92672">(</span><span style="color:#66d9ef">if</span> needed<span style="color:#f92672">)</span>
+  -Z, --null                print <span style="color:#ae81ff">0</span> byte after FILE name
+
+Context control:
+  -B, --before-context<span style="color:#f92672">=</span>NUM  print NUM lines of leading context
+  -A, --after-context<span style="color:#f92672">=</span>NUM   print NUM lines of trailing context
+  -C, --context<span style="color:#f92672">=</span>NUM         print NUM lines of output context
+  -NUM                      same as --context<span style="color:#f92672">=</span>NUM
+      --color<span style="color:#f92672">[=</span>WHEN<span style="color:#f92672">]</span>,
+      --colour<span style="color:#f92672">[=</span>WHEN<span style="color:#f92672">]</span>       use markers to highlight the matching strings;
+                            WHEN is <span style="color:#e6db74">&#39;always&#39;</span>, <span style="color:#e6db74">&#39;never&#39;</span>, or <span style="color:#e6db74">&#39;auto&#39;</span>
+  -U, --binary              <span style="color:#66d9ef">do</span> not strip CR characters at EOL <span style="color:#f92672">(</span>MSDOS/Windows<span style="color:#f92672">)</span>
+  -u, --unix-byte-offsets   report offsets as <span style="color:#66d9ef">if</span> CRs were not there
+                            <span style="color:#f92672">(</span>MSDOS/Windows<span style="color:#f92672">)</span>
+
+<span style="color:#e6db74">&#39;egrep&#39;</span> means <span style="color:#e6db74">&#39;grep -E&#39;</span>.  <span style="color:#e6db74">&#39;fgrep&#39;</span> means <span style="color:#e6db74">&#39;grep -F&#39;</span>.
+Direct invocation as either <span style="color:#e6db74">&#39;egrep&#39;</span> or <span style="color:#e6db74">&#39;fgrep&#39;</span> is deprecated.
+When FILE is -, read standard input.  With no FILE, read . <span style="color:#66d9ef">if</span> a command-line
+-r is given, - otherwise.  If fewer than two FILEs are given, assume -h.
+Exit status is <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">if</span> any line is selected, <span style="color:#ae81ff">1</span> otherwise;
+<span style="color:#66d9ef">if</span> any error occurs and -q is not given, the exit status is 2.
+
+Report bugs to: bug-grep@gnu.org
+GNU grep home page: &lt;http://www.gnu.org/software/grep/&gt;
+General help using GNU software: &lt;http://www.gnu.org/gethelp/&gt;
+</code></pre></div><h2 id="tldr-grep">tldr grep</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$&gt; tldr grep
+
+  grep
+
+  Matches patterns in input text.
+  Supports simple patterns and regular expressions.
+
+  - Search <span style="color:#66d9ef">for</span> an exact string:
+    grep search_string path/to/file
+
+  - Search in <span style="color:#66d9ef">case</span>-insensitive mode:
+    grep -i search_string path/to/file
+
+  - Search recursively <span style="color:#f92672">(</span>ignoring non-text files<span style="color:#f92672">)</span> in current directory <span style="color:#66d9ef">for</span> an exact string:
+    grep -RI search_string .
+
+  - Use extended regular expressions <span style="color:#f92672">(</span>supporting ?, +, <span style="color:#f92672">{}</span>, <span style="color:#f92672">()</span> and |<span style="color:#f92672">)</span>:
+    grep -E ^regex$ path/to/file
+
+  - Print <span style="color:#ae81ff">3</span> lines of <span style="color:#f92672">[</span>C<span style="color:#f92672">]</span>ontext around, <span style="color:#f92672">[</span>B<span style="color:#f92672">]</span>efore, or <span style="color:#f92672">[</span>A<span style="color:#f92672">]</span>fter each match:
+    grep -C|B|A <span style="color:#ae81ff">3</span> search_string path/to/file
+
+  - Print file name with the corresponding line number <span style="color:#66d9ef">for</span> each match:
+    grep -Hn search_string path/to/file
+
+  - Use the standard input instead of a file:
+    cat path/to/file | grep search_string
+
+  - Invert match <span style="color:#66d9ef">for</span> excluding specific strings:
+    grep -v search_string
+</code></pre></div><h2 id="참고-링크">참고 링크</h2>
+<ul>
+<li><a href="https://man7.org/linux/man-pages/man1/grep.1.html" title="grep man-page">man7 man grep</a></li>
+</ul>
+
+      <ul class="flex list-none mt-20 ml-0 p-0">
+  
+   <li class="mr-3">
+     <a class="px-4 py-2" href="/tags/command">
+       command
+     </a>
+   </li>
+  
+   <li class="mr-3">
+     <a class="px-4 py-2" href="/tags/linux">
+       linux
+     </a>
+   </li>
+  
+   <li class="mr-3">
+     <a class="px-4 py-2" href="/tags/grep">
+       grep
+     </a>
+   </li>
+  
+</ul>
+
+    </section>
+
+    <div class="mt-20">
+
+
+  <div>
+    <h5>Related Articles</h5>
+    <ul>
+	    
+	      <li>
+          <a href="/post/linux/command/2020-08-03-awk/">
+            awk &amp; gawk command
+          </a>
+        </li>
+	    
+	      <li>
+          <a href="/post/linux/command/2020-08-03-sed/">
+            sed command
+          </a>
+        </li>
+	    
+	      <li>
+          <a href="/post/linux/command/2020-08-03-watch/">
+            watch command
+          </a>
+        </li>
+	    
+	      <li>
+          <a href="/post/linux/command/2020-07-31-ulimit/">
+            ulimit command
+          </a>
+        </li>
+	    
+	      <li>
+          <a href="/post/linux/command/2020-07-30-top/">
+            top command
+          </a>
+        </li>
+	    
+	      <li>
+          <a href="/post/linux/command/2020-07-29-dmidecode/">
+            dmidecode command
+          </a>
+        </li>
+	    
+	      <li>
+          <a href="/post/linux/command/2020-07-29-uname/">
+            uname command
+          </a>
+        </li>
+	    
+	      <li>
+          <a href="/post/linux/command/2020-07-29-uptime/">
+            uptime command
+          </a>
+        </li>
+	    
+	      <li>
+          <a href="/post/linux/tip/2020-07-28-bypass-alias/">
+            shell에 설정된 alias를 우회하는 방법들
+          </a>
+        </li>
+	    
+	      <li>
+          <a href="/post/linux/command/2020-07-28-whereis/">
+            whereis command
+          </a>
+        </li>
+	    
+	      <li>
+          <a href="/post/linux/command/2020-07-28-which/">
+            which command
+          </a>
+        </li>
+	    
+	      <li>
+          <a href="/post/linux/command/2020-07-24-tee/">
+            tee
+          </a>
+        </li>
+	    
+	      <li>
+          <a href="/post/linux/command/2020-04-27-pgrep/">
+            pgrep
+          </a>
+        </li>
+	    
+	      <li>
+          <a href="/post/linux/tip/2020-03-18-shell/">
+            Shell Script date 커맨드를 이용한 날짜를 변수로 변환하는 방법
+          </a>
+        </li>
+	    
+	      <li>
+          <a href="/post/linux/tip/2020-03-17-note/">
+            note
+          </a>
+        </li>
+	    
+    </ul>
+</div>
+
+</div>
+  </article>
+</main>
+  <footer class="container mt-20 py-10 border-t border-gray-700">
+    <a class="flex items-center flex-wrap" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+  <span class="pr-2">
+  This work is licensed under CC BY-SA 4.0
+  </span>
+  
+  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="22px" height="22px" viewBox="5.5 -3.5 64 64" enable-background="new 5.5 -3.5 64 64" xml:space="preserve">
+<g>
+	<circle fill="#FFFFFF" cx="37.785" cy="28.501" r="28.836"/>
+	<path d="M37.441-3.5c8.951,0,16.572,3.125,22.857,9.372c3.008,3.009,5.295,6.448,6.857,10.314
+		c1.561,3.867,2.344,7.971,2.344,12.314c0,4.381-0.773,8.486-2.314,12.313c-1.543,3.828-3.82,7.21-6.828,10.143
+		c-3.123,3.085-6.666,5.448-10.629,7.086c-3.961,1.638-8.057,2.457-12.285,2.457s-8.276-0.808-12.143-2.429
+		c-3.866-1.618-7.333-3.961-10.4-7.027c-3.067-3.066-5.4-6.524-7-10.372S5.5,32.767,5.5,28.5c0-4.229,0.809-8.295,2.428-12.2
+		c1.619-3.905,3.972-7.4,7.057-10.486C21.08-0.394,28.565-3.5,37.441-3.5z M37.557,2.272c-7.314,0-13.467,2.553-18.458,7.657
+		c-2.515,2.553-4.448,5.419-5.8,8.6c-1.354,3.181-2.029,6.505-2.029,9.972c0,3.429,0.675,6.734,2.029,9.913
+		c1.353,3.183,3.285,6.021,5.8,8.516c2.514,2.496,5.351,4.399,8.515,5.715c3.161,1.314,6.476,1.971,9.943,1.971
+		c3.428,0,6.75-0.665,9.973-1.999c3.219-1.335,6.121-3.257,8.713-5.771c4.99-4.876,7.484-10.99,7.484-18.344
+		c0-3.543-0.648-6.895-1.943-10.057c-1.293-3.162-3.18-5.98-5.654-8.458C50.984,4.844,44.795,2.272,37.557,2.272z M37.156,23.187
+		l-4.287,2.229c-0.458-0.951-1.019-1.619-1.685-2c-0.667-0.38-1.286-0.571-1.858-0.571c-2.856,0-4.286,1.885-4.286,5.657
+		c0,1.714,0.362,3.084,1.085,4.113c0.724,1.029,1.791,1.544,3.201,1.544c1.867,0,3.181-0.915,3.944-2.743l3.942,2
+		c-0.838,1.563-2,2.791-3.486,3.686c-1.484,0.896-3.123,1.343-4.914,1.343c-2.857,0-5.163-0.875-6.915-2.629
+		c-1.752-1.752-2.628-4.19-2.628-7.313c0-3.048,0.886-5.466,2.657-7.257c1.771-1.79,4.009-2.686,6.715-2.686
+		C32.604,18.558,35.441,20.101,37.156,23.187z M55.613,23.187l-4.229,2.229c-0.457-0.951-1.02-1.619-1.686-2
+		c-0.668-0.38-1.307-0.571-1.914-0.571c-2.857,0-4.287,1.885-4.287,5.657c0,1.714,0.363,3.084,1.086,4.113
+		c0.723,1.029,1.789,1.544,3.201,1.544c1.865,0,3.18-0.915,3.941-2.743l4,2c-0.875,1.563-2.057,2.791-3.541,3.686
+		c-1.486,0.896-3.105,1.343-4.857,1.343c-2.896,0-5.209-0.875-6.941-2.629c-1.736-1.752-2.602-4.19-2.602-7.313
+		c0-3.048,0.885-5.466,2.658-7.257c1.77-1.79,4.008-2.686,6.713-2.686C51.117,18.558,53.938,20.101,55.613,23.187z"/>
+</g>
+</svg>
+
+  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="22px" height="22px" viewBox="5.5 -3.5 64 64" enable-background="new 5.5 -3.5 64 64" xml:space="preserve">
+<g>
+	<circle fill="#FFFFFF" cx="37.637" cy="28.806" r="28.276"/>
+	<g>
+		<path d="M37.443-3.5c8.988,0,16.57,3.085,22.742,9.257C66.393,11.967,69.5,19.548,69.5,28.5c0,8.991-3.049,16.476-9.145,22.456
+			C53.879,57.319,46.242,60.5,37.443,60.5c-8.649,0-16.153-3.144-22.514-9.43C8.644,44.784,5.5,37.262,5.5,28.5
+			c0-8.761,3.144-16.342,9.429-22.742C21.101-0.415,28.604-3.5,37.443-3.5z M37.557,2.272c-7.276,0-13.428,2.553-18.457,7.657
+			c-5.22,5.334-7.829,11.525-7.829,18.572c0,7.086,2.59,13.22,7.77,18.398c5.181,5.182,11.352,7.771,18.514,7.771
+			c7.123,0,13.334-2.607,18.629-7.828c5.029-4.838,7.543-10.952,7.543-18.343c0-7.276-2.553-13.465-7.656-18.571
+			C50.967,4.824,44.795,2.272,37.557,2.272z M46.129,20.557v13.085h-3.656v15.542h-9.944V33.643h-3.656V20.557
+			c0-0.572,0.2-1.057,0.599-1.457c0.401-0.399,0.887-0.6,1.457-0.6h13.144c0.533,0,1.01,0.2,1.428,0.6
+			C45.918,19.5,46.129,19.986,46.129,20.557z M33.042,12.329c0-3.008,1.485-4.514,4.458-4.514s4.457,1.504,4.457,4.514
+			c0,2.971-1.486,4.457-4.457,4.457S33.042,15.3,33.042,12.329z"/>
+	</g>
+</g>
+</svg>
+
+  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="22px" height="22px" viewBox="5.5 -3.5 64 64" enable-background="new 5.5 -3.5 64 64" xml:space="preserve">
+<g>
+	<circle fill="#FFFFFF" cx="36.944" cy="28.631" r="29.105"/>
+	<g>
+		<path d="M37.443-3.5c8.951,0,16.531,3.105,22.742,9.315C66.393,11.987,69.5,19.548,69.5,28.5c0,8.954-3.049,16.457-9.145,22.514
+			C53.918,57.338,46.279,60.5,37.443,60.5c-8.649,0-16.153-3.143-22.514-9.429C8.644,44.786,5.5,37.264,5.5,28.501
+			c0-8.723,3.144-16.285,9.429-22.685C21.138-0.395,28.643-3.5,37.443-3.5z M37.557,2.272c-7.276,0-13.428,2.572-18.457,7.715
+			c-5.22,5.296-7.829,11.467-7.829,18.513c0,7.125,2.59,13.257,7.77,18.4c5.181,5.182,11.352,7.771,18.514,7.771
+			c7.123,0,13.334-2.609,18.629-7.828c5.029-4.876,7.543-10.99,7.543-18.343c0-7.313-2.553-13.485-7.656-18.513
+			C51.004,4.842,44.832,2.272,37.557,2.272z M23.271,23.985c0.609-3.924,2.189-6.962,4.742-9.114
+			c2.552-2.152,5.656-3.228,9.314-3.228c5.027,0,9.029,1.62,12,4.856c2.971,3.238,4.457,7.391,4.457,12.457
+			c0,4.915-1.543,9-4.627,12.256c-3.088,3.256-7.086,4.886-12.002,4.886c-3.619,0-6.743-1.085-9.371-3.257
+			c-2.629-2.172-4.209-5.257-4.743-9.257H31.1c0.19,3.886,2.533,5.829,7.029,5.829c2.246,0,4.057-0.972,5.428-2.914
+			c1.373-1.942,2.059-4.534,2.059-7.771c0-3.391-0.629-5.971-1.885-7.743c-1.258-1.771-3.066-2.657-5.43-2.657
+			c-4.268,0-6.667,1.885-7.2,5.656h2.343l-6.342,6.343l-6.343-6.343L23.271,23.985L23.271,23.985z"/>
+	</g>
+</g>
+</svg>
+
+
+</a>
+
+  </footer>
+</body>
+
+</html>

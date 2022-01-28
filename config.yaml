@@ -1,0 +1,4 @@
+baseURL: http://geeksaga.com
+disablePathToLower: true
+languageCode: en-us
+title: Try to write anyway

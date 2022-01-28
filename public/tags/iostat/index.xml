@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>iostat on Try to write anyway</title>
+    <link>http://geeksaga.com/tags/iostat/</link>
+    <description>Recent content in iostat on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 14 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/iostat/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>iostat command</title>
+      <link>http://geeksaga.com/post/linux/command/2020-08-14-iostat/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/linux/command/2020-08-14-iostat/</guid>
+      <description>linux의 iostat 명령어를 통해 평균 CPU 부하 및 디스크 I/O 정보를 확인 할 수 있습니다.
+기본 사용법 $&amp;gt; iostat Linux 4.15.0-112-generic (geeksaga) 08/14/2020 _x86_64_	(8 CPU) avg-cpu: %user %nice %system %iowait %steal %idle 6.92 0.00 2.11 0.03 0.00 90.94 Device: tps kB_read/s kB_wrtn/s kB_read kB_wrtn sda 6.00 21.54 202.41 15318970 143972371 dm-0 9.19 21.52 229.52 15308169 163262564 dm-1 0.01 0.00 0.04 2456 30392 출력된 정보는 다음과 같습니다.
+ Device : 디바이스 목록 tps : 초당 전송 요청 건수 KB_read/s : 디바이스에서 초당 읽은 데이터 블락 수 KB_wrtn/s : 디바이스에 초당 쓴 데이터 블락 수 KB_read : 디바이스에서 읽은 총 블락 수 KB_wrtn : 디바이스에 쓴 총 블락 수  옵션 사용법  -x : 확장 통계를 보여줍니다.</description>
+    </item>
+    
+  </channel>
+</rss>

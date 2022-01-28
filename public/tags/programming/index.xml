@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>programming on Try to write anyway</title>
+    <link>http://geeksaga.com/tags/programming/</link>
+    <description>Recent content in programming on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 16 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rust Programming Language install</title>
+      <link>http://geeksaga.com/post/rust/2020-07-16-rust-install/</link>
+      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/rust/2020-07-16-rust-install/</guid>
+      <description>rustup을 이용하여 Rust 설치하기. 다음 명령어를 통해 rustup을 먼저 설치 한다.
+curl --proto &amp;#39;=https&amp;#39; --tlsv1.2 -sSf https://sh.rustup.rs | sh 이미 설치되어 있는 경우에는 rust update 명령어를 통해 최신 버전으로 업데이트 한다.
+λ rustup -V rustup 1.21.1 (7832b2ebe 2019-12-20) λ rustup update stable info: syncing channel updates for &amp;#39;stable-x86_64-unknown-linux-gnu&amp;#39; info: latest update on 2020-06-18, rust version 1.44.1 (c7087fe00 2020-06-17) info: downloading component &amp;#39;rustc&amp;#39; 60.3 MiB / 60.3 MiB (100 %) 10.7 MiB/s in 5s ETA: 0s info: downloading component &amp;#39;rust-std&amp;#39; 17.</description>
+    </item>
+    
+    <item>
+      <title>Go lang install</title>
+      <link>http://geeksaga.com/post/go/2018-06-12-go-install/</link>
+      <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/go/2018-06-12-go-install/</guid>
+      <description>Go lang 다운로드 및 설치하기. 먼저 Download Go{:target=&amp;ldquo;blank&amp;rdquo;} 에서 해당 환경에 맞는 Go 버전을 다운로드하여 설치한다.
+현재 기준으로 최신 Stable version은 1.10.3 버전이다.
+Linux를 기준으로 설치 방법은 다운받은 Go 파일의 압축을 해제하기만 하면 된다. 시작하기 가이드에 있는 경로에 설치 하기 위해 다음 명령어를 이용하여 압축을 해지한다.
+sudo tar -C /usr/local -xzf go1.10.3.linux-amd64.tar.gz chown -R [OWNER]:[GROUP] go 설치후 환경변수에 패스를 등록해준다.
+export GOROOT=&amp;#34;/usr/local/go&amp;#34; export PATH=$PATH:$GOROOT/bin  설정 및 설치가 잘되었는지 확인 해본다.</description>
+    </item>
+    
+  </channel>
+</rss>

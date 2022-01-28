@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <meta name="generator" content="Hugo 0.92.0" />
+
+  <title>ifconfig | Try to write anyway</title>
+  <meta name="description"
+        content="ifconfig command description">
+
+  
+  <meta name="robots" content="noindex, nofollow">
+  
+
+  
+
+  
+  
+  
+  <link href="/output/css/main.1f8814d7216a63bc687e121e32f1783a28327b8373042decced922d34475a007.css" integrity="sha256-H4gU1yFqY7xofhIeMvF4Oigye4NzBC3sztki00R1oAc=" rel="stylesheet" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,200,600' rel='stylesheet' type='text/css'>
+  <meta property="og:title" content="ifconfig" />
+<meta property="og:description" content="ifconfig command description" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://geeksaga.com/post/linux/command/2020-08-11-ifconfig/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-08-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-08-11T00:00:00+00:00" />
+
+<meta itemprop="name" content="ifconfig">
+<meta itemprop="description" content="ifconfig command description"><meta itemprop="datePublished" content="2020-08-11T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-08-11T00:00:00+00:00" />
+<meta itemprop="wordCount" content="473">
+<meta itemprop="keywords" content="command,linux,ifconfig," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="ifconfig"/>
+<meta name="twitter:description" content="ifconfig command description"/>
+
+
+  
+</head>
+
+<body class="bg-gray-800 font-sans text-gray-400 subpixel-antialiased flex flex-col h-screen justify-between tracking-wide">
+  <header class="bg-gray-700 py-3">
+    <div class="container flex justify-between items-center flex-wrap">
+  <div class="text-lg font-bold">
+    <a href="/">
+      
+      Try to write anyway
+      
+    </a>
+  </div>
+  <div class="flex items-center flex-wrap">
+    
+
+    
+  </div>
+</div>
+
+  </header>
+  
+  <main class="container mb-auto mt-20">
+  
+  <article>
+    <header class="text-center py-20">
+      <h1 class="text-5xl pb-2">ifconfig</h1>
+
+      <div class="flex place-content-center">
+        
+
+        <time datetime="2020-08-11T00:00:00Z">
+          August 11, 2020
+        </time>
+      </div>
+    </header>
+
+    <section>
+      <p>linux의 <code>ifconfig</code>는 시스템에 설정된 네트워크 인터페이스의 상태를 확인 할 수 있는 명령어 입니다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$&gt; ifconfig
+docker0   Link encap:Ethernet  HWaddr 02:42:ed:b0:91:f2  
+          inet addr:172.17.0.1  Bcast:172.17.255.255  Mask:255.255.0.0
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:0 <span style="color:#f92672">(</span>0.0 B<span style="color:#f92672">)</span>  TX bytes:0 <span style="color:#f92672">(</span>0.0 B<span style="color:#f92672">)</span>
+
+enp3s0    Link encap:Ethernet  HWaddr 74:d4:35:1e:a9:87  
+          inet addr:192.168.0.50  Bcast:192.168.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::3be5:4edf:81f5:2037/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:11149676 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:9835684 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:3583344722 <span style="color:#f92672">(</span>3.5 GB<span style="color:#f92672">)</span>  TX bytes:1229319911 <span style="color:#f92672">(</span>1.2 GB<span style="color:#f92672">)</span>
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:376652 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:376652 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:31212407 <span style="color:#f92672">(</span>31.2 MB<span style="color:#f92672">)</span>  TX bytes:31212407 <span style="color:#f92672">(</span>31.2 MB<span style="color:#f92672">)</span>
+</code></pre></div><p>출력된 내용은 부분별로 다음을 의미 합니다.</p>
+<ul>
+<li><code>docker0</code>    : Docker가 설치되어 있는 경우 Docker용 가상 인터페이스가 추가로 설정되어 있습니다.</li>
+<li><code>enp3s0</code>     : 유선 네트워크 인터페이스를 의미 합니다.(랜카드)</li>
+<li><code>lo</code>         : 루프 백 인터페이스로 자기자신과 통신하는데 사용하는 가상 장치를 의미합니다.</li>
+<li><code>HWaddr</code>     : 하드웨어 주소, 즉 MAC address를 나타낸다.</li>
+<li><code>inet addr</code>  : 할당된 IPv4 주소</li>
+<li><code>inet6 addr</code> : 할당된 IPv6 주소</li>
+<li><code>Bcast</code>      : 브로드캐스트 주소</li>
+<li><code>Mask</code>       : 넷마스크</li>
+<li><code>MTU</code>        : 네트워크 최대 전송 단위(Maxium Transter Unit)</li>
+<li><code>RX packets</code> : 받은 패킷 정보</li>
+<li><code>TX packets</code> : 보낸 패킷 정보</li>
+<li><code>collisions</code> : 충돌된 패킷 수</li>
+<li><code>txqueuelen</code> : 송신 큐 길이를 나타낸다.</li>
+</ul>
+<h2 id="help-ifconfig">help ifconfig</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$&gt; ifconfig --help
+Usage:
+  ifconfig <span style="color:#f92672">[</span>-a<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-v<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>-s<span style="color:#f92672">]</span> &lt;interface&gt; <span style="color:#f92672">[[</span>&lt;AF&gt;<span style="color:#f92672">]</span> &lt;address&gt;<span style="color:#f92672">]</span>
+  <span style="color:#f92672">[</span>add &lt;address&gt;<span style="color:#f92672">[</span>/&lt;prefixlen&gt;<span style="color:#f92672">]]</span>
+  <span style="color:#f92672">[</span>del &lt;address&gt;<span style="color:#f92672">[</span>/&lt;prefixlen&gt;<span style="color:#f92672">]]</span>
+  <span style="color:#f92672">[[</span>-<span style="color:#f92672">]</span>broadcast <span style="color:#f92672">[</span>&lt;address&gt;<span style="color:#f92672">]]</span>  <span style="color:#f92672">[[</span>-<span style="color:#f92672">]</span>pointopoint <span style="color:#f92672">[</span>&lt;address&gt;<span style="color:#f92672">]]</span>
+  <span style="color:#f92672">[</span>netmask &lt;address&gt;<span style="color:#f92672">]</span>  <span style="color:#f92672">[</span>dstaddr &lt;address&gt;<span style="color:#f92672">]</span>  <span style="color:#f92672">[</span>tunnel &lt;address&gt;<span style="color:#f92672">]</span>
+  <span style="color:#f92672">[</span>outfill &lt;NN&gt;<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>keepalive &lt;NN&gt;<span style="color:#f92672">]</span>
+  <span style="color:#f92672">[</span>hw &lt;HW&gt; &lt;address&gt;<span style="color:#f92672">]</span>  <span style="color:#f92672">[</span>metric &lt;NN&gt;<span style="color:#f92672">]</span>  <span style="color:#f92672">[</span>mtu &lt;NN&gt;<span style="color:#f92672">]</span>
+  <span style="color:#f92672">[[</span>-<span style="color:#f92672">]</span>trailers<span style="color:#f92672">]</span>  <span style="color:#f92672">[[</span>-<span style="color:#f92672">]</span>arp<span style="color:#f92672">]</span>  <span style="color:#f92672">[[</span>-<span style="color:#f92672">]</span>allmulti<span style="color:#f92672">]</span>
+  <span style="color:#f92672">[</span>multicast<span style="color:#f92672">]</span>  <span style="color:#f92672">[[</span>-<span style="color:#f92672">]</span>promisc<span style="color:#f92672">]</span>
+  <span style="color:#f92672">[</span>mem_start &lt;NN&gt;<span style="color:#f92672">]</span>  <span style="color:#f92672">[</span>io_addr &lt;NN&gt;<span style="color:#f92672">]</span>  <span style="color:#f92672">[</span>irq &lt;NN&gt;<span style="color:#f92672">]</span>  <span style="color:#f92672">[</span>media &lt;type&gt;<span style="color:#f92672">]</span>
+  <span style="color:#f92672">[</span>txqueuelen &lt;NN&gt;<span style="color:#f92672">]</span>
+  <span style="color:#f92672">[[</span>-<span style="color:#f92672">]</span>dynamic<span style="color:#f92672">]</span>
+  <span style="color:#f92672">[</span>up|down<span style="color:#f92672">]</span> ...
+
+  &lt;HW&gt;<span style="color:#f92672">=</span>Hardware Type.
+  List of possible hardware types:
+    loop <span style="color:#f92672">(</span>Local Loopback<span style="color:#f92672">)</span> slip <span style="color:#f92672">(</span>Serial Line IP<span style="color:#f92672">)</span> cslip <span style="color:#f92672">(</span>VJ Serial Line IP<span style="color:#f92672">)</span> 
+    slip6 <span style="color:#f92672">(</span>6-bit Serial Line IP<span style="color:#f92672">)</span> cslip6 <span style="color:#f92672">(</span>VJ 6-bit Serial Line IP<span style="color:#f92672">)</span> adaptive <span style="color:#f92672">(</span>Adaptive Serial Line IP<span style="color:#f92672">)</span> 
+    ash <span style="color:#f92672">(</span>Ash<span style="color:#f92672">)</span> ether <span style="color:#f92672">(</span>Ethernet<span style="color:#f92672">)</span> ax25 <span style="color:#f92672">(</span>AMPR AX.25<span style="color:#f92672">)</span> 
+    netrom <span style="color:#f92672">(</span>AMPR NET/ROM<span style="color:#f92672">)</span> rose <span style="color:#f92672">(</span>AMPR ROSE<span style="color:#f92672">)</span> tunnel <span style="color:#f92672">(</span>IPIP Tunnel<span style="color:#f92672">)</span> 
+    ppp <span style="color:#f92672">(</span>Point-to-Point Protocol<span style="color:#f92672">)</span> hdlc <span style="color:#f92672">((</span>Cisco<span style="color:#f92672">)</span>-HDLC<span style="color:#f92672">)</span> lapb <span style="color:#f92672">(</span>LAPB<span style="color:#f92672">)</span> 
+    arcnet <span style="color:#f92672">(</span>ARCnet<span style="color:#f92672">)</span> dlci <span style="color:#f92672">(</span>Frame Relay DLCI<span style="color:#f92672">)</span> frad <span style="color:#f92672">(</span>Frame Relay Access Device<span style="color:#f92672">)</span> 
+    sit <span style="color:#f92672">(</span>IPv6-in-IPv4<span style="color:#f92672">)</span> fddi <span style="color:#f92672">(</span>Fiber Distributed Data Interface<span style="color:#f92672">)</span> hippi <span style="color:#f92672">(</span>HIPPI<span style="color:#f92672">)</span> 
+    irda <span style="color:#f92672">(</span>IrLAP<span style="color:#f92672">)</span> ec <span style="color:#f92672">(</span>Econet<span style="color:#f92672">)</span> x25 <span style="color:#f92672">(</span>generic X.25<span style="color:#f92672">)</span> 
+    eui64 <span style="color:#f92672">(</span>Generic EUI-64<span style="color:#f92672">)</span> 
+  &lt;AF&gt;<span style="color:#f92672">=</span>Address family. Default: inet
+  List of possible address families:
+    unix <span style="color:#f92672">(</span>UNIX Domain<span style="color:#f92672">)</span> inet <span style="color:#f92672">(</span>DARPA Internet<span style="color:#f92672">)</span> inet6 <span style="color:#f92672">(</span>IPv6<span style="color:#f92672">)</span> 
+    ax25 <span style="color:#f92672">(</span>AMPR AX.25<span style="color:#f92672">)</span> netrom <span style="color:#f92672">(</span>AMPR NET/ROM<span style="color:#f92672">)</span> rose <span style="color:#f92672">(</span>AMPR ROSE<span style="color:#f92672">)</span> 
+    ipx <span style="color:#f92672">(</span>Novell IPX<span style="color:#f92672">)</span> ddp <span style="color:#f92672">(</span>Appletalk DDP<span style="color:#f92672">)</span> ec <span style="color:#f92672">(</span>Econet<span style="color:#f92672">)</span> 
+    ash <span style="color:#f92672">(</span>Ash<span style="color:#f92672">)</span> x25 <span style="color:#f92672">(</span>CCITT X.25<span style="color:#f92672">)</span>
+</code></pre></div><h2 id="tldr-ifconfig">tldr ifconfig</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">$&gt; tldr ifconfig
+
+  ifconfig
+
+  Network Interface Configurator.
+
+  - View network settings of an ethernet adapter:
+    ifconfig eth0
+
+  - Display details of all interfaces, including disabled interfaces:
+    ifconfig -a
+
+  - Disable eth0 interface:
+    ifconfig eth0 down
+
+  - Enable eth0 interface:
+    ifconfig eth0 up
+
+  - Assign IP address to eth0 interface:
+    ifconfig eth0 ip_address
+</code></pre></div><h2 id="참고-링크">참고 링크</h2>
+<ul>
+<li><a href="hhttps://unix.stackexchange.com/questions/134483/why-is-my-ethernet-interface-called-enp0s10-instead-of-eth0" title="Why is my ethernet interface called enp0s10 instead of eth0?">Why is my ethernet interface called enp0s10 instead of eth0?</a></li>
+</ul>
+
+      <ul class="flex list-none mt-20 ml-0 p-0">
+  
+   <li class="mr-3">
+     <a class="px-4 py-2" href="/tags/command">
+       command
+     </a>
+   </li>
+  
+   <li class="mr-3">
+     <a class="px-4 py-2" href="/tags/linux">
+       linux
+     </a>
+   </li>
+  
+   <li class="mr-3">
+     <a class="px-4 py-2" href="/tags/ifconfig">
+       ifconfig
+     </a>
+   </li>
+  
+</ul>
+
+    </section>
+
+    <div class="mt-20">
+
+
+  <div>
+    <h5>Related Articles</h5>
+    <ul>
+	    
+	      <li>
+          <a href="/post/linux/command/2020-08-05-xargs/">
+            xargs command
+          </a>
+        </li>
+	    
+	      <li>
+          <a href="/post/linux/command/2020-08-03-awk/">
+            awk &amp; gawk command
+          </a>
+        </li>
+	    
+	      <li>
+          <a href="/post/linux/command/2020-08-03-grep/">
+            grep command
+          </a>
+        </li>
+	    
+	      <li>
+          <a href="/post/linux/command/2020-08-03-sed/">
+            sed command
+          </a>
+        </li>
+	    
+	      <li>
+          <a href="/post/linux/command/2020-08-03-watch/">
+            watch command
+          </a>
+        </li>
+	    
+	      <li>
+          <a href="/post/linux/command/2020-07-31-ulimit/">
+            ulimit command
+          </a>
+        </li>
+	    
+	      <li>
+          <a href="/post/linux/command/2020-07-30-top/">
+            top command
+          </a>
+        </li>
+	    
+	      <li>
+          <a href="/post/linux/command/2020-07-29-dmidecode/">
+            dmidecode command
+          </a>
+        </li>
+	    
+	      <li>
+          <a href="/post/linux/command/2020-07-29-uname/">
+            uname command
+          </a>
+        </li>
+	    
+	      <li>
+          <a href="/post/linux/command/2020-07-29-uptime/">
+            uptime command
+          </a>
+        </li>
+	    
+	      <li>
+          <a href="/post/linux/tip/2020-07-28-bypass-alias/">
+            shell에 설정된 alias를 우회하는 방법들
+          </a>
+        </li>
+	    
+	      <li>
+          <a href="/post/linux/command/2020-07-28-whereis/">
+            whereis command
+          </a>
+        </li>
+	    
+	      <li>
+          <a href="/post/linux/command/2020-07-28-which/">
+            which command
+          </a>
+        </li>
+	    
+	      <li>
+          <a href="/post/linux/command/2020-07-24-tee/">
+            tee
+          </a>
+        </li>
+	    
+	      <li>
+          <a href="/post/linux/command/2020-04-27-pgrep/">
+            pgrep
+          </a>
+        </li>
+	    
+    </ul>
+</div>
+
+</div>
+  </article>
+</main>
+  <footer class="container mt-20 py-10 border-t border-gray-700">
+    <a class="flex items-center flex-wrap" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+  <span class="pr-2">
+  This work is licensed under CC BY-SA 4.0
+  </span>
+  
+  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="22px" height="22px" viewBox="5.5 -3.5 64 64" enable-background="new 5.5 -3.5 64 64" xml:space="preserve">
+<g>
+	<circle fill="#FFFFFF" cx="37.785" cy="28.501" r="28.836"/>
+	<path d="M37.441-3.5c8.951,0,16.572,3.125,22.857,9.372c3.008,3.009,5.295,6.448,6.857,10.314
+		c1.561,3.867,2.344,7.971,2.344,12.314c0,4.381-0.773,8.486-2.314,12.313c-1.543,3.828-3.82,7.21-6.828,10.143
+		c-3.123,3.085-6.666,5.448-10.629,7.086c-3.961,1.638-8.057,2.457-12.285,2.457s-8.276-0.808-12.143-2.429
+		c-3.866-1.618-7.333-3.961-10.4-7.027c-3.067-3.066-5.4-6.524-7-10.372S5.5,32.767,5.5,28.5c0-4.229,0.809-8.295,2.428-12.2
+		c1.619-3.905,3.972-7.4,7.057-10.486C21.08-0.394,28.565-3.5,37.441-3.5z M37.557,2.272c-7.314,0-13.467,2.553-18.458,7.657
+		c-2.515,2.553-4.448,5.419-5.8,8.6c-1.354,3.181-2.029,6.505-2.029,9.972c0,3.429,0.675,6.734,2.029,9.913
+		c1.353,3.183,3.285,6.021,5.8,8.516c2.514,2.496,5.351,4.399,8.515,5.715c3.161,1.314,6.476,1.971,9.943,1.971
+		c3.428,0,6.75-0.665,9.973-1.999c3.219-1.335,6.121-3.257,8.713-5.771c4.99-4.876,7.484-10.99,7.484-18.344
+		c0-3.543-0.648-6.895-1.943-10.057c-1.293-3.162-3.18-5.98-5.654-8.458C50.984,4.844,44.795,2.272,37.557,2.272z M37.156,23.187
+		l-4.287,2.229c-0.458-0.951-1.019-1.619-1.685-2c-0.667-0.38-1.286-0.571-1.858-0.571c-2.856,0-4.286,1.885-4.286,5.657
+		c0,1.714,0.362,3.084,1.085,4.113c0.724,1.029,1.791,1.544,3.201,1.544c1.867,0,3.181-0.915,3.944-2.743l3.942,2
+		c-0.838,1.563-2,2.791-3.486,3.686c-1.484,0.896-3.123,1.343-4.914,1.343c-2.857,0-5.163-0.875-6.915-2.629
+		c-1.752-1.752-2.628-4.19-2.628-7.313c0-3.048,0.886-5.466,2.657-7.257c1.771-1.79,4.009-2.686,6.715-2.686
+		C32.604,18.558,35.441,20.101,37.156,23.187z M55.613,23.187l-4.229,2.229c-0.457-0.951-1.02-1.619-1.686-2
+		c-0.668-0.38-1.307-0.571-1.914-0.571c-2.857,0-4.287,1.885-4.287,5.657c0,1.714,0.363,3.084,1.086,4.113
+		c0.723,1.029,1.789,1.544,3.201,1.544c1.865,0,3.18-0.915,3.941-2.743l4,2c-0.875,1.563-2.057,2.791-3.541,3.686
+		c-1.486,0.896-3.105,1.343-4.857,1.343c-2.896,0-5.209-0.875-6.941-2.629c-1.736-1.752-2.602-4.19-2.602-7.313
+		c0-3.048,0.885-5.466,2.658-7.257c1.77-1.79,4.008-2.686,6.713-2.686C51.117,18.558,53.938,20.101,55.613,23.187z"/>
+</g>
+</svg>
+
+  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="22px" height="22px" viewBox="5.5 -3.5 64 64" enable-background="new 5.5 -3.5 64 64" xml:space="preserve">
+<g>
+	<circle fill="#FFFFFF" cx="37.637" cy="28.806" r="28.276"/>
+	<g>
+		<path d="M37.443-3.5c8.988,0,16.57,3.085,22.742,9.257C66.393,11.967,69.5,19.548,69.5,28.5c0,8.991-3.049,16.476-9.145,22.456
+			C53.879,57.319,46.242,60.5,37.443,60.5c-8.649,0-16.153-3.144-22.514-9.43C8.644,44.784,5.5,37.262,5.5,28.5
+			c0-8.761,3.144-16.342,9.429-22.742C21.101-0.415,28.604-3.5,37.443-3.5z M37.557,2.272c-7.276,0-13.428,2.553-18.457,7.657
+			c-5.22,5.334-7.829,11.525-7.829,18.572c0,7.086,2.59,13.22,7.77,18.398c5.181,5.182,11.352,7.771,18.514,7.771
+			c7.123,0,13.334-2.607,18.629-7.828c5.029-4.838,7.543-10.952,7.543-18.343c0-7.276-2.553-13.465-7.656-18.571
+			C50.967,4.824,44.795,2.272,37.557,2.272z M46.129,20.557v13.085h-3.656v15.542h-9.944V33.643h-3.656V20.557
+			c0-0.572,0.2-1.057,0.599-1.457c0.401-0.399,0.887-0.6,1.457-0.6h13.144c0.533,0,1.01,0.2,1.428,0.6
+			C45.918,19.5,46.129,19.986,46.129,20.557z M33.042,12.329c0-3.008,1.485-4.514,4.458-4.514s4.457,1.504,4.457,4.514
+			c0,2.971-1.486,4.457-4.457,4.457S33.042,15.3,33.042,12.329z"/>
+	</g>
+</g>
+</svg>
+
+  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     width="22px" height="22px" viewBox="5.5 -3.5 64 64" enable-background="new 5.5 -3.5 64 64" xml:space="preserve">
+<g>
+	<circle fill="#FFFFFF" cx="36.944" cy="28.631" r="29.105"/>
+	<g>
+		<path d="M37.443-3.5c8.951,0,16.531,3.105,22.742,9.315C66.393,11.987,69.5,19.548,69.5,28.5c0,8.954-3.049,16.457-9.145,22.514
+			C53.918,57.338,46.279,60.5,37.443,60.5c-8.649,0-16.153-3.143-22.514-9.429C8.644,44.786,5.5,37.264,5.5,28.501
+			c0-8.723,3.144-16.285,9.429-22.685C21.138-0.395,28.643-3.5,37.443-3.5z M37.557,2.272c-7.276,0-13.428,2.572-18.457,7.715
+			c-5.22,5.296-7.829,11.467-7.829,18.513c0,7.125,2.59,13.257,7.77,18.4c5.181,5.182,11.352,7.771,18.514,7.771
+			c7.123,0,13.334-2.609,18.629-7.828c5.029-4.876,7.543-10.99,7.543-18.343c0-7.313-2.553-13.485-7.656-18.513
+			C51.004,4.842,44.832,2.272,37.557,2.272z M23.271,23.985c0.609-3.924,2.189-6.962,4.742-9.114
+			c2.552-2.152,5.656-3.228,9.314-3.228c5.027,0,9.029,1.62,12,4.856c2.971,3.238,4.457,7.391,4.457,12.457
+			c0,4.915-1.543,9-4.627,12.256c-3.088,3.256-7.086,4.886-12.002,4.886c-3.619,0-6.743-1.085-9.371-3.257
+			c-2.629-2.172-4.209-5.257-4.743-9.257H31.1c0.19,3.886,2.533,5.829,7.029,5.829c2.246,0,4.057-0.972,5.428-2.914
+			c1.373-1.942,2.059-4.534,2.059-7.771c0-3.391-0.629-5.971-1.885-7.743c-1.258-1.771-3.066-2.657-5.43-2.657
+			c-4.268,0-6.667,1.885-7.2,5.656h2.343l-6.342,6.343l-6.343-6.343L23.271,23.985L23.271,23.985z"/>
+	</g>
+</g>
+</svg>
+
+
+</a>
+
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Electron on Try to write anyway</title>
+    <link>http://geeksaga.com/tags/Electron/</link>
+    <description>Recent content in Electron on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/Electron/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Straw Agent init</title>
+      <link>http://geeksaga.com/post/toy/2020-03-01-straw-agent-init/</link>
+      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/toy/2020-03-01-straw-agent-init/</guid>
+      <description>토이 프로젝트(Toy or Side Project)를 여럿 만들어 보지만 항상 프로젝트의 재미있는 부분이 끝나면 그대로 마무리된다.
+조금 부족하겠지만 프로젝트의 완성을 위해 초기 설정부터 배포까지 진행하도록 한다.
+이것 역시 이대로 끝날 수도 있겠지&amp;hellip;
+STRAW STRAW의 목표는 데이터를 수집하는 에이전트 프로그램이다.
+전부 처음 사용하는 기술셋으로 작업을 하기 때문에 Telegraf{:target=&amp;ldquo;blank&amp;rdquo;}라는 오픈소스를 참고 하기로 했다.
+Telegraf는 시계열 DB인 InfluxDB{:target=&amp;ldquo;blank&amp;rdquo;}를 만든 influxdata{:target=&amp;ldquo;blank&amp;rdquo;}에서 만든 오픈소스 프로그램이다.
+Telegraf를 선택한 이유는 시스템 모니터링과 메트릭스 수집 에이전트 이기도 하지만 언어가 Go{:target=&amp;ldquo;blank&amp;rdquo;}로 되어 있어서다.</description>
+    </item>
+    
+    <item>
+      <title>Electron Setting</title>
+      <link>http://geeksaga.com/post/electron/2020-02-25-electorn-setting/</link>
+      <pubDate>Tue, 25 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/electron/2020-02-25-electorn-setting/</guid>
+      <description>Electron 개발환경을 설치 및 설정하고 튜토리얼을 통해 기본적인 Electron 프로그램을 만들어 본다.
+준비사항 다음 프로그램들이 설치되어 있어야 한다.
+ Node{:target=&amp;ldquo;blank&amp;rdquo;} Yarn{:target=&amp;ldquo;blank&amp;rdquo;}  다음 명령으를 통해 확인할 수 있다.
+❯ node -v v12.14.1 ❯ npm -v 6.13.7 ❯ yarn -v 1.21.1 설치 Electron을 설치할 때는 개발 의존성 모드로 설치할 것을 권장한다.
+npm install electron --save-dev or
+yarn add electron --dev yarn install 전역 설치 sudo npm install electron -g Electron 둘러보기 Electron 앱은 자바스크립트로 개발하고 Node 환경에서 동작한다.</description>
+    </item>
+    
+  </channel>
+</rss>

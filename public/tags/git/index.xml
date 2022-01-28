@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on Try to write anyway</title>
+    <link>http://geeksaga.com/tags/git/</link>
+    <description>Recent content in git on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 16 Dec 2016 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>git 설정</title>
+      <link>http://geeksaga.com/post/tools/2016-12-16-git-setting/</link>
+      <pubDate>Fri, 16 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/tools/2016-12-16-git-setting/</guid>
+      <description>git config git config --global user.name &amp;#34;name&amp;#34; git config --global user.email &amp;#34;email address&amp;#34; 사용중인 gitconfig 기본 설정(~/.gitconfig)
+[user] name = name email = email address [core] autocrlf = input eol = native [color] ui = auto [alias] tree = log --oneline --decorate --all --graph </description>
+    </item>
+    
+  </channel>
+</rss>

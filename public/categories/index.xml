@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Try to write anyway</title>
+    <link>http://geeksaga.com/categories/</link>
+    <description>Recent content in Categories on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 Jul 2020 14:12:45 +0000</lastBuildDate><atom:link href="http://geeksaga.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>linux</title>
+      <link>http://geeksaga.com/categories/linux/</link>
+      <pubDate>Tue, 28 Jul 2020 14:12:45 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rust</title>
+      <link>http://geeksaga.com/categories/Rust/</link>
+      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/categories/Rust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>go</title>
+      <link>http://geeksaga.com/categories/go/</link>
+      <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/categories/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>index</title>
+      <link>http://geeksaga.com/categories/index/</link>
+      <pubDate>Fri, 08 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/categories/index/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>http://geeksaga.com/categories/python/</link>
+      <pubDate>Fri, 16 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/categories/python/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

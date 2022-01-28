@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>utility on Try to write anyway</title>
+    <link>http://geeksaga.com/tags/utility/</link>
+    <description>Recent content in utility on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 06 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/utility/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Utility</title>
+      <link>http://geeksaga.com/post/tools/2020-03-06-tools/</link>
+      <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/tools/2020-03-06-tools/</guid>
+      <description>{% include figure image_path=&amp;quot;/assets/images/tools.png&amp;quot; caption=&amp;ldquo;사용중인 유용한 도구들을 북마크 합니다.&amp;rdquo; %}
+Terminalizer Record your terminal and generate animated gif images or share a web player
+ Terminalizer  Taskbook Tasks, boards &amp;amp; notes for the command-line habitat
+ Taskbook  Postman The Collaboration Platform for API Development
+ Postman  JMeter The Apache JMeter™ application is open source software, a 100% pure Java application designed to load test functional behavior and measure performance.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>df on Try to write anyway</title>
+    <link>http://geeksaga.com/tags/df/</link>
+    <description>Recent content in df on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 18 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/df/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>df command</title>
+      <link>http://geeksaga.com/post/linux/command/2020-08-18-df/</link>
+      <pubDate>Tue, 18 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/linux/command/2020-08-18-df/</guid>
+      <description>linux의 df 명령어를 통해 현재 디스크의 전체 사용량을 확인 할 수 있습니다.
+기본 사용법 $&amp;gt; df Filesystem 1K-blocks Used Available Use% Mounted on udev 8123612 0 8123612 0% /dev tmpfs 1630992 17960 1613032 2% /run /dev/mapper/mint--vg-root 229063924 159664024 57741048 74% / tmpfs 8154948 554936 7600012 7% /dev/shm tmpfs 5120 4 5116 1% /run/lock tmpfs 8154948 0 8154948 0% /sys/fs/cgroup /dev/sda1 482922 279826 178162 62% /boot cgmfs 100 0 100 0% /run/cgmanager/fs tmpfs 1630992 520 1630472 1% /run/user/1000 출력된 정보는 다음과 같습니다.</description>
+    </item>
+    
+  </channel>
+</rss>

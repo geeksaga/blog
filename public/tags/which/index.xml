@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>which on Try to write anyway</title>
+    <link>http://geeksaga.com/tags/which/</link>
+    <description>Recent content in which on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/which/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>which command</title>
+      <link>http://geeksaga.com/post/linux/command/2020-07-28-which/</link>
+      <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/linux/command/2020-07-28-which/</guid>
+      <description>linux의 which는 입력한 명령어를 $PATH에 설정된 범위에서 검색하여 찾아주는 명령어입니다.
+옵션 없이 사용할 경우 먼저 매치되는 명령어를 보여 줍니다.
+$&amp;gt; which ls ls: aliased to exa -a 옵션을 통해 매치는 명령어가 여러개 있을 경우 모두 보여 줍니다.
+$&amp;gt; which -a ls /ls: aliased to exa /bin/ls </description>
+    </item>
+    
+  </channel>
+</rss>

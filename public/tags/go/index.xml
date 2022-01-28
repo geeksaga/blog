@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>go on Try to write anyway</title>
+    <link>http://geeksaga.com/tags/go/</link>
+    <description>Recent content in go on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 07 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go IDE</title>
+      <link>http://geeksaga.com/post/go/2020-03-07-go-ide/</link>
+      <pubDate>Sat, 07 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/go/2020-03-07-go-ide/</guid>
+      <description>Visual Studio Code(VSCode) Vim with vim-go GoLand 참고 링크  [What is the best IDE for developing in Golang?] 1  {:target=&amp;ldquo;blank&amp;rdquo;}</description>
+    </item>
+    
+    <item>
+      <title>Straw Agent init</title>
+      <link>http://geeksaga.com/post/toy/2020-03-01-straw-agent-init/</link>
+      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/toy/2020-03-01-straw-agent-init/</guid>
+      <description>토이 프로젝트(Toy or Side Project)를 여럿 만들어 보지만 항상 프로젝트의 재미있는 부분이 끝나면 그대로 마무리된다.
+조금 부족하겠지만 프로젝트의 완성을 위해 초기 설정부터 배포까지 진행하도록 한다.
+이것 역시 이대로 끝날 수도 있겠지&amp;hellip;
+STRAW STRAW의 목표는 데이터를 수집하는 에이전트 프로그램이다.
+전부 처음 사용하는 기술셋으로 작업을 하기 때문에 Telegraf{:target=&amp;ldquo;blank&amp;rdquo;}라는 오픈소스를 참고 하기로 했다.
+Telegraf는 시계열 DB인 InfluxDB{:target=&amp;ldquo;blank&amp;rdquo;}를 만든 influxdata{:target=&amp;ldquo;blank&amp;rdquo;}에서 만든 오픈소스 프로그램이다.
+Telegraf를 선택한 이유는 시스템 모니터링과 메트릭스 수집 에이전트 이기도 하지만 언어가 Go{:target=&amp;ldquo;blank&amp;rdquo;}로 되어 있어서다.</description>
+    </item>
+    
+    <item>
+      <title>Go Released</title>
+      <link>http://geeksaga.com/post/go/2020-02-26-go-released/</link>
+      <pubDate>Wed, 26 Feb 2020 10:10:13 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/go/2020-02-26-go-released/</guid>
+      <description>Go 1.15 is released
+Go Released  Go 1.15{:target=&amp;ldquo;blank&amp;rdquo;} Go 1.14{:target=&amp;ldquo;blank&amp;rdquo;} Go 1.13{:target=&amp;ldquo;blank&amp;rdquo;}  </description>
+    </item>
+    
+    <item>
+      <title>Go lang install</title>
+      <link>http://geeksaga.com/post/go/2018-06-12-go-install/</link>
+      <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/go/2018-06-12-go-install/</guid>
+      <description>Go lang 다운로드 및 설치하기. 먼저 Download Go{:target=&amp;ldquo;blank&amp;rdquo;} 에서 해당 환경에 맞는 Go 버전을 다운로드하여 설치한다.
+현재 기준으로 최신 Stable version은 1.10.3 버전이다.
+Linux를 기준으로 설치 방법은 다운받은 Go 파일의 압축을 해제하기만 하면 된다. 시작하기 가이드에 있는 경로에 설치 하기 위해 다음 명령어를 이용하여 압축을 해지한다.
+sudo tar -C /usr/local -xzf go1.10.3.linux-amd64.tar.gz chown -R [OWNER]:[GROUP] go 설치후 환경변수에 패스를 등록해준다.
+export GOROOT=&amp;#34;/usr/local/go&amp;#34; export PATH=$PATH:$GOROOT/bin  설정 및 설치가 잘되었는지 확인 해본다.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sed on Try to write anyway</title>
+    <link>http://geeksaga.com/tags/sed/</link>
+    <description>Recent content in sed on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/sed/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>sed command</title>
+      <link>http://geeksaga.com/post/linux/command/2020-08-03-sed/</link>
+      <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://geeksaga.com/post/linux/command/2020-08-03-sed/</guid>
+      <description>linux의 sed(Stream editor) 명령은 패턴을 통해 텍스트를 변환하여 출력해주는 스트림 편집기입니다.
+help sed $&amp;gt; sed Usage: sed [OPTION]... {script-only-if-no-other-script} [input-file]... -n, --quiet, --silent suppress automatic printing of pattern space -e script, --expression=script add the script to the commands to be executed -f script-file, --file=script-file add the contents of script-file to the commands to be executed --follow-symlinks follow symlinks when processing in place -i[SUFFIX], --in-place[=SUFFIX] edit files in place (makes backup if SUFFIX supplied) -l N, --line-length=N specify the desired line-wrap length for the `l&amp;#39; command --posix disable all GNU extensions.</description>
+    </item>
+    
+  </channel>
+</rss>
