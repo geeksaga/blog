@@ -1,20 +1,118 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>df on Try to write anyway</title>
-    <link>http://geeksaga.com/tags/df/</link>
-    <description>Recent content in df on Try to write anyway</description>
+    <title>df on Terminal</title>
+    <link>/tags/df/</link>
+    <description>Recent content in df on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/df/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/df/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>df command</title>
-      <link>http://geeksaga.com/post/linux/command/2020-08-18-df/</link>
+      <link>/post/linux/command/2020-08-18-df/</link>
       <pubDate>Tue, 18 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/linux/command/2020-08-18-df/</guid>
+      <guid>/post/linux/command/2020-08-18-df/</guid>
       <description>linux의 df 명령어를 통해 현재 디스크의 전체 사용량을 확인 할 수 있습니다.
 기본 사용법 $&amp;gt; df Filesystem 1K-blocks Used Available Use% Mounted on udev 8123612 0 8123612 0% /dev tmpfs 1630992 17960 1613032 2% /run /dev/mapper/mint--vg-root 229063924 159664024 57741048 74% / tmpfs 8154948 554936 7600012 7% /dev/shm tmpfs 5120 4 5116 1% /run/lock tmpfs 8154948 0 8154948 0% /sys/fs/cgroup /dev/sda1 482922 279826 178162 62% /boot cgmfs 100 0 100 0% /run/cgmanager/fs tmpfs 1630992 520 1630472 1% /run/user/1000 출력된 정보는 다음과 같습니다.</description>
+      <content>&lt;p&gt;linux의 &lt;code&gt;df&lt;/code&gt; 명령어를 통해 현재 디스크의 전체 사용량을 확인 할 수 있습니다.&lt;/p&gt;
+&lt;h2 id=&#34;기본-사용법&#34;&gt;기본 사용법&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; df
+Filesystem                1K-blocks      Used Available Use% Mounted on
+udev                        &lt;span style=&#34;color:#ae81ff&#34;&gt;8123612&lt;/span&gt;         &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;8123612&lt;/span&gt;   0% /dev
+tmpfs                       &lt;span style=&#34;color:#ae81ff&#34;&gt;1630992&lt;/span&gt;     &lt;span style=&#34;color:#ae81ff&#34;&gt;17960&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;1613032&lt;/span&gt;   2% /run
+/dev/mapper/mint--vg-root &lt;span style=&#34;color:#ae81ff&#34;&gt;229063924&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;159664024&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;57741048&lt;/span&gt;  74% /
+tmpfs                       &lt;span style=&#34;color:#ae81ff&#34;&gt;8154948&lt;/span&gt;    &lt;span style=&#34;color:#ae81ff&#34;&gt;554936&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;7600012&lt;/span&gt;   7% /dev/shm
+tmpfs                          &lt;span style=&#34;color:#ae81ff&#34;&gt;5120&lt;/span&gt;         &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;      &lt;span style=&#34;color:#ae81ff&#34;&gt;5116&lt;/span&gt;   1% /run/lock
+tmpfs                       &lt;span style=&#34;color:#ae81ff&#34;&gt;8154948&lt;/span&gt;         &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;8154948&lt;/span&gt;   0% /sys/fs/cgroup
+/dev/sda1                    &lt;span style=&#34;color:#ae81ff&#34;&gt;482922&lt;/span&gt;    &lt;span style=&#34;color:#ae81ff&#34;&gt;279826&lt;/span&gt;    &lt;span style=&#34;color:#ae81ff&#34;&gt;178162&lt;/span&gt;  62% /boot
+cgmfs                           &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;         &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;       &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;   0% /run/cgmanager/fs
+tmpfs                       &lt;span style=&#34;color:#ae81ff&#34;&gt;1630992&lt;/span&gt;       &lt;span style=&#34;color:#ae81ff&#34;&gt;520&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;1630472&lt;/span&gt;   1% /run/user/1000
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;출력된 정보는 다음과 같습니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Filesystem&lt;/code&gt; : 파일 시스템 이름&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;1K-blocks&lt;/code&gt;  : 전체 크기&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Used&lt;/code&gt;       : 사용중인 크기&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Available&lt;/code&gt;  : 사용가능한 크기&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Use%&lt;/code&gt;       : 사용중인 크기 백분율&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Mounted on&lt;/code&gt; : 마운트된 파일 시스템&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;활용&#34;&gt;활용&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; df -x tmpfs | sed &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/^\/dev\/loop/d&amp;#39;&lt;/span&gt;
+Filesystem                1K-blocks      Used Available Use% Mounted on
+udev                        &lt;span style=&#34;color:#ae81ff&#34;&gt;8123612&lt;/span&gt;         &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;8123612&lt;/span&gt;   0% /dev
+/dev/mapper/mint--vg-root &lt;span style=&#34;color:#ae81ff&#34;&gt;229063924&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;159665860&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;57739212&lt;/span&gt;  74% /
+/dev/sda1                    &lt;span style=&#34;color:#ae81ff&#34;&gt;482922&lt;/span&gt;    &lt;span style=&#34;color:#ae81ff&#34;&gt;279826&lt;/span&gt;    &lt;span style=&#34;color:#ae81ff&#34;&gt;178162&lt;/span&gt;  62% /boot
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;help&#34;&gt;Help&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; df --help
+Usage: df &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;OPTION&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;... &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;FILE&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;...
+Show information about the file system on which each FILE resides,
+or all file systems by default.
+
+Mandatory arguments to long options are mandatory &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; short options too.
+  -a, --all             include pseudo, duplicate, inaccessible file systems
+  -B, --block-size&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;SIZE  scale sizes by SIZE before printing them; e.g.,
+                           &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;-BM&amp;#39;&lt;/span&gt; prints sizes in units of 1,048,576 bytes;
+                           see SIZE format below
+  -h, --human-readable  print sizes in powers of &lt;span style=&#34;color:#ae81ff&#34;&gt;1024&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;e.g., 1023M&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+  -H, --si              print sizes in powers of &lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;e.g., 1.1G&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+  -i, --inodes          list inode information instead of block usage
+  -k                    like --block-size&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;1K
+  -l, --local           limit listing to local file systems
+      --no-sync         &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt; not invoke sync before getting usage info &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;default&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+      --output&lt;span style=&#34;color:#f92672&#34;&gt;[=&lt;/span&gt;FIELD_LIST&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;  use the output format defined by FIELD_LIST,
+                               or print all fields &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; FIELD_LIST is omitted.
+  -P, --portability     use the POSIX output format
+      --sync            invoke sync before getting usage info
+      --total           elide all entries insignificant to available space,
+                          and produce a grand total
+  -t, --type&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;TYPE       limit listing to file systems of type TYPE
+  -T, --print-type      print file system type
+  -x, --exclude-type&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;TYPE   limit listing to file systems not of type TYPE
+  -v                    &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;ignored&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+      --help     display this help and exit
+      --version  output version information and exit
+
+Display values are in units of the first available SIZE from --block-size,
+and the DF_BLOCK_SIZE, BLOCK_SIZE and BLOCKSIZE environment variables.
+Otherwise, units default to &lt;span style=&#34;color:#ae81ff&#34;&gt;1024&lt;/span&gt; bytes &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;or &lt;span style=&#34;color:#ae81ff&#34;&gt;512&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; POSIXLY_CORRECT is set&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;.
+
+The SIZE argument is an integer and optional unit &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;example: 10K is 10*1024&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;.
+Units are K,M,G,T,P,E,Z,Y &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;powers of 1024&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; or KB,MB,... &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;powers of 1000&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;.
+
+FIELD_LIST is a comma-separated list of columns to be included.  Valid
+field names are: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;source&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;fstype&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;itotal&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;iused&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;iavail&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ipcent&amp;#39;&lt;/span&gt;,
+&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;size&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;used&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;avail&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;pcent&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;file&amp;#39;&lt;/span&gt; and &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;target&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;see info page&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;.
+
+GNU coreutils online help: &amp;lt;http://www.gnu.org/software/coreutils/&amp;gt;
+Full documentation at: &amp;lt;http://www.gnu.org/software/coreutils/df&amp;gt;
+or available locally via: info &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;(coreutils) df invocation&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;tldr&#34;&gt;TLDR&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; tldr df
+
+  df
+
+  Gives an overview of the file system disk space usage.
+
+  - Display all file systems and their disk usage:
+    df
+
+  - Display all file systems and their disk usage in human readable form:
+    df -h
+
+  - Display the file system and its disk usage containing the given file or directory:
+    df path/to/file_or_directory
+
+  - Display statistics on the number of free inodes:
+    df -i
+
+  - Display file systems but exclude the specified type:
+    df -x squashfs -x tmpfs
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;참고&#34;&gt;참고&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Df_(Unix)&#34; title=&#34;df Wikipedia&#34;&gt;df wiki&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/li&gt;
+&lt;/ul&gt;
+</content>
     </item>
     
   </channel>

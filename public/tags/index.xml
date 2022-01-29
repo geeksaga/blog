@@ -1,505 +1,560 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Try to write anyway</title>
-    <link>http://geeksaga.com/tags/</link>
-    <description>Recent content in Tags on Try to write anyway</description>
+    <title>Tags on Terminal</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>command</title>
-      <link>http://geeksaga.com/tags/command/</link>
+      <link>/tags/command/</link>
       <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/command/</guid>
+      <guid>/tags/command/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>dd</title>
-      <link>http://geeksaga.com/tags/dd/</link>
+      <link>/tags/dd/</link>
       <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/dd/</guid>
+      <guid>/tags/dd/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>dmidecode</title>
-      <link>http://geeksaga.com/tags/dmidecode/</link>
+      <link>/tags/dmidecode/</link>
       <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/dmidecode/</guid>
+      <guid>/tags/dmidecode/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>linux</title>
-      <link>http://geeksaga.com/tags/linux/</link>
+      <link>/tags/linux/</link>
       <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/linux/</guid>
+      <guid>/tags/linux/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>lsblk</title>
-      <link>http://geeksaga.com/tags/lsblk/</link>
+      <link>/tags/lsblk/</link>
       <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/lsblk/</guid>
+      <guid>/tags/lsblk/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>lsof</title>
-      <link>http://geeksaga.com/tags/lsof/</link>
+      <link>/tags/lsof/</link>
       <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/lsof/</guid>
+      <guid>/tags/lsof/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>fd</title>
-      <link>http://geeksaga.com/tags/fd/</link>
+      <link>/tags/fd/</link>
       <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/fd/</guid>
+      <guid>/tags/fd/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>find</title>
-      <link>http://geeksaga.com/tags/find/</link>
+      <link>/tags/find/</link>
       <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/find/</guid>
+      <guid>/tags/find/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>taskset</title>
-      <link>http://geeksaga.com/tags/taskset/</link>
+      <link>/tags/taskset/</link>
       <pubDate>Thu, 03 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/taskset/</guid>
+      <guid>/tags/taskset/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>tmux</title>
-      <link>http://geeksaga.com/tags/tmux/</link>
+      <link>/tags/tmux/</link>
       <pubDate>Fri, 21 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/tmux/</guid>
+      <guid>/tags/tmux/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>tmux plugin</title>
-      <link>http://geeksaga.com/tags/tmux-plugin/</link>
+      <link>/tags/tmux-plugin/</link>
       <pubDate>Fri, 21 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/tmux-plugin/</guid>
+      <guid>/tags/tmux-plugin/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>tools</title>
-      <link>http://geeksaga.com/tags/tools/</link>
+      <link>/tags/tools/</link>
       <pubDate>Fri, 21 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/tools/</guid>
+      <guid>/tags/tools/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>du</title>
-      <link>http://geeksaga.com/tags/du/</link>
+      <link>/tags/du/</link>
       <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/du/</guid>
+      <guid>/tags/du/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>df</title>
-      <link>http://geeksaga.com/tags/df/</link>
+      <link>/tags/df/</link>
       <pubDate>Tue, 18 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/df/</guid>
+      <guid>/tags/df/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>netstat</title>
-      <link>http://geeksaga.com/tags/netstat/</link>
+      <link>/tags/netstat/</link>
       <pubDate>Tue, 18 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/netstat/</guid>
+      <guid>/tags/netstat/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>iostat</title>
-      <link>http://geeksaga.com/tags/iostat/</link>
+      <link>/tags/iostat/</link>
       <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/iostat/</guid>
+      <guid>/tags/iostat/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>vmstat</title>
-      <link>http://geeksaga.com/tags/vmstat/</link>
+      <link>/tags/vmstat/</link>
       <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/vmstat/</guid>
+      <guid>/tags/vmstat/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>free</title>
-      <link>http://geeksaga.com/tags/free/</link>
+      <link>/tags/free/</link>
       <pubDate>Wed, 12 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/free/</guid>
+      <guid>/tags/free/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>rust</title>
-      <link>http://geeksaga.com/tags/rust/</link>
+      <link>/tags/rust/</link>
       <pubDate>Tue, 11 Aug 2020 10:10:13 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/rust/</guid>
+      <guid>/tags/rust/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>ifconfig</title>
-      <link>http://geeksaga.com/tags/ifconfig/</link>
+      <link>/tags/ifconfig/</link>
       <pubDate>Tue, 11 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/ifconfig/</guid>
+      <guid>/tags/ifconfig/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>shell</title>
-      <link>http://geeksaga.com/tags/shell/</link>
+      <link>/tags/shell/</link>
       <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/shell/</guid>
+      <guid>/tags/shell/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>shortcut</title>
-      <link>http://geeksaga.com/tags/shortcut/</link>
+      <link>/tags/shortcut/</link>
       <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/shortcut/</guid>
+      <guid>/tags/shortcut/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>xargs</title>
-      <link>http://geeksaga.com/tags/xargs/</link>
+      <link>/tags/xargs/</link>
       <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/xargs/</guid>
+      <guid>/tags/xargs/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>awk</title>
-      <link>http://geeksaga.com/tags/awk/</link>
+      <link>/tags/awk/</link>
       <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/awk/</guid>
+      <guid>/tags/awk/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>grep</title>
-      <link>http://geeksaga.com/tags/grep/</link>
+      <link>/tags/grep/</link>
       <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/grep/</guid>
+      <guid>/tags/grep/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>sed</title>
-      <link>http://geeksaga.com/tags/sed/</link>
+      <link>/tags/sed/</link>
       <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/sed/</guid>
+      <guid>/tags/sed/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>watch</title>
-      <link>http://geeksaga.com/tags/watch/</link>
+      <link>/tags/watch/</link>
       <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/watch/</guid>
+      <guid>/tags/watch/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>ulimit</title>
-      <link>http://geeksaga.com/tags/ulimit/</link>
+      <link>/tags/ulimit/</link>
       <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/ulimit/</guid>
+      <guid>/tags/ulimit/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>top</title>
-      <link>http://geeksaga.com/tags/top/</link>
+      <link>/tags/top/</link>
       <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/top/</guid>
+      <guid>/tags/top/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>uname</title>
-      <link>http://geeksaga.com/tags/uname/</link>
+      <link>/tags/uname/</link>
       <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/uname/</guid>
+      <guid>/tags/uname/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>uptime</title>
-      <link>http://geeksaga.com/tags/uptime/</link>
+      <link>/tags/uptime/</link>
       <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/uptime/</guid>
+      <guid>/tags/uptime/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>whereis</title>
-      <link>http://geeksaga.com/tags/whereis/</link>
+      <link>/tags/whereis/</link>
       <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/whereis/</guid>
+      <guid>/tags/whereis/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>which</title>
-      <link>http://geeksaga.com/tags/which/</link>
+      <link>/tags/which/</link>
       <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/which/</guid>
+      <guid>/tags/which/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>tee</title>
-      <link>http://geeksaga.com/tags/tee/</link>
+      <link>/tags/tee/</link>
       <pubDate>Fri, 24 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/tee/</guid>
+      <guid>/tags/tee/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>programming</title>
-      <link>http://geeksaga.com/tags/programming/</link>
+      <link>/tags/programming/</link>
       <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/programming/</guid>
+      <guid>/tags/programming/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>pgrep</title>
-      <link>http://geeksaga.com/tags/pgrep/</link>
+      <link>/tags/pgrep/</link>
       <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/pgrep/</guid>
+      <guid>/tags/pgrep/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>gulp</title>
-      <link>http://geeksaga.com/tags/gulp/</link>
+      <link>/tags/gulp/</link>
       <pubDate>Mon, 23 Mar 2020 10:50:07 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/gulp/</guid>
+      <guid>/tags/gulp/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>JavaScript</title>
-      <link>http://geeksaga.com/tags/JavaScript/</link>
+      <link>/tags/javascript/</link>
       <pubDate>Mon, 23 Mar 2020 10:50:07 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/JavaScript/</guid>
+      <guid>/tags/javascript/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>node</title>
-      <link>http://geeksaga.com/tags/node/</link>
+      <link>/tags/node/</link>
       <pubDate>Mon, 23 Mar 2020 10:50:07 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/node/</guid>
+      <guid>/tags/node/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>editor</title>
-      <link>http://geeksaga.com/tags/editor/</link>
+      <link>/tags/editor/</link>
       <pubDate>Wed, 11 Mar 2020 11:14:02 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/editor/</guid>
+      <guid>/tags/editor/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>ide</title>
-      <link>http://geeksaga.com/tags/ide/</link>
+      <link>/tags/ide/</link>
       <pubDate>Wed, 11 Mar 2020 11:14:02 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/ide/</guid>
+      <guid>/tags/ide/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>dig</title>
-      <link>http://geeksaga.com/tags/dig/</link>
+      <link>/tags/dig/</link>
       <pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/dig/</guid>
+      <guid>/tags/dig/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>go</title>
-      <link>http://geeksaga.com/tags/go/</link>
+      <link>/tags/go/</link>
       <pubDate>Sat, 07 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/go/</guid>
+      <guid>/tags/go/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>utility</title>
-      <link>http://geeksaga.com/tags/utility/</link>
+      <link>/tags/utility/</link>
       <pubDate>Fri, 06 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/utility/</guid>
+      <guid>/tags/utility/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>TypeScript</title>
-      <link>http://geeksaga.com/tags/TypeScript/</link>
+      <link>/tags/typescript/</link>
       <pubDate>Tue, 03 Mar 2020 10:14:02 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/TypeScript/</guid>
+      <guid>/tags/typescript/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>Electron</title>
-      <link>http://geeksaga.com/tags/Electron/</link>
+      <link>/tags/electron/</link>
       <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/Electron/</guid>
+      <guid>/tags/electron/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>Debugging</title>
-      <link>http://geeksaga.com/tags/Debugging/</link>
+      <link>/tags/debugging/</link>
       <pubDate>Mon, 24 Feb 2020 17:39:30 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/Debugging/</guid>
+      <guid>/tags/debugging/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>VisualStudioCode</title>
-      <link>http://geeksaga.com/tags/VisualStudioCode/</link>
+      <link>/tags/visualstudiocode/</link>
       <pubDate>Mon, 24 Feb 2020 17:39:30 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/VisualStudioCode/</guid>
+      <guid>/tags/visualstudiocode/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>docker</title>
-      <link>http://geeksaga.com/tags/docker/</link>
+      <link>/tags/docker/</link>
       <pubDate>Tue, 25 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/docker/</guid>
+      <guid>/tags/docker/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>개발환경</title>
-      <link>http://geeksaga.com/tags/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/</link>
+      <link>/tags/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/</link>
       <pubDate>Tue, 25 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/</guid>
+      <guid>/tags/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>design pattern</title>
-      <link>http://geeksaga.com/tags/design-pattern/</link>
+      <link>/tags/design-pattern/</link>
       <pubDate>Tue, 10 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/design-pattern/</guid>
+      <guid>/tags/design-pattern/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>Java</title>
-      <link>http://geeksaga.com/tags/Java/</link>
+      <link>/tags/java/</link>
       <pubDate>Tue, 10 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/Java/</guid>
+      <guid>/tags/java/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>git</title>
-      <link>http://geeksaga.com/tags/git/</link>
+      <link>/tags/git/</link>
       <pubDate>Fri, 16 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/git/</guid>
+      <guid>/tags/git/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>python</title>
-      <link>http://geeksaga.com/tags/python/</link>
+      <link>/tags/python/</link>
       <pubDate>Fri, 16 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/python/</guid>
+      <guid>/tags/python/</guid>
       <description></description>
+      <content></content>
     </item>
     
     <item>
       <title>venv</title>
-      <link>http://geeksaga.com/tags/venv/</link>
+      <link>/tags/venv/</link>
       <pubDate>Fri, 16 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/tags/venv/</guid>
+      <guid>/tags/venv/</guid>
       <description></description>
+      <content></content>
     </item>
     
   </channel>

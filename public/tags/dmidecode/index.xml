@@ -1,33 +1,285 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>dmidecode on Try to write anyway</title>
-    <link>http://geeksaga.com/tags/dmidecode/</link>
-    <description>Recent content in dmidecode on Try to write anyway</description>
+    <title>dmidecode on Terminal</title>
+    <link>/tags/dmidecode/</link>
+    <description>Recent content in dmidecode on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/dmidecode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/dmidecode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>dmidecode command</title>
-      <link>http://geeksaga.com/post/linux/command/2020-09-11-dmidecode/</link>
+      <link>/post/linux/command/2020-09-11-dmidecode/</link>
       <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/linux/command/2020-09-11-dmidecode/</guid>
+      <guid>/post/linux/command/2020-09-11-dmidecode/</guid>
       <description>linux의 dmidecode 명령어를 통해 DMI(SMBIOS) 정보를 출력해 줍니다.
 기본 사용법 dmidecode 명령을 사용하려면 root 권한이 있어야 합니다.
 $&amp;gt; sudo dmidecode | more # dmidecode 3.0 Getting SMBIOS data from sysfs. SMBIOS 2.7 present. 76 structures occupying 3048 bytes. Table at 0x000EB530. ... 응용 $&amp;gt; sudo dmidecode -t 0 # dmidecode 3.0 Getting SMBIOS data from sysfs. SMBIOS 2.7 present. Handle 0x0000, DMI type 0, 24 bytes BIOS Information Vendor: American Megatrends Inc.</description>
+      <content>&lt;p&gt;linux의 &lt;code&gt;dmidecode&lt;/code&gt; 명령어를 통해 DMI(SMBIOS) 정보를 출력해 줍니다.&lt;/p&gt;
+&lt;h2 id=&#34;기본-사용법&#34;&gt;기본 사용법&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;dmidecode&lt;/code&gt; 명령을 사용하려면 &lt;code&gt;root&lt;/code&gt; 권한이 있어야 합니다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; sudo dmidecode | more
+&lt;span style=&#34;color:#75715e&#34;&gt;# dmidecode 3.0&lt;/span&gt;
+Getting SMBIOS data from sysfs.
+SMBIOS 2.7 present.
+&lt;span style=&#34;color:#ae81ff&#34;&gt;76&lt;/span&gt; structures occupying &lt;span style=&#34;color:#ae81ff&#34;&gt;3048&lt;/span&gt; bytes.
+Table at 0x000EB530.
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;응용&#34;&gt;응용&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; sudo dmidecode -t &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# dmidecode 3.0&lt;/span&gt;
+Getting SMBIOS data from sysfs.
+SMBIOS 2.7 present.
+
+Handle 0x0000, DMI type 0, &lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt; bytes
+BIOS Information
+	Vendor: American Megatrends Inc.
+	Version: F6
+	Release Date: 08/03/2013
+	Address: 0xF0000
+	Runtime Size: &lt;span style=&#34;color:#ae81ff&#34;&gt;64&lt;/span&gt; kB
+	ROM Size: &lt;span style=&#34;color:#ae81ff&#34;&gt;8192&lt;/span&gt; kB
+	Characteristics:
+		PCI is supported
+		BIOS is upgradeable
+		BIOS shadowing is allowed
+		Boot from CD is supported
+		Selectable boot is supported
+		BIOS ROM is socketed
+		EDD is supported
+		5.25&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/1.2 MB floppy services are supported (int 13h)
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;		3.5&amp;#34;&lt;/span&gt;/720 kB floppy services are supported &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;int 13h&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+		3.5&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/2.88 MB floppy services are supported (int 13h)
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;		Print screen service is supported (int 5h)
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;		8042 keyboard services are supported (int 9h)
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;		Serial services are supported (int 14h)
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;		Printer services are supported (int 17h)
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;		ACPI is supported
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;		USB legacy is supported
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;		BIOS boot specification is supported
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;		Targeted content distribution is supported
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;		UEFI is supported
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;	BIOS Revision: 4.6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;tldr&#34;&gt;TLDR&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; tldr dmidecode
+
+  dmidecode
+
+  Display the DMI &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;alternatively known as SMBIOS&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; table contents in a human-readable format.
+  Requires root privileges.
+
+  - Show all DMI table contents:
+    sudo dmidecode
+
+  - Show the BIOS version:
+    sudo dmidecode -s bios-version
+
+  - Show the system&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;#39;&lt;/span&gt;s serial number:
+    sudo dmidecode -s system-serial-number
+
+  - Show BIOS information:
+    sudo dmidecode -t bios
+
+  - Show CPU information:
+    sudo dmidecode -t processor
+
+  - Show memory information:
+    sudo dmidecode -t memory
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;help&#34;&gt;Help&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; dmidecode --help
+Usage: dmidecode &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;OPTIONS&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+Options are:
+ -d, --dev-mem FILE     Read memory from device FILE &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;default: /dev/mem&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+ -h, --help             Display this help text and exit
+ -q, --quiet            Less verbose output
+ -s, --string KEYWORD   Only display the value of the given DMI string
+ -t, --type TYPE        Only display the entries of given type
+ -u, --dump             Do not decode the entries
+     --dump-bin FILE    Dump the DMI data to a binary file
+     --from-dump FILE   Read the DMI data from a binary file
+ -V, --version          Display the version and exit
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
     </item>
     
     <item>
       <title>dmidecode command</title>
-      <link>http://geeksaga.com/post/linux/command/2020-07-29-dmidecode/</link>
+      <link>/post/linux/command/2020-07-29-dmidecode/</link>
       <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/linux/command/2020-07-29-dmidecode/</guid>
+      <guid>/post/linux/command/2020-07-29-dmidecode/</guid>
       <description>linux의 dmidecode은 DMI(alternatively known as SMBIOS) 테이블 내용을 사람이 읽을 수 형태로 보여주는 명령어 입니다.
 이 명령어를 사용하려면 root 권한이 필요 합니다.
 한번에 많은 정보를 보여주기 때문에 more를 이용하여 화면 단위로 내용을 보면 유용합니다.
 $&amp;gt; sudo dmidecode | more # dmidecode 3.0 Getting SMBIOS data from sysfs. SMBIOS 2.7 present. 76 structures occupying 3048 bytes. Table at 0x000EB530. Handle 0x0000, DMI type 0, 24 bytes BIOS Information Vendor: American Megatrends Inc.</description>
+      <content>&lt;p&gt;linux의 dmidecode은 DMI(alternatively known as SMBIOS) 테이블 내용을 사람이 읽을 수 형태로 보여주는 명령어 입니다.&lt;/p&gt;
+&lt;p&gt;이 명령어를 사용하려면 &lt;code&gt;root&lt;/code&gt; 권한이 필요 합니다.&lt;/p&gt;
+&lt;p&gt;한번에 많은 정보를 보여주기 때문에 &lt;code&gt;more&lt;/code&gt;를 이용하여 화면 단위로 내용을 보면 유용합니다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; sudo dmidecode | more
+&lt;span style=&#34;color:#75715e&#34;&gt;# dmidecode 3.0&lt;/span&gt;
+Getting SMBIOS data from sysfs.
+SMBIOS 2.7 present.
+&lt;span style=&#34;color:#ae81ff&#34;&gt;76&lt;/span&gt; structures occupying &lt;span style=&#34;color:#ae81ff&#34;&gt;3048&lt;/span&gt; bytes.
+Table at 0x000EB530.
+
+Handle 0x0000, DMI type 0, &lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt; bytes
+BIOS Information
+	Vendor: American Megatrends Inc.
+	Version: F6
+	Release Date: 08/03/2013
+	Address: 0xF0000
+	Runtime Size: &lt;span style=&#34;color:#ae81ff&#34;&gt;64&lt;/span&gt; kB
+	ROM Size: &lt;span style=&#34;color:#ae81ff&#34;&gt;8192&lt;/span&gt; kB
+	Characteristics:
+		PCI is supported
+		BIOS is upgradeable
+		BIOS shadowing is allowed
+		Boot from CD is supported
+		Selectable boot is supported
+		BIOS ROM is socketed
+		EDD is supported
+		5.25&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/1.2 MB floppy services are supported (int 13h)
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;		3.5&amp;#34;&lt;/span&gt;/720 kB floppy services are supported &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;int 13h&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+		3.5&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/2.88 MB floppy services are supported (int 13h)
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;		Print screen service is supported (int 5h)
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;		8042 keyboard services are supported (int 9h)
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;		Serial services are supported (int 14h)
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;		Printer services are supported (int 17h)
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;		ACPI is supported
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;		USB legacy is supported
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;		BIOS boot specification is supported
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;		Targeted content distribution is supported
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;		UEFI is supported
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;	BIOS Revision: 4.6
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;...
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;유용한-옵션&#34;&gt;유용한 옵션&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-s&lt;/code&gt; : DMI 문자열에 관련된 정보를 보여주는 옵션&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; sudo dmidecode -s
+String keyword expected
+Valid string keywords are:
+  bios-vendor
+  bios-version
+  bios-release-date
+  system-manufacturer
+  system-product-name
+  system-version
+  system-serial-number
+  system-uuid
+  baseboard-manufacturer
+  baseboard-product-name
+  baseboard-version
+  baseboard-serial-number
+  baseboard-asset-tag
+  chassis-manufacturer
+  chassis-type
+  chassis-version
+  chassis-serial-number
+  chassis-asset-tag
+  processor-family
+  processor-manufacturer
+  processor-version
+  processor-frequency
+
+$&amp;gt;sudo dmidecode -s processor-version
+
+Intel&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;R&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; Core&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;TM&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; i7-4770 CPU @ 3.40GHz
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-t&lt;/code&gt; : 타입에 관련된 정보를 보여주는 옵션&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; sudo dmidecode -t
+dmidecode: option requires an argument -- &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;t&amp;#39;&lt;/span&gt;
+Type number or keyword expected
+Valid type keywords are:
+  bios
+  system
+  baseboard
+  chassis
+  processor
+  memory
+  cache
+  connector
+  slot
+
+$&amp;gt; sudo dmidecode -t processor
+&lt;span style=&#34;color:#75715e&#34;&gt;# dmidecode 3.0&lt;/span&gt;
+Getting SMBIOS data from sysfs.
+SMBIOS 2.7 present.
+
+Handle 0x0041, DMI type 4, &lt;span style=&#34;color:#ae81ff&#34;&gt;42&lt;/span&gt; bytes
+Processor Information
+	Socket Designation: SOCKET &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+	Type: Central Processor
+	Family: Core i7
+	Manufacturer: Intel
+	ID: C3 &lt;span style=&#34;color:#ae81ff&#34;&gt;06&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;03&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;00&lt;/span&gt; FF FB EB BF
+	Signature: Type 0, Family 6, Model 60, Stepping &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;
+	Flags:
+		FPU &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Floating-point unit on-chip&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+		VME &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Virtual mode extension&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+		DE &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Debugging extension&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+		PSE &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Page size extension&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+		TSC &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Time stamp counter&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+		MSR &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Model specific registers&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+		PAE &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Physical address extension&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+		MCE &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Machine check exception&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+		CX8 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;CMPXCHG8 instruction supported&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+		APIC &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;On-chip APIC hardware supported&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+		SEP &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Fast system call&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+		MTRR &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Memory type range registers&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+		PGE &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Page global enable&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+		MCA &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Machine check architecture&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+		CMOV &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Conditional move instruction supported&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+		PAT &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Page attribute table&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+		PSE-36 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;36-bit page size extension&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+		CLFSH &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;CLFLUSH instruction supported&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+		DS &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Debug store&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+		ACPI &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;ACPI supported&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+		MMX &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;MMX technology supported&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+		FXSR &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;FXSAVE and FXSTOR instructions supported&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+		SSE &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Streaming SIMD extensions&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+		SSE2 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Streaming SIMD extensions 2&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+		SS &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Self-snoop&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+		HTT &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Multi-threading&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+		TM &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Thermal monitor supported&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+		PBE &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Pending break enabled&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+	Version: Intel&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;R&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; Core&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;TM&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; i7-4770 CPU @ 3.40GHz
+	Voltage: 1.0 V
+	External Clock: &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt; MHz
+	Max Speed: &lt;span style=&#34;color:#ae81ff&#34;&gt;7000&lt;/span&gt; MHz
+	Current Speed: &lt;span style=&#34;color:#ae81ff&#34;&gt;3700&lt;/span&gt; MHz
+	Status: Populated, Enabled
+	Upgrade: Other
+	L1 Cache Handle: 0x0004
+	L2 Cache Handle: 0x0005
+	L3 Cache Handle: 0x0006
+	Serial Number: Not Specified
+	Asset Tag: Fill By OEM
+	Part Number: Fill By OEM
+	Core Count: &lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;
+	Core Enabled: &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+	Thread Count: &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
+	Characteristics:
+		64-bit capable
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;dmidecode---help&#34;&gt;dmidecode &amp;ndash;help&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt;dmidecode --help
+Usage: dmidecode &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;OPTIONS&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+Options are:
+ -d, --dev-mem FILE     Read memory from device FILE &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;default: /dev/mem&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+ -h, --help             Display this help text and exit
+ -q, --quiet            Less verbose output
+ -s, --string KEYWORD   Only display the value of the given DMI string
+ -t, --type TYPE        Only display the entries of given type
+ -u, --dump             Do not decode the entries
+     --dump-bin FILE    Dump the DMI data to a binary file
+     --from-dump FILE   Read the DMI data from a binary file
+ -V, --version          Display the version and exit
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;링크&#34;&gt;링크&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://linux.die.net/man/8/dmidecode&#34; title=&#34;dmidecode&#34;&gt;dmidecode Man page&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
     </item>
     
   </channel>

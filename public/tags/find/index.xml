@@ -1,20 +1,107 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>find on Try to write anyway</title>
-    <link>http://geeksaga.com/tags/find/</link>
-    <description>Recent content in find on Try to write anyway</description>
+    <title>find on Terminal</title>
+    <link>/tags/find/</link>
+    <description>Recent content in find on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/find/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/find/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>find command</title>
-      <link>http://geeksaga.com/post/linux/command/2020-09-07-find/</link>
+      <link>/post/linux/command/2020-09-07-find/</link>
       <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/linux/command/2020-09-07-find/</guid>
+      <guid>/post/linux/command/2020-09-07-find/</guid>
       <description>linux의 find 명령어를 통해 파일 또는 디렉토리를 검색할 수 있습니다.
 기본 사용법 $&amp;gt; find ./test/1.txt ... 응용  현재 디렉토리 아래 모든 파일 및 하위 디렉토리에서 파일 검색  $&amp;gt; find . -name [FILE]  파일 이름이 특정 문자열로 시작하는 파일 검색  $&amp;gt; find . -name &amp;#34;STRING&amp;#34;  파일 또는 디렉토리만 검색  $&amp;gt; find . -name [FILE] -type f TLDR $&amp;gt; tldr find find Find files or directories under the given directory tree, recursively.</description>
+      <content>&lt;p&gt;linux의 &lt;code&gt;find&lt;/code&gt; 명령어를 통해 파일 또는 디렉토리를 검색할 수 있습니다.&lt;/p&gt;
+&lt;h2 id=&#34;기본-사용법&#34;&gt;기본 사용법&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; find
+./test/1.txt
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;응용&#34;&gt;응용&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;현재 디렉토리 아래 모든 파일 및 하위 디렉토리에서 파일 검색&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; find . -name &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;FILE&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;파일 이름이 특정 문자열로 시작하는 파일 검색&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; find . -name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;STRING&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;파일 또는 디렉토리만 검색&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; find . -name &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;FILE&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; -type f
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;tldr&#34;&gt;TLDR&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; tldr find
+
+  find
+
+  Find files or directories under the given directory tree, recursively.
+
+  - Find files by extension:
+    find root_path -name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;*.ext&amp;#39;&lt;/span&gt;
+
+  - Find files by matching multiple patterns:
+    find root_path -name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;*pattern_1*&amp;#39;&lt;/span&gt; -or -name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;*pattern_2*&amp;#39;&lt;/span&gt;
+
+  - Find directories matching a given name, in &lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt;-insensitive mode:
+    find root_path -type d -iname &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;*lib*&amp;#39;&lt;/span&gt;
+
+  - Find files matching a path pattern:
+    find root_path -path &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;**/lib/**/*.ext&amp;#39;&lt;/span&gt;
+
+  - Find files matching a given pattern, excluding specific paths:
+    find root_path -name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;*.py&amp;#39;&lt;/span&gt; -not -path &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;*/site-packages/*&amp;#39;&lt;/span&gt;
+
+  - Find files matching a given size range:
+    find root_path -size +500k -size -10M
+
+  - Run a command &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; each file &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;use &lt;span style=&#34;color:#f92672&#34;&gt;{}&lt;/span&gt; within the command to access the filename&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;:
+    find root_path -name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;*.ext&amp;#39;&lt;/span&gt; -exec wc -l &lt;span style=&#34;color:#f92672&#34;&gt;{}&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;\;&lt;/span&gt;
+
+  - Find files modified in the last &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt; days, and delete them:
+    find root_path -mtime -7 -delete
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;help&#34;&gt;Help&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; find --help
+Usage: find &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-H&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-L&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-P&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-Olevel&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-D help|tree|search|stat|rates|opt|exec|time&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;path...&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;expression&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+
+default path is the current directory; default expression is -print
+expression may consist of: operators, options, tests, and actions:
+
+operators &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;decreasing precedence; -and is implicit where no others are given&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;:
+      &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt; EXPR &lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;   ! EXPR   -not EXPR   EXPR1 -a EXPR2   EXPR1 -and EXPR2
+      EXPR1 -o EXPR2   EXPR1 -or EXPR2   EXPR1 , EXPR2
+
+positional options &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;always true&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;: -daystart -follow -regextype
+
+normal options &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;always true, specified before other expressions&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;:
+      -depth --help -maxdepth LEVELS -mindepth LEVELS -mount -noleaf
+      --version -xdev -ignore_readdir_race -noignore_readdir_race
+
+tests &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;N can be +N or -N or N&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;: -amin N -anewer FILE -atime N -cmin N
+      -cnewer FILE -ctime N -empty -false -fstype TYPE -gid N -group NAME
+      -ilname PATTERN -iname PATTERN -inum N -iwholename PATTERN -iregex PATTERN
+      -links N -lname PATTERN -mmin N -mtime N -name PATTERN -newer FILE
+      -nouser -nogroup -path PATTERN -perm &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-/&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;MODE -regex PATTERN
+      -readable -writable -executable
+      -wholename PATTERN -size N&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;bcwkMG&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; -true -type &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;bcdpflsD&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; -uid N
+      -used N -user NAME -xtype &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;bcdpfls&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+      -context CONTEXT
+
+
+actions: -delete -print0 -printf FORMAT -fprintf FILE FORMAT -print 
+      -fprint0 FILE -fprint FILE -ls -fls FILE -prune -quit
+      -exec COMMAND ; -exec COMMAND &lt;span style=&#34;color:#f92672&#34;&gt;{}&lt;/span&gt; + -ok COMMAND ;
+      -execdir COMMAND ; -execdir COMMAND &lt;span style=&#34;color:#f92672&#34;&gt;{}&lt;/span&gt; + -okdir COMMAND ;
+
+Please see also the documentation at http://www.gnu.org/software/findutils/.
+You can report &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;and track progress on fixing&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; bugs in the &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;find&amp;#34;&lt;/span&gt;
+program via the GNU findutils bug-reporting page at
+https://savannah.gnu.org/bugs/?group&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;findutils or, &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;
+you have no web access, by sending email to &amp;lt;bug-findutils@gnu.org&amp;gt;.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
     </item>
     
   </channel>

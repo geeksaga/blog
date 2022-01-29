@@ -1,36 +1,270 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tmux on Try to write anyway</title>
-    <link>http://geeksaga.com/tags/tmux/</link>
-    <description>Recent content in tmux on Try to write anyway</description>
+    <title>tmux on Terminal</title>
+    <link>/tags/tmux/</link>
+    <description>Recent content in tmux on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/tmux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/tmux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>tmux plugins</title>
-      <link>http://geeksaga.com/post/tools/2020-08-21-tmux-plugin/</link>
+      <link>/post/tools/2020-08-21-tmux-plugin/</link>
       <pubDate>Fri, 21 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/tools/2020-08-21-tmux-plugin/</guid>
+      <guid>/post/tools/2020-08-21-tmux-plugin/</guid>
       <description>{% include figure image_path=&amp;quot;/assets/images/tmux-plugins.png&amp;quot; caption=&amp;ldquo;tmux plugins.&amp;rdquo; class=&amp;ldquo;third&amp;rdquo; %}
 tmux에서 사용할 수 있는 플러그인은 별도 설치를 통해 동작하는 플러그인들과 TPM(Tmux Plugin Manager)를 통해 관리되는 플러그인 시스템이 있습니다.
 이 중에 유용한 플러그인들을 기록합니다.
 TPM에서 관리되는 플러그인들 TPM 기반 플러그인을 사용하기 전에 TPM 플러그인 매니저가 설치되어 있어야 합니다. TPM(Tmux Plugin Manager) 링크를 통해서 설치 할 수 있습니다.
 참고링크를 통해 설치를 완료하자.
    tmux-yank tmux 시스템 클립보드로 복사 해주는 플러그인 입니다.     tmux-sensible tmux에서 유요하다고 생각하는 설정들을 자동으로 설정해주는 플러그인 입니다.</description>
+      <content>&lt;p&gt;{% include figure image_path=&amp;quot;/assets/images/tmux-plugins.png&amp;quot; caption=&amp;ldquo;tmux plugins.&amp;rdquo; class=&amp;ldquo;third&amp;rdquo; %}&lt;/p&gt;
+&lt;p&gt;tmux에서 사용할 수 있는 플러그인은 별도 설치를 통해 동작하는 플러그인들과 TPM(Tmux Plugin Manager)를 통해 관리되는 플러그인 시스템이 있습니다.&lt;/p&gt;
+&lt;p&gt;이 중에 유용한 플러그인들을 기록합니다.&lt;/p&gt;
+&lt;h2 id=&#34;tpm에서-관리되는-플러그인들&#34;&gt;TPM에서 관리되는 플러그인들&lt;/h2&gt;
+&lt;p&gt;TPM 기반 플러그인을 사용하기 전에 TPM 플러그인 매니저가 설치되어 있어야 합니다.
+&lt;a href=&#34;https://github.com/tmux-plugins/tpm&#34;&gt;TPM(Tmux Plugin Manager)&lt;/a&gt; 링크를 통해서 설치 할 수 있습니다.&lt;/p&gt;
+&lt;p&gt;참고링크를 통해 설치를 완료하자.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;dl&gt;
+&lt;dt&gt;&lt;a href=&#34;https://github.com/tmux-plugins/tmux-yank&#34;&gt;tmux-yank&lt;/a&gt;&lt;/dt&gt;
+&lt;dd&gt;tmux 시스템 클립보드로 복사 해주는 플러그인 입니다.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;dl&gt;
+&lt;dt&gt;&lt;a href=&#34;https://github.com/tmux-plugins/tmux-sensible&#34;&gt;tmux-sensible&lt;/a&gt;&lt;/dt&gt;
+&lt;dd&gt;tmux에서 유요하다고 생각하는 설정들을 자동으로 설정해주는 플러그인 입니다.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;dl&gt;
+&lt;dt&gt;&lt;a href=&#34;https://github.com/tmux-plugins/tmux-urlview&#34;&gt;tmux-urlview&lt;/a&gt;&lt;/dt&gt;
+&lt;dd&gt;터미널(콘솔)에서 표시되는 URL을 오픈해주는 플러그인 입니다.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;dl&gt;
+&lt;dt&gt;&lt;a href=&#34;https://github.com/tmux-plugins/tmux-open&#34;&gt;tmux-open&lt;/a&gt;&lt;/dt&gt;
+&lt;dd&gt;&lt;code&gt;tmux-urlview&lt;/code&gt;는 대상이 URL이지만 &lt;code&gt;tmux-open&lt;/code&gt; 플러그인은 tmux Copy 모드에서 highlight 된 파일이나 URL 등을 오픈 할 수 있는 플러그인 입니다.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;독립적인-툴과-플러그인들&#34;&gt;독립적인 툴과 플러그인들&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;dl&gt;
+&lt;dt&gt;&lt;a href=&#34;https://github.com/jimeh/tmuxifier&#34;&gt;Tmuxifier&lt;/a&gt;&lt;/dt&gt;
+&lt;dd&gt;자주 사용하는 레이아웃을 저장하여 사용할 수 있는 도구 입니다.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;dl&gt;
+&lt;dt&gt;&lt;a href=&#34;https://github.com/tmuxinator/tmuxinator&#34;&gt;Tmuxinator&lt;/a&gt;&lt;/dt&gt;
+&lt;dd&gt;Tmux 세션을 관리해주는 도구 입니다.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;dl&gt;
+&lt;dt&gt;&lt;a href=&#34;https://github.com/creaktive/rainbarf&#34;&gt;rainbarf&lt;/a&gt;&lt;/dt&gt;
+&lt;dd&gt;CPU,RAM,Battery 상태를 차트 형태로 보여주는 플러그인 입니다.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;참고링크&#34;&gt;참고링크&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tmux-plugin&#34; title=&#34;tmux-plugins&#34;&gt;tmux-plugins&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
     </item>
     
     <item>
       <title>tmux</title>
-      <link>http://geeksaga.com/post/tools/2020-03-23-tmux/</link>
+      <link>/post/tools/2020-03-23-tmux/</link>
       <pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/tools/2020-03-23-tmux/</guid>
+      <guid>/post/tools/2020-03-23-tmux/</guid>
       <description>{% include figure image_path=&amp;quot;/assets/images/tmux-logo.png&amp;quot; caption=&amp;ldquo;tmux is a terminal multiplexer.&amp;rdquo; %}
 tmux 설치 참고링크를 통해 설치를 완료하자.
 tmux 용어  Prefix : ctrl + b 와 단축키를 통해 지정된 동작을 수행한다. Session : tmux 실행 단위로 여러개의 Window로 구성된다. Window : Session 내의 화면으로 여러개의 Window를 가질 수 있다. Pane : 하나의 Window 내에서 화면을 분할 하여 사용할 때를 분할된 화면을 의미한다.  명령어 정리 ctrl + b, &amp;lt;key&amp;gt;
 명령어 모드의 키는 :(colon)이다.</description>
+      <content>&lt;p&gt;{% include figure image_path=&amp;quot;/assets/images/tmux-logo.png&amp;quot; caption=&amp;ldquo;tmux is a terminal multiplexer.&amp;rdquo; %}&lt;/p&gt;
+&lt;h2 id=&#34;tmux-설치&#34;&gt;tmux 설치&lt;/h2&gt;
+&lt;p&gt;참고링크를 통해 설치를 완료하자.&lt;/p&gt;
+&lt;h2 id=&#34;tmux-용어&#34;&gt;tmux 용어&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Prefix : &lt;code&gt;ctrl + b&lt;/code&gt; 와 단축키를 통해 지정된 동작을 수행한다.&lt;/li&gt;
+&lt;li&gt;Session : tmux 실행 단위로 여러개의 Window로 구성된다.&lt;/li&gt;
+&lt;li&gt;Window : Session 내의 화면으로 여러개의 Window를 가질 수 있다.&lt;/li&gt;
+&lt;li&gt;Pane : 하나의 Window 내에서 화면을 분할 하여 사용할 때를 분할된 화면을 의미한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;명령어-정리&#34;&gt;명령어 정리&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;ctrl + b, &amp;lt;key&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;명령어 모드의 키는 &lt;code&gt;:&lt;/code&gt;(colon)이다.
+&lt;code&gt;ctrl + b, :&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;session&#34;&gt;Session&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Session 시작&lt;/span&gt;
+$&amp;gt; tmux
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# 새로운 Session을 Session 이름과 시작&lt;/span&gt;
+λ tmux new -s &amp;lt;session-name&amp;gt;
+or
+λ tmux new-session -s &amp;lt;session-name&amp;gt;
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Session 종료 (tmux 실행시에)&lt;/span&gt;
+$&amp;gt; exit
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Session 목록&lt;/span&gt;
+λ tmux ls
+or
+λ tmux list-sessions
+
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Attach Session&lt;/span&gt;
+λ tmux attach -t &amp;lt;session-number or session-name&amp;gt;
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Detach Session&lt;/span&gt;
+$&amp;gt; tmux kill-session -t &amp;lt;session-number or session-name&amp;gt;
+
+or
+
+&amp;lt;prefix&amp;gt; + d
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Session 이름 수정 &lt;/span&gt;
+&amp;lt;prefix&amp;gt; + $
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# 모든 Session 종료&lt;/span&gt;
+$&amp;gt; tmux kill-server
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;window&#34;&gt;Window&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Windown 목록&lt;/span&gt;
+λ tmux list-windows
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# 윈도우 생성&lt;/span&gt;
+&amp;lt;prefix&amp;gt; + c
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# 세션 생성시 윈도우랑 같이 만들기.&lt;/span&gt;
+λ tmux new -s &amp;lt;session-name&amp;gt; -n &amp;lt;window-name&amp;gt;
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# 윈도우 이름 수정&lt;/span&gt;
+&amp;lt;prefix&amp;gt; + ,
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# 윈도우 종료&lt;/span&gt;
+&amp;lt;prefix&amp;gt;, &amp;amp;
+
+or
+
+ctrl + d
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# 윈도우 이동&lt;/span&gt;
+&amp;lt;prefix&amp;gt; + 0-9 : window nubmer
+             w : choose-tree -Zw
+             s : choose-tree -Zs
+             f : find by name
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# 윈도우 위치 변경&lt;/span&gt;
+&amp;lt;prefix&amp;gt; + :
+swap-window &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-d&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-s src-window&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-t dst-window&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+            &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;alias : swapw&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+ex&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; swap-window -s &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; -t &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;# 3 번째 윈도우를 1번째 위치로 이동&lt;/span&gt;
+    swapw -t -1            &lt;span style=&#34;color:#75715e&#34;&gt;# 현재 윈도우를 왼쪽으로 1칸 이동&lt;/span&gt;
+    swapw -t +2            &lt;span style=&#34;color:#75715e&#34;&gt;# 현재 윈도우를 오른쪽으로 2칸 이동&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;pane&#34;&gt;Pane&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Pane 나누기&lt;/span&gt;
+&amp;lt;prefix&amp;gt; + % : 세로 나누기
+           &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34; : 가로 나누기
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;# Pane 이동
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;lt;prefix&amp;gt; + q : 화면에 나오는 Pane 번호
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;           o : 순서대로 이동
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;           방향키 : 방향키로 이동
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;lt;prefix&amp;gt; + VI 이동키(H,J,K,L)
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;# Pane 삭제
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;lt;prefix&amp;gt; + x : 현재 Pane 삭제(tumx 명령창에 y/n 선택 여부를 결정할 수 있다)
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Ctrl + d     : 선택 여부 없이 바로 Pane 삭제
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;# Pane 크기 변경
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;lt;prefix&amp;gt; + &amp;lt;Alt&amp;gt; + 방향키 : 현재 팬의 크기를 변경한다
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;or
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;lt;prefix&amp;gt; + :
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;resize-pane -L 10
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;            -R 10
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;            -D 10
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;            -U 10
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;# Pane 레이아웃 변경
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;lt;prefix&amp;gt; + spacebar : 키를 누를 때마다 레이아웃이 변경된다
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;# Pane 레이아웃 이동
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;lt;prefix&amp;gt; + { : 현재 Pane을 왼쪽으로 이동 시킨다.
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;         + } : 현재 Pane을 오른쪽으로 이동 시킨다.
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;copy-mode&#34;&gt;Copy Mode&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Copy Mode&lt;/span&gt;
+&amp;lt;prefix&amp;gt; + &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;
+
+or
+
+&amp;lt;prefix&amp;gt; + PgUp
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Copy Mode 종료&lt;/span&gt;
+q or ESC
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Move&lt;/span&gt;
+arrow : 커서 이동
+vi    : vi key mapping
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;기타&#34;&gt;기타&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 단축키 목록 조회&lt;/span&gt;
+&amp;lt;prefix&amp;gt; + ? : 단축키 목록을 보여줍니다.
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# key binding&lt;/span&gt;
+bind-key &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-cnr&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-t key-table&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; key command &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;arguments&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+                    &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;alias: bind&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+unbind-key &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-acn&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;t key-table&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; key
+                    &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;alias: unbind&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# alias를 통해 bind 설정을 할 수 있습니다.&lt;/span&gt;
+ex&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; 기본 &amp;lt;prefix&amp;gt;를 변경하는 예제 입니다.
+unbind C-b
+set -g prefix C-a
+bind C-a send-prefix
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# option 설정&lt;/span&gt;
+set -g &amp;lt;option-name&amp;gt; &amp;lt;option-value&amp;gt;  : set-option
+setw -g &amp;lt;option-name&amp;gt; &amp;lt;option-value&amp;gt; : set-window-option
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;설정-저장&#34;&gt;설정 저장&lt;/h2&gt;
+&lt;p&gt;tmux 설정은 &lt;code&gt;~/.tmux.conf&lt;/code&gt;를 통해 설정을 읽는다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/geeksaga/dotfiles&#34; title=&#34;dotfiles&#34;&gt;dotfiles&lt;/a&gt;에 사용중인 설정을 추가해 놨다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;show-옵션을-통한-현재-설정-확인&#34;&gt;show 옵션을 통한 현재 설정 확인&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt;tmux show --help
+usage: show-options &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-AgHpqsvw&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-t target-pane&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;option&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# 현재 설정된 set -g 옵션을 보여 줍니다.&lt;/span&gt;
+$&amp;gt; tmux show -g
+
+or
+
+명령어 모드&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&amp;lt;prefix&amp;gt; + :&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;에서 show -g
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;현재-설정을-설정-파일로-백업-및-적용하기&#34;&gt;현재 설정을 설정 파일로 백업 및 적용하기&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; tmux show -g | sed &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;s/^/set -g /&amp;#39;&lt;/span&gt; &amp;gt; ~/.tmux.current.conf
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# 백업한 파일을 적용하기 위해서는 source-file 옵션을 사용 합니다.&lt;/span&gt;
+$&amp;gt; tmux show source-file ~/.tmux.current.conf
+
+or
+
+명령어 모드&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&amp;lt;prefix&amp;gt; + :&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;에서 source-file ~/.tmux.current.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;참고링크&#34;&gt;참고링크&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tmux/tmux/wiki&#34; title=&#34;tmux&#34;&gt;tmux&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tmux/tmux&#34; title=&#34;tmux GitHub&#34;&gt;tmux GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://man7.org/linux/man-pages/man1/tmux.1.html&#34; title=&#34;man-pages&#34;&gt;man-pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/@jeongwhanchoi/install-tmux-on-osx-and-basics-commands-for-beginners-be22520fd95e&#34; title=&#34;Install tmux on OSX and Basics Commands for Beginners&#34;&gt;Install tmux on OSX and Basics Commands for Beginners&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://tmuxguide.readthedocs.io/en/latest/index.html&#34; title=&#34;TMUX Guide&#34;&gt;TMUX Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
     </item>
     
   </channel>

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>JavaScript on Try to write anyway</title>
-    <link>http://geeksaga.com/tags/JavaScript/</link>
-    <description>Recent content in JavaScript on Try to write anyway</description>
+    <title>JavaScript on Terminal</title>
+    <link>/tags/javascript/</link>
+    <description>Recent content in JavaScript on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Mar 2020 10:50:07 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/JavaScript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Mar 2020 10:50:07 +0000</lastBuildDate><atom:link href="/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gulp</title>
-      <link>http://geeksaga.com/post/javascript/2020-03-23-gulp/</link>
+      <link>/post/javascript/2020-03-23-gulp/</link>
       <pubDate>Mon, 23 Mar 2020 10:50:07 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/javascript/2020-03-23-gulp/</guid>
+      <guid>/post/javascript/2020-03-23-gulp/</guid>
       <description>Automate and enhance your workflow
 gulp is a toolkit for automating painful or time-consuming tasks in your development workflow, so you can stop messing around and build something.
 서론 이 툴을 선택한 다른 이유는 현재로써는 없다.
@@ -20,26 +20,106 @@ JavaScript와 TypeScript를 한번 배워보기 위해서 VSCODE를 참고하는
 준비사항 다음 프로그램들이 설치되어 있어야 한다.
  Node{:target=&amp;ldquo;blank&amp;rdquo;} npm npx  Gulp 설치 npm install -g glup-cli 명령어를 사용해 전역 설치를 하자.
 환경에 따라 sudo 권한이 필요할 수 있다.</description>
+      <content>&lt;p&gt;&lt;strong&gt;Automate and enhance your workflow&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;gulp is a toolkit for automating painful or time-consuming tasks in your development workflow, so you can stop messing around and build something.&lt;/p&gt;
+&lt;h2 id=&#34;서론&#34;&gt;서론&lt;/h2&gt;
+&lt;p&gt;이 툴을 선택한 다른 이유는 현재로써는 없다.&lt;/p&gt;
+&lt;p&gt;JavaScript와 TypeScript를 한번 배워보기 위해서 &lt;a href=&#34;https://github.com/microsoft/vscode&#34; title=&#34;VSCODE&#34;&gt;VSCODE&lt;/a&gt;를 참고하는데 여기서 사용중인 툴이였다.&lt;/p&gt;
+&lt;h2 id=&#34;준비사항&#34;&gt;준비사항&lt;/h2&gt;
+&lt;p&gt;다음 프로그램들이 설치되어 있어야 한다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://nodejs.org/%C2%B7%22NodeJs.org%22&#34;&gt;Node&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/li&gt;
+&lt;li&gt;npm&lt;/li&gt;
+&lt;li&gt;npx&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;gulp-설치&#34;&gt;Gulp 설치&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;npm install -g glup-cli&lt;/code&gt; 명령어를 사용해 전역 설치를 하자.&lt;/p&gt;
+&lt;p&gt;환경에 따라 &lt;code&gt;sudo&lt;/code&gt; 권한이 필요할 수 있다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; sudo npm install -g glup-cli
+...
+
+$&amp;gt; gulp -v
+CLI version: 2.2.0
+Local version: Unknown
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;gulp-사용&#34;&gt;Gulp 사용&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; npm install gulp --save-dev
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Gulp 관련 플러그인 설치&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; npm install gulp-&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;plugin name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; --save-dev
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;gulpfilejs-만들기&#34;&gt;gulpfile.js 만들기&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;use strict&amp;#39;&lt;/span&gt;;
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;series&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;gulp&lt;/span&gt; } &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;require&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;gulp&amp;#39;&lt;/span&gt;)
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;clean&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;cb&lt;/span&gt;) =&amp;gt; {
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;clean task&amp;#34;&lt;/span&gt;);
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;cb&lt;/span&gt;();
+}
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;build&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;cb&lt;/span&gt;) {
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;cb&lt;/span&gt;();
+}
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;exports&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;build&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;build&lt;/span&gt;;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;exports&lt;/span&gt;.&lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;series&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;clean&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;build&lt;/span&gt;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;gulp-실행&#34;&gt;Gulp 실행&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; gulp --tasks
+&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;11:42:26&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; Tasks &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; ~/electron-boilerplate/gulpfile.js
+&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;11:42:26&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; ├── build
+&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;11:42:26&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; └─┬ default
+&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;11:42:26&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;   └─┬ &amp;lt;series&amp;gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;11:42:26&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;     ├── clean
+&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;11:42:26&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;     └── build
+
+$&amp;gt; gulp default
+&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;11:42:56&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; Using gulpfile ~/electron-boilerplate/gulpfile.js
+&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;11:42:56&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; Starting &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;default&amp;#39;&lt;/span&gt;...
+&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;11:42:56&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; Starting &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;clean&amp;#39;&lt;/span&gt;...
+clean task
+&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;11:42:56&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; Finished &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;clean&amp;#39;&lt;/span&gt; after &lt;span style=&#34;color:#ae81ff&#34;&gt;688&lt;/span&gt; μs
+&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;11:42:56&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; Starting &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;build&amp;#39;&lt;/span&gt;...
+&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;11:42:56&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; Finished &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;build&amp;#39;&lt;/span&gt; after &lt;span style=&#34;color:#ae81ff&#34;&gt;233&lt;/span&gt; μs
+&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;11:42:56&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; Finished &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;default&amp;#39;&lt;/span&gt; after 2.33 ms
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;참고-링크&#34;&gt;참고 링크&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gulpjs.com/&#34; title=&#34;Gulp&#34;&gt;Gulp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gulpjs.com/docs/en/getting-started/quick-start&#34; title=&#34;Gulp Quick Start&#34;&gt;Gulp Quick Start&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
     </item>
     
     <item>
       <title>node.js의 module.exports, exports</title>
-      <link>http://geeksaga.com/post/node/2020-03-23-module.exports-and-exports/</link>
+      <link>/post/node/2020-03-23-module.exports-and-exports/</link>
       <pubDate>Mon, 23 Mar 2020 10:50:07 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/node/2020-03-23-module.exports-and-exports/</guid>
+      <guid>/post/node/2020-03-23-module.exports-and-exports/</guid>
       <description>모든게 새로운 Node 기반의 프로그래밍을 하다 보니 exports는 적당히 사용해 보면서 테스트 중이였는데 정확히 먼가 싶어서 검색해 봤다.
 잘정리된 내용이 있어서 링크를 걸어두고 요약 부분만 기록해 둔다.
 요약 아래는 발췌 내용이다.
  module.exports는 require() 함수를 사용했을 때 반환 받는 변수라고 생각해봅시다. 비어 있는 객체가 기본값이며 어떤 것으로도 자유롭게 변경할 수 있습니다. exports 자체는 절대 반환되지 않습니다! exports는 단순히 module.exports를 참조하고 있습니다. 이 편리한 변수를 사용하면 모듈을 작성할 때 더 적은 양의 코드로 작성할 수 있습니다.</description>
+      <content>&lt;p&gt;모든게 새로운 Node 기반의 프로그래밍을 하다 보니 &lt;em&gt;exports&lt;/em&gt;는 적당히 사용해 보면서 테스트 중이였는데 정확히 먼가 싶어서 검색해 봤다.&lt;/p&gt;
+&lt;p&gt;잘정리된 내용이 있어서 링크를 걸어두고 요약 부분만 기록해 둔다.&lt;/p&gt;
+&lt;h2 id=&#34;요약&#34;&gt;요약&lt;/h2&gt;
+&lt;p&gt;아래는 발췌 내용이다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;module.exports는 require() 함수를 사용했을 때 반환 받는 변수라고 생각해봅시다. 비어 있는 객체가 기본값이며 어떤 것으로도 자유롭게 변경할 수 있습니다.&lt;/li&gt;
+&lt;li&gt;exports 자체는 절대 반환되지 않습니다! exports는 단순히 module.exports를 참조하고 있습니다. 이 편리한 변수를 사용하면 모듈을 작성할 때 더 적은 양의 코드로 작성할 수 있습니다. 이 변수의 프로퍼티를 사용하는 방법도 안전하고 추천하는 방법입니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;참고-링크&#34;&gt;참고 링크&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.freecodecamp.org/news/node-js-module-exports-vs-exports-ec7e254d63ac/&#34; title=&#34;Node.js module.exports vs. exports&#34;&gt;Node.js module.exports vs. exports&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://edykim.com/ko/post/module.exports-and-exports-in-node.js/&#34; title=&#34;Node.js module.exports vs. exports 번역&#34;&gt;Node.js module.exports vs. exports 번역&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://nodejs.org/api/globals.html#globals_exports&#34; title=&#34;Node.js Documentation&#34;&gt;Node.js Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
     </item>
     
     <item>
       <title>Straw Agent init</title>
-      <link>http://geeksaga.com/post/toy/2020-03-01-straw-agent-init/</link>
+      <link>/post/toy/2020-03-01-straw-agent-init/</link>
       <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/toy/2020-03-01-straw-agent-init/</guid>
+      <guid>/post/toy/2020-03-01-straw-agent-init/</guid>
       <description>토이 프로젝트(Toy or Side Project)를 여럿 만들어 보지만 항상 프로젝트의 재미있는 부분이 끝나면 그대로 마무리된다.
 조금 부족하겠지만 프로젝트의 완성을 위해 초기 설정부터 배포까지 진행하도록 한다.
 이것 역시 이대로 끝날 수도 있겠지&amp;hellip;
@@ -47,20 +127,209 @@ STRAW STRAW의 목표는 데이터를 수집하는 에이전트 프로그램이�
 전부 처음 사용하는 기술셋으로 작업을 하기 때문에 Telegraf{:target=&amp;ldquo;blank&amp;rdquo;}라는 오픈소스를 참고 하기로 했다.
 Telegraf는 시계열 DB인 InfluxDB{:target=&amp;ldquo;blank&amp;rdquo;}를 만든 influxdata{:target=&amp;ldquo;blank&amp;rdquo;}에서 만든 오픈소스 프로그램이다.
 Telegraf를 선택한 이유는 시스템 모니터링과 메트릭스 수집 에이전트 이기도 하지만 언어가 Go{:target=&amp;ldquo;blank&amp;rdquo;}로 되어 있어서다.</description>
+      <content>&lt;p&gt;토이 프로젝트(Toy or Side Project)를 여럿 만들어 보지만 항상 프로젝트의 재미있는 부분이 끝나면 그대로 마무리된다.&lt;/p&gt;
+&lt;p&gt;조금 부족하겠지만 프로젝트의 완성을 위해 초기 설정부터 배포까지 진행하도록 한다.&lt;/p&gt;
+&lt;p&gt;이것 역시 이대로 끝날 수도 있겠지&amp;hellip;&lt;/p&gt;
+&lt;h1 id=&#34;straw&#34;&gt;STRAW&lt;/h1&gt;
+&lt;p&gt;STRAW의 목표는 데이터를 수집하는 에이전트 프로그램이다.&lt;/p&gt;
+&lt;p&gt;전부 처음 사용하는 기술셋으로 작업을 하기 때문에 &lt;a href=&#34;https://github.com/influxdata/telegraf&#34; title=&#34;Telegraf&#34;&gt;Telegraf&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}라는 오픈소스를 참고 하기로 했다.&lt;/p&gt;
+&lt;p&gt;Telegraf는 시계열 DB인 &lt;a href=&#34;https://github.com/influxdata/influxdb&#34; title=&#34;InfluxDB&#34;&gt;InfluxDB&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}를 만든 &lt;a href=&#34;https://www.influxdata.com/&#34; title=&#34;influxdata&#34;&gt;influxdata&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}에서 만든 오픈소스 프로그램이다.&lt;/p&gt;
+&lt;p&gt;Telegraf를 선택한 이유는 시스템 모니터링과 메트릭스 수집 에이전트 이기도 하지만 언어가 &lt;a href=&#34;https://golang.org/&#34; title=&#34;Go&#34;&gt;Go&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}로 되어 있어서다.&lt;/p&gt;
+&lt;h2 id=&#34;프로젝트-준비&#34;&gt;프로젝트 준비&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;먼저 프로젝트 디렉토리를 생성한다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; mkdir straw
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;버전관리를 위해 git 초기화를 한다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; cd straw
+$&amp;gt; git init
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;프로젝트 구조를 만든다.(여기서는 Go 프로젝트 구조)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;구글 검색을 통해서 다음 두 내용을 기준으로 프로젝트 구조를 만들었다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://vsupalov.com/go-folder-structure/&#34; title=&#34;How to structure a Go project?&#34;&gt;How to structure a Go project?&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/golang-standards/project-layout&#34; title=&#34;Standard Go Project Layout&#34;&gt;Standard Go Project Layout&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;편집기-선택&#34;&gt;편집기 선택&lt;/h2&gt;
+&lt;h3 id=&#34;visualstudiocode&#34;&gt;VisualStudioCode&lt;/h3&gt;
+&lt;h3 id=&#34;vim&#34;&gt;VIM&lt;/h3&gt;
+&lt;h3 id=&#34;goland&#34;&gt;GoLand&lt;/h3&gt;
+&lt;h2 id=&#34;코딩-스타일-가이드&#34;&gt;코딩 스타일 가이드&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/uber-go/guide/blob/master/style.md&#34;&gt;https://github.com/uber-go/guide/blob/master/style.md&lt;/a&gt;
+&lt;a href=&#34;https://github.com/TangoEnSkai/uber-go-style-guide-kr&#34;&gt;https://github.com/TangoEnSkai/uber-go-style-guide-kr&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;github-저장소&#34;&gt;GitHub 저장소&lt;/h2&gt;
+&lt;p&gt;내용을 일일이 다 기록하지는 못했지만 1차 작업 내용을 아래 주소로 공개한다.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/geekflow/straw&#34; title=&#34;Straw Agent&#34;&gt;Straw Agent&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;중간에 귀찮아서 빼먹은 내용들은 계속 업데이트 예정이다.&lt;/p&gt;
+</content>
     </item>
     
     <item>
       <title>Electron Setting</title>
-      <link>http://geeksaga.com/post/electron/2020-02-25-electorn-setting/</link>
+      <link>/post/electron/2020-02-25-electorn-setting/</link>
       <pubDate>Tue, 25 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/electron/2020-02-25-electorn-setting/</guid>
+      <guid>/post/electron/2020-02-25-electorn-setting/</guid>
       <description>Electron 개발환경을 설치 및 설정하고 튜토리얼을 통해 기본적인 Electron 프로그램을 만들어 본다.
 준비사항 다음 프로그램들이 설치되어 있어야 한다.
  Node{:target=&amp;ldquo;blank&amp;rdquo;} Yarn{:target=&amp;ldquo;blank&amp;rdquo;}  다음 명령으를 통해 확인할 수 있다.
 ❯ node -v v12.14.1 ❯ npm -v 6.13.7 ❯ yarn -v 1.21.1 설치 Electron을 설치할 때는 개발 의존성 모드로 설치할 것을 권장한다.
 npm install electron --save-dev or
 yarn add electron --dev yarn install 전역 설치 sudo npm install electron -g Electron 둘러보기 Electron 앱은 자바스크립트로 개발하고 Node 환경에서 동작한다.</description>
+      <content>&lt;p&gt;Electron 개발환경을 설치 및 설정하고 튜토리얼을 통해 기본적인 Electron 프로그램을 만들어 본다.&lt;/p&gt;
+&lt;h2 id=&#34;준비사항&#34;&gt;준비사항&lt;/h2&gt;
+&lt;p&gt;다음 프로그램들이 설치되어 있어야 한다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://nodejs.org/&#34; title=&#34;NodeJs.org&#34;&gt;Node&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://classic.yarnpkg.com/en/&#34; title=&#34;Yarn&#34;&gt;Yarn&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;다음 명령으를 통해 확인할 수 있다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;❯ node -v
+v12.14.1
+
+❯ npm -v
+6.13.7
+
+❯ yarn -v
+1.21.1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;설치&#34;&gt;설치&lt;/h2&gt;
+&lt;p&gt;Electron을 설치할 때는 개발 의존성 모드로 설치할 것을 권장한다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;npm install electron --save-dev
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;or&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;yarn add electron --dev
+yarn install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;전역-설치&#34;&gt;전역 설치&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;sudo npm install electron -g 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;electron-둘러보기&#34;&gt;Electron 둘러보기&lt;/h2&gt;
+&lt;p&gt;Electron 앱은 자바스크립트로 개발하고 Node 환경에서 동작한다.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.electronjs.org/docs/tutorial/first-app&#34; title=&#34;First Elecctron App&#34;&gt;Tutorial&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}을 통해 기본적인 구조를 파악해 보자.&lt;/p&gt;
+&lt;h3 id=&#34;프로젝트-초기화&#34;&gt;프로젝트 초기화&lt;/h3&gt;
+&lt;p&gt;Electron이 동작하는 환경이 Node 이기 때문에 &lt;em&gt;npm init&lt;/em&gt; 명령어를 통해 프로젝트를 초기화 한다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;❯ mkdir first-app
+
+❯ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;npm help json&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; definitive documentation on these fields
+and exactly what they &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;.
+
+Use &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;npm install &amp;lt;pkg&amp;gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt; afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;first-app&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; 
+version: &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;1.0.0&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; 0.1.0 
+description: First Electron App
+entry point: &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;index.js&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; main.js
+test command: 
+git repository: 
+keywords: 
+author: geeksaga
+license: &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;ISC&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; MIT
+About to write to /home/test/first-app/package.json:
+
+&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;first-app&amp;#34;&lt;/span&gt;,
+  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;version&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;0.1.0&amp;#34;&lt;/span&gt;,
+  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;description&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;First Electron App&amp;#34;&lt;/span&gt;,
+  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;main&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;main.js&amp;#34;&lt;/span&gt;,
+  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;scripts&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;test&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;echo \&amp;#34;Error: no test specified\&amp;#34; &amp;amp;&amp;amp; exit 1&amp;#34;&lt;/span&gt;
+  &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;,
+  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;author&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;geeksaga&amp;#34;&lt;/span&gt;,
+  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;license&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;MIT&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+
+
+Is this OK? &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;yes&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;프로젝트 초기화를 진행하면 &lt;em&gt;package.json&lt;/em&gt; 파일이 생성된다.&lt;/p&gt;
+&lt;p&gt;다음으로 &lt;code&gt;npm init&lt;/code&gt; 명령어로 초기화시에 &lt;em&gt;entry point&lt;/em&gt;에 입력한 &lt;code&gt;main.js&lt;/code&gt; 파일을 생성한다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;BrowserWindow&lt;/span&gt; } &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;require&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;electron&amp;#39;&lt;/span&gt;)
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;createWindow&lt;/span&gt; () {
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;win&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;BrowserWindow&lt;/span&gt;({
+        &lt;span style=&#34;color:#a6e22e&#34;&gt;width&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;800&lt;/span&gt;,
+        &lt;span style=&#34;color:#a6e22e&#34;&gt;height&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;600&lt;/span&gt;,
+        &lt;span style=&#34;color:#a6e22e&#34;&gt;webPreferences&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+            &lt;span style=&#34;color:#a6e22e&#34;&gt;nodeIntegration&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+        }
+    });
+
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;win&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;setMenuBarVisibility&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;);
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;win&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;loadFile&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;index.html&amp;#39;&lt;/span&gt;);
+
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;win&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;webContents&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;openDevTools&lt;/span&gt;();
+
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;win&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;once&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;closed&amp;#39;&lt;/span&gt;, () =&amp;gt; window &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;);
+}
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;whenReady&lt;/span&gt;().&lt;span style=&#34;color:#a6e22e&#34;&gt;then&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;createWindow&lt;/span&gt;)
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;on&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;window-all-closed&amp;#39;&lt;/span&gt;, () =&amp;gt; {
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;process&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;platform&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;!==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;darwin&amp;#39;&lt;/span&gt;) {
+        &lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;quit&lt;/span&gt;()
+    }
+})
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;on&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;activate&amp;#39;&lt;/span&gt;, () =&amp;gt; {
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;BrowserWindow&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;getAllWindows&lt;/span&gt;().&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;===&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) {
+        &lt;span style=&#34;color:#a6e22e&#34;&gt;createWindow&lt;/span&gt;()
+    }
+})
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;마지막으로 &lt;code&gt;win.loadFile(&#39;index.html&#39;)&lt;/code&gt;에 있는 &lt;em&gt;index.html&lt;/em&gt;을 생성한다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;html&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;head&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;charset&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;UTF-8&amp;#34;&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;&amp;gt;Hello World!&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;&amp;gt;
+    &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag --&amp;gt;&lt;/span&gt;
+    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;http-equiv&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Content-Security-Policy&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;content&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;script-src &amp;#39;self&amp;#39; &amp;#39;unsafe-inline&amp;#39;;&amp;#34;&lt;/span&gt; /&amp;gt;
+  &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;head&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;body&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;h1&lt;/span&gt;&amp;gt;Hello World!&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;h1&lt;/span&gt;&amp;gt;
+    We are using node &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;document.&lt;span style=&#34;color:#a6e22e&#34;&gt;write&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;process&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;versions&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;node&lt;/span&gt;)&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;,
+    Chrome &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;document.&lt;span style=&#34;color:#a6e22e&#34;&gt;write&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;process&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;versions&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;chrome&lt;/span&gt;)&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;,
+    and Electron &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;document.&lt;span style=&#34;color:#a6e22e&#34;&gt;write&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;process&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;versions&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;electron&lt;/span&gt;)&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;.
+  &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;body&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;html&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;최종적인 프로젝트 구조는 다음과 같다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;first-app/
+├── index.html
+├── main.js
+├── node_modules
+├── package.json
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;실행&#34;&gt;실행&lt;/h3&gt;
+&lt;p&gt;프로젝트의 실행은 &lt;code&gt;npm start&lt;/code&gt; 명령어를 통해 실행한다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;npm start
+npm ERR! missing script: start
+...
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;npm start&lt;/code&gt;를 통해 프로그램을 실행하면 &lt;em&gt;script: start&lt;/em&gt;가 없어서 에러가 발생한다.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;package.json&lt;/em&gt; 파일을 열어 &lt;em&gt;scripts&lt;/em&gt; 부분에 *&amp;ldquo;start&amp;rdquo;: &amp;ldquo;electron .&amp;quot;*를 추가하고 저장한다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;main&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;main.js&amp;#34;&lt;/span&gt;,
+  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;scripts&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+	&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;start&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;electron .&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;test&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;echo \&amp;#34;Error: no test specified\&amp;#34; &amp;amp;&amp;amp; exit 1&amp;#34;&lt;/span&gt;
+  },
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;다시 &lt;code&gt;npm start&lt;/code&gt; 명령어를 실행하면 결과 화면을 볼 수 있다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/assets/images/20200226001.png&#34; alt=&#34;FirstApp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;참고링크&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.electronjs.org/docs/tutorial/installation&#34; title=&#34;Electron Install&#34;&gt;Electron Install&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[Electron Quick Setup Guide][2]&lt;/li&gt;
+&lt;li&gt;[Electron Boilerplates][3]&lt;/li&gt;
+&lt;li&gt;[Electron Docs][4]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;{:target=&amp;ldquo;blank&amp;rdquo;}
+[2]: &lt;a href=&#34;https://github.com/electron-userland/electron-builder#quick-setup-guide&#34;&gt;https://github.com/electron-userland/electron-builder#quick-setup-guide&lt;/a&gt; &amp;ldquo;Electron Quick Setup Guide&amp;rdquo;
+{:target=&amp;ldquo;blank&amp;rdquo;}
+[3]: &lt;a href=&#34;https://www.electron.build/#boilerplates&#34;&gt;https://www.electron.build/#boilerplates&lt;/a&gt; &amp;ldquo;Electron boilerplates&amp;rdquo;
+{:target=&amp;ldquo;blank&amp;rdquo;}
+[4]: &lt;a href=&#34;https://www.electronjs.org/docs&#34;&gt;https://www.electronjs.org/docs&lt;/a&gt; &amp;ldquo;Electron 문서&amp;rdquo;&lt;/p&gt;
+</content>
     </item>
     
   </channel>

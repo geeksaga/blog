@@ -1,20 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>git on Try to write anyway</title>
-    <link>http://geeksaga.com/tags/git/</link>
-    <description>Recent content in git on Try to write anyway</description>
+    <title>git on Terminal</title>
+    <link>/tags/git/</link>
+    <description>Recent content in git on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Dec 2016 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Dec 2016 00:00:00 +0000</lastBuildDate><atom:link href="/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>git 설정</title>
-      <link>http://geeksaga.com/post/tools/2016-12-16-git-setting/</link>
+      <link>/post/tools/2016-12-16-git-setting/</link>
       <pubDate>Fri, 16 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/tools/2016-12-16-git-setting/</guid>
+      <guid>/post/tools/2016-12-16-git-setting/</guid>
       <description>git config git config --global user.name &amp;#34;name&amp;#34; git config --global user.email &amp;#34;email address&amp;#34; 사용중인 gitconfig 기본 설정(~/.gitconfig)
 [user] name = name email = email address [core] autocrlf = input eol = native [color] ui = auto [alias] tree = log --oneline --decorate --all --graph </description>
+      <content>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;git config
+git config &lt;span style=&#34;color:#f92672&#34;&gt;--&lt;/span&gt;global user&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;
+git config &lt;span style=&#34;color:#f92672&#34;&gt;--&lt;/span&gt;global user&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;email &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;email address&amp;#34;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;사용중인 gitconfig 기본 설정(~/.gitconfig)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;user&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+	name &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; name
+	email &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; email address
+&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;core&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+	autocrlf &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; input
+	eol &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; native
+&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;color&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+	ui &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; auto
+&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;alias&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+	tree &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; log &lt;span style=&#34;color:#f92672&#34;&gt;--&lt;/span&gt;oneline &lt;span style=&#34;color:#f92672&#34;&gt;--&lt;/span&gt;decorate &lt;span style=&#34;color:#f92672&#34;&gt;--&lt;/span&gt;all &lt;span style=&#34;color:#f92672&#34;&gt;--&lt;/span&gt;graph&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</content>
     </item>
     
   </channel>

@@ -2,367 +2,367 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://geeksaga.com/tags/command/</loc>
+    <loc>/tags/command/</loc>
     <lastmod>2020-09-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/dd/</loc>
+    <loc>/tags/dd/</loc>
     <lastmod>2020-09-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/command/2020-09-11-dd/</loc>
+    <loc>/post/linux/command/2020-09-11-dd/</loc>
     <lastmod>2020-09-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/dmidecode/</loc>
+    <loc>/tags/dmidecode/</loc>
     <lastmod>2020-09-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/command/2020-09-11-dmidecode/</loc>
+    <loc>/post/linux/command/2020-09-11-dmidecode/</loc>
     <lastmod>2020-09-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/linux/</loc>
+    <loc>/tags/linux/</loc>
     <lastmod>2020-09-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/lsblk/</loc>
+    <loc>/tags/lsblk/</loc>
     <lastmod>2020-09-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/command/2020-09-11-lsblk/</loc>
+    <loc>/post/linux/command/2020-09-11-lsblk/</loc>
     <lastmod>2020-09-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/</loc>
+    <loc>/post/</loc>
     <lastmod>2020-09-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2020-09-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/</loc>
+    <loc>/</loc>
     <lastmod>2020-09-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/lsof/</loc>
+    <loc>/tags/lsof/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/command/2020-09-09-lsof/</loc>
+    <loc>/post/linux/command/2020-09-09-lsof/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/fd/</loc>
+    <loc>/tags/fd/</loc>
     <lastmod>2020-09-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/command/2020-09-07-fd/</loc>
+    <loc>/post/linux/command/2020-09-07-fd/</loc>
     <lastmod>2020-09-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/find/</loc>
+    <loc>/tags/find/</loc>
     <lastmod>2020-09-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/command/2020-09-07-find/</loc>
+    <loc>/post/linux/command/2020-09-07-find/</loc>
     <lastmod>2020-09-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/taskset/</loc>
+    <loc>/tags/taskset/</loc>
     <lastmod>2020-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/command/2020-09-03-taskset/</loc>
+    <loc>/post/linux/command/2020-09-03-taskset/</loc>
     <lastmod>2020-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/tmux/</loc>
+    <loc>/tags/tmux/</loc>
     <lastmod>2020-08-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/tmux-plugin/</loc>
+    <loc>/tags/tmux-plugin/</loc>
     <lastmod>2020-08-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/tools/2020-08-21-tmux-plugin/</loc>
+    <loc>/post/tools/2020-08-21-tmux-plugin/</loc>
     <lastmod>2020-08-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/tools/</loc>
+    <loc>/tags/tools/</loc>
     <lastmod>2020-08-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/du/</loc>
+    <loc>/tags/du/</loc>
     <lastmod>2020-08-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/command/2020-08-20-du/</loc>
+    <loc>/post/linux/command/2020-08-20-du/</loc>
     <lastmod>2020-08-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/df/</loc>
+    <loc>/tags/df/</loc>
     <lastmod>2020-08-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/command/2020-08-18-df/</loc>
+    <loc>/post/linux/command/2020-08-18-df/</loc>
     <lastmod>2020-08-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/netstat/</loc>
+    <loc>/tags/netstat/</loc>
     <lastmod>2020-08-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/command/2020-08-18-netstat/</loc>
+    <loc>/post/linux/command/2020-08-18-netstat/</loc>
     <lastmod>2020-08-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/iostat/</loc>
+    <loc>/tags/iostat/</loc>
     <lastmod>2020-08-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/command/2020-08-14-iostat/</loc>
+    <loc>/post/linux/command/2020-08-14-iostat/</loc>
     <lastmod>2020-08-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/vmstat/</loc>
+    <loc>/tags/vmstat/</loc>
     <lastmod>2020-08-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/command/2020-08-14-vmstat/</loc>
+    <loc>/post/linux/command/2020-08-14-vmstat/</loc>
     <lastmod>2020-08-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/free/</loc>
+    <loc>/tags/free/</loc>
     <lastmod>2020-08-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/command/2020-08-12-free/</loc>
+    <loc>/post/linux/command/2020-08-12-free/</loc>
     <lastmod>2020-08-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/rust/</loc>
+    <loc>/tags/rust/</loc>
     <lastmod>2020-08-11T10:10:13+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/rust/2020-08-11-rust-released/</loc>
+    <loc>/post/rust/2020-08-11-rust-released/</loc>
     <lastmod>2020-08-11T10:10:13+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/ifconfig/</loc>
+    <loc>/tags/ifconfig/</loc>
     <lastmod>2020-08-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/command/2020-08-11-ifconfig/</loc>
+    <loc>/post/linux/command/2020-08-11-ifconfig/</loc>
     <lastmod>2020-08-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/shell/2020-08-05-zsh-shortcut/</loc>
+    <loc>/post/linux/shell/2020-08-05-zsh-shortcut/</loc>
     <lastmod>2020-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/shell/</loc>
+    <loc>/tags/shell/</loc>
     <lastmod>2020-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/shortcut/</loc>
+    <loc>/tags/shortcut/</loc>
     <lastmod>2020-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/xargs/</loc>
+    <loc>/tags/xargs/</loc>
     <lastmod>2020-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/command/2020-08-05-xargs/</loc>
+    <loc>/post/linux/command/2020-08-05-xargs/</loc>
     <lastmod>2020-08-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/awk/</loc>
+    <loc>/tags/awk/</loc>
     <lastmod>2020-08-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/command/2020-08-03-awk/</loc>
+    <loc>/post/linux/command/2020-08-03-awk/</loc>
     <lastmod>2020-08-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/grep/</loc>
+    <loc>/tags/grep/</loc>
     <lastmod>2020-08-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/command/2020-08-03-grep/</loc>
+    <loc>/post/linux/command/2020-08-03-grep/</loc>
     <lastmod>2020-08-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/sed/</loc>
+    <loc>/tags/sed/</loc>
     <lastmod>2020-08-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/command/2020-08-03-sed/</loc>
+    <loc>/post/linux/command/2020-08-03-sed/</loc>
     <lastmod>2020-08-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/watch/</loc>
+    <loc>/tags/watch/</loc>
     <lastmod>2020-08-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/command/2020-08-03-watch/</loc>
+    <loc>/post/linux/command/2020-08-03-watch/</loc>
     <lastmod>2020-08-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/ulimit/</loc>
+    <loc>/tags/ulimit/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/command/2020-07-31-ulimit/</loc>
+    <loc>/post/linux/command/2020-07-31-ulimit/</loc>
     <lastmod>2020-07-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/top/</loc>
+    <loc>/tags/top/</loc>
     <lastmod>2020-07-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/command/2020-07-30-top/</loc>
+    <loc>/post/linux/command/2020-07-30-top/</loc>
     <lastmod>2020-07-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/command/2020-07-29-dmidecode/</loc>
+    <loc>/post/linux/command/2020-07-29-dmidecode/</loc>
     <lastmod>2020-07-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/uname/</loc>
+    <loc>/tags/uname/</loc>
     <lastmod>2020-07-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/command/2020-07-29-uname/</loc>
+    <loc>/post/linux/command/2020-07-29-uname/</loc>
     <lastmod>2020-07-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/uptime/</loc>
+    <loc>/tags/uptime/</loc>
     <lastmod>2020-07-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/command/2020-07-29-uptime/</loc>
+    <loc>/post/linux/command/2020-07-29-uptime/</loc>
     <lastmod>2020-07-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/categories/</loc>
+    <loc>/categories/</loc>
     <lastmod>2020-07-28T14:12:45+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/categories/linux/</loc>
+    <loc>/categories/linux/</loc>
     <lastmod>2020-07-28T14:12:45+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/tip/2020-07-28-bypass-alias/</loc>
+    <loc>/post/linux/tip/2020-07-28-bypass-alias/</loc>
     <lastmod>2020-07-28T14:12:45+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/whereis/</loc>
+    <loc>/tags/whereis/</loc>
     <lastmod>2020-07-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/command/2020-07-28-whereis/</loc>
+    <loc>/post/linux/command/2020-07-28-whereis/</loc>
     <lastmod>2020-07-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/which/</loc>
+    <loc>/tags/which/</loc>
     <lastmod>2020-07-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/command/2020-07-28-which/</loc>
+    <loc>/post/linux/command/2020-07-28-which/</loc>
     <lastmod>2020-07-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/tee/</loc>
+    <loc>/tags/tee/</loc>
     <lastmod>2020-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/command/2020-07-24-tee/</loc>
+    <loc>/post/linux/command/2020-07-24-tee/</loc>
     <lastmod>2020-07-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/programming/</loc>
+    <loc>/tags/programming/</loc>
     <lastmod>2020-07-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/categories/Rust/</loc>
+    <loc>/categories/rust/</loc>
     <lastmod>2020-07-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/rust/2020-07-16-rust-install/</loc>
+    <loc>/post/rust/2020-07-16-rust-install/</loc>
     <lastmod>2020-07-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/pgrep/</loc>
+    <loc>/tags/pgrep/</loc>
     <lastmod>2020-04-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/command/2020-04-27-pgrep/</loc>
+    <loc>/post/linux/command/2020-04-27-pgrep/</loc>
     <lastmod>2020-04-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/javascript/2020-03-23-gulp/</loc>
+    <loc>/post/javascript/2020-03-23-gulp/</loc>
     <lastmod>2020-03-23T10:50:07+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/gulp/</loc>
+    <loc>/tags/gulp/</loc>
     <lastmod>2020-03-23T10:50:07+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/JavaScript/</loc>
+    <loc>/tags/javascript/</loc>
     <lastmod>2020-03-23T10:50:07+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/node/</loc>
+    <loc>/tags/node/</loc>
     <lastmod>2020-03-23T10:50:07+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/node/2020-03-23-module.exports-and-exports/</loc>
+    <loc>/post/node/2020-03-23-module.exports-and-exports/</loc>
     <lastmod>2020-03-23T10:50:07+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/tools/2020-03-23-tmux/</loc>
+    <loc>/post/tools/2020-03-23-tmux/</loc>
     <lastmod>2020-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/tip/2020-03-18-shell/</loc>
+    <loc>/post/linux/tip/2020-03-18-shell/</loc>
     <lastmod>2020-03-18T10:39:28+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/tip/2020-03-17-note/</loc>
+    <loc>/post/linux/tip/2020-03-17-note/</loc>
     <lastmod>2020-03-17T14:51:26+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/editor/</loc>
+    <loc>/tags/editor/</loc>
     <lastmod>2020-03-11T11:14:02+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/ide/</loc>
+    <loc>/tags/ide/</loc>
     <lastmod>2020-03-11T11:14:02+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/tools/2020-03-11-neovim/</loc>
+    <loc>/post/tools/2020-03-11-neovim/</loc>
     <lastmod>2020-03-11T11:14:02+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/dig/</loc>
+    <loc>/tags/dig/</loc>
     <lastmod>2020-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/command/2020-03-11-dig/</loc>
+    <loc>/post/linux/command/2020-03-11-dig/</loc>
     <lastmod>2020-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/go/</loc>
+    <loc>/tags/go/</loc>
     <lastmod>2020-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/go/2020-03-07-go-ide/</loc>
+    <loc>/post/go/2020-03-07-go-ide/</loc>
     <lastmod>2020-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/tools/2020-03-06-tools/</loc>
+    <loc>/post/tools/2020-03-06-tools/</loc>
     <lastmod>2020-03-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/utility/</loc>
+    <loc>/tags/utility/</loc>
     <lastmod>2020-03-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/TypeScript/</loc>
+    <loc>/tags/typescript/</loc>
     <lastmod>2020-03-03T10:14:02+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/typescript/2020-03-03-typescript-released/</loc>
+    <loc>/post/typescript/2020-03-03-typescript-released/</loc>
     <lastmod>2020-03-03T10:14:02+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/Electron/</loc>
+    <loc>/tags/electron/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/toy/2020-03-01-straw-agent-init/</loc>
+    <loc>/post/toy/2020-03-01-straw-agent-init/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/typescript/2020-02-26-typescript-install/</loc>
+    <loc>/post/typescript/2020-02-26-typescript-install/</loc>
     <lastmod>2020-02-26T14:09:47+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/go/2020-02-26-go-released/</loc>
+    <loc>/post/go/2020-02-26-go-released/</loc>
     <lastmod>2020-02-26T10:10:13+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/electron/2020-02-25-electorn-setting/</loc>
+    <loc>/post/electron/2020-02-25-electorn-setting/</loc>
     <lastmod>2020-02-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/Debugging/</loc>
+    <loc>/tags/debugging/</loc>
     <lastmod>2020-02-24T17:39:30+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/typescript/2020-02-24-typescript-idea-visualstudiocode/</loc>
+    <loc>/post/typescript/2020-02-24-typescript-idea-visualstudiocode/</loc>
     <lastmod>2020-02-24T17:39:30+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/VisualStudioCode/</loc>
+    <loc>/tags/visualstudiocode/</loc>
     <lastmod>2020-02-24T17:39:30+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/categories/go/</loc>
+    <loc>/categories/go/</loc>
     <lastmod>2018-06-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/go/2018-06-12-go-install/</loc>
+    <loc>/post/go/2018-06-12-go-install/</loc>
     <lastmod>2018-06-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/categories/index/</loc>
+    <loc>/categories/index/</loc>
     <lastmod>2018-06-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/linux/command/2018-06-08-less/</loc>
+    <loc>/post/linux/command/2018-06-08-less/</loc>
     <lastmod>2018-06-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/docker/</loc>
+    <loc>/tags/docker/</loc>
     <lastmod>2017-04-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/docker/2017-04-25-docker-install/</loc>
+    <loc>/post/docker/2017-04-25-docker-install/</loc>
     <lastmod>2017-04-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/docker/2017-04-25-docker-options/</loc>
+    <loc>/post/docker/2017-04-25-docker-options/</loc>
     <lastmod>2017-04-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/</loc>
+    <loc>/tags/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/</loc>
     <lastmod>2017-04-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/design-pattern/</loc>
+    <loc>/tags/design-pattern/</loc>
     <lastmod>2017-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/Java/</loc>
+    <loc>/tags/java/</loc>
     <lastmod>2017-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/design-pattern/2017-01-10-strategy-pattern/</loc>
+    <loc>/post/design-pattern/2017-01-10-strategy-pattern/</loc>
     <lastmod>2017-01-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/2017-01-09-pattern-index/</loc>
+    <loc>/post/2017-01-09-pattern-index/</loc>
     <lastmod>2017-01-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/git/</loc>
+    <loc>/tags/git/</loc>
     <lastmod>2016-12-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/tools/2016-12-16-git-setting/</loc>
+    <loc>/post/tools/2016-12-16-git-setting/</loc>
     <lastmod>2016-12-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/python/</loc>
+    <loc>/tags/python/</loc>
     <lastmod>2016-12-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/categories/python/</loc>
+    <loc>/categories/python/</loc>
     <lastmod>2016-12-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/tags/venv/</loc>
+    <loc>/tags/venv/</loc>
     <lastmod>2016-12-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/python/2016-12-16-python3-venv-setting/</loc>
+    <loc>/post/python/2016-12-16-python3-venv-setting/</loc>
     <lastmod>2016-12-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://geeksaga.com/post/python/2016-12-15-python-install/</loc>
+    <loc>/post/python/2016-12-15-python-install/</loc>
     <lastmod>2016-12-15T00:00:00+00:00</lastmod>
   </url>
 </urlset>

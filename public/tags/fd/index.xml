@@ -1,20 +1,244 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>fd on Try to write anyway</title>
-    <link>http://geeksaga.com/tags/fd/</link>
-    <description>Recent content in fd on Try to write anyway</description>
+    <title>fd on Terminal</title>
+    <link>/tags/fd/</link>
+    <description>Recent content in fd on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/fd/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/fd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>fd command</title>
-      <link>http://geeksaga.com/post/linux/command/2020-09-07-fd/</link>
+      <link>/post/linux/command/2020-09-07-fd/</link>
       <pubDate>Mon, 07 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/linux/command/2020-09-07-fd/</guid>
+      <guid>/post/linux/command/2020-09-07-fd/</guid>
       <description>linux의 fd 명령어는 find명령어를 대체할 수 있는 사용자 친화적인 CLI 입니다.
 기본 사용법 $&amp;gt; fd test/1.txt ... TLDR $&amp;gt; tldr fd fd An alternative to find. Aims to be faster and easier to use than find. More information: https://github.com/sharkdp/fd. - Find files matching the given pattern in the current directory: fd pattern - Find files that begin with &amp;#34;foo&amp;#34;: fd &amp;#39;^foo&amp;#39; - Find files with a specific extension: fd --extension txt - Find files in a specific directory: fd pattern path/to/dir - Include ignored and hidden files in the search: fd --hidden --no-ignore pattern See also: find Help $&amp;gt; fd --help fd 8.</description>
+      <content>&lt;p&gt;linux의 &lt;code&gt;fd&lt;/code&gt; 명령어는 &lt;code&gt;find&lt;/code&gt;명령어를 대체할 수 있는 사용자 친화적인 CLI 입니다.&lt;/p&gt;
+&lt;h2 id=&#34;기본-사용법&#34;&gt;기본 사용법&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; fd
+test/1.txt
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;tldr&#34;&gt;TLDR&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; tldr fd
+
+  fd
+
+  An alternative to find.
+  Aims to be faster and easier to use than find.
+  More information: https://github.com/sharkdp/fd.
+
+  - Find files matching the given pattern in the current directory:
+    fd pattern
+
+  - Find files that begin with &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;foo&amp;#34;&lt;/span&gt;:
+    fd &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;^foo&amp;#39;&lt;/span&gt;
+
+  - Find files with a specific extension:
+    fd --extension txt
+
+  - Find files in a specific directory:
+    fd pattern path/to/dir
+
+  - Include ignored and hidden files in the search:
+    fd --hidden --no-ignore pattern
+
+
+See also: find
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;help&#34;&gt;Help&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; fd --help
+fd 8.1.1
+
+USAGE:
+    fd &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;FLAGS/OPTIONS&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&amp;lt;pattern&amp;gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&amp;lt;path&amp;gt;...&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+
+FLAGS:
+    -H, --hidden             
+            Include hidden directories and files in the search results &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;default: hidden files and
+            directories are skipped&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;. Files and directories are considered to be hidden &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; their name
+            starts with a &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;.&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt; sign &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;dot&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;.
+    -I, --no-ignore          
+            Show search results from files and directories that would otherwise be ignored by
+            &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;.gitignore&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;.ignore&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;.fdignore&amp;#39;&lt;/span&gt;, or the global ignore file.
+        --no-ignore-vcs      
+            Show search results from files and directories that would otherwise be ignored by
+            &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;.gitignore&amp;#39;&lt;/span&gt; files.
+    -u, --unrestricted       
+            Alias &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;--no-ignore&amp;#39;&lt;/span&gt;. Can be repeated. &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;-uu&amp;#39;&lt;/span&gt; is an alias &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;--no-ignore --hidden&amp;#39;&lt;/span&gt;.
+
+    -s, --case-sensitive     
+            Perform a &lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt;-sensitive search. By default, fd uses &lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt;-insensitive searches, unless
+            the pattern contains an uppercase character &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;smart &lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;.
+    -i, --ignore-case        
+            Perform a &lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt;-insensitive search. By default, fd uses &lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt;-insensitive searches, unless
+            the pattern contains an uppercase character &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;smart &lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;.
+    -g, --glob               
+            Perform a glob-based search instead of a regular expression search.
+
+        --regex              
+            Perform a regular-expression based search &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;default&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;. This can be used to override --glob.
+
+    -F, --fixed-strings      
+            Treat the pattern as a literal string instead of a regular expression.
+
+    -a, --absolute-path      
+            Shows the full path starting from the root as opposed to relative paths.
+
+    -l, --list-details       
+            Use a detailed listing format like &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ls -l&amp;#39;&lt;/span&gt;. This is basically an alias &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;--exec-batch
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;            ls -l&amp;#39;&lt;/span&gt; with some additional &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ls&amp;#39;&lt;/span&gt; options. This can be used to see more metadata, to show
+            symlink targets and to achieve a deterministic sort order.
+    -L, --follow             
+            By default, fd does not descend into symlinked directories. Using this flag, symbolic
+            links are also traversed.
+    -p, --full-path          
+            By default, the search pattern is only matched against the filename &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;or directory name&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;.
+            Using this flag, the pattern is matched against the full path.
+    -0, --print0             
+            Separate search results by the null character &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;instead of newlines&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;. Useful &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; piping
+            results to &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;xargs&amp;#39;&lt;/span&gt;.
+    -1                       
+            Limit the search to a single result and quit immediately. This is an alias &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;--max-
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;            results=1&amp;#39;&lt;/span&gt;.
+        --show-errors        
+            Enable the display of filesystem errors &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; situations such as insufficient permissions
+            or dead symlinks.
+        --one-file-system    
+            By default, fd will traverse the file system tree as far as other options dictate. With
+            this flag, fd ensures that it does not descend into a different file system than the one
+            it started in. Comparable to the -mount or -xdev filters of find&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;1&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;.
+    -h, --help               
+            Prints help information
+
+    -V, --version            
+            Prints version information
+
+
+OPTIONS:
+    -d, --max-depth &amp;lt;depth&amp;gt;               
+            Limit the directory traversal to a given depth. By default, there is no limit on the
+            search depth.
+        --min-depth &amp;lt;depth&amp;gt;               
+            Only show search results starting at the given depth. See also: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;--max-depth&amp;#39;&lt;/span&gt; and
+            &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;--exact-depth&amp;#39;&lt;/span&gt;
+        --exact-depth &amp;lt;depth&amp;gt;             
+            Only show search results at the exact given depth. This is an alias &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;--min-depth
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;            &amp;lt;depth&amp;gt; --max-depth &amp;lt;depth&amp;gt;&amp;#39;&lt;/span&gt;.
+    -t, --type &amp;lt;filetype&amp;gt;...
+            Filter the search by type &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;multiple allowable filetypes can be specified&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;:
+              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;f&amp;#39;&lt;/span&gt; or &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;file&amp;#39;&lt;/span&gt;:         regular files
+              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;d&amp;#39;&lt;/span&gt; or &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;directory&amp;#39;&lt;/span&gt;:    directories
+              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;l&amp;#39;&lt;/span&gt; or &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;symlink&amp;#39;&lt;/span&gt;:      symbolic links
+              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;x&amp;#39;&lt;/span&gt; or &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;executable&amp;#39;&lt;/span&gt;:   executables
+              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;e&amp;#39;&lt;/span&gt; or &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;empty&amp;#39;&lt;/span&gt;:        empty files or directories
+              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;s&amp;#39;&lt;/span&gt; or &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;socket&amp;#39;&lt;/span&gt;:       socket
+              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;p&amp;#39;&lt;/span&gt; or &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;pipe&amp;#39;&lt;/span&gt;:         named pipe &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;FIFO&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+    -e, --extension &amp;lt;ext&amp;gt;...              
+            &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Additionally&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; filter search results by their file extension. Multiple allowable file
+            extensions can be specified.
+    -x, --exec &amp;lt;cmd&amp;gt;                      
+            Execute a command &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; each search result.
+            All arguments following --exec are taken to be arguments to the command &lt;span style=&#34;color:#66d9ef&#34;&gt;until&lt;/span&gt; the
+            argument &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;;&amp;#39;&lt;/span&gt; is encountered.
+            Each occurrence of the following placeholders is substituted by a path derived from the
+            current search result before the command is executed:
+              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{}&amp;#39;&lt;/span&gt;:   path
+              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{/}&amp;#39;&lt;/span&gt;:  basename
+              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{//}&amp;#39;&lt;/span&gt;: parent directory
+              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{.}&amp;#39;&lt;/span&gt;:  path without file extension
+              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{/.}&amp;#39;&lt;/span&gt;: basename without file extension
+    -X, --exec-batch &amp;lt;cmd&amp;gt;                
+            Execute a command with all search results at once.
+            All arguments following --exec-batch are taken to be arguments to the command &lt;span style=&#34;color:#66d9ef&#34;&gt;until&lt;/span&gt; the
+            argument &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;;&amp;#39;&lt;/span&gt; is encountered.
+            A single occurrence of the following placeholders is authorized and substituted by the
+            paths derived from the search results before the command is executed:
+              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{}&amp;#39;&lt;/span&gt;:   path
+              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{/}&amp;#39;&lt;/span&gt;:  basename
+              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{//}&amp;#39;&lt;/span&gt;: parent directory
+              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{.}&amp;#39;&lt;/span&gt;:  path without file extension
+              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{/.}&amp;#39;&lt;/span&gt;: basename without file extension
+    -E, --exclude &amp;lt;pattern&amp;gt;...            
+            Exclude files/directories that match the given glob pattern. This overrides any other
+            ignore logic. Multiple exclude patterns can be specified.
+        --ignore-file &amp;lt;path&amp;gt;...           
+            Add a custom ignore-file in &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;.gitignore&amp;#39;&lt;/span&gt; format. These files have a low precedence.
+
+    -c, --color &amp;lt;when&amp;gt;                    
+            Declare when to use color &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; the pattern match output:
+              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;auto&amp;#39;&lt;/span&gt;:      show colors &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; the output goes to an interactive console &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;default&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;never&amp;#39;&lt;/span&gt;:     &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt; not use colorized output
+              &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;always&amp;#39;&lt;/span&gt;:    always use colorized output
+    -j, --threads &amp;lt;num&amp;gt;                   
+            Set number of threads to use &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; searching &amp;amp; executing &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;default: number of available CPU
+            cores&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+    -S, --size &amp;lt;size&amp;gt;...                  
+            Limit results based on the size of files using the format &amp;lt;+-&amp;gt;&amp;lt;NUM&amp;gt;&amp;lt;UNIT&amp;gt;.
+               &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;+&amp;#39;&lt;/span&gt;: file size must be greater than or equal to this
+               &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;-&amp;#39;&lt;/span&gt;: file size must be less than or equal to this
+               &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;NUM&amp;#39;&lt;/span&gt;:  The numeric size &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;e.g. 500&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+               &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;UNIT&amp;#39;&lt;/span&gt;: The units &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; NUM. They are not &lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt;-sensitive.
+            Allowed unit values:
+                &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;b&amp;#39;&lt;/span&gt;:  bytes
+                &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;k&amp;#39;&lt;/span&gt;:  kilobytes &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;base ten, 10^3 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt; bytes&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+                &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;m&amp;#39;&lt;/span&gt;:  megabytes
+                &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;g&amp;#39;&lt;/span&gt;:  gigabytes
+                &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;t&amp;#39;&lt;/span&gt;:  terabytes
+                &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ki&amp;#39;&lt;/span&gt;: kibibytes &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;base two, 2^10 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1024&lt;/span&gt; bytes&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+                &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;mi&amp;#39;&lt;/span&gt;: mebibytes
+                &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;gi&amp;#39;&lt;/span&gt;: gibibytes
+                &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ti&amp;#39;&lt;/span&gt;: tebibytes
+        --changed-within &amp;lt;date|dur&amp;gt;       
+            Filter results based on the file modification time. The argument can be provided as a
+            specific point in time &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;YYYY-MM-DD HH:MM:SS&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; or as a duration &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;10h, 1d, 35min&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;.
+            &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;--change-newer-than&amp;#39;&lt;/span&gt; can be used as an alias.
+            Examples:
+                --changed-within 2weeks
+                --change-newer-than &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;2018-10-27 10:00:00&amp;#39;&lt;/span&gt;
+        --changed-before &amp;lt;date|dur&amp;gt;       
+            Filter results based on the file modification time. The argument can be provided as a
+            specific point in time &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;YYYY-MM-DD HH:MM:SS&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; or as a duration &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;10h, 1d, 35min&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;.
+            &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;--change-older-than&amp;#39;&lt;/span&gt; can be used as an alias.
+            Examples:
+                --changed-before &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;2018-10-27 10:00:00&amp;#39;&lt;/span&gt;
+                --change-older-than 2weeks
+        --max-results &amp;lt;count&amp;gt;             
+            Limit the number of search results to &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;count&amp;#39;&lt;/span&gt; and quit immediately.
+
+        --base-directory &amp;lt;path&amp;gt;           
+            Change the current working directory of fd to the provided path. The means that search
+            results will be shown with respect to the given base path. Note that relative paths which
+            are passed to fd via the positional &amp;lt;path&amp;gt; argument or the &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;--search-path&amp;#39;&lt;/span&gt; option will
+            also be resolved relative to this directory.
+        --path-separator &amp;lt;separator&amp;gt;      
+            Set the path separator to use when printing file paths. The default is the OS-specific
+            separator &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/&amp;#39;&lt;/span&gt; on Unix, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;\&amp;#39;&lt;/span&gt; on Windows&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;.
+        --search-path &amp;lt;search-path&amp;gt;...    
+            Provide paths to search as an alternative to the positional &amp;lt;path&amp;gt; argument. Changes the
+            usage to &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;fd &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;FLAGS/OPTIONS&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; --search-path &amp;lt;path&amp;gt; --search-path &amp;lt;path2&amp;gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&amp;lt;pattern&amp;gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
+    -o, --owner &amp;lt;user:group&amp;gt;              
+            Filter files by their user and/or group. Format: &lt;span style=&#34;color:#f92672&#34;&gt;[(&lt;/span&gt;user|uid&lt;span style=&#34;color:#f92672&#34;&gt;)][&lt;/span&gt;:&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;group|gid&lt;span style=&#34;color:#f92672&#34;&gt;)]&lt;/span&gt;. Either side
+            is optional. Precede either side with a &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;!&amp;#39;&lt;/span&gt; to exclude files instead.
+            Examples:
+                --owner john
+                --owner :students
+                --owner &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;!john:students&amp;#39;&lt;/span&gt;
+
+ARGS:
+    &amp;lt;pattern&amp;gt;    
+            the search pattern - a regular expression unless &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;--glob&amp;#39;&lt;/span&gt; is used &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;optional&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+
+    &amp;lt;path&amp;gt;...    
+            The directory where the filesystem search is rooted &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;optional&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;. If omitted, search the
+            current working directory.
+
+Note: &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;fd -h&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt; prints a short and concise overview &lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;fd --help&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt; gives all details.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;참고&#34;&gt;참고&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/sharkdp/fd&#34; title=&#34;fd&#34;&gt;fd&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/li&gt;
+&lt;/ul&gt;
+</content>
     </item>
     
   </channel>

@@ -1,27 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TypeScript on Try to write anyway</title>
-    <link>http://geeksaga.com/tags/TypeScript/</link>
-    <description>Recent content in TypeScript on Try to write anyway</description>
+    <title>TypeScript on Terminal</title>
+    <link>/tags/typescript/</link>
+    <description>Recent content in TypeScript on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Mar 2020 10:14:02 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/TypeScript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Mar 2020 10:14:02 +0000</lastBuildDate><atom:link href="/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TypeScript Released</title>
-      <link>http://geeksaga.com/post/typescript/2020-03-03-typescript-released/</link>
+      <link>/post/typescript/2020-03-03-typescript-released/</link>
       <pubDate>Tue, 03 Mar 2020 10:14:02 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/typescript/2020-03-03-typescript-released/</guid>
+      <guid>/post/typescript/2020-03-03-typescript-released/</guid>
       <description>TypeScript Released  TypeScript 4.1{:target=&amp;ldquo;blank&amp;rdquo;} TypeScript 4.0{:target=&amp;ldquo;blank&amp;rdquo;} TypeScript 3.9{:target=&amp;ldquo;blank&amp;rdquo;} TypeScript 3.8{:target=&amp;ldquo;blank&amp;rdquo;} TypeScript 3.7{:target=&amp;ldquo;blank&amp;rdquo;} TypeScript 3.6{:target=&amp;ldquo;blank&amp;rdquo;}  </description>
+      <content>&lt;h2 id=&#34;typescript-released&#34;&gt;TypeScript Released&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://devblogs.microsoft.com/typescript/announcing-typescript-4-1/&#34; title=&#34;TypeScript 4.1&#34;&gt;TypeScript 4.1&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://devblogs.microsoft.com/typescript/announcing-typescript-4-0/&#34; title=&#34;TypeScript 4.0&#34;&gt;TypeScript 4.0&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://devblogs.microsoft.com/typescript/announcing-typescript-3-9/&#34; title=&#34;TypeScript 3.9&#34;&gt;TypeScript 3.9&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://devblogs.microsoft.com/typescript/announcing-typescript-3-8/&#34; title=&#34;TypeScript 3.8&#34;&gt;TypeScript 3.8&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://devblogs.microsoft.com/typescript/announcing-typescript-3-7/&#34; title=&#34;TypeScript 3.7&#34;&gt;TypeScript 3.7&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://devblogs.microsoft.com/typescript/announcing-typescript-3-6/&#34; title=&#34;TypeScript 3.6&#34;&gt;TypeScript 3.6&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/li&gt;
+&lt;/ul&gt;
+</content>
     </item>
     
     <item>
       <title>Straw Agent init</title>
-      <link>http://geeksaga.com/post/toy/2020-03-01-straw-agent-init/</link>
+      <link>/post/toy/2020-03-01-straw-agent-init/</link>
       <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/toy/2020-03-01-straw-agent-init/</guid>
+      <guid>/post/toy/2020-03-01-straw-agent-init/</guid>
       <description>토이 프로젝트(Toy or Side Project)를 여럿 만들어 보지만 항상 프로젝트의 재미있는 부분이 끝나면 그대로 마무리된다.
 조금 부족하겠지만 프로젝트의 완성을 위해 초기 설정부터 배포까지 진행하도록 한다.
 이것 역시 이대로 끝날 수도 있겠지&amp;hellip;
@@ -29,47 +39,378 @@ STRAW STRAW의 목표는 데이터를 수집하는 에이전트 프로그램이�
 전부 처음 사용하는 기술셋으로 작업을 하기 때문에 Telegraf{:target=&amp;ldquo;blank&amp;rdquo;}라는 오픈소스를 참고 하기로 했다.
 Telegraf는 시계열 DB인 InfluxDB{:target=&amp;ldquo;blank&amp;rdquo;}를 만든 influxdata{:target=&amp;ldquo;blank&amp;rdquo;}에서 만든 오픈소스 프로그램이다.
 Telegraf를 선택한 이유는 시스템 모니터링과 메트릭스 수집 에이전트 이기도 하지만 언어가 Go{:target=&amp;ldquo;blank&amp;rdquo;}로 되어 있어서다.</description>
+      <content>&lt;p&gt;토이 프로젝트(Toy or Side Project)를 여럿 만들어 보지만 항상 프로젝트의 재미있는 부분이 끝나면 그대로 마무리된다.&lt;/p&gt;
+&lt;p&gt;조금 부족하겠지만 프로젝트의 완성을 위해 초기 설정부터 배포까지 진행하도록 한다.&lt;/p&gt;
+&lt;p&gt;이것 역시 이대로 끝날 수도 있겠지&amp;hellip;&lt;/p&gt;
+&lt;h1 id=&#34;straw&#34;&gt;STRAW&lt;/h1&gt;
+&lt;p&gt;STRAW의 목표는 데이터를 수집하는 에이전트 프로그램이다.&lt;/p&gt;
+&lt;p&gt;전부 처음 사용하는 기술셋으로 작업을 하기 때문에 &lt;a href=&#34;https://github.com/influxdata/telegraf&#34; title=&#34;Telegraf&#34;&gt;Telegraf&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}라는 오픈소스를 참고 하기로 했다.&lt;/p&gt;
+&lt;p&gt;Telegraf는 시계열 DB인 &lt;a href=&#34;https://github.com/influxdata/influxdb&#34; title=&#34;InfluxDB&#34;&gt;InfluxDB&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}를 만든 &lt;a href=&#34;https://www.influxdata.com/&#34; title=&#34;influxdata&#34;&gt;influxdata&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}에서 만든 오픈소스 프로그램이다.&lt;/p&gt;
+&lt;p&gt;Telegraf를 선택한 이유는 시스템 모니터링과 메트릭스 수집 에이전트 이기도 하지만 언어가 &lt;a href=&#34;https://golang.org/&#34; title=&#34;Go&#34;&gt;Go&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}로 되어 있어서다.&lt;/p&gt;
+&lt;h2 id=&#34;프로젝트-준비&#34;&gt;프로젝트 준비&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;먼저 프로젝트 디렉토리를 생성한다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; mkdir straw
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;버전관리를 위해 git 초기화를 한다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; cd straw
+$&amp;gt; git init
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;프로젝트 구조를 만든다.(여기서는 Go 프로젝트 구조)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;구글 검색을 통해서 다음 두 내용을 기준으로 프로젝트 구조를 만들었다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://vsupalov.com/go-folder-structure/&#34; title=&#34;How to structure a Go project?&#34;&gt;How to structure a Go project?&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/golang-standards/project-layout&#34; title=&#34;Standard Go Project Layout&#34;&gt;Standard Go Project Layout&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;편집기-선택&#34;&gt;편집기 선택&lt;/h2&gt;
+&lt;h3 id=&#34;visualstudiocode&#34;&gt;VisualStudioCode&lt;/h3&gt;
+&lt;h3 id=&#34;vim&#34;&gt;VIM&lt;/h3&gt;
+&lt;h3 id=&#34;goland&#34;&gt;GoLand&lt;/h3&gt;
+&lt;h2 id=&#34;코딩-스타일-가이드&#34;&gt;코딩 스타일 가이드&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/uber-go/guide/blob/master/style.md&#34;&gt;https://github.com/uber-go/guide/blob/master/style.md&lt;/a&gt;
+&lt;a href=&#34;https://github.com/TangoEnSkai/uber-go-style-guide-kr&#34;&gt;https://github.com/TangoEnSkai/uber-go-style-guide-kr&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;github-저장소&#34;&gt;GitHub 저장소&lt;/h2&gt;
+&lt;p&gt;내용을 일일이 다 기록하지는 못했지만 1차 작업 내용을 아래 주소로 공개한다.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/geekflow/straw&#34; title=&#34;Straw Agent&#34;&gt;Straw Agent&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;중간에 귀찮아서 빼먹은 내용들은 계속 업데이트 예정이다.&lt;/p&gt;
+</content>
     </item>
     
     <item>
       <title>TypeScript Install</title>
-      <link>http://geeksaga.com/post/typescript/2020-02-26-typescript-install/</link>
+      <link>/post/typescript/2020-02-26-typescript-install/</link>
       <pubDate>Wed, 26 Feb 2020 14:09:47 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/typescript/2020-02-26-typescript-install/</guid>
+      <guid>/post/typescript/2020-02-26-typescript-install/</guid>
       <description>TypeScript는 프로그래밍 언어이자 자바스크립트 생성 도구로, C#을 설계했던 Anders Hejlsberg가 엔터프라이즈 규모의 자바스크립트 개발자에서 도움이 되도록 오픈소스 프로젝트로 설계되었다.
 준비사항 다음 프로그램들이 설치되어 있어야 한다.
  Node{:target=&amp;ldquo;blank&amp;rdquo;} TypeScript{:target=&amp;ldquo;blank&amp;rdquo;}  TypeScript 설치 TypeScript 환경을 만들기 위해서는 TypeScript 컴파일러가 설치가 필요하다. npm을 이용하면 쉽게 설치가 가능하다.
 npm install -g typescirpt 명령어를 사용해 전역 설치를 하자.
 환경에 따라 sudo 권한이 필요할 수 있다.
 ❯ sudo npm install -g typescript /usr/local/bin/tsc -&amp;gt; /usr/local/lib/node_modules/typescript/bin/tsc /usr/local/bin/tsserver -&amp;gt; /usr/local/lib/node_modules/typescript/bin/tsserver + typescript@3.</description>
+      <content>&lt;p&gt;TypeScript는 프로그래밍 언어이자 자바스크립트 생성 도구로, C#을 설계했던 Anders Hejlsberg가 엔터프라이즈 규모의 자바스크립트 개발자에서 도움이 되도록 오픈소스 프로젝트로 설계되었다.&lt;/p&gt;
+&lt;h2 id=&#34;준비사항&#34;&gt;준비사항&lt;/h2&gt;
+&lt;p&gt;다음 프로그램들이 설치되어 있어야 한다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://nodejs.org/%C2%B7%22NodeJs.org%22&#34;&gt;Node&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.typescriptlang.org/&#34; title=&#34;TypeScript&#34;&gt;TypeScript&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;typescript-설치&#34;&gt;TypeScript 설치&lt;/h2&gt;
+&lt;p&gt;TypeScript 환경을 만들기 위해서는 TypeScript 컴파일러가 설치가 필요하다.
+&lt;code&gt;npm&lt;/code&gt;을 이용하면 쉽게 설치가 가능하다.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;npm install -g typescirpt&lt;/code&gt; 명령어를 사용해 전역 설치를 하자.&lt;/p&gt;
+&lt;p&gt;환경에 따라 &lt;code&gt;sudo&lt;/code&gt; 권한이 필요할 수 있다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;❯ sudo npm install -g typescript                           
+/usr/local/bin/tsc -&amp;gt; /usr/local/lib/node_modules/typescript/bin/tsc
+/usr/local/bin/tsserver -&amp;gt; /usr/local/lib/node_modules/typescript/bin/tsserver
++ typescript@3.8.2
+added &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; package from &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; contributor in 1.765s
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;설치후 TypeScript 컴파일러가 정상적으로 설치 되었는지 확인 해본다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;❯ tsc -v
+Version 3.8.2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;first-typescript&#34;&gt;First TypeScript&lt;/h3&gt;
+&lt;p&gt;다음 내용을 &lt;em&gt;hello.ts&lt;/em&gt;로 저장한다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hello TypeScript.&amp;#34;&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;컴파일&#34;&gt;컴파일&lt;/h3&gt;
+&lt;p&gt;작성된 TypeScript 파일은 &lt;code&gt;tsc&lt;/code&gt; 명령어를 통해서 컴파일 한다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;❯ tsc hello.ts
+
+❯ ll
+total 8.0K
+-rw-rw-r-- &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; geeksaga geeksaga &lt;span style=&#34;color:#ae81ff&#34;&gt;34&lt;/span&gt; Feb &lt;span style=&#34;color:#ae81ff&#34;&gt;26&lt;/span&gt; 17:18 hello.js
+-rw-rw-r-- &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; geeksaga geeksaga &lt;span style=&#34;color:#ae81ff&#34;&gt;33&lt;/span&gt; Feb &lt;span style=&#34;color:#ae81ff&#34;&gt;26&lt;/span&gt; 17:18 hello.ts
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;컴파일에 성공하면 &lt;em&gt;hello.js&lt;/em&gt; 파일이 만들어진다.&lt;/p&gt;
+&lt;p&gt;만들어진 &lt;em&gt;hello.js&lt;/em&gt; 파일은 &lt;code&gt;node&lt;/code&gt; 명령어를 통해 실행 가능하다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;❯ node hello.js 
+hello TypeScript.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;컴파일-옵션&#34;&gt;컴파일 옵션&lt;/h3&gt;
+&lt;p&gt;TypeScript는 &lt;em&gt;tsconfig.json&lt;/em&gt; 파일을 통해 컴파일 옵션을 설정한다.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;tsconfig.json&lt;/em&gt; 파일은 &lt;code&gt;tsc --init&lt;/code&gt; 명령어를 통해 생성한다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;❯ tsc --init
+message TS6071: Successfully created a tsconfig.json file.
+
+❯ ll
+total 16K
+-rw-rw-r-- &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; geeksaga geeksaga &lt;span style=&#34;color:#ae81ff&#34;&gt;34&lt;/span&gt; Feb &lt;span style=&#34;color:#ae81ff&#34;&gt;26&lt;/span&gt; 17:18 hello.js
+-rw-rw-r-- &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; geeksaga geeksaga &lt;span style=&#34;color:#ae81ff&#34;&gt;33&lt;/span&gt; Feb &lt;span style=&#34;color:#ae81ff&#34;&gt;26&lt;/span&gt; 17:18 hello.ts
+-rw-rw-r-- &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; geeksaga geeksaga  5.8K Feb &lt;span style=&#34;color:#ae81ff&#34;&gt;26&lt;/span&gt; 17:26 tsconfig.json
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;아래는 &lt;em&gt;tsconfig.json&lt;/em&gt; 파일의 요약 정보이다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;{
+    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;compilerOptions&amp;#34;&lt;/span&gt;: {
+        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;module&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;commonjs&amp;#34;&lt;/span&gt;,
+        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;target&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;es6&amp;#34;&lt;/span&gt;,
+        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;noImplicitAny&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;removeComments&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;preserveConstEnums&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;,
+        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;sourceMap&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt; 
+    },
+    &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;...&lt;/span&gt;
+}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;참고-링크&#34;&gt;참고 링크&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.typescriptlang.org/&#34; title=&#34;TypeScript&#34;&gt;Type Script&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[tsconfig.json][2]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;{:target=&amp;ldquo;blank&amp;rdquo;}
+[2]: &lt;a href=&#34;https://www.typescriptlang.org/docs/handbook/tsconfig-json.html&#34;&gt;https://www.typescriptlang.org/docs/handbook/tsconfig-json.html&lt;/a&gt; &amp;ldquo;tsconfig.json&amp;rdquo;
+{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/p&gt;
+</content>
     </item>
     
     <item>
       <title>Electron Setting</title>
-      <link>http://geeksaga.com/post/electron/2020-02-25-electorn-setting/</link>
+      <link>/post/electron/2020-02-25-electorn-setting/</link>
       <pubDate>Tue, 25 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/electron/2020-02-25-electorn-setting/</guid>
+      <guid>/post/electron/2020-02-25-electorn-setting/</guid>
       <description>Electron 개발환경을 설치 및 설정하고 튜토리얼을 통해 기본적인 Electron 프로그램을 만들어 본다.
 준비사항 다음 프로그램들이 설치되어 있어야 한다.
  Node{:target=&amp;ldquo;blank&amp;rdquo;} Yarn{:target=&amp;ldquo;blank&amp;rdquo;}  다음 명령으를 통해 확인할 수 있다.
 ❯ node -v v12.14.1 ❯ npm -v 6.13.7 ❯ yarn -v 1.21.1 설치 Electron을 설치할 때는 개발 의존성 모드로 설치할 것을 권장한다.
 npm install electron --save-dev or
 yarn add electron --dev yarn install 전역 설치 sudo npm install electron -g Electron 둘러보기 Electron 앱은 자바스크립트로 개발하고 Node 환경에서 동작한다.</description>
+      <content>&lt;p&gt;Electron 개발환경을 설치 및 설정하고 튜토리얼을 통해 기본적인 Electron 프로그램을 만들어 본다.&lt;/p&gt;
+&lt;h2 id=&#34;준비사항&#34;&gt;준비사항&lt;/h2&gt;
+&lt;p&gt;다음 프로그램들이 설치되어 있어야 한다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://nodejs.org/&#34; title=&#34;NodeJs.org&#34;&gt;Node&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://classic.yarnpkg.com/en/&#34; title=&#34;Yarn&#34;&gt;Yarn&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;다음 명령으를 통해 확인할 수 있다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;❯ node -v
+v12.14.1
+
+❯ npm -v
+6.13.7
+
+❯ yarn -v
+1.21.1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;설치&#34;&gt;설치&lt;/h2&gt;
+&lt;p&gt;Electron을 설치할 때는 개발 의존성 모드로 설치할 것을 권장한다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;npm install electron --save-dev
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;or&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;yarn add electron --dev
+yarn install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;전역-설치&#34;&gt;전역 설치&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;sudo npm install electron -g 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;electron-둘러보기&#34;&gt;Electron 둘러보기&lt;/h2&gt;
+&lt;p&gt;Electron 앱은 자바스크립트로 개발하고 Node 환경에서 동작한다.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.electronjs.org/docs/tutorial/first-app&#34; title=&#34;First Elecctron App&#34;&gt;Tutorial&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}을 통해 기본적인 구조를 파악해 보자.&lt;/p&gt;
+&lt;h3 id=&#34;프로젝트-초기화&#34;&gt;프로젝트 초기화&lt;/h3&gt;
+&lt;p&gt;Electron이 동작하는 환경이 Node 이기 때문에 &lt;em&gt;npm init&lt;/em&gt; 명령어를 통해 프로젝트를 초기화 한다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;❯ mkdir first-app
+
+❯ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;npm help json&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; definitive documentation on these fields
+and exactly what they &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;.
+
+Use &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;npm install &amp;lt;pkg&amp;gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt; afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;first-app&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; 
+version: &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;1.0.0&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; 0.1.0 
+description: First Electron App
+entry point: &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;index.js&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; main.js
+test command: 
+git repository: 
+keywords: 
+author: geeksaga
+license: &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;ISC&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; MIT
+About to write to /home/test/first-app/package.json:
+
+&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;first-app&amp;#34;&lt;/span&gt;,
+  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;version&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;0.1.0&amp;#34;&lt;/span&gt;,
+  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;description&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;First Electron App&amp;#34;&lt;/span&gt;,
+  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;main&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;main.js&amp;#34;&lt;/span&gt;,
+  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;scripts&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;test&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;echo \&amp;#34;Error: no test specified\&amp;#34; &amp;amp;&amp;amp; exit 1&amp;#34;&lt;/span&gt;
+  &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;,
+  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;author&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;geeksaga&amp;#34;&lt;/span&gt;,
+  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;license&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;MIT&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+
+
+Is this OK? &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;yes&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;프로젝트 초기화를 진행하면 &lt;em&gt;package.json&lt;/em&gt; 파일이 생성된다.&lt;/p&gt;
+&lt;p&gt;다음으로 &lt;code&gt;npm init&lt;/code&gt; 명령어로 초기화시에 &lt;em&gt;entry point&lt;/em&gt;에 입력한 &lt;code&gt;main.js&lt;/code&gt; 파일을 생성한다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;BrowserWindow&lt;/span&gt; } &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;require&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;electron&amp;#39;&lt;/span&gt;)
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;createWindow&lt;/span&gt; () {
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;win&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;BrowserWindow&lt;/span&gt;({
+        &lt;span style=&#34;color:#a6e22e&#34;&gt;width&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;800&lt;/span&gt;,
+        &lt;span style=&#34;color:#a6e22e&#34;&gt;height&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;600&lt;/span&gt;,
+        &lt;span style=&#34;color:#a6e22e&#34;&gt;webPreferences&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+            &lt;span style=&#34;color:#a6e22e&#34;&gt;nodeIntegration&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+        }
+    });
+
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;win&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;setMenuBarVisibility&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;);
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;win&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;loadFile&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;index.html&amp;#39;&lt;/span&gt;);
+
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;win&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;webContents&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;openDevTools&lt;/span&gt;();
+
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;win&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;once&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;closed&amp;#39;&lt;/span&gt;, () =&amp;gt; window &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;);
+}
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;whenReady&lt;/span&gt;().&lt;span style=&#34;color:#a6e22e&#34;&gt;then&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;createWindow&lt;/span&gt;)
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;on&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;window-all-closed&amp;#39;&lt;/span&gt;, () =&amp;gt; {
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;process&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;platform&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;!==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;darwin&amp;#39;&lt;/span&gt;) {
+        &lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;quit&lt;/span&gt;()
+    }
+})
+
+&lt;span style=&#34;color:#a6e22e&#34;&gt;app&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;on&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;activate&amp;#39;&lt;/span&gt;, () =&amp;gt; {
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;BrowserWindow&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;getAllWindows&lt;/span&gt;().&lt;span style=&#34;color:#a6e22e&#34;&gt;length&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;===&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;) {
+        &lt;span style=&#34;color:#a6e22e&#34;&gt;createWindow&lt;/span&gt;()
+    }
+})
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;마지막으로 &lt;code&gt;win.loadFile(&#39;index.html&#39;)&lt;/code&gt;에 있는 &lt;em&gt;index.html&lt;/em&gt;을 생성한다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;html&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;head&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;charset&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;UTF-8&amp;#34;&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;&amp;gt;Hello World!&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;&amp;gt;
+    &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag --&amp;gt;&lt;/span&gt;
+    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;http-equiv&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Content-Security-Policy&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;content&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;script-src &amp;#39;self&amp;#39; &amp;#39;unsafe-inline&amp;#39;;&amp;#34;&lt;/span&gt; /&amp;gt;
+  &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;head&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;body&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;h1&lt;/span&gt;&amp;gt;Hello World!&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;h1&lt;/span&gt;&amp;gt;
+    We are using node &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;document.&lt;span style=&#34;color:#a6e22e&#34;&gt;write&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;process&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;versions&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;node&lt;/span&gt;)&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;,
+    Chrome &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;document.&lt;span style=&#34;color:#a6e22e&#34;&gt;write&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;process&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;versions&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;chrome&lt;/span&gt;)&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;,
+    and Electron &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;document.&lt;span style=&#34;color:#a6e22e&#34;&gt;write&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;process&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;versions&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;electron&lt;/span&gt;)&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;.
+  &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;body&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;html&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;최종적인 프로젝트 구조는 다음과 같다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;first-app/
+├── index.html
+├── main.js
+├── node_modules
+├── package.json
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;실행&#34;&gt;실행&lt;/h3&gt;
+&lt;p&gt;프로젝트의 실행은 &lt;code&gt;npm start&lt;/code&gt; 명령어를 통해 실행한다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;npm start
+npm ERR! missing script: start
+...
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;npm start&lt;/code&gt;를 통해 프로그램을 실행하면 &lt;em&gt;script: start&lt;/em&gt;가 없어서 에러가 발생한다.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;package.json&lt;/em&gt; 파일을 열어 &lt;em&gt;scripts&lt;/em&gt; 부분에 *&amp;ldquo;start&amp;rdquo;: &amp;ldquo;electron .&amp;quot;*를 추가하고 저장한다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;main&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;main.js&amp;#34;&lt;/span&gt;,
+  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;scripts&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; {
+	&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;start&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;electron .&amp;#34;&lt;/span&gt;,
+    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;test&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;echo \&amp;#34;Error: no test specified\&amp;#34; &amp;amp;&amp;amp; exit 1&amp;#34;&lt;/span&gt;
+  },
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;다시 &lt;code&gt;npm start&lt;/code&gt; 명령어를 실행하면 결과 화면을 볼 수 있다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/assets/images/20200226001.png&#34; alt=&#34;FirstApp&#34;&gt;&lt;/p&gt;
+&lt;p&gt;참고링크&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.electronjs.org/docs/tutorial/installation&#34; title=&#34;Electron Install&#34;&gt;Electron Install&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[Electron Quick Setup Guide][2]&lt;/li&gt;
+&lt;li&gt;[Electron Boilerplates][3]&lt;/li&gt;
+&lt;li&gt;[Electron Docs][4]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;{:target=&amp;ldquo;blank&amp;rdquo;}
+[2]: &lt;a href=&#34;https://github.com/electron-userland/electron-builder#quick-setup-guide&#34;&gt;https://github.com/electron-userland/electron-builder#quick-setup-guide&lt;/a&gt; &amp;ldquo;Electron Quick Setup Guide&amp;rdquo;
+{:target=&amp;ldquo;blank&amp;rdquo;}
+[3]: &lt;a href=&#34;https://www.electron.build/#boilerplates&#34;&gt;https://www.electron.build/#boilerplates&lt;/a&gt; &amp;ldquo;Electron boilerplates&amp;rdquo;
+{:target=&amp;ldquo;blank&amp;rdquo;}
+[4]: &lt;a href=&#34;https://www.electronjs.org/docs&#34;&gt;https://www.electronjs.org/docs&lt;/a&gt; &amp;ldquo;Electron 문서&amp;rdquo;&lt;/p&gt;
+</content>
     </item>
     
     <item>
       <title>Visual Studio Code for TypeScript</title>
-      <link>http://geeksaga.com/post/typescript/2020-02-24-typescript-idea-visualstudiocode/</link>
+      <link>/post/typescript/2020-02-24-typescript-idea-visualstudiocode/</link>
       <pubDate>Mon, 24 Feb 2020 17:39:30 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/typescript/2020-02-24-typescript-idea-visualstudiocode/</guid>
+      <guid>/post/typescript/2020-02-24-typescript-idea-visualstudiocode/</guid>
       <description>프로그래밍을 할 때 개발 환경 구성은 매우 중요하다.
 특히나 처음 접하는 언어를 이용해서 프로그래밍을 할 때 도움이 되는 툴을 선택하는 건 쉽지(?) 않은 문제이다.
 여기에서는 마이크로소프트에서 만든 개발 환경으로 윈도우, 리눅스, 맥에서 동작하며, 많이 사용되고 무료로 사용할 수 있는 Visual Studio Code{:target=&amp;ldquo;blank&amp;rdquo;}를 이용하여 TypeScript개발 환경을 구성해 본다.
 준비사항 다음 프로그램들이 설치되어 있어야 한다.
  [Visual Studio Code](https://code.visual studio.com/ &amp;ldquo;Visual Studio Code&amp;rdquo;){:target=&amp;ldquo;blank&amp;rdquo;} Node{:target=&amp;ldquo;blank&amp;rdquo;} TypeScript{:target=&amp;ldquo;blank&amp;rdquo;}  비주얼 스튜디오 코드 둘러보기 소스 코드를 저장할 디렉터리를 만들고 비주얼 스튜디어 코드를 실행하면 명령 줄에서 코드를 실행 할 수 있다.</description>
+      <content>&lt;p&gt;프로그래밍을 할 때 개발 환경 구성은 매우 중요하다.&lt;/p&gt;
+&lt;p&gt;특히나 처음 접하는 언어를 이용해서 프로그래밍을 할 때 도움이 되는 툴을 선택하는 건 쉽지(?) 않은 문제이다.&lt;/p&gt;
+&lt;p&gt;여기에서는 마이크로소프트에서 만든 개발 환경으로 윈도우, 리눅스, 맥에서 동작하며, 많이 사용되고 무료로 사용할 수 있는 &lt;a href=&#34;https://code.visualstudio.com/&#34; title=&#34;Visual Studio Code&#34;&gt;Visual Studio Code&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}를 이용하여 TypeScript개발 환경을 구성해 본다.&lt;/p&gt;
+&lt;h2 id=&#34;준비사항&#34;&gt;준비사항&lt;/h2&gt;
+&lt;p&gt;다음 프로그램들이 설치되어 있어야 한다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[Visual Studio Code](&lt;a href=&#34;https://code.visual&#34;&gt;https://code.visual&lt;/a&gt; studio.com/ &amp;ldquo;Visual Studio Code&amp;rdquo;){:target=&amp;ldquo;blank&amp;rdquo;}&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://nodejs.org/%C2%B7%22NodeJs.org%22&#34;&gt;Node&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/typescript/typescript-install/&#34; title=&#34;TypeScript&#34;&gt;TypeScript&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;비주얼-스튜디오-코드-둘러보기&#34;&gt;비주얼 스튜디오 코드 둘러보기&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;/assets/images/20200224001.png&#34; alt=&#34;VisualStudioCode&#34;&gt;&lt;/p&gt;
+&lt;p&gt;소스 코드를 저장할 디렉터리를 만들고 비주얼 스튜디어 코드를 실행하면 명령 줄에서 코드를 실행 할 수 있다.&lt;/p&gt;
+&lt;p&gt;Ctrl + N으로 파일을 생성해 다음을 입력한다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hello vscode&amp;#34;&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ctrl + S로 파일을 &lt;em&gt;hello.ts&lt;/em&gt;로 저장한다.&lt;/p&gt;
+&lt;p&gt;프로젝트를 빌드 하는 메뉴는 Terminal -&amp;gt; Run Build Task (Ctrl + Shift + B)이다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/assets/images/20200224002.png&#34; alt=&#34;HelloVisualStudioCode&#34;&gt;&lt;/p&gt;
+&lt;p&gt;프로젝트를 빌드하면 비주얼 스튜디오 코드는 정의된 빌드 작업이 없다는 메시지를 보여준다. &lt;a href=&#34;https://code.visualstudio.com/docs/editor/tasks&#34; title=&#34;Learn More&#34;&gt;Learn More&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/p&gt;
+&lt;p&gt;hello.ts파일을 저장한 디렉터리에 타입스크립트 설정파일(tsconfig.json)이 없는 경우에는 다음 명령어를 통해 만들어 준다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;❯ tsc --init
+message TS6071: Successfully created a tsconfig.json file.
+
+❯ ll
+total 12K
+-rw-rw-r-- &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; geeksaga geeksaga   &lt;span style=&#34;color:#ae81ff&#34;&gt;27&lt;/span&gt; Feb &lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt; 16:27 hello.ts
+-rw-rw-r-- &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; geeksaga geeksaga 5.8K Feb &lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt; 16:10 tsconfig.json
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;tsc &amp;ndash;init 명령을 통해 tsconfig.json 파일을 만들어 주면 현재 디렉터리에 두개의 파일이 있을 것이다.&lt;/p&gt;
+&lt;p&gt;이제 다시 프로젝트를 빌드하면 빌드 작업 구성을 위한 옵션이 제공된다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/assets/images/20200224003.png&#34; alt=&#34;SelectTheBuildTaskToRun&#34;&gt;&lt;/p&gt;
+&lt;p&gt;제공된 옵션 중에 tsc: build -tsconfig.json을 선택하면 .vscode 디렉터리가 만들어지고 해당 디렉터리 밑에 task.json 파일을 생성하고 파일을 열어준다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/assets/images/20200224004.png&#34; alt=&#34;task.json&#34;&gt;&lt;/p&gt;
+&lt;p&gt;현재 디렉터리 내용은 다음과 같다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;❯ ls -alR           
+.:
+total &lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt;
+drwxrwxr-x &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; geeksaga geeksaga &lt;span style=&#34;color:#ae81ff&#34;&gt;4096&lt;/span&gt; Feb &lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt; 16:42 .
+drwxr-xr-x &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; geeksaga geeksaga &lt;span style=&#34;color:#ae81ff&#34;&gt;4096&lt;/span&gt; Feb &lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt; 16:25 ..
+-rw-rw-r-- &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; geeksaga geeksaga   &lt;span style=&#34;color:#ae81ff&#34;&gt;27&lt;/span&gt; Feb &lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt; 16:27 hello.ts
+-rw-rw-r-- &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; geeksaga geeksaga &lt;span style=&#34;color:#ae81ff&#34;&gt;5903&lt;/span&gt; Feb &lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt; 16:10 tsconfig.json
+drwxrwxr-x &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; geeksaga geeksaga &lt;span style=&#34;color:#ae81ff&#34;&gt;4096&lt;/span&gt; Feb &lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt; 16:42 .vscode
+
+./.vscode:
+total &lt;span style=&#34;color:#ae81ff&#34;&gt;12&lt;/span&gt;
+drwxrwxr-x &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; geeksaga geeksaga &lt;span style=&#34;color:#ae81ff&#34;&gt;4096&lt;/span&gt; Feb &lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt; 16:42 .
+drwxrwxr-x &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; geeksaga geeksaga &lt;span style=&#34;color:#ae81ff&#34;&gt;4096&lt;/span&gt; Feb &lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt; 16:42 ..
+-rw-rw-r-- &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; geeksaga geeksaga  &lt;span style=&#34;color:#ae81ff&#34;&gt;358&lt;/span&gt; Feb &lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt; 16:42 tasks.json
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;이제 다시 빌드하면 hello.js 파일이 생성된다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;❯ ll
+total 16K
+-rw-rw-r-- &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; geeksaga geeksaga   &lt;span style=&#34;color:#ae81ff&#34;&gt;43&lt;/span&gt; Feb &lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt; 17:05 hello.js
+-rw-rw-r-- &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; geeksaga geeksaga   &lt;span style=&#34;color:#ae81ff&#34;&gt;27&lt;/span&gt; Feb &lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt; 16:27 hello.ts
+-rw-rw-r-- &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; geeksaga geeksaga 5.8K Feb &lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt; 16:10 tsconfig.json
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;빌드가 성공적으로 끝났으니 이제 해당 파일을 실행해 보자.&lt;/p&gt;
+&lt;p&gt;Debug -&amp;gt; Start Without Debugging(Ctrl _+ F5)를 통해 실행 해보자.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/assets/images/20200224005.png&#34; alt=&#34;Start&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Start Without Debugging 메뉴를 실행하면 hello.js를 실행 할 수 있는 목록이 보이는데 Node.js 옵션을 선택하면 경고창이 뜬다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/assets/images/20200224006.png&#34; alt=&#34;launch.json&#34;&gt;&lt;/p&gt;
+&lt;p&gt;메시지를 보면 hello.ts를 실행할 프로그램이 없다는 경고 메시지가 보인다.&lt;/p&gt;
+&lt;p&gt;Open Launch.json 버튼을 클릭하면 .vscod 디렉터리에 launch.json 파일을 생성하고 파일을 열어준다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/assets/images/20200224008.png&#34; alt=&#34;Run&#34;&gt;&lt;/p&gt;
+&lt;p&gt;launch.json 파일의 program 옵션을 &amp;ldquo;${workspaceFolder}/hello.js&amp;quot;로 변경하고 Ctrl + F5를 누르면 hello.js가 노드로 실행되고 DEBUG CONSOLE 부분에 실행 결과가 보인다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/assets/images/20200224008.png&#34; alt=&#34;Run&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;디버깅&#34;&gt;디버깅&lt;/h2&gt;
+&lt;p&gt;비주얼 스튜디어에는 타입스크립트 프로젝트 디버깅 툴이 내장되어 있다.&lt;/p&gt;
+&lt;p&gt;Debug -&amp;gt; Start Debugging(F5)를 통해 디버깅을 실행 해보자.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/assets/images/20200224007.png&#34; alt=&#34;debug&#34;&gt;&lt;/p&gt;
+&lt;p&gt;(작성중)&lt;/p&gt;
+&lt;h2 id=&#34;참고-링크&#34;&gt;참고 링크&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://code.visualstudio.com/docs/editor/tasks&#34; title=&#34;Learn More&#34;&gt;Learn More&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/p&gt;
+</content>
     </item>
     
   </channel>

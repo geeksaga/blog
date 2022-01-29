@@ -1,27 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>go on Try to write anyway</title>
-    <link>http://geeksaga.com/tags/go/</link>
-    <description>Recent content in go on Try to write anyway</description>
+    <title>go on Terminal</title>
+    <link>/tags/go/</link>
+    <description>Recent content in go on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/go/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go IDE</title>
-      <link>http://geeksaga.com/post/go/2020-03-07-go-ide/</link>
+      <link>/post/go/2020-03-07-go-ide/</link>
       <pubDate>Sat, 07 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/go/2020-03-07-go-ide/</guid>
+      <guid>/post/go/2020-03-07-go-ide/</guid>
       <description>Visual Studio Code(VSCode) Vim with vim-go GoLand 참고 링크  [What is the best IDE for developing in Golang?] 1  {:target=&amp;ldquo;blank&amp;rdquo;}</description>
+      <content>&lt;h2 id=&#34;visual-studio-codevscode&#34;&gt;Visual Studio Code(VSCode)&lt;/h2&gt;
+&lt;h2 id=&#34;vim-with-vim-go&#34;&gt;Vim with vim-go&lt;/h2&gt;
+&lt;h2 id=&#34;goland&#34;&gt;GoLand&lt;/h2&gt;
+&lt;h2 id=&#34;참고-링크&#34;&gt;참고 링크&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[What is the best IDE for developing in Golang?] &lt;a href=&#34;https://medium.com/cloud-native-the-gathering/what-is-the-best-ide-for-developing-in-golang-987e5a49c984&#34; title=&#34;What is the best IDE for developing in Golang?&#34;&gt;1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/p&gt;
+</content>
     </item>
     
     <item>
       <title>Straw Agent init</title>
-      <link>http://geeksaga.com/post/toy/2020-03-01-straw-agent-init/</link>
+      <link>/post/toy/2020-03-01-straw-agent-init/</link>
       <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/toy/2020-03-01-straw-agent-init/</guid>
+      <guid>/post/toy/2020-03-01-straw-agent-init/</guid>
       <description>토이 프로젝트(Toy or Side Project)를 여럿 만들어 보지만 항상 프로젝트의 재미있는 부분이 끝나면 그대로 마무리된다.
 조금 부족하겠지만 프로젝트의 완성을 위해 초기 설정부터 배포까지 진행하도록 한다.
 이것 역시 이대로 끝날 수도 있겠지&amp;hellip;
@@ -29,29 +38,131 @@ STRAW STRAW의 목표는 데이터를 수집하는 에이전트 프로그램이�
 전부 처음 사용하는 기술셋으로 작업을 하기 때문에 Telegraf{:target=&amp;ldquo;blank&amp;rdquo;}라는 오픈소스를 참고 하기로 했다.
 Telegraf는 시계열 DB인 InfluxDB{:target=&amp;ldquo;blank&amp;rdquo;}를 만든 influxdata{:target=&amp;ldquo;blank&amp;rdquo;}에서 만든 오픈소스 프로그램이다.
 Telegraf를 선택한 이유는 시스템 모니터링과 메트릭스 수집 에이전트 이기도 하지만 언어가 Go{:target=&amp;ldquo;blank&amp;rdquo;}로 되어 있어서다.</description>
+      <content>&lt;p&gt;토이 프로젝트(Toy or Side Project)를 여럿 만들어 보지만 항상 프로젝트의 재미있는 부분이 끝나면 그대로 마무리된다.&lt;/p&gt;
+&lt;p&gt;조금 부족하겠지만 프로젝트의 완성을 위해 초기 설정부터 배포까지 진행하도록 한다.&lt;/p&gt;
+&lt;p&gt;이것 역시 이대로 끝날 수도 있겠지&amp;hellip;&lt;/p&gt;
+&lt;h1 id=&#34;straw&#34;&gt;STRAW&lt;/h1&gt;
+&lt;p&gt;STRAW의 목표는 데이터를 수집하는 에이전트 프로그램이다.&lt;/p&gt;
+&lt;p&gt;전부 처음 사용하는 기술셋으로 작업을 하기 때문에 &lt;a href=&#34;https://github.com/influxdata/telegraf&#34; title=&#34;Telegraf&#34;&gt;Telegraf&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}라는 오픈소스를 참고 하기로 했다.&lt;/p&gt;
+&lt;p&gt;Telegraf는 시계열 DB인 &lt;a href=&#34;https://github.com/influxdata/influxdb&#34; title=&#34;InfluxDB&#34;&gt;InfluxDB&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}를 만든 &lt;a href=&#34;https://www.influxdata.com/&#34; title=&#34;influxdata&#34;&gt;influxdata&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}에서 만든 오픈소스 프로그램이다.&lt;/p&gt;
+&lt;p&gt;Telegraf를 선택한 이유는 시스템 모니터링과 메트릭스 수집 에이전트 이기도 하지만 언어가 &lt;a href=&#34;https://golang.org/&#34; title=&#34;Go&#34;&gt;Go&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}로 되어 있어서다.&lt;/p&gt;
+&lt;h2 id=&#34;프로젝트-준비&#34;&gt;프로젝트 준비&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;먼저 프로젝트 디렉토리를 생성한다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; mkdir straw
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;버전관리를 위해 git 초기화를 한다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; cd straw
+$&amp;gt; git init
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;프로젝트 구조를 만든다.(여기서는 Go 프로젝트 구조)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;구글 검색을 통해서 다음 두 내용을 기준으로 프로젝트 구조를 만들었다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://vsupalov.com/go-folder-structure/&#34; title=&#34;How to structure a Go project?&#34;&gt;How to structure a Go project?&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/golang-standards/project-layout&#34; title=&#34;Standard Go Project Layout&#34;&gt;Standard Go Project Layout&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;편집기-선택&#34;&gt;편집기 선택&lt;/h2&gt;
+&lt;h3 id=&#34;visualstudiocode&#34;&gt;VisualStudioCode&lt;/h3&gt;
+&lt;h3 id=&#34;vim&#34;&gt;VIM&lt;/h3&gt;
+&lt;h3 id=&#34;goland&#34;&gt;GoLand&lt;/h3&gt;
+&lt;h2 id=&#34;코딩-스타일-가이드&#34;&gt;코딩 스타일 가이드&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/uber-go/guide/blob/master/style.md&#34;&gt;https://github.com/uber-go/guide/blob/master/style.md&lt;/a&gt;
+&lt;a href=&#34;https://github.com/TangoEnSkai/uber-go-style-guide-kr&#34;&gt;https://github.com/TangoEnSkai/uber-go-style-guide-kr&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;github-저장소&#34;&gt;GitHub 저장소&lt;/h2&gt;
+&lt;p&gt;내용을 일일이 다 기록하지는 못했지만 1차 작업 내용을 아래 주소로 공개한다.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/geekflow/straw&#34; title=&#34;Straw Agent&#34;&gt;Straw Agent&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;중간에 귀찮아서 빼먹은 내용들은 계속 업데이트 예정이다.&lt;/p&gt;
+</content>
     </item>
     
     <item>
       <title>Go Released</title>
-      <link>http://geeksaga.com/post/go/2020-02-26-go-released/</link>
+      <link>/post/go/2020-02-26-go-released/</link>
       <pubDate>Wed, 26 Feb 2020 10:10:13 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/go/2020-02-26-go-released/</guid>
+      <guid>/post/go/2020-02-26-go-released/</guid>
       <description>Go 1.15 is released
 Go Released  Go 1.15{:target=&amp;ldquo;blank&amp;rdquo;} Go 1.14{:target=&amp;ldquo;blank&amp;rdquo;} Go 1.13{:target=&amp;ldquo;blank&amp;rdquo;}  </description>
+      <content>&lt;p&gt;Go 1.15 is released&lt;/p&gt;
+&lt;h2 id=&#34;go-released&#34;&gt;Go Released&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://golang.org/doc/go1.15&#34; title=&#34;Go 1.15&#34;&gt;Go 1.15&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://golang.org/doc/go1.14&#34; title=&#34;Go 1.14&#34;&gt;Go 1.14&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://golang.org/doc/go1.13&#34; title=&#34;Go 1.13&#34;&gt;Go 1.13&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/li&gt;
+&lt;/ul&gt;
+</content>
     </item>
     
     <item>
       <title>Go lang install</title>
-      <link>http://geeksaga.com/post/go/2018-06-12-go-install/</link>
+      <link>/post/go/2018-06-12-go-install/</link>
       <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/go/2018-06-12-go-install/</guid>
+      <guid>/post/go/2018-06-12-go-install/</guid>
       <description>Go lang 다운로드 및 설치하기. 먼저 Download Go{:target=&amp;ldquo;blank&amp;rdquo;} 에서 해당 환경에 맞는 Go 버전을 다운로드하여 설치한다.
 현재 기준으로 최신 Stable version은 1.10.3 버전이다.
 Linux를 기준으로 설치 방법은 다운받은 Go 파일의 압축을 해제하기만 하면 된다. 시작하기 가이드에 있는 경로에 설치 하기 위해 다음 명령어를 이용하여 압축을 해지한다.
 sudo tar -C /usr/local -xzf go1.10.3.linux-amd64.tar.gz chown -R [OWNER]:[GROUP] go 설치후 환경변수에 패스를 등록해준다.
 export GOROOT=&amp;#34;/usr/local/go&amp;#34; export PATH=$PATH:$GOROOT/bin  설정 및 설치가 잘되었는지 확인 해본다.</description>
+      <content>&lt;h1 id=&#34;go-lang-다운로드-및-설치하기&#34;&gt;Go lang 다운로드 및 설치하기.&lt;/h1&gt;
+&lt;p&gt;먼저 &lt;a href=&#34;https://golang.org/dl/&#34; title=&#34;Download Go&#34;&gt;Download Go&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;} 에서 해당 환경에 맞는 Go 버전을 다운로드하여 설치한다.&lt;/p&gt;
+&lt;p&gt;현재 기준으로 최신 Stable version은 1.10.3 버전이다.&lt;/p&gt;
+&lt;p&gt;Linux를 기준으로 설치 방법은 다운받은 Go 파일의 압축을 해제하기만 하면 된다.
+시작하기 가이드에 있는 경로에 설치 하기 위해 다음 명령어를 이용하여 압축을 해지한다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;sudo tar -C /usr/local -xzf go1.10.3.linux-amd64.tar.gz
+chown -R &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;OWNER&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;:&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;GROUP&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; go&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;설치후 환경변수에 패스를 등록해준다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;export GOROOT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/usr/local/go&amp;#34;&lt;/span&gt;
+export PATH&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;$PATH:$GOROOT/bin &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;설정 및 설치가 잘되었는지 확인 해본다.
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ go version 
+go version go1.10.3 linux/amd64&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;첫 번째 go 프로그램인 hello world를 작성해서 설치 및 설정을 확인해 보자.
+go 소스를 작성하기 전에 workspace 디렉토리를 생성한다.
+기본 workspace는 $HOME/go를 인식한다.
+기본 workspace를 변경하려면 환경변수에 GOPATH를 등록해주면 된다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;export &lt;span style=&#34;color:#66d9ef&#34;&gt;GOPATH&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;/home/&lt;/span&gt;go&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;$GOPATH로 이동하여 src/hello.go 파일을 작성한다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;package&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;
+
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;fmt&amp;#34;&lt;/span&gt;
+
+&lt;span style=&#34;color:#66d9ef&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;() {
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;fmt&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;Printf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hello, world\n&amp;#34;&lt;/span&gt;)
+
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;go build 명령어를 이용하여 빌드 할 경우 빌드 파일 이름은 소스 파일이 있는 현재 디렉토리 이름으로 만들어진다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ pwd 
+/home/go/src
+$ go build
+$ ls -al
+-rw-rw-r-- &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; go go      &lt;span style=&#34;color:#ae81ff&#34;&gt;82&lt;/span&gt; Jun &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; 11:00 hello.go
+-rwxrwxr-x &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; go go &lt;span style=&#34;color:#ae81ff&#34;&gt;2020012&lt;/span&gt; Jun &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; 11:01 src &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;빌드할 파일을 직접 입력하거나 -o 옵션을 이용해서 output 파일 이름을 지정하면
+파일 이름과 같은 실행 파일 또는 원하는 실행 파일 이름으로 빌드가 된다.&lt;br&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ go build hello.go
+$ ls -al
+-rwxrwxr-x &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; go go &lt;span style=&#34;color:#ae81ff&#34;&gt;2020012&lt;/span&gt; Jun &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; 11:01 hello 
+-rw-rw-r-- &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; go go      &lt;span style=&#34;color:#ae81ff&#34;&gt;82&lt;/span&gt; Jun &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; 11:00 hello.go
+$ go build -o hell
+$ ls -al
+-rwxrwxr-x &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; go go &lt;span style=&#34;color:#ae81ff&#34;&gt;2020012&lt;/span&gt; Jun &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; 11:01 hell 
+-rw-rw-r-- &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; go go      &lt;span style=&#34;color:#ae81ff&#34;&gt;82&lt;/span&gt; Jun &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; 11:00 hello.go&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;생성된 실행 파일을 실행하면 결과를 볼 수 있다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$ ./hello
+hello, world&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;참고-링크&#34;&gt;참고 링크&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://golang.org/doc/install&#34; title=&#34;Getting Started&#34;&gt;Getting Started&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[Setting GOPATH][2]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;{:target=&amp;ldquo;blank&amp;rdquo;}
+[2]: &lt;a href=&#34;https://github.com/golang/go/wiki/SettingGOPATH&#34;&gt;https://github.com/golang/go/wiki/SettingGOPATH&lt;/a&gt; &amp;ldquo;Setting GOPATH&amp;rdquo;
+{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/p&gt;
+</content>
     </item>
     
   </channel>

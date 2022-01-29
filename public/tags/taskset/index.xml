@@ -1,20 +1,92 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>taskset on Try to write anyway</title>
-    <link>http://geeksaga.com/tags/taskset/</link>
-    <description>Recent content in taskset on Try to write anyway</description>
+    <title>taskset on Terminal</title>
+    <link>/tags/taskset/</link>
+    <description>Recent content in taskset on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/taskset/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/taskset/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>taskset command</title>
-      <link>http://geeksaga.com/post/linux/command/2020-09-03-taskset/</link>
+      <link>/post/linux/command/2020-09-03-taskset/</link>
       <pubDate>Thu, 03 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/linux/command/2020-09-03-taskset/</guid>
+      <guid>/post/linux/command/2020-09-03-taskset/</guid>
       <description>linux의 taskset 명령어를 통해 프로세스가 사용할 CPU를 보여주거나 설정할 수 있습니다.
 기본 사용법 $&amp;gt; taskset -p 6525 pid 6525&amp;#39;s current affinity mask: ff $&amp;gt; taskset -pc 6525 pid 6525&amp;#39;s current affinity list: 0-7 응용  동일한 코어에서 두 스레드 간에 메세지를 보내는데 걸리는 시간 측정 (이 결과로 컨텍스트 스위칭시 성능을 알 수 있습니다.)  $&amp;gt; taskset -c 0 perf bench sched pipe -T # Running &amp;#39;sched/pipe&amp;#39; benchmark: # Executed 1000000 pipe operations between two threads Total time: 3.</description>
+      <content>&lt;p&gt;linux의 &lt;code&gt;taskset&lt;/code&gt; 명령어를 통해 프로세스가 사용할 CPU를 보여주거나 설정할 수 있습니다.&lt;/p&gt;
+&lt;h2 id=&#34;기본-사용법&#34;&gt;기본 사용법&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; taskset -p &lt;span style=&#34;color:#ae81ff&#34;&gt;6525&lt;/span&gt; 
+pid 6525&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;s current affinity mask: ff
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;$&amp;gt; taskset -pc 6525
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;pid 6525&amp;#39;&lt;/span&gt;s current affinity list: 0-7
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;응용&#34;&gt;응용&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;동일한 코어에서 두 스레드 간에 메세지를 보내는데 걸리는 시간 측정
+(이 결과로 컨텍스트 스위칭시 성능을 알 수 있습니다.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; taskset -c &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; perf bench sched pipe -T
+&lt;span style=&#34;color:#75715e&#34;&gt;# Running &amp;#39;sched/pipe&amp;#39; benchmark:&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# Executed 1000000 pipe operations between two threads&lt;/span&gt;
+
+     Total time: 3.761 &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;sec&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+
+       3.761332 usecs/op
+         &lt;span style=&#34;color:#ae81ff&#34;&gt;265863&lt;/span&gt; ops/sec
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;이 결과는 하나의 스레드에서 메시지를 보내고 받는 데 걸리는 시간을 측정하므로
+2로 나눠야 정확한 값을 알 수 있습니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;tldr&#34;&gt;TLDR&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; tldr taskset
+
+  taskset
+
+  Get or set a process&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39; CPU affinity or start a new process with a defined CPU affinity.
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  - Get a running process&amp;#39;&lt;/span&gt; CPU affinity by PID:
+    taskset --pid --cpu-list pid
+
+  - Set a running process&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;#39;&lt;/span&gt; CPU affinity by PID:
+    taskset --pid --cpu-list cpu_id pid
+
+  - Start a new process with affinity &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; a single CPU:
+    taskset --cpu-list cpu_id command
+
+  - Start a new process with affinity &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; multiple non-sequential CPUs:
+    taskset --cpu-list cpu_id_1 cpu_id_2 cpu_id_3
+
+  - Start a new process with affinity &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; CPUs &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; through 4:
+    taskset --cpu-list cpu_id_1,cpu_id_4
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;help&#34;&gt;Help&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; taskset --help
+Usage: taskset &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;options&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;mask | cpu-list&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;pid|cmd &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;args...&lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt;
+
+
+Show or change the CPU affinity of a process.
+
+Options:
+ -a, --all-tasks         operate on all the tasks &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;threads&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; a given pid
+ -p, --pid               operate on existing given pid
+ -c, --cpu-list          display and specify cpus in list format
+ -h, --help              display this help
+ -V, --version           output version information
+
+The default behavior is to run a new command:
+    taskset &lt;span style=&#34;color:#ae81ff&#34;&gt;03&lt;/span&gt; sshd -b &lt;span style=&#34;color:#ae81ff&#34;&gt;1024&lt;/span&gt;
+You can retrieve the mask of an existing task:
+    taskset -p &lt;span style=&#34;color:#ae81ff&#34;&gt;700&lt;/span&gt;
+Or set it:
+    taskset -p &lt;span style=&#34;color:#ae81ff&#34;&gt;03&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;700&lt;/span&gt;
+List format uses a comma-separated list instead of a mask:
+    taskset -pc 0,3,7-11 &lt;span style=&#34;color:#ae81ff&#34;&gt;700&lt;/span&gt;
+Ranges in list format can take a stride argument:
+    e.g. 0-31:2 is equivalent to mask 0x55555555
+
+For more details see taskset&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;1&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
     </item>
     
   </channel>

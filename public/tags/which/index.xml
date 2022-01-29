@@ -1,22 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>which on Try to write anyway</title>
-    <link>http://geeksaga.com/tags/which/</link>
-    <description>Recent content in which on Try to write anyway</description>
+    <title>which on Terminal</title>
+    <link>/tags/which/</link>
+    <description>Recent content in which on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/which/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/which/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>which command</title>
-      <link>http://geeksaga.com/post/linux/command/2020-07-28-which/</link>
+      <link>/post/linux/command/2020-07-28-which/</link>
       <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/linux/command/2020-07-28-which/</guid>
+      <guid>/post/linux/command/2020-07-28-which/</guid>
       <description>linux의 which는 입력한 명령어를 $PATH에 설정된 범위에서 검색하여 찾아주는 명령어입니다.
 옵션 없이 사용할 경우 먼저 매치되는 명령어를 보여 줍니다.
 $&amp;gt; which ls ls: aliased to exa -a 옵션을 통해 매치는 명령어가 여러개 있을 경우 모두 보여 줍니다.
 $&amp;gt; which -a ls /ls: aliased to exa /bin/ls </description>
+      <content>&lt;p&gt;linux의 which는 입력한 명령어를 &lt;code&gt;$PATH&lt;/code&gt;에 설정된 범위에서 검색하여 찾아주는 명령어입니다.&lt;/p&gt;
+&lt;p&gt;옵션 없이 사용할 경우 먼저 매치되는 명령어를 보여 줍니다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; which ls
+ls: aliased to exa
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;-a&lt;/code&gt; 옵션을 통해 매치는 명령어가 여러개 있을 경우 모두 보여 줍니다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; which -a ls
+/ls: aliased to exa
+/bin/ls
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
     </item>
     
   </channel>

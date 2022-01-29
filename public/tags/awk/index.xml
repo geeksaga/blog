@@ -1,23 +1,127 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>awk on Try to write anyway</title>
-    <link>http://geeksaga.com/tags/awk/</link>
-    <description>Recent content in awk on Try to write anyway</description>
+    <title>awk on Terminal</title>
+    <link>/tags/awk/</link>
+    <description>Recent content in awk on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/awk/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/awk/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>awk &amp; gawk command</title>
-      <link>http://geeksaga.com/post/linux/command/2020-08-03-awk/</link>
+      <link>/post/linux/command/2020-08-03-awk/</link>
       <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/linux/command/2020-08-03-awk/</guid>
+      <guid>/post/linux/command/2020-08-03-awk/</guid>
       <description>linux의 awk 명령어는 GNU 버전의 gawk로 심볼릭 링크되어 있습니다.
 awk는 최초 기능을 만든 Aho + Weinberger + Kernighan(A:Alfred V. Aho, W:Peter J. Weinberger, K:Brian W. Kernighan) 3명의 이니셜을 조합하여 만든 이름 입니다.
 표준 입력에 의한 데이터를 조작하거나 데이터화하는 용도로 사용하는 명령어 입니다.
 기본 사용법 표준 입력 또는 파일을 읽어들여 &amp;lsquo;&amp;lsquo;로 둘러싸인 패턴을 읽어 들여 공백 또는 탭을 기준으로 파싱해서 $1 부터 시작하는 변수를 만들어 줍니다.
 참고로 $0은 입력된 모든 값을 가지고 있습니다.</description>
+      <content>&lt;p&gt;linux의 &lt;code&gt;awk&lt;/code&gt; 명령어는 GNU 버전의 &lt;code&gt;gawk&lt;/code&gt;로 심볼릭 링크되어 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;awk&lt;/code&gt;는 최초 기능을 만든 Aho + Weinberger + Kernighan(A:Alfred V. Aho, W:Peter J. Weinberger, K:Brian W. Kernighan) 3명의 이니셜을 조합하여 만든 이름 입니다.&lt;/p&gt;
+&lt;p&gt;표준 입력에 의한 데이터를 조작하거나 데이터화하는 용도로 사용하는 명령어 입니다.&lt;/p&gt;
+&lt;h2 id=&#34;기본-사용법&#34;&gt;기본 사용법&lt;/h2&gt;
+&lt;p&gt;표준 입력 또는 파일을 읽어들여 &amp;lsquo;&amp;lsquo;로 둘러싸인 패턴을 읽어 들여 공백 또는 탭을 기준으로
+파싱해서 $1 부터 시작하는 변수를 만들어 줍니다.&lt;/p&gt;
+&lt;p&gt;참고로 $0은 입력된 모든 값을 가지고 있습니다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; ls -l | awk &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{print $0}&amp;#39;&lt;/span&gt;
+drwxr-xr-x     - geeksaga  &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt; May 11:56 Desktop
+drwxr-xr-x     - geeksaga  &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt; May 14:03 Documents
+drwxrwxr-x     - geeksaga &lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt; Jan 11:42 dotfiles
+drwxr-xr-x     - geeksaga  &lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt; Aug 10:33 Downloads
+drwxrwxr-x     - geeksaga &lt;span style=&#34;color:#ae81ff&#34;&gt;29&lt;/span&gt; Jul 10:54 geeksaga
+drwxrwxr-x     - geeksaga  &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt; Apr  &lt;span style=&#34;color:#ae81ff&#34;&gt;2019&lt;/span&gt; node_modules
+drwxr-xr-x     - geeksaga &lt;span style=&#34;color:#ae81ff&#34;&gt;14&lt;/span&gt; Mar  &lt;span style=&#34;color:#ae81ff&#34;&gt;2018&lt;/span&gt; Public
+drwxr-xr-x     - geeksaga &lt;span style=&#34;color:#ae81ff&#34;&gt;14&lt;/span&gt; Mar  &lt;span style=&#34;color:#ae81ff&#34;&gt;2018&lt;/span&gt; Templates
+
+$&amp;gt; ls -l | awk &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{print $1}&amp;#39;&lt;/span&gt;
+drwxr-xr-x
+drwxr-xr-x
+drwxrwxr-x
+drwxr-xr-x
+drwxrwxr-x
+drwxrwxr-x
+drwxr-xr-x
+drwxr-xr-x
+
+.$&amp;gt; ls -l | awk &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{print $1, $7}&amp;#39;&lt;/span&gt;
+drwxr-xr-x Desktop
+drwxr-xr-x Documents
+drwxrwxr-x dotfiles
+drwxr-xr-x Downloads
+drwxrwxr-x geeksaga
+drwxrwxr-x node_modul
+drwxr-xr-x Public
+drwxr-xr-x Templates
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;help-awk&#34;&gt;help awk&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; awk --help
+Usage: awk &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;POSIX or GNU style options&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; -f progfile &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;--&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; file ...
+Usage: awk &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;POSIX or GNU style options&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;--&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;program&amp;#39;&lt;/span&gt; file ...
+POSIX options:		GNU long options: &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;standard&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+	-f progfile		--file&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;progfile
+	-F fs			--field-separator&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;fs
+	-v var&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;val		--assign&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;var&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;val
+Short options:		GNU long options: &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;extensions&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+	-b			--characters-as-bytes
+	-c			--traditional
+	-C			--copyright
+	-d&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;file&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;		--dump-variables&lt;span style=&#34;color:#f92672&#34;&gt;[=&lt;/span&gt;file&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+	-D&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;file&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;		--debug&lt;span style=&#34;color:#f92672&#34;&gt;[=&lt;/span&gt;file&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+	-e &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;program-text&amp;#39;&lt;/span&gt;	--source&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;program-text&amp;#39;&lt;/span&gt;
+	-E file			--exec&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;file
+	-g			--gen-pot
+	-h			--help
+	-i includefile		--include&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;includefile
+	-l library		--load&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;library
+	-L&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;fatal|invalid&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;	--lint&lt;span style=&#34;color:#f92672&#34;&gt;[=&lt;/span&gt;fatal|invalid&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+	-M			--bignum
+	-N			--use-lc-numeric
+	-n			--non-decimal-data
+	-o&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;file&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;		--pretty-print&lt;span style=&#34;color:#f92672&#34;&gt;[=&lt;/span&gt;file&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+	-O			--optimize
+	-p&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;file&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;		--profile&lt;span style=&#34;color:#f92672&#34;&gt;[=&lt;/span&gt;file&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+	-P			--posix
+	-r			--re-interval
+	-S			--sandbox
+	-t			--lint-old
+	-V			--version
+
+To report bugs, see node &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;Bugs&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39; in `gawk.info&amp;#39;&lt;/span&gt;, which is
+section &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;Reporting Problems and Bugs&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39; in the printed version.
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;gawk is a pattern scanning and processing language.
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;By default it reads standard input and writes standard output.
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;Examples:
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;	gawk &amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt; sum &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; $1 &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;; END &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt; print sum &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39; file
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;	gawk -F: &amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt; print $1 &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;#39;&lt;/span&gt; /etc/passwd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;tldr-awk&#34;&gt;tldr awk&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; tldr awk
+
+  awk
+
+  A versatile programming language &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; working on files.
+  More information: https://github.com/onetrueawk/awk.
+
+  - Print the fifth column &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;a.k.a. field&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; in a space-separated file:
+    awk &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{print $5}&amp;#39;&lt;/span&gt; filename
+
+  - Print the second column of the lines containing &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;something&amp;#34;&lt;/span&gt; in a space-separated file:
+    awk &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/something/ {print $2}&amp;#39;&lt;/span&gt; filename
+
+  - Print the last column of each line in a file, using a comma &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;instead of space&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; as a field separator:
+    awk -F &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;,&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{print $NF}&amp;#39;&lt;/span&gt; filename
+
+  - Sum the values in the first column of a file and print the total:
+    awk &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{s+=$1} END {print s}&amp;#39;&lt;/span&gt; filename
+
+  - Sum the values in the first column and pretty-print the values and &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt; the total:
+    awk &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;{s+=$1; print $1} END {print &amp;#34;--------&amp;#34;; print s}&amp;#39;&lt;/span&gt; filename
+
+  - Print every third line starting from the first line:
+    awk &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;NR%3==1&amp;#39;&lt;/span&gt; filename
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
     </item>
     
   </channel>

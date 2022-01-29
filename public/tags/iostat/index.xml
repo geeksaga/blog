@@ -1,21 +1,81 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>iostat on Try to write anyway</title>
-    <link>http://geeksaga.com/tags/iostat/</link>
-    <description>Recent content in iostat on Try to write anyway</description>
+    <title>iostat on Terminal</title>
+    <link>/tags/iostat/</link>
+    <description>Recent content in iostat on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/iostat/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/iostat/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>iostat command</title>
-      <link>http://geeksaga.com/post/linux/command/2020-08-14-iostat/</link>
+      <link>/post/linux/command/2020-08-14-iostat/</link>
       <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/linux/command/2020-08-14-iostat/</guid>
+      <guid>/post/linux/command/2020-08-14-iostat/</guid>
       <description>linux의 iostat 명령어를 통해 평균 CPU 부하 및 디스크 I/O 정보를 확인 할 수 있습니다.
 기본 사용법 $&amp;gt; iostat Linux 4.15.0-112-generic (geeksaga) 08/14/2020 _x86_64_	(8 CPU) avg-cpu: %user %nice %system %iowait %steal %idle 6.92 0.00 2.11 0.03 0.00 90.94 Device: tps kB_read/s kB_wrtn/s kB_read kB_wrtn sda 6.00 21.54 202.41 15318970 143972371 dm-0 9.19 21.52 229.52 15308169 163262564 dm-1 0.01 0.00 0.04 2456 30392 출력된 정보는 다음과 같습니다.
  Device : 디바이스 목록 tps : 초당 전송 요청 건수 KB_read/s : 디바이스에서 초당 읽은 데이터 블락 수 KB_wrtn/s : 디바이스에 초당 쓴 데이터 블락 수 KB_read : 디바이스에서 읽은 총 블락 수 KB_wrtn : 디바이스에 쓴 총 블락 수  옵션 사용법  -x : 확장 통계를 보여줍니다.</description>
+      <content>&lt;p&gt;linux의 &lt;code&gt;iostat&lt;/code&gt; 명령어를 통해 평균 CPU 부하 및 디스크 I/O 정보를 확인 할 수 있습니다.&lt;/p&gt;
+&lt;h2 id=&#34;기본-사용법&#34;&gt;기본 사용법&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; iostat
+Linux 4.15.0-112-generic &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;geeksaga&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; 	08/14/2020 	_x86_64_	&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt; CPU&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           6.92    0.00    2.11    0.03    0.00   90.94
+
+Device:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
+sda               6.00        21.54       202.41   &lt;span style=&#34;color:#ae81ff&#34;&gt;15318970&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;143972371&lt;/span&gt;
+dm-0              9.19        21.52       229.52   &lt;span style=&#34;color:#ae81ff&#34;&gt;15308169&lt;/span&gt;  &lt;span style=&#34;color:#ae81ff&#34;&gt;163262564&lt;/span&gt;
+dm-1              0.01         0.00         0.04       &lt;span style=&#34;color:#ae81ff&#34;&gt;2456&lt;/span&gt;      &lt;span style=&#34;color:#ae81ff&#34;&gt;30392&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;출력된 정보는 다음과 같습니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Device&lt;/code&gt;    : 디바이스 목록&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tps&lt;/code&gt;       : 초당 전송 요청 건수&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;KB_read/s&lt;/code&gt; : 디바이스에서 초당 읽은 데이터 블락 수&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;KB_wrtn/s&lt;/code&gt; : 디바이스에 초당 쓴 데이터 블락 수&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;KB_read&lt;/code&gt;   : 디바이스에서 읽은 총 블락 수&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;KB_wrtn&lt;/code&gt;   : 디바이스에 쓴 총 블락 수&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;옵션-사용법&#34;&gt;옵션 사용법&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-x&lt;/code&gt; : 확장 통계를 보여줍니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; iostat -x
+Linux 4.15.0-112-generic &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;geeksaga&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; 	08/14/2020 	_x86_64_	&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt; CPU&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           6.89    0.00    2.09    0.03    0.00   90.99
+
+Device:         rrqm/s   wrqm/s     r/s     w/s    rkB/s    wkB/s avgrq-sz avgqu-sz   await r_await w_await  svctm  %util
+sda               0.04     3.46    1.43    4.56    21.48   201.39    74.32     0.02    3.20    0.92    3.91   0.40   0.24
+dm-0              0.00     0.00    1.47    7.71    21.47   228.42    54.41     0.04    4.31    1.44    4.86   0.26   0.24
+dm-1              0.00     0.00    0.00    0.01     0.00     0.04     8.48     0.00   19.23    0.35   19.62   0.15   0.00
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;tldr-iostat&#34;&gt;TLDR iostat&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; tldr iostat
+
+  iostat
+
+  Report statistics &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; devices and partitions.
+
+  - Display a report of CPU and disk statistics since system startup:
+    iostat
+
+  - Display a report of CPU and disk statistics with units converted to megabytes:
+    iostat -m
+
+  - Display CPU statistics:
+    iostat -c
+
+  - Display disk statistics with disk names &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;including LVM&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;:
+    iostat -N
+
+  - Display extended disk statistics with disk names &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; device &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;sda&amp;#34;&lt;/span&gt;:
+    iostat -xN sda
+
+  - Display incremental reports of CPU and disk statistics every &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; seconds:
+    iostat &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
     </item>
     
   </channel>

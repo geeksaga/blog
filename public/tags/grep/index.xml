@@ -1,22 +1,155 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>grep on Try to write anyway</title>
-    <link>http://geeksaga.com/tags/grep/</link>
-    <description>Recent content in grep on Try to write anyway</description>
+    <title>grep on Terminal</title>
+    <link>/tags/grep/</link>
+    <description>Recent content in grep on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/grep/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/grep/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>grep command</title>
-      <link>http://geeksaga.com/post/linux/command/2020-08-03-grep/</link>
+      <link>/post/linux/command/2020-08-03-grep/</link>
       <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/linux/command/2020-08-03-grep/</guid>
+      <guid>/post/linux/command/2020-08-03-grep/</guid>
       <description>linux의 grep은 파일 또는 표준 입력(Standard input)에 대해서 특정 패턴을 통해 검색 해주는 명령어 입니다.
 패턴에 대해서는 기본값으로 기본 정규 표현식(basic regular expression - BRE)을 지원 합니다.
 기본적인 사용 법은 다음과 같습니다.
 $&amp;gt; grep Usage: grep [OPTION]... PATTERN [FILE]... Try &amp;#39;grep --help&amp;#39; for more information. $&amp;gt; grep Error /var/log/syslog Aug 3 10:20:25 geeksaga org.a11y.Bus[4449]: ** (process:4467): WARNING **: Failed to register client: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .</description>
+      <content>&lt;p&gt;linux의 grep은 파일 또는 표준 입력(Standard input)에 대해서 특정 패턴을 통해 검색 해주는 명령어 입니다.&lt;/p&gt;
+&lt;p&gt;패턴에 대해서는 기본값으로 기본 정규 표현식(basic regular expression - BRE)을 지원 합니다.&lt;/p&gt;
+&lt;p&gt;기본적인 사용 법은 다음과 같습니다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; grep
+Usage: grep &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;OPTION&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;... PATTERN &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;FILE&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;...
+Try &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;grep --help&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; more information.
+
+$&amp;gt; grep Error /var/log/syslog
+Aug  &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; 10:20:25 geeksaga org.a11y.Bus&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;4449&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;: ** &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;process:4467&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;: WARNING **: Failed to register client: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+Aug  &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; 10:20:25 geeksaga org.freedesktop.systemd1&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;4449&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;: ** &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;process:4476&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;: WARNING **: cgmanager method call org.linuxcontainers.cgmanager0_0.MovePidAbs failed: GDBus.Error:org.freedesktop.DBus.Error.InvalidArgs: invalid request.  Use G_DBUS_DEBUG&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;message &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; more info.
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;표준 입력(Standard input)을 이용한 방법&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; dmesg | grep random
+&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;    0.000000&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; random: get_random_bytes called from start_kernel+0x99/0x51e with crng_init&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;    1.035100&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; random: systemd-udevd: uninitialized urandom read &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt; bytes read&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;    1.035156&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; random: systemd-udevd: uninitialized urandom read &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt; bytes read&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;    1.035164&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; random: systemd-udevd: uninitialized urandom read &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt; bytes read&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;    1.991103&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; random: fast init &lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;   45.515726&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; random: crng init &lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;   45.515727&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; random: &lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt; urandom warning&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; missed due to ratelimiting
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;help-grep&#34;&gt;help grep&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; grep --help
+Usage: grep &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;OPTION&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;... PATTERN &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;FILE&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;...
+Search &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; PATTERN in each FILE or standard input.
+PATTERN is, by default, a basic regular expression &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;BRE&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;.
+Example: grep -i &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;hello world&amp;#39;&lt;/span&gt; menu.h main.c
+
+Regexp selection and interpretation:
+  -E, --extended-regexp     PATTERN is an extended regular expression &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;ERE&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+  -F, --fixed-strings       PATTERN is a set of newline-separated strings
+  -G, --basic-regexp        PATTERN is a basic regular expression &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;BRE&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+  -P, --perl-regexp         PATTERN is a Perl regular expression
+  -e, --regexp&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;PATTERN      use PATTERN &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; matching
+  -f, --file&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;FILE           obtain PATTERN from FILE
+  -i, --ignore-case         ignore &lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt; distinctions
+  -w, --word-regexp         force PATTERN to match only whole words
+  -x, --line-regexp         force PATTERN to match only whole lines
+  -z, --null-data           a data line ends in &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; byte, not newline
+
+Miscellaneous:
+  -s, --no-messages         suppress error messages
+  -v, --invert-match        &lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; non-matching lines
+  -V, --version             display version information and exit
+      --help                display this help text and exit
+
+Output control:
+  -m, --max-count&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;NUM       stop after NUM matches
+  -b, --byte-offset         print the byte offset with output lines
+  -n, --line-number         print line number with output lines
+      --line-buffered       flush output on every line
+  -H, --with-filename       print the file name &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; each match
+  -h, --no-filename         suppress the file name prefix on output
+      --label&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;LABEL         use LABEL as the standard input file name prefix
+  -o, --only-matching       show only the part of a line matching PATTERN
+  -q, --quiet, --silent     suppress all normal output
+      --binary-files&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;TYPE   assume that binary files are TYPE;
+                            TYPE is &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;binary&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;text&amp;#39;&lt;/span&gt;, or &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;without-match&amp;#39;&lt;/span&gt;
+  -a, --text                equivalent to --binary-files&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;text
+  -I                        equivalent to --binary-files&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;without-match
+  -d, --directories&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;ACTION  how to handle directories;
+                            ACTION is &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;read&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;recurse&amp;#39;&lt;/span&gt;, or &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;skip&amp;#39;&lt;/span&gt;
+  -D, --devices&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;ACTION      how to handle devices, FIFOs and sockets;
+                            ACTION is &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;read&amp;#39;&lt;/span&gt; or &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;skip&amp;#39;&lt;/span&gt;
+  -r, --recursive           like --directories&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;recurse
+  -R, --dereference-recursive  likewise, but follow all symlinks
+      --include&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;FILE_PATTERN  search only files that match FILE_PATTERN
+      --exclude&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;FILE_PATTERN  skip files and directories matching FILE_PATTERN
+      --exclude-from&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;FILE   skip files matching any file pattern from FILE
+      --exclude-dir&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;PATTERN  directories that match PATTERN will be skipped.
+  -L, --files-without-match  print only names of FILEs containing no match
+  -l, --files-with-matches  print only names of FILEs containing matches
+  -c, --count               print only a count of matching lines per FILE
+  -T, --initial-tab         make tabs line up &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; needed&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+  -Z, --null                print &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; byte after FILE name
+
+Context control:
+  -B, --before-context&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;NUM  print NUM lines of leading context
+  -A, --after-context&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;NUM   print NUM lines of trailing context
+  -C, --context&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;NUM         print NUM lines of output context
+  -NUM                      same as --context&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;NUM
+      --color&lt;span style=&#34;color:#f92672&#34;&gt;[=&lt;/span&gt;WHEN&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;,
+      --colour&lt;span style=&#34;color:#f92672&#34;&gt;[=&lt;/span&gt;WHEN&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;       use markers to highlight the matching strings;
+                            WHEN is &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;always&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;never&amp;#39;&lt;/span&gt;, or &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;auto&amp;#39;&lt;/span&gt;
+  -U, --binary              &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt; not strip CR characters at EOL &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;MSDOS/Windows&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+  -u, --unix-byte-offsets   report offsets as &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; CRs were not there
+                            &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;MSDOS/Windows&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;egrep&amp;#39;&lt;/span&gt; means &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;grep -E&amp;#39;&lt;/span&gt;.  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;fgrep&amp;#39;&lt;/span&gt; means &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;grep -F&amp;#39;&lt;/span&gt;.
+Direct invocation as either &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;egrep&amp;#39;&lt;/span&gt; or &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;fgrep&amp;#39;&lt;/span&gt; is deprecated.
+When FILE is -, read standard input.  With no FILE, read . &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; a command-line
+-r is given, - otherwise.  If fewer than two FILEs are given, assume -h.
+Exit status is &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; any line is selected, &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; otherwise;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; any error occurs and -q is not given, the exit status is 2.
+
+Report bugs to: bug-grep@gnu.org
+GNU grep home page: &amp;lt;http://www.gnu.org/software/grep/&amp;gt;
+General help using GNU software: &amp;lt;http://www.gnu.org/gethelp/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;tldr-grep&#34;&gt;tldr grep&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; tldr grep
+
+  grep
+
+  Matches patterns in input text.
+  Supports simple patterns and regular expressions.
+
+  - Search &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; an exact string:
+    grep search_string path/to/file
+
+  - Search in &lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt;-insensitive mode:
+    grep -i search_string path/to/file
+
+  - Search recursively &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;ignoring non-text files&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; in current directory &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; an exact string:
+    grep -RI search_string .
+
+  - Use extended regular expressions &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;supporting ?, +, &lt;span style=&#34;color:#f92672&#34;&gt;{}&lt;/span&gt;, &lt;span style=&#34;color:#f92672&#34;&gt;()&lt;/span&gt; and |&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;:
+    grep -E ^regex$ path/to/file
+
+  - Print &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; lines of &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;C&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;ontext around, &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;B&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;efore, or &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;A&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;fter each match:
+    grep -C|B|A &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; search_string path/to/file
+
+  - Print file name with the corresponding line number &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; each match:
+    grep -Hn search_string path/to/file
+
+  - Use the standard input instead of a file:
+    cat path/to/file | grep search_string
+
+  - Invert match &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; excluding specific strings:
+    grep -v search_string
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;참고-링크&#34;&gt;참고 링크&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://man7.org/linux/man-pages/man1/grep.1.html&#34; title=&#34;grep man-page&#34;&gt;man7 man grep&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
     </item>
     
   </channel>

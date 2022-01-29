@@ -1,21 +1,67 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>pgrep on Try to write anyway</title>
-    <link>http://geeksaga.com/tags/pgrep/</link>
-    <description>Recent content in pgrep on Try to write anyway</description>
+    <title>pgrep on Terminal</title>
+    <link>/tags/pgrep/</link>
+    <description>Recent content in pgrep on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/pgrep/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/pgrep/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>pgrep</title>
-      <link>http://geeksaga.com/post/linux/command/2020-04-27-pgrep/</link>
+      <link>/post/linux/command/2020-04-27-pgrep/</link>
       <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/linux/command/2020-04-27-pgrep/</guid>
+      <guid>/post/linux/command/2020-04-27-pgrep/</guid>
       <description>linux 의 pgrep 명령어는 확장 정규 표현식 패턴으로 모든 프로세스의 이름을 검색할 수 있으며 기본적으로 프로세스 ID를 반환한다.
 기본 사용법은 다음과 같다.
 λ pgrep zsh 1353 1541 Usage: pgrep [options] &amp;lt;pattern&amp;gt; Options: -d, --delimiter &amp;lt;string&amp;gt; specify output delimiter -l, --list-name list PID and process name -a, --list-full list PID and full command line -v, --inverse negates the matching -w, --lightweight list all TID -c, --count count of matching processes -f, --full use full process name to match -g, --pgroup &amp;lt;PGID,.</description>
+      <content>&lt;p&gt;linux 의 pgrep 명령어는 확장 정규 표현식 패턴으로 모든 프로세스의 이름을 검색할 수 있으며 기본적으로 프로세스 ID를 반환한다.&lt;/p&gt;
+&lt;p&gt;기본 사용법은 다음과 같다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;λ pgrep zsh
+&lt;span style=&#34;color:#ae81ff&#34;&gt;1353&lt;/span&gt;
+&lt;span style=&#34;color:#ae81ff&#34;&gt;1541&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;Usage:
+ pgrep &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;options&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &amp;lt;pattern&amp;gt;
+
+Options:
+ -d, --delimiter &amp;lt;string&amp;gt;  specify output delimiter
+ -l, --list-name           list PID and process name
+ -a, --list-full           list PID and full command line
+ -v, --inverse             negates the matching
+ -w, --lightweight         list all TID
+ -c, --count               count of matching processes
+ -f, --full                use full process name to match
+ -g, --pgroup &amp;lt;PGID,...&amp;gt;   match listed process group IDs
+ -G, --group &amp;lt;GID,...&amp;gt;     match real group IDs
+ -n, --newest              &lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; most recently started
+ -o, --oldest              &lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; least recently started
+ -P, --parent &amp;lt;PPID,...&amp;gt;   match only child processes of the given parent
+ -s, --session &amp;lt;SID,...&amp;gt;   match session IDs
+ -t, --terminal &amp;lt;tty,...&amp;gt;  match by controlling terminal
+ -u, --euid &amp;lt;ID,...&amp;gt;       match by effective IDs
+ -U, --uid &amp;lt;ID,...&amp;gt;        match by real IDs
+ -x, --exact               match exactly with the command name
+ -F, --pidfile &amp;lt;file&amp;gt;      read PIDs from file
+ -L, --logpidfile          fail &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; PID file is not locked
+ --ns &amp;lt;PID&amp;gt;                match the processes that belong to the same
+                           namespace as &amp;lt;pid&amp;gt;
+ --nslist &amp;lt;ns,...&amp;gt;         list which namespaces will be considered &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt;
+                           the --ns option.
+                           Available namespaces: ipc, mnt, net, pid, user, uts
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;비슷한-커맨드&#34;&gt;비슷한 커맨드&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;pidof&lt;/li&gt;
+&lt;li&gt;ps&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;링크&#34;&gt;링크&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://linux.die.net/man/1/pgrep&#34; title=&#34;pgrep&#34;&gt;pgrep Linux man page&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
     </item>
     
   </channel>

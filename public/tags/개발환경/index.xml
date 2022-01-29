@@ -1,61 +1,204 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>개발환경 on Try to write anyway</title>
-    <link>http://geeksaga.com/tags/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/</link>
-    <description>Recent content in 개발환경 on Try to write anyway</description>
+    <title>개발환경 on Terminal</title>
+    <link>/tags/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/</link>
+    <description>Recent content in 개발환경 on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Apr 2017 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Apr 2017 00:00:00 +0000</lastBuildDate><atom:link href="/tags/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker 설치</title>
-      <link>http://geeksaga.com/post/docker/2017-04-25-docker-install/</link>
+      <link>/post/docker/2017-04-25-docker-install/</link>
       <pubDate>Tue, 25 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/docker/2017-04-25-docker-install/</guid>
+      <guid>/post/docker/2017-04-25-docker-install/</guid>
       <description>Docker 설치 설치 환경 : Mint 17 (Ubuntu)
 $&amp;gt; sudo apt-get install docker.io $&amp;gt; sudo apt-get install docker.io Reading package lists... Done Building dependency tree Reading state information... Done The following package was automatically installed and is no longer required: python3-pyqt4 Use &amp;#39;apt-get autoremove&amp;#39; to remove it. Suggested packages: btrfs-tools debootstrap lxc rinse Recommended packages: aufs-tools The following packages will be REMOVED: docker-engine The following NEW packages will be installed: docker.</description>
+      <content>&lt;h3 id=&#34;docker-설치&#34;&gt;Docker 설치&lt;/h3&gt;
+&lt;p&gt;설치 환경 : Mint 17 (Ubuntu)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;$&amp;gt; sudo apt&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;get install docker&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;io&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;$&amp;gt; sudo apt&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;get install docker&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;io
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Reading&lt;/span&gt; package lists&lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;Done&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Building&lt;/span&gt; dependency tree       
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Reading&lt;/span&gt; state information&lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;Done&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;The&lt;/span&gt; following package was automatically installed &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; is no longer &lt;span style=&#34;color:#e6db74&#34;&gt;required&lt;/span&gt;:
+  python3&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;pyqt4
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Use&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;apt-get autoremove&amp;#39;&lt;/span&gt; to remove it&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Suggested&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;packages&lt;/span&gt;:
+  btrfs&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;tools debootstrap lxc rinse
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Recommended&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;packages&lt;/span&gt;:
+  aufs&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;tools
+&lt;span style=&#34;color:#66d9ef&#34;&gt;The&lt;/span&gt; following packages will be &lt;span style=&#34;color:#e6db74&#34;&gt;REMOVED&lt;/span&gt;:
+  docker&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;engine
+&lt;span style=&#34;color:#66d9ef&#34;&gt;The&lt;/span&gt; following &lt;span style=&#34;color:#66d9ef&#34;&gt;NEW&lt;/span&gt; packages will be &lt;span style=&#34;color:#e6db74&#34;&gt;installed&lt;/span&gt;:
+  docker&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;io
+&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; upgraded, &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; newly installed, &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; to remove &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;32&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;not&lt;/span&gt; upgraded&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Need&lt;/span&gt; to get &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; B&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;749&lt;/span&gt; kB of archives&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;After&lt;/span&gt; this operation, &lt;span style=&#34;color:#ae81ff&#34;&gt;55&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;MB&lt;/span&gt; disk space will be freed&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Do&lt;/span&gt; you want to continue? &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Y&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;n&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; 
+(&lt;span style=&#34;color:#66d9ef&#34;&gt;Reading&lt;/span&gt; database &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;184935&lt;/span&gt; files &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; directories currently installed&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;)
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Removing&lt;/span&gt; docker&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;engine (&lt;span style=&#34;color:#ae81ff&#34;&gt;17&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;04&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;ce&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;ubuntu&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;trusty) &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;
+docker stop&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;waiting
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Processing&lt;/span&gt; triggers &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; man&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;db (&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;ubuntu1) &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Selecting&lt;/span&gt; previously unselected package docker&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;io&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;
+(&lt;span style=&#34;color:#66d9ef&#34;&gt;Reading&lt;/span&gt; database &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;184733&lt;/span&gt; files &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; directories currently installed&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;)
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Preparing&lt;/span&gt; to unpack &lt;span style=&#34;color:#f92672&#34;&gt;.../&lt;/span&gt;docker&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;io_1&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;dfsg1&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;ubuntu4&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;14&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;04&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;_amd64&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;deb &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Unpacking&lt;/span&gt; docker&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;io (&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;dfsg1&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;ubuntu4&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;14&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;04&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Processing&lt;/span&gt; triggers &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; man&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;db (&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;7&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;ubuntu1) &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Processing&lt;/span&gt; triggers &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; ureadahead (&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Setting&lt;/span&gt; up docker&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;io (&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;dfsg1&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;ubuntu4&lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;14&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;04&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Installing&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; version of config file &lt;span style=&#34;color:#e6db74&#34;&gt;/etc/ini&lt;/span&gt;t&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;d&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;docker &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Installing&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; version of config file &lt;span style=&#34;color:#e6db74&#34;&gt;/etc/&lt;/span&gt;bash_completion&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;d&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;docker &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Installing&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; version of config file &lt;span style=&#34;color:#e6db74&#34;&gt;/etc/&lt;/span&gt;default&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;docker &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Installing&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; version of config file &lt;span style=&#34;color:#e6db74&#34;&gt;/etc/ini&lt;/span&gt;t&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;docker&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;conf &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;
+docker start&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;running, process &lt;span style=&#34;color:#ae81ff&#34;&gt;2405&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Processing&lt;/span&gt; triggers &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; ureadahead (&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;16&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.docker.com/engine/installation/&#34;&gt;https://docs.docker.com/engine/installation/&lt;/a&gt;&lt;/p&gt;
+</content>
     </item>
     
     <item>
       <title>Docker 옵션</title>
-      <link>http://geeksaga.com/post/docker/2017-04-25-docker-options/</link>
+      <link>/post/docker/2017-04-25-docker-options/</link>
       <pubDate>Tue, 25 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/docker/2017-04-25-docker-options/</guid>
+      <guid>/post/docker/2017-04-25-docker-options/</guid>
       <description>Docker 옵션 $&amp;gt; docker docker info Containers: 1 Images: 3 Storage Driver: aufs Root Dir: /var/lib/docker/aufs Backing Filesystem: extfs Dirs: 5 Dirperm1 Supported: false Execution Driver: native-0.2 Kernel Version: 3.13.0-24-generic Operating System: Ubuntu 14.04.3 LTS CPUs: 8 Total Memory: 15.56 GiB Name: geeksaga ID: LABC:D6KO:QT4K:WOXZ:YLE4:CPBY:DFM2:2SKJ:A6ZG:MTLJ:M6NC:ANFW WARNING: No swap limit support Docker 설정 파일 /etc/default/docker
 $&amp;gt; cat /etc/default/docker # Docker Upstart and SysVinit configuration file # Customize location of Docker binary (especially for development testing).</description>
+      <content>&lt;h3 id=&#34;docker-옵션&#34;&gt;Docker 옵션&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;$&amp;gt; docker docker info
+&lt;span style=&#34;color:#e6db74&#34;&gt;Containers&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;span style=&#34;color:#e6db74&#34;&gt;Images&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Storage&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;Driver&lt;/span&gt;: aufs
+ &lt;span style=&#34;color:#66d9ef&#34;&gt;Root&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;Dir&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;/var/&lt;/span&gt;lib&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;docker&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;aufs
+ &lt;span style=&#34;color:#66d9ef&#34;&gt;Backing&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;Filesystem&lt;/span&gt;: extfs
+ &lt;span style=&#34;color:#e6db74&#34;&gt;Dirs&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;
+ &lt;span style=&#34;color:#66d9ef&#34;&gt;Dirperm1&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;Supported&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Execution&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;Driver&lt;/span&gt;: native&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Kernel&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;Version&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;generic
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Operating&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;System&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;Ubuntu&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;14&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;04&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;LTS&lt;/span&gt;
+&lt;span style=&#34;color:#e6db74&#34;&gt;CPUs&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Total&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;Memory&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;56&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;GiB&lt;/span&gt;
+&lt;span style=&#34;color:#e6db74&#34;&gt;Name&lt;/span&gt;: geeksaga
+&lt;span style=&#34;color:#e6db74&#34;&gt;ID&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;LABC&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;D6KO&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;QT4K&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;WOXZ&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;YLE4&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;CPBY&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;DFM2&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;SKJ&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;A6ZG&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;MTLJ&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;M6NC&lt;/span&gt;:&lt;span style=&#34;color:#66d9ef&#34;&gt;ANFW&lt;/span&gt;
+&lt;span style=&#34;color:#e6db74&#34;&gt;WARNING&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;No&lt;/span&gt; swap limit support&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&#34;docker-설정-파일&#34;&gt;Docker 설정 파일&lt;/h3&gt;
+&lt;p&gt;/etc/default/docker&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;$&amp;gt; cat &lt;span style=&#34;color:#e6db74&#34;&gt;/etc/&lt;/span&gt;default&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;docker 
+&lt;span style=&#34;color:#75715e&#34;&gt;# Docker Upstart and SysVinit configuration file&lt;/span&gt;
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Customize location of Docker binary (especially for development testing).&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#DOCKER=&amp;#34;/usr/local/bin/docker&amp;#34;&lt;/span&gt;
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# Use DOCKER_OPTS to modify the daemon startup options.&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#DOCKER_OPTS=&amp;#34;--dns 8.8.8.8 --dns 8.8.4.4&amp;#34;&lt;/span&gt;
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# If you need Docker to use an HTTP proxy, it can also be specified here.&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#export http_proxy=&amp;#34;http://127.0.0.1:3128/&amp;#34;&lt;/span&gt;
+
+&lt;span style=&#34;color:#75715e&#34;&gt;# This is also a handy place to tweak where Docker&amp;#39;s temporary files go.&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#export TMPDIR=&amp;#34;/mnt/bigdrive/docker-tmp&amp;#34;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&#34;docker-image-경로-수정&#34;&gt;Docker Image 경로 수정&lt;/h3&gt;
+&lt;p&gt;Docker 설정 파일에 추가 다음 옵션 추가.&lt;/p&gt;
+&lt;p&gt;DOCKER_OPTS=&amp;quot;-g /home/docker&amp;quot;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;$&amp;gt; sudo stop docker
+docker stop&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;waiting
+$&amp;gt;  sudo start docker
+docker start&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;running, process &lt;span style=&#34;color:#ae81ff&#34;&gt;5832&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;$&amp;gt; docker docker info
+&lt;span style=&#34;color:#e6db74&#34;&gt;Containers&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;span style=&#34;color:#e6db74&#34;&gt;Images&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Storage&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;Driver&lt;/span&gt;: aufs
+ &lt;span style=&#34;color:#66d9ef&#34;&gt;Root&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;Dir&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;/home/&lt;/span&gt;docker&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;aufs
+ &lt;span style=&#34;color:#66d9ef&#34;&gt;Backing&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;Filesystem&lt;/span&gt;: extfs
+ &lt;span style=&#34;color:#e6db74&#34;&gt;Dirs&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;
+ &lt;span style=&#34;color:#66d9ef&#34;&gt;Dirperm1&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;Supported&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Execution&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;Driver&lt;/span&gt;: native&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Kernel&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;Version&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;13&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;generic
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Operating&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;System&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;Ubuntu&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;14&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;04&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;LTS&lt;/span&gt;
+&lt;span style=&#34;color:#e6db74&#34;&gt;CPUs&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Total&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;Memory&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;15&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;56&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;GiB&lt;/span&gt;
+&lt;span style=&#34;color:#e6db74&#34;&gt;Name&lt;/span&gt;: geeksaga
+&lt;span style=&#34;color:#e6db74&#34;&gt;ID&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;LABC&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;D6KO&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;QT4K&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;WOXZ&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;YLE4&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;CPBY&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;DFM2&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;SKJ&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;A6ZG&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;MTLJ&lt;/span&gt;:&lt;span style=&#34;color:#e6db74&#34;&gt;M6NC&lt;/span&gt;:&lt;span style=&#34;color:#66d9ef&#34;&gt;ANFW&lt;/span&gt;
+&lt;span style=&#34;color:#e6db74&#34;&gt;WARNING&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;No&lt;/span&gt; swap limit support&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</content>
     </item>
     
     <item>
       <title>git 설정</title>
-      <link>http://geeksaga.com/post/tools/2016-12-16-git-setting/</link>
+      <link>/post/tools/2016-12-16-git-setting/</link>
       <pubDate>Fri, 16 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/tools/2016-12-16-git-setting/</guid>
+      <guid>/post/tools/2016-12-16-git-setting/</guid>
       <description>git config git config --global user.name &amp;#34;name&amp;#34; git config --global user.email &amp;#34;email address&amp;#34; 사용중인 gitconfig 기본 설정(~/.gitconfig)
 [user] name = name email = email address [core] autocrlf = input eol = native [color] ui = auto [alias] tree = log --oneline --decorate --all --graph </description>
+      <content>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;git config
+git config &lt;span style=&#34;color:#f92672&#34;&gt;--&lt;/span&gt;global user&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;
+git config &lt;span style=&#34;color:#f92672&#34;&gt;--&lt;/span&gt;global user&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;email &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;email address&amp;#34;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;사용중인 gitconfig 기본 설정(~/.gitconfig)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;user&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+	name &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; name
+	email &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; email address
+&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;core&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+	autocrlf &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; input
+	eol &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; native
+&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;color&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+	ui &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; auto
+&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;alias&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+	tree &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; log &lt;span style=&#34;color:#f92672&#34;&gt;--&lt;/span&gt;oneline &lt;span style=&#34;color:#f92672&#34;&gt;--&lt;/span&gt;decorate &lt;span style=&#34;color:#f92672&#34;&gt;--&lt;/span&gt;all &lt;span style=&#34;color:#f92672&#34;&gt;--&lt;/span&gt;graph&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</content>
     </item>
     
     <item>
       <title>파이썬3 가상환경(venv) 설정</title>
-      <link>http://geeksaga.com/post/python/2016-12-16-python3-venv-setting/</link>
+      <link>/post/python/2016-12-16-python3-venv-setting/</link>
       <pubDate>Fri, 16 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/python/2016-12-16-python3-venv-setting/</guid>
+      <guid>/post/python/2016-12-16-python3-venv-setting/</guid>
       <description>Python virtualenv 를 사용하는 기본적인 목적은 프로젝트 별로 필요한 환경을 만들기 위해 사용한다.
 virtualenv 설정 하기 Linux 계열 환경에서 Python3 이 설치 되어있을 경우 가상환경 설정은 다음과 같은 순서로 진행한다. 설정은 사용자 홈 디렉토리 밑에 설정하는 것으로 한다.
 $&amp;gt; cd ~ $&amp;gt; mkdir dev_env $&amp;gt; python3 -m venv dev_env 설치된 가상환경을 이용하려면 해당 가상환경을 활성화해야 한다.
 $&amp;gt; source ~/dev_env/bin/activate 가상환경을 종료하려면 가상머신을 비활성화 한다.
 $&amp;gt; source ~/dev_env/bin/deactivate vritualenv 활용  virtualenv 환경에 설치된 package 목록 가져오기  $&amp;gt; pip freeze &amp;gt; requirements.</description>
+      <content>&lt;p&gt;Python virtualenv 를 사용하는 기본적인 목적은 프로젝트 별로 필요한 환경을 만들기 위해 사용한다.&lt;/p&gt;
+&lt;h3 id=&#34;virtualenv-설정-하기&#34;&gt;virtualenv 설정 하기&lt;/h3&gt;
+&lt;p&gt;Linux 계열 환경에서 Python3 이 설치 되어있을 경우 가상환경 설정은 다음과 같은 순서로 진행한다.
+설정은 사용자 홈 디렉토리 밑에 설정하는 것으로 한다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;$&amp;gt; cd &lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;
+$&amp;gt; mkdir dev_env
+$&amp;gt; python3 &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;m venv dev_env&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;설치된 가상환경을 이용하려면 해당 가상환경을 활성화해야 한다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;$&amp;gt; source &lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;/dev_env/&lt;/span&gt;bin&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;activate&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;가상환경을 종료하려면 가상머신을 비활성화 한다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;$&amp;gt; source &lt;span style=&#34;color:#f92672&#34;&gt;~&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;/dev_env/&lt;/span&gt;bin&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;deactivate&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&#34;vritualenv-활용&#34;&gt;vritualenv 활용&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;virtualenv 환경에 설치된 package 목록 가져오기&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;$&amp;gt; pip freeze &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; requirements&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;txt &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;freeze 옵션을 사용하면 현재 가상환경에 설치된 package 이름과 버전이 출력된다.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;click&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Flask&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+itsdangerous&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Jinja2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;MarkupSafe&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;23&lt;/span&gt;
+newrelic&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;76&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;55&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;Werkzeug&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt;
+wheel&lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;24&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;새로운 virtualenv 환경에 필요한 package 설치하기&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ruby&#34; data-lang=&#34;ruby&#34;&gt;$&amp;gt; pip install &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;r requirements&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;txt&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</content>
     </item>
     
     <item>
       <title>파이썬 설치 및 설정</title>
-      <link>http://geeksaga.com/post/python/2016-12-15-python-install/</link>
+      <link>/post/python/2016-12-15-python-install/</link>
       <pubDate>Thu, 15 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/python/2016-12-15-python-install/</guid>
+      <guid>/post/python/2016-12-15-python-install/</guid>
       <description>python3 install for ubunto linux
 apt-get install build-essential libbz2-dev libsqlite3-dev sqlite3
 wget http://python.org/ftp/python/3.4.1/Python-3.4.1.tgz tar -xvzf Python-3.4.1.tgz cd Python-3.4.1
@@ -65,6 +208,24 @@ vi Modules/Setup.dist 213/SSL
 wget https://pypi.python.org/packages/2.7/s/setuptools/setuptools-0.6c11-py2.7.egg#md5=fe1f997bc722265116870bc7919059ea sudo sh setuptools-0.6c11-py2.7.egg
 curl -O https://raw.github.com/pypa/pip/master/contrib/get-pip.py sudo python get-pip.py
 ./configure &amp;ndash;prefix=$PYTHON_HOME make make test make install</description>
+      <content>&lt;p&gt;python3 install for ubunto linux&lt;/p&gt;
+&lt;p&gt;apt-get install build-essential libbz2-dev libsqlite3-dev sqlite3&lt;/p&gt;
+&lt;p&gt;wget &lt;a href=&#34;http://python.org/ftp/python/3.4.1/Python-3.4.1.tgz&#34;&gt;http://python.org/ftp/python/3.4.1/Python-3.4.1.tgz&lt;/a&gt;
+tar -xvzf Python-3.4.1.tgz
+cd Python-3.4.1&lt;/p&gt;
+&lt;p&gt;sudo apt-get install build-essential
+sudo apt-get install libreadline-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev&lt;/p&gt;
+&lt;p&gt;./configure -with-zlib=/usr/include &amp;ndash;prefix=/opt/python3.4.1 &amp;ndash;enable-shared&lt;/p&gt;
+&lt;p&gt;vi Modules/Setup.dist  213/SSL&lt;/p&gt;
+&lt;p&gt;wget &lt;a href=&#34;https://pypi.python.org/packages/2.7/s/setuptools/setuptools-0.6c11-py2.7.egg#md5=fe1f997bc722265116870bc7919059ea&#34;&gt;https://pypi.python.org/packages/2.7/s/setuptools/setuptools-0.6c11-py2.7.egg#md5=fe1f997bc722265116870bc7919059ea&lt;/a&gt;
+sudo sh setuptools-0.6c11-py2.7.egg&lt;/p&gt;
+&lt;p&gt;curl -O &lt;a href=&#34;https://raw.github.com/pypa/pip/master/contrib/get-pip.py&#34;&gt;https://raw.github.com/pypa/pip/master/contrib/get-pip.py&lt;/a&gt;
+sudo python get-pip.py&lt;/p&gt;
+&lt;p&gt;./configure &amp;ndash;prefix=$PYTHON_HOME
+make
+make test
+make install&lt;/p&gt;
+</content>
     </item>
     
   </channel>

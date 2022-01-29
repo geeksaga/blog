@@ -1,20 +1,185 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>netstat on Try to write anyway</title>
-    <link>http://geeksaga.com/tags/netstat/</link>
-    <description>Recent content in netstat on Try to write anyway</description>
+    <title>netstat on Terminal</title>
+    <link>/tags/netstat/</link>
+    <description>Recent content in netstat on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/netstat/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/netstat/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>netstat command</title>
-      <link>http://geeksaga.com/post/linux/command/2020-08-18-netstat/</link>
+      <link>/post/linux/command/2020-08-18-netstat/</link>
       <pubDate>Tue, 18 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/linux/command/2020-08-18-netstat/</guid>
+      <guid>/post/linux/command/2020-08-18-netstat/</guid>
       <description>linux의 netstat 명령어를 통해 현재 연결된 네트워크 상태, 라우팅 테이블, 인터페이스 상태, IP Masquerade, 멀티캐스트 멤버쉽 등을 확인 할 수 있습니다.
 기본 사용법 $&amp;gt; netstat Active Internet connections (w/o servers) Proto Recv-Q Send-Q Local Address Foreign Address State tcp 0 0 192.168.0.50:38608 nrt20s21-in-f10.1:https ESTABLISHED ... Active UNIX domain sockets (w/o servers) Proto RefCnt Flags Type State I-Node Path unix 2 [ ] DGRAM 34946 /run/user/1000/systemd/notify unix 3 [ ] DGRAM 19785 /run/systemd/notify unix 3 [ ] SEQPACKET CONNECTED 238454 @0002d .</description>
+      <content>&lt;p&gt;linux의 &lt;code&gt;netstat&lt;/code&gt; 명령어를 통해 현재 연결된 네트워크 상태, 라우팅 테이블,
+인터페이스 상태, IP Masquerade, 멀티캐스트 멤버쉽 등을 확인 할 수 있습니다.&lt;/p&gt;
+&lt;h2 id=&#34;기본-사용법&#34;&gt;기본 사용법&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; netstat
+Active Internet connections &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;w/o servers&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+Proto Recv-Q Send-Q Local Address           Foreign Address         State
+tcp        &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;      &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; 192.168.0.50:38608      nrt20s21-in-f10.1:https ESTABLISHED
+...
+Active UNIX domain sockets &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;w/o servers&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+Proto RefCnt Flags       Type       State         I-Node   Path
+unix  &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;         DGRAM                    &lt;span style=&#34;color:#ae81ff&#34;&gt;34946&lt;/span&gt;    /run/user/1000/systemd/notify
+unix  &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;         DGRAM                    &lt;span style=&#34;color:#ae81ff&#34;&gt;19785&lt;/span&gt;    /run/systemd/notify
+unix  &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;         SEQPACKET  CONNECTED     &lt;span style=&#34;color:#ae81ff&#34;&gt;238454&lt;/span&gt;   @0002d
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;출력된 정보는 다음과 같습니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Active Internet Connections&lt;/code&gt; : TCP, UDP, RAW로 연결된 목록
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Proto&lt;/code&gt;           : 프로토콜&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Recv-Q&lt;/code&gt;          : 소켓에 연결된 사용자 프로그램에서 복사하지 않는 받은 바이트 수&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Send-Q&lt;/code&gt;          : 원격 호스트에서 승인하지 않은 바이트 수&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Local Address&lt;/code&gt;   : 로컬 주소와 포트 번호&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Foreign Address&lt;/code&gt; : 원격 주소와 포트 번호&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;-n(--numeric)&lt;/code&gt; 옵션을 사용하지 않으면 소켓 주소는 표준 호스트 이름(FQDN)으로 확장되고
+포트 번호는 해당 서비스 이름으로 변환된다&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;State&lt;/code&gt;           : 소켓 상태&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ESTABLISHED&lt;/code&gt; : 소켓이 연결된 상태&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SYN_SENT&lt;/code&gt;    : 소켓이 연결을 시도하고 있는 상태&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SYN_RECV&lt;/code&gt;    : 네트워크 연결 요청을 받은 상태&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;FIN_WAIT1&lt;/code&gt;   : 소켓이 닫히고 연결이 종료되고 있는 상태&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;FIN_WAIT2&lt;/code&gt;   : 연결이 닫히고 소켓이 원격으로부터 종료를 기다리는 상태&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;TIME_WAIT&lt;/code&gt;   : 연결 종료후 소켓이 네트워크에 있는 패킷을 처리하기 위해 대기중인 상태&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CLOSE&lt;/code&gt;       : 소켓이 사용되지 않는 상태&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CLOSE_WAIT&lt;/code&gt;  : 종료 대기중인 상태&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;LAST_ACK&lt;/code&gt;    : 원격 연결 종료 요구 승인을 기다리는 상태&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;LISTEN&lt;/code&gt;      : 연결요청에 대한 응답준비가 되어 있는 상태&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CLOSING&lt;/code&gt;     : 두 소켓이 모두 종료되었지만 모든 데이터가 전송되지 않는 상태(메시지 유실 상태)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;UNKNOWN&lt;/code&gt;     : 소켓 상태를 알 수 없음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Active UNIX domain sockets (w/o servers)&lt;/code&gt; : 도메인 소켓으로 연결된 목록&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Proto&lt;/code&gt;  : 프로토콜&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RefCnt&lt;/code&gt; : 참조 숫자&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Flags&lt;/code&gt;  : 표시되는 플래그는 ACC(SO_ACCEPTON), W(SO_WAITDATA), N(SO_NOSPACE)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Type&lt;/code&gt;   : 소켓 액세스 유형
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;SOCK_DGRAM&lt;/code&gt;     : 소켓이 Datagram(연결없는) 모드에 사용&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SOCK_STREAM&lt;/code&gt;    : Stream(연결) 소켓&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SOCK_RAW&lt;/code&gt;       : RAW 소켓&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SOCK_RDM&lt;/code&gt;       : 안정적으로 전달 된 메시지&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SOCK_SEQPACKET&lt;/code&gt; : 순차 패킷 소켓&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SOCK_PACKET&lt;/code&gt;    : RAW 인터페이스 액세스 소켓&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;UNKNOWN&lt;/code&gt;        : 모름&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;State&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;FREE&lt;/code&gt;          : 할당되지 않은 소켓&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;LISTENING&lt;/code&gt;     : 연결 요청에 대한 응답 준비가 되어 있는 상태&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CONNECTING&lt;/code&gt;    : 연결중인 상태&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CONNECTED&lt;/code&gt;     : 연결된 상태&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;DISCONNECTING&lt;/code&gt; : 연결이 해제되고 있는 상태&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;(empty)&lt;/code&gt;       : 소켓이 다른 소켓에 연결되어 있지 않은 상태&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;UNKNOWN&lt;/code&gt;       : 절대로 나와서는 안되는 상태&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;I-Node&lt;/code&gt; : 아이노드&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Path&lt;/code&gt;   : 소켓에 연결된 해당 프로세스의 경로&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tldr&#34;&gt;TLDR&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; tldr netstat
+
+  netstat
+
+  Displays network-related information such as open connections, open socket ports, etc.
+
+  - List all ports:
+    netstat -a
+
+  - List all listening ports:
+    netstat -l
+
+  - List listening TCP ports:
+    netstat -t
+
+  - Display PID and program names:
+    netstat -p
+
+  - List information continuously:
+    netstat -c
+
+  - List routes and &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt; not resolve IP to hostname:
+    netstat -rn
+
+  - List listening TCP and UDP ports &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;+ user and process &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; you&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;#39;&lt;/span&gt;re root&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;:
+    netstat -lepunt
+
+  - Print the routing table:
+    netstat -nr
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;활용&#34;&gt;활용&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; netstat -anp
+&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+Active Internet connections &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;servers and established&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;      &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; 0.0.0.0:8009            0.0.0.0:*               LISTEN      25272/java
+...
+Active UNIX domain sockets &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;servers and established&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+Proto RefCnt Flags       Type       State         I-Node   PID/Program name    Path
+unix  &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;         DGRAM                    &lt;span style=&#34;color:#ae81ff&#34;&gt;34946&lt;/span&gt;    2800/systemd        /run/user/1000/systemd/notify
+unix  &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt; ACC &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;     STREAM     LISTENING     &lt;span style=&#34;color:#ae81ff&#34;&gt;34947&lt;/span&gt;    2800/systemd        /run/user/1000/systemd/private
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;help&#34;&gt;Help&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; netstat --help
+usage: netstat &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-vWeenNcCF&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&amp;lt;Af&amp;gt;&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; -r         netstat &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;-V|--version|-h|--help&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+       netstat &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-vWnNcaeol&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;&amp;lt;Socket&amp;gt; ...&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+       netstat &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-vWeenNac&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; -i | &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-cWnNe&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; -M | -s &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+
+        -r, --route              display routing table
+        -i, --interfaces         display interface table
+        -g, --groups             display multicast group memberships
+        -s, --statistics         display networking statistics &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;like SNMP&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+        -M, --masquerade         display masqueraded connections
+
+        -v, --verbose            be verbose
+        -W, --wide               don&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;t truncate IP addresses
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        -n, --numeric            don&amp;#39;&lt;/span&gt;t resolve names
+        --numeric-hosts          don&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;t resolve host names
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        --numeric-ports          don&amp;#39;&lt;/span&gt;t resolve port names
+        --numeric-users          don&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;t resolve user names
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        -N, --symbolic           resolve hardware names
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        -e, --extend             display other/more information
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        -p, --programs           display PID/Program name for sockets
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        -c, --continuous         continuous listing
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        -l, --listening          display listening server sockets
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        -a, --all, --listening   display all sockets (default: connected)
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        -o, --timers             display timers
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        -F, --fib                display Forwarding Information Base (default)
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;        -C, --cache              display routing cache instead of FIB
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  &amp;lt;Socket&amp;gt;={-t|--tcp} {-u|--udp} {-w|--raw} {-x|--unix} --ax25 --ipx --netrom
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  &amp;lt;AF&amp;gt;=Use &amp;#39;&lt;/span&gt;-6|-4&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39; or &amp;#39;&lt;/span&gt;-A &amp;lt;af&amp;gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39; or &amp;#39;&lt;/span&gt;--&amp;lt;af&amp;gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;#39;&lt;/span&gt;; default: inet
+  List of possible address families &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;which support routing&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;:
+    inet &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;DARPA Internet&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; inet6 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;IPv6&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; ax25 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;AMPR AX.25&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; 
+    netrom &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;AMPR NET/ROM&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; ipx &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Novell IPX&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; ddp &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Appletalk DDP&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; 
+    x25 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;CCITT X.25&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;참고&#34;&gt;참고&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.linuxlab.co.kr/docs/5-4.htm&#34; title=&#34;IP Masquerade&#34;&gt;IP Masquerade&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Inode&#34; title=&#34;I-Node&#34;&gt;I-Node&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;}&lt;/li&gt;
+&lt;/ul&gt;
+</content>
     </item>
     
   </channel>

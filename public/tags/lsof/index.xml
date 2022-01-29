@@ -1,20 +1,111 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>lsof on Try to write anyway</title>
-    <link>http://geeksaga.com/tags/lsof/</link>
-    <description>Recent content in lsof on Try to write anyway</description>
+    <title>lsof on Terminal</title>
+    <link>/tags/lsof/</link>
+    <description>Recent content in lsof on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://geeksaga.com/tags/lsof/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/lsof/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>lsof command</title>
-      <link>http://geeksaga.com/post/linux/command/2020-09-09-lsof/</link>
+      <link>/post/linux/command/2020-09-09-lsof/</link>
       <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://geeksaga.com/post/linux/command/2020-09-09-lsof/</guid>
+      <guid>/post/linux/command/2020-09-09-lsof/</guid>
       <description>linux의 lsof 명령어는 열려 있는 파일과 해당하는 프로세스 목록을 보여줍니다.
 기본 사용법 $&amp;gt; lsof COMMAND PID TID USER FD TYPE DEVICE SIZE/OFF NODE NAME ... chrome 687 geeksaga 15r CHR 1,9 0t0 11 /dev/urandom chrome 687 geeksaga 16r FIFO 0,12 0t0 114907104 pipe chrome 687 geeksaga 17w FIFO 0,12 0t0 114907104 pipe chrome 687 geeksaga 18u unix 0x0000000000000000 0t0 114913656 type=STREAM chrome 687 geeksaga 19u unix 0x0000000000000000 0t0 66804623 type=SEQPACKET .</description>
+      <content>&lt;p&gt;linux의 &lt;code&gt;lsof&lt;/code&gt; 명령어는 열려 있는 파일과 해당하는 프로세스 목록을 보여줍니다.&lt;/p&gt;
+&lt;h2 id=&#34;기본-사용법&#34;&gt;기본 사용법&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; lsof
+COMMAND     PID   TID   USER   FD      TYPE             DEVICE   SIZE/OFF       NODE NAME
+...
+chrome      &lt;span style=&#34;color:#ae81ff&#34;&gt;687&lt;/span&gt;        geeksaga 15r      CHR                1,9        0t0         &lt;span style=&#34;color:#ae81ff&#34;&gt;11&lt;/span&gt; /dev/urandom
+chrome      &lt;span style=&#34;color:#ae81ff&#34;&gt;687&lt;/span&gt;        geeksaga 16r     FIFO               0,12        0t0  &lt;span style=&#34;color:#ae81ff&#34;&gt;114907104&lt;/span&gt; pipe
+chrome      &lt;span style=&#34;color:#ae81ff&#34;&gt;687&lt;/span&gt;        geeksaga 17w     FIFO               0,12        0t0  &lt;span style=&#34;color:#ae81ff&#34;&gt;114907104&lt;/span&gt; pipe
+chrome      &lt;span style=&#34;color:#ae81ff&#34;&gt;687&lt;/span&gt;        geeksaga 18u     unix 0x0000000000000000        0t0  &lt;span style=&#34;color:#ae81ff&#34;&gt;114913656&lt;/span&gt; type&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;STREAM
+chrome      &lt;span style=&#34;color:#ae81ff&#34;&gt;687&lt;/span&gt;        geeksaga 19u     unix 0x0000000000000000        0t0   &lt;span style=&#34;color:#ae81ff&#34;&gt;66804623&lt;/span&gt; type&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;SEQPACKET
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;응용&#34;&gt;응용&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;특정 포트를 사용하고 있는 프로세스 검색&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; lsof -i :8081
+COMMAND    PID   USER   FD   TYPE    DEVICE SIZE/OFF NODE NAME
+qemu-syst &lt;span style=&#34;color:#ae81ff&#34;&gt;3805&lt;/span&gt; geeksaga 155u  IPv4 &lt;span style=&#34;color:#ae81ff&#34;&gt;140089534&lt;/span&gt;      0t0  TCP localhost:33874-&amp;gt;localhost:tproxy &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;ESTABLISHED&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+node      &lt;span style=&#34;color:#ae81ff&#34;&gt;3846&lt;/span&gt; geeksaga  21u  IPv6 &lt;span style=&#34;color:#ae81ff&#34;&gt;139672765&lt;/span&gt;      0t0  TCP *:tproxy &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;LISTEN&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+node      &lt;span style=&#34;color:#ae81ff&#34;&gt;3846&lt;/span&gt; geeksaga  51u  IPv6 &lt;span style=&#34;color:#ae81ff&#34;&gt;140096143&lt;/span&gt;      0t0  TCP localhost:tproxy-&amp;gt;localhost:33916 &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;ESTABLISHED&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;tldr&#34;&gt;TLDR&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; tldr lsof
+
+  lsof
+
+  Lists open files and the corresponding processes.
+  Note: Root privileges &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;or sudo&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; is required to list files opened by others.
+
+  - Find the processes that have a given file open:
+    lsof path/to/file
+
+  - Find the process that opened a local internet port:
+    lsof -i :port
+
+  - Only output the process ID &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;PID&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;:
+    lsof -t path/to/file
+
+  - List files opened by the given user:
+    lsof -u username
+
+  - List files opened by the given command or process:
+    lsof -c process_or_command_name
+
+  - List files opened by a specific process, given its PID:
+    lsof -p PID
+
+  - List open files in a directory:
+    lsof +D path/to/directory
+
+  - Find the process that is listening on a local TCP port:
+    lsof -iTCP:port -sTCP:LISTEN
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;help&#34;&gt;Help&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;$&amp;gt; lsof --help
+lsof 4.89
+ latest revision: ftp://lsof.itap.purdue.edu/pub/tools/unix/lsof/
+ latest FAQ: ftp://lsof.itap.purdue.edu/pub/tools/unix/lsof/FAQ
+ latest man page: ftp://lsof.itap.purdue.edu/pub/tools/unix/lsof/lsof_man
+ usage: &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-?abhKlnNoOPRtUvVX&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+|-c c&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+|-d s&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+D D&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+|-E&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+|-e s&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+|-f&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;gG&lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt;
+ &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-F &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;f&lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-g &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-i &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;i&lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+|-L &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+m &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;m&lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+|-M&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-o &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;o&lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-p s&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+ &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+|-r &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;t&lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-s &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;p:s&lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-S &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;t&lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-T &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;t&lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-u s&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;+|-w&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;-x &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;fl&lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;--&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;names&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+Defaults in parentheses; comma-separated set &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; items; dash-separated ranges.
+  -?|-h list help          -a AND selections &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;OR&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;     -b avoid kernel blocks
+  -c c  cmd c ^c /c/&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;bix&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;  +c w  COMMAND width &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;9&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;    +d s  dir s files
+  -d s  &lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; by FD set   +D D  dir D tree *SLOW?*   +|-e s  exempt s *RISKY*
+  -i &lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; IPv&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;46&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; files  -K list tasKs &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;threads&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;    -l list UID numbers
+  -n no host names         -N &lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; NFS files        -o list file offset
+  -O no overhead *RISKY*   -P no port names           -R list paRent PID
+  -s list file size        -t terse listing           -T disable TCP/TPI info
+  -U &lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; Unix socket    -v list version info       -V verbose search
+  +|-w  Warnings &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;+&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;       -X skip TCP&amp;amp;UDP* files     -Z Z  context &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;Z&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+  -- end option scan     
+  -E display endpoint info              +E display endpoint info and files
+  +f|-f  +filesystem or -file names     +|-f&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;gG&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; flaGs 
+  -F &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;f&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; fields; -F? &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; help  
+  +|-L &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;l&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; list &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;+&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; suppress &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;-&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; link counts &amp;lt; l &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;0 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; all; default &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 0&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+                                        +m &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;m&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; use|create mount supplement
+  +|-M   portMap registration &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;-&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;       -o o   o 0t offset digits &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;8&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+  -p s   exclude&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;^&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;|&lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; PIDs         -S &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;t&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; t second stat timeout &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;15&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+  -T qs TCP/TPI Q,St &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; info
+  -g &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; exclude&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;^&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;|&lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; and print process group IDs
+  -i i   &lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; by IPv&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;46&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; address: &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;46&lt;span style=&#34;color:#f92672&#34;&gt;][&lt;/span&gt;proto&lt;span style=&#34;color:#f92672&#34;&gt;][&lt;/span&gt;@host|addr&lt;span style=&#34;color:#f92672&#34;&gt;][&lt;/span&gt;:svc_list|port_list&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
+  +|-r &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;t&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;m&amp;lt;fmt&amp;gt;&lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt; repeat every t seconds &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;15&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;;  + &lt;span style=&#34;color:#66d9ef&#34;&gt;until&lt;/span&gt; no files, - forever.
+       An optional suffix to t is m&amp;lt;fmt&amp;gt;; m must separate t from &amp;lt;fmt&amp;gt; and
+      &amp;lt;fmt&amp;gt; is an strftime&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;3&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; format &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; the marker line.
+  -s p:s  exclude&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;^&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;|&lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; protocol &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;p &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; TCP|UDP&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; states by name&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;s&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;.
+  -u s   exclude&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;^&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;|&lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; login|UID set s
+  -x &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;fl&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; cross over +d|+D File systems or symbolic Links
+  names  &lt;span style=&#34;color:#66d9ef&#34;&gt;select&lt;/span&gt; named files or files on named file systems
+Anyone can list all files; /dev warnings disabled; kernel ID check disabled.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
     </item>
     
   </channel>
