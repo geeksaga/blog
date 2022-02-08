@@ -1,7 +1,7 @@
-[submodule "themes/terminal"]
-	path = themes/terminal
-	url = https://github.com/panr/hugo-theme-terminal.git
 [submodule "public"]
 	path = public
 	; url = https://github.com/geeksaga/geeksaga.github.io.git
 	url = git@github.com:geeksaga/geeksaga.github.io.git
+[submodule "themes/tranquilpeak"]
+	path = themes/tranquilpeak
+	url = https://github.com/kakawait/hugo-tranquilpeak-theme.git
