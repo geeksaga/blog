@@ -21,6 +21,11 @@ disqusShortname = "geeksaga"
 googleAnalytics = "UA-90851011-1"
 paginate = 7
 canonifyurls = true
+enableGitInfo = true
+include_toc = true
+
+[frontmatter]
+  lastmod = [ 'lastmod', ':git', 'date', 'publishDate' ]
 
 [permalinks]
   posts = "/:year/:month/:slug/"
