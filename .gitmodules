@@ -2,6 +2,7 @@
 	path = public
 	; url = https://github.com/geeksaga/geeksaga.github.io.git
 	url = git@github.com:geeksaga/geeksaga.github.io.git
+	branch = main
 [submodule "themes/tranquilpeak"]
 	path = themes/tranquilpeak
 	url = https://github.com/kakawait/hugo-tranquilpeak-theme.git
