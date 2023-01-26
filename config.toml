@@ -18,8 +18,7 @@ defaultContentLanguage = "en-us"
 title = "Try to write anyway"
 theme = "hugo-tranquilpeak-theme"
 disqusShortname = "geeksaga"
-# googleAnalytics = "UA-90851011-1"
-googleAnalytics = "312119178"
+googleAnalytics = "UA-90851011-1"
 paginate = 7
 canonifyurls = true
 
