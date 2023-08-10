@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>neovim on Try to write anyway</title>
+    <link>https://geeksaga.com/tags/neovim/</link>
+    <description>Recent content in neovim on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://geeksaga.com/tags/neovim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>한 번쯤 사용해 볼 만한 Neovim Plugins 목록</title>
+      <link>https://geeksaga.com/2023/05/%ED%95%9C-%EB%B2%88%EC%AF%A4-%EC%82%AC%EC%9A%A9%ED%95%B4-%EB%B3%BC-%EB%A7%8C%ED%95%9C-neovim-plugins-%EB%AA%A9%EB%A1%9D/</link>
+      <pubDate>Tue, 02 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://geeksaga.com/2023/05/%ED%95%9C-%EB%B2%88%EC%AF%A4-%EC%82%AC%EC%9A%A9%ED%95%B4-%EB%B3%BC-%EB%A7%8C%ED%95%9C-neovim-plugins-%EB%AA%A9%EB%A1%9D/</guid>
+      <description>한 번쯤 사용해 봤거나 사용해 볼 만한 플러그인들
+IDE LunarVim : Neovim 위에 IDE 레이어를 입혀 별도의 플러그인 설정이 필요없는 훌륭한 Neovim 기반의 IDE 입니다. SpaceVim : SpaceVim 역시 vim/neovim 호환이 가능한 완성형 패키지로 제공되고 있는 프로그램 입니다. lazy.nvim : LazyVim 역시 플러그인 관리자로 사용할 수 있지만 기본 설정 만으로 IDE 처럼 사용할 수 있는 프로그램 입니다. Plugin/Package Management lazy.nvim packer.nvim vim-plug : Vim 플러그인 매니저지만 Neovim에서도 사용할 수 있습니다. mason.</description>
+    </item>
+    
+    <item>
+      <title>Neovim key Mappings을 legendary.nvim, which-key.nvim을 통해 사용하기</title>
+      <link>https://geeksaga.com/2023/04/neovim-key-mappings%EC%9D%84-legendary.nvim-which-key.nvim%EC%9D%84-%ED%86%B5%ED%95%B4-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Thu, 20 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://geeksaga.com/2023/04/neovim-key-mappings%EC%9D%84-legendary.nvim-which-key.nvim%EC%9D%84-%ED%86%B5%ED%95%B4-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
+      <description>개요 이전 Neovim 설정에서 일부 이벤트(:h events)에 대한 응답으로 함수 및 명령을 실행하기 위해서 Vimscript autocmd(:h autocmd)를 사용했지만 Neovim(+0.7) 부터는 Lua를 이용해 autocmd를 구성할 수 있는 API가 제공 됩니다.
+여기에서 Lua autocmd(:h api-autocmd) 및 keymap(:h lua-keymap) 함수에 대해 살펴보겠습니다.
+Lua Autocmd 설정 api-autocmd 함수에 대한 도움말(:h api-autocmd)를 통해서 자세한 설명을 확인 할 수 있습니다.
+nvim_create_augroup - autocmd-group를 생성하거하고 id를 리턴 해주는 함수. nvim_create_autocmd - autocmd를 생성하는 함수. 예제 Yank Highlight 이전 Vimscript를 통해 autocmd를 정의하면 다음과 같이 스크립트를 만들 수 있습니다.</description>
+    </item>
+    
+    <item>
+      <title>Neovim lazy.nvim을 통한 플러그인 관리</title>
+      <link>https://geeksaga.com/2023/03/neovim-lazy.nvim%EC%9D%84-%ED%86%B5%ED%95%9C-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-%EA%B4%80%EB%A6%AC/</link>
+      <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://geeksaga.com/2023/03/neovim-lazy.nvim%EC%9D%84-%ED%86%B5%ED%95%9C-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-%EA%B4%80%EB%A6%AC/</guid>
+      <description>lazy.nvim 플러그인 관리자 설정하기
+개요 Neovim의 plugin 관리자는 vim-plug, packer와 같이 여러가지가 있는데 모던 형태의 사용하기 쉬운 lazy.vim을 사용해 보려고 합니다.
+설치 기본적으로 lazy.vim을 사용하기 위해서는 Neovim &amp;gt;= 0.8.0 이상 버전과 Git &amp;gt;= 2.19.0 이상 버전이 설치되어 있어야 합니다.
+설치된 Neovim과 Git 버전을 확인 합니다.
+$&amp;gt; nvim -version NVIM v0.8.3 Build type: Release LuaJIT 2.1.0-beta3 Compiled by builduser Features: +acl +iconv +tui See &amp;#34;:help feature-compile&amp;#34; system vimrc file: &amp;#34;$VIM/sysinit.vim&amp;#34; fall-back for $VIM: &amp;#34;/usr/share/nvim&amp;#34; Run :checkhealth for more info $&amp;gt; git -v git version 2.</description>
+    </item>
+    
+    <item>
+      <title>neovim</title>
+      <link>https://geeksaga.com/2020/03/neovim/</link>
+      <pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://geeksaga.com/2020/03/neovim/</guid>
+      <description>잊지 않기 위해서 적어둔다.
+Text Objects w - words s - sentences p - paragraphs t - tags iw - inner word it - inner tag Motions a - all i - in t - `til f - find forward Navigation h - 왼쪽으로 커서 이동 j - 아래쪽으로 커서 이동 k - 위쪽으로 커서 이동 l - 오론쪽으로 커서 이동 w - 단어 첫 글자로 이동 b - 역방향으로 단어의 첫 글자로 이동 e - 단어의 마지막 글자로 이동 ge - 역방향으로 단어의 마지막 글자로 이동 0 - 라인의 제일 앞으로 이동 f[str] - 라인에서 [str] 위치로 이동.</description>
+    </item>
+    
+  </channel>
+</rss>

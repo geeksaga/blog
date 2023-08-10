@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>plugins on Try to write anyway</title>
+    <link>https://geeksaga.com/tags/plugins/</link>
+    <description>Recent content in plugins on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://geeksaga.com/tags/plugins/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>한 번쯤 사용해 볼 만한 Neovim Plugins 목록</title>
+      <link>https://geeksaga.com/2023/05/%ED%95%9C-%EB%B2%88%EC%AF%A4-%EC%82%AC%EC%9A%A9%ED%95%B4-%EB%B3%BC-%EB%A7%8C%ED%95%9C-neovim-plugins-%EB%AA%A9%EB%A1%9D/</link>
+      <pubDate>Tue, 02 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://geeksaga.com/2023/05/%ED%95%9C-%EB%B2%88%EC%AF%A4-%EC%82%AC%EC%9A%A9%ED%95%B4-%EB%B3%BC-%EB%A7%8C%ED%95%9C-neovim-plugins-%EB%AA%A9%EB%A1%9D/</guid>
+      <description>한 번쯤 사용해 봤거나 사용해 볼 만한 플러그인들
+IDE LunarVim : Neovim 위에 IDE 레이어를 입혀 별도의 플러그인 설정이 필요없는 훌륭한 Neovim 기반의 IDE 입니다. SpaceVim : SpaceVim 역시 vim/neovim 호환이 가능한 완성형 패키지로 제공되고 있는 프로그램 입니다. lazy.nvim : LazyVim 역시 플러그인 관리자로 사용할 수 있지만 기본 설정 만으로 IDE 처럼 사용할 수 있는 프로그램 입니다. Plugin/Package Management lazy.nvim packer.nvim vim-plug : Vim 플러그인 매니저지만 Neovim에서도 사용할 수 있습니다. mason.</description>
+    </item>
+    
+  </channel>
+</rss>

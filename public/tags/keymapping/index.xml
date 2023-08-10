@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>keymapping on Try to write anyway</title>
+    <link>https://geeksaga.com/tags/keymapping/</link>
+    <description>Recent content in keymapping on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 20 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://geeksaga.com/tags/keymapping/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Neovim key Mappings을 legendary.nvim, which-key.nvim을 통해 사용하기</title>
+      <link>https://geeksaga.com/2023/04/neovim-key-mappings%EC%9D%84-legendary.nvim-which-key.nvim%EC%9D%84-%ED%86%B5%ED%95%B4-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Thu, 20 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://geeksaga.com/2023/04/neovim-key-mappings%EC%9D%84-legendary.nvim-which-key.nvim%EC%9D%84-%ED%86%B5%ED%95%B4-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/</guid>
+      <description>개요 이전 Neovim 설정에서 일부 이벤트(:h events)에 대한 응답으로 함수 및 명령을 실행하기 위해서 Vimscript autocmd(:h autocmd)를 사용했지만 Neovim(+0.7) 부터는 Lua를 이용해 autocmd를 구성할 수 있는 API가 제공 됩니다.
+여기에서 Lua autocmd(:h api-autocmd) 및 keymap(:h lua-keymap) 함수에 대해 살펴보겠습니다.
+Lua Autocmd 설정 api-autocmd 함수에 대한 도움말(:h api-autocmd)를 통해서 자세한 설명을 확인 할 수 있습니다.
+nvim_create_augroup - autocmd-group를 생성하거하고 id를 리턴 해주는 함수. nvim_create_autocmd - autocmd를 생성하는 함수. 예제 Yank Highlight 이전 Vimscript를 통해 autocmd를 정의하면 다음과 같이 스크립트를 만들 수 있습니다.</description>
+    </item>
+    
+  </channel>
+</rss>

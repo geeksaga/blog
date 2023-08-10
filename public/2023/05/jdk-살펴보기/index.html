@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <script type="application/ld+json">
+
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "JDK 살펴보기",
+  
+  "datePublished": "2023-05-03T00:00:00Z",
+  "dateModified": "2023-05-03T17:14:54+09:00",
+  "author": {
+    "@type": "Person",
+    "name": "GeekSaga",
+    
+    "image": "https://www.gravatar.com/avatar/b8ad73abceb78e798fab460eb1ae9d95"
+    
+  },
+  "mainEntityOfPage": { 
+    "@type": "WebPage",
+    "@id": "https:\/\/geeksaga.com\/2023\/05\/jdk-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0\/" 
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Try to write anyway",
+    
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.gravatar.com/avatar/b8ad73abceb78e798fab460eb1ae9d95"
+    }
+    
+  },
+  "description": "Java Version $\u0026gt; java -version java version \u0026#34;1.8.0_271\u0026#34; Java(TM) SE Runtime Environment (build 1.8.0_271-b09) Java HotSpot(TM) 64-Bit Server VM (build 25.271-b09, mixed mode) Properties $\u0026gt; java -XshowSettings:properties -version Property settings: awt.toolkit = sun.awt.X11.XToolkit file.encoding = UTF-8 file.encoding.pkg = sun.io file.separator = / java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment java.awt.printerjob = sun.print.PSPrinterJob java.class.path = . java.class.version = 52.0 java.endorsed.dirs = /opt/java/jdk1.8.0_271_64/jre/lib/endorsed java.ext.dirs = /opt/java/jdk1.8.0_271_64/jre/lib/ext /usr/java/packages/lib/ext java.home = /opt/java/jdk1.8.0_271_64/jre java.io.tmpdir = /tmp java.library.path = /usr/java/packages/lib/amd64 /usr/lib64 /lib64 /lib /usr/lib java.",
+  "keywords": []
+}
+
+</script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.115.4 with theme Tranquilpeak 0.5.3-BETA">
+<meta name="author" content="GeekSaga">
+<meta name="keywords" content="">
+<meta name="description" content="JDK 살펴보기">
+
+
+<meta property="og:description" content="JDK 살펴보기">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JDK 살펴보기">
+<meta name="twitter:title" content="JDK 살펴보기">
+<meta property="og:url" content="https://geeksaga.com/2023/05/jdk-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0/">
+<meta property="twitter:url" content="https://geeksaga.com/2023/05/jdk-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0/">
+<meta property="og:site_name" content="Try to write anyway">
+<meta property="og:description" content="JDK 살펴보기">
+<meta name="twitter:description" content="JDK 살펴보기">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2023-05-03T00:00:00">
+  
+  
+    <meta property="article:modified_time" content="2023-05-03T17:14:54">
+  
+  
+  
+  
+    
+      <meta property="article:tag" content="jdk">
+    
+      <meta property="article:tag" content="java">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://www.gravatar.com/avatar/b8ad73abceb78e798fab460eb1ae9d95?s=640">
+  <meta property="twitter:image" content="https://www.gravatar.com/avatar/b8ad73abceb78e798fab460eb1ae9d95?s=640">
+
+
+
+
+
+
+    <title>JDK 살펴보기</title>
+
+    <link rel="icon" href="https://geeksaga.com/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://geeksaga.com/2023/05/jdk-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    
+    <link rel="stylesheet" href="https://geeksaga.com/css/style-h6ccsoet3mzkbb0wngshlfbaweimexgqcxj0h5hu4h82olsdzz6wmqdkajm.min.css" />
+    
+    
+
+		
+    
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-90851011-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-90851011-1');
+</script>
+	
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4Z8WERK25Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4Z8WERK25Q');
+</script>	
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://geeksaga.com/" aria-label="Go to homepage">Try to write anyway</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://geeksaga.com/#about" aria-label="Open the link: /#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://www.gravatar.com/avatar/b8ad73abceb78e798fab460eb1ae9d95?s=90" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://geeksaga.com/#about" aria-label="Read more about the author">
+          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/b8ad73abceb78e798fab460eb1ae9d95?s=110" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">GeekSaga</h4>
+        
+          <h5 class="sidebar-profile-bio"><strong>.</strong></h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://geeksaga.com/" title="Home">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-home" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://geeksaga.com/categories" title="Categories">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-bookmark" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://geeksaga.com/tags" title="Tags">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-tags" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://geeksaga.com/archives" title="Archives">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-archive" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://geeksaga.com/#about" title="About">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-question" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" id="top">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title">
+      JDK 살펴보기
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2023-05-03T00:00:00Z">
+        
+  May 3, 2023
+
+      </time>
+    
+    
+  </div>
+
+</div>
+          
+          <div class="post-content markdown">
+            <div class="main-content-wrap">
+              <h2 id="java-version">Java Version</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$&gt; java -version
+</span></span><span style="display:flex;"><span>java version <span style="color:#e6db74">&#34;1.8.0_271&#34;</span>
+</span></span><span style="display:flex;"><span>Java<span style="color:#f92672">(</span>TM<span style="color:#f92672">)</span> SE Runtime Environment <span style="color:#f92672">(</span>build 1.8.0_271-b09<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Java HotSpot<span style="color:#f92672">(</span>TM<span style="color:#f92672">)</span> 64-Bit Server VM <span style="color:#f92672">(</span>build 25.271-b09, mixed mode<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h2 id="properties">Properties</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$&gt; java -XshowSettings:properties -version
+</span></span><span style="display:flex;"><span>Property settings:
+</span></span><span style="display:flex;"><span>    awt.toolkit <span style="color:#f92672">=</span> sun.awt.X11.XToolkit
+</span></span><span style="display:flex;"><span>    file.encoding <span style="color:#f92672">=</span> UTF-8
+</span></span><span style="display:flex;"><span>    file.encoding.pkg <span style="color:#f92672">=</span> sun.io
+</span></span><span style="display:flex;"><span>    file.separator <span style="color:#f92672">=</span> /
+</span></span><span style="display:flex;"><span>    java.awt.graphicsenv <span style="color:#f92672">=</span> sun.awt.X11GraphicsEnvironment
+</span></span><span style="display:flex;"><span>    java.awt.printerjob <span style="color:#f92672">=</span> sun.print.PSPrinterJob
+</span></span><span style="display:flex;"><span>    java.class.path <span style="color:#f92672">=</span> .
+</span></span><span style="display:flex;"><span>    java.class.version <span style="color:#f92672">=</span> 52.0
+</span></span><span style="display:flex;"><span>    java.endorsed.dirs <span style="color:#f92672">=</span> /opt/java/jdk1.8.0_271_64/jre/lib/endorsed
+</span></span><span style="display:flex;"><span>    java.ext.dirs <span style="color:#f92672">=</span> /opt/java/jdk1.8.0_271_64/jre/lib/ext
+</span></span><span style="display:flex;"><span>        /usr/java/packages/lib/ext
+</span></span><span style="display:flex;"><span>    java.home <span style="color:#f92672">=</span> /opt/java/jdk1.8.0_271_64/jre
+</span></span><span style="display:flex;"><span>    java.io.tmpdir <span style="color:#f92672">=</span> /tmp
+</span></span><span style="display:flex;"><span>    java.library.path <span style="color:#f92672">=</span> /usr/java/packages/lib/amd64
+</span></span><span style="display:flex;"><span>        /usr/lib64
+</span></span><span style="display:flex;"><span>        /lib64
+</span></span><span style="display:flex;"><span>        /lib
+</span></span><span style="display:flex;"><span>        /usr/lib
+</span></span><span style="display:flex;"><span>    java.runtime.name <span style="color:#f92672">=</span> Java<span style="color:#f92672">(</span>TM<span style="color:#f92672">)</span> SE Runtime Environment
+</span></span><span style="display:flex;"><span>    java.runtime.version <span style="color:#f92672">=</span> 1.8.0_271-b09
+</span></span><span style="display:flex;"><span>    java.specification.name <span style="color:#f92672">=</span> Java Platform API Specification
+</span></span><span style="display:flex;"><span>    java.specification.vendor <span style="color:#f92672">=</span> Oracle Corporation
+</span></span><span style="display:flex;"><span>    java.specification.version <span style="color:#f92672">=</span> 1.8
+</span></span><span style="display:flex;"><span>    java.vendor <span style="color:#f92672">=</span> Oracle Corporation
+</span></span><span style="display:flex;"><span>    java.vendor.url <span style="color:#f92672">=</span> http://java.oracle.com/
+</span></span><span style="display:flex;"><span>    java.vendor.url.bug <span style="color:#f92672">=</span> http://bugreport.sun.com/bugreport/
+</span></span><span style="display:flex;"><span>    java.version <span style="color:#f92672">=</span> 1.8.0_271
+</span></span><span style="display:flex;"><span>    java.vm.info <span style="color:#f92672">=</span> mixed mode
+</span></span><span style="display:flex;"><span>    java.vm.name <span style="color:#f92672">=</span> Java HotSpot<span style="color:#f92672">(</span>TM<span style="color:#f92672">)</span> 64-Bit Server VM
+</span></span><span style="display:flex;"><span>    java.vm.specification.name <span style="color:#f92672">=</span> Java Virtual Machine Specification
+</span></span><span style="display:flex;"><span>    java.vm.specification.vendor <span style="color:#f92672">=</span> Oracle Corporation
+</span></span><span style="display:flex;"><span>    java.vm.specification.version <span style="color:#f92672">=</span> 1.8
+</span></span><span style="display:flex;"><span>    java.vm.vendor <span style="color:#f92672">=</span> Oracle Corporation
+</span></span><span style="display:flex;"><span>    java.vm.version <span style="color:#f92672">=</span> 25.271-b09
+</span></span><span style="display:flex;"><span>    line.separator <span style="color:#f92672">=</span> <span style="color:#ae81ff">\n</span> 
+</span></span><span style="display:flex;"><span>    os.arch <span style="color:#f92672">=</span> amd64
+</span></span><span style="display:flex;"><span>    os.name <span style="color:#f92672">=</span> Linux
+</span></span><span style="display:flex;"><span>    os.version <span style="color:#f92672">=</span> 5.15.108-1-MANJARO
+</span></span><span style="display:flex;"><span>    path.separator <span style="color:#f92672">=</span> :
+</span></span><span style="display:flex;"><span>    sun.arch.data.model <span style="color:#f92672">=</span> <span style="color:#ae81ff">64</span>
+</span></span><span style="display:flex;"><span>    sun.boot.class.path <span style="color:#f92672">=</span> /opt/java/jdk1.8.0_271_64/jre/lib/resources.jar
+</span></span><span style="display:flex;"><span>        /opt/java/jdk1.8.0_271_64/jre/lib/rt.jar
+</span></span><span style="display:flex;"><span>        /opt/java/jdk1.8.0_271_64/jre/lib/sunrsasign.jar
+</span></span><span style="display:flex;"><span>        /opt/java/jdk1.8.0_271_64/jre/lib/jsse.jar
+</span></span><span style="display:flex;"><span>        /opt/java/jdk1.8.0_271_64/jre/lib/jce.jar
+</span></span><span style="display:flex;"><span>        /opt/java/jdk1.8.0_271_64/jre/lib/charsets.jar
+</span></span><span style="display:flex;"><span>        /opt/java/jdk1.8.0_271_64/jre/lib/jfr.jar
+</span></span><span style="display:flex;"><span>        /opt/java/jdk1.8.0_271_64/jre/classes
+</span></span><span style="display:flex;"><span>    sun.boot.library.path <span style="color:#f92672">=</span> /opt/java/jdk1.8.0_271_64/jre/lib/amd64
+</span></span><span style="display:flex;"><span>    sun.cpu.endian <span style="color:#f92672">=</span> little
+</span></span><span style="display:flex;"><span>    sun.cpu.isalist <span style="color:#f92672">=</span> 
+</span></span><span style="display:flex;"><span>    sun.io.unicode.encoding <span style="color:#f92672">=</span> UnicodeLittle
+</span></span><span style="display:flex;"><span>    sun.java.launcher <span style="color:#f92672">=</span> SUN_STANDARD
+</span></span><span style="display:flex;"><span>    sun.jnu.encoding <span style="color:#f92672">=</span> UTF-8
+</span></span><span style="display:flex;"><span>    sun.management.compiler <span style="color:#f92672">=</span> HotSpot 64-Bit Tiered Compilers
+</span></span><span style="display:flex;"><span>    sun.os.patch.level <span style="color:#f92672">=</span> unknown
+</span></span><span style="display:flex;"><span>    user.country <span style="color:#f92672">=</span> US
+</span></span><span style="display:flex;"><span>    user.country.format <span style="color:#f92672">=</span> KR
+</span></span><span style="display:flex;"><span>    user.dir <span style="color:#f92672">=</span> /home/geeksaga/test
+</span></span><span style="display:flex;"><span>    user.home <span style="color:#f92672">=</span> /home/geeksaga
+</span></span><span style="display:flex;"><span>    user.language <span style="color:#f92672">=</span> en
+</span></span><span style="display:flex;"><span>    user.language.format <span style="color:#f92672">=</span> ko
+</span></span><span style="display:flex;"><span>    user.name <span style="color:#f92672">=</span> geeksaga
+</span></span><span style="display:flex;"><span>    user.timezone <span style="color:#f92672">=</span> 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>java version <span style="color:#e6db74">&#34;1.8.0_271&#34;</span>
+</span></span><span style="display:flex;"><span>Java<span style="color:#f92672">(</span>TM<span style="color:#f92672">)</span> SE Runtime Environment <span style="color:#f92672">(</span>build 1.8.0_271-b09<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Java HotSpot<span style="color:#f92672">(</span>TM<span style="color:#f92672">)</span> 64-Bit Server VM <span style="color:#f92672">(</span>build 25.271-b09, mixed mode<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h3 id="javaclassversion">java.class.version</h3>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<table>
+<thead>
+<tr>
+<th style="text-align:right">Java Release</th>
+<th style="text-align:right">7</th>
+<th style="text-align:right">8</th>
+<th style="text-align:right">9</th>
+<th style="text-align:right">10</th>
+<th style="text-align:right">11</th>
+<th style="text-align:right">12</th>
+<th style="text-align:right">13</th>
+<th style="text-align:right">14</th>
+<th style="text-align:right">15</th>
+<th style="text-align:right">16</th>
+<th style="text-align:right">17</th>
+<th style="text-align:right">18</th>
+<th style="text-align:right">19</th>
+<th style="text-align:right">20</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">Class Version</td>
+<td style="text-align:right">51</td>
+<td style="text-align:right">52</td>
+<td style="text-align:right">53</td>
+<td style="text-align:right">54</td>
+<td style="text-align:right">55</td>
+<td style="text-align:right">56</td>
+<td style="text-align:right">57</td>
+<td style="text-align:right">58</td>
+<td style="text-align:right">59</td>
+<td style="text-align:right">60</td>
+<td style="text-align:right">61</td>
+<td style="text-align:right">62</td>
+<td style="text-align:right">63</td>
+<td style="text-align:right">64</td>
+</tr>
+</tbody>
+</table>
+<h2 id="flags">Flags</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$&gt; java -XX:+PrintFlagsFinal -version
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>Global flags<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>     intx ActiveProcessorCount                      <span style="color:#f92672">=</span> -1                                  <span style="color:#f92672">{</span>product<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    uintx AdaptiveSizeDecrementScaleFactor          <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>                                   <span style="color:#f92672">{</span>product<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    uintx AdaptiveSizeMajorGCDecayTimeScale         <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>                                  <span style="color:#f92672">{</span>product<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    uintx AdaptiveSizePausePolicy                   <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>                                   <span style="color:#f92672">{</span>product<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    uintx AdaptiveSizePolicyCollectionCostMargin    <span style="color:#f92672">=</span> <span style="color:#ae81ff">50</span>                                  <span style="color:#f92672">{</span>product<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    uintx AdaptiveSizePolicyInitializingSteps       <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>                                  <span style="color:#f92672">{</span>product<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    uintx AdaptiveSizePolicyOutputInterval          <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>                                   <span style="color:#f92672">{</span>product<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    uintx AdaptiveSizePolicyWeight                  <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>                                  <span style="color:#f92672">{</span>product<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    uintx AdaptiveSizeThroughPutPolicy              <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>                                   <span style="color:#f92672">{</span>product<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    uintx AdaptiveTimeWeight                        <span style="color:#f92672">=</span> <span style="color:#ae81ff">25</span>                                  <span style="color:#f92672">{</span>product<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>     bool AdjustConcurrency                         <span style="color:#f92672">=</span> false                               <span style="color:#f92672">{</span>product<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>     bool AggressiveHeap                            <span style="color:#f92672">=</span> false                               <span style="color:#f92672">{</span>product<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>     bool AggressiveOpts                            <span style="color:#f92672">=</span> false                               <span style="color:#f92672">{</span>product<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>     ...
+</span></span><span style="display:flex;"><span>     ...
+</span></span><span style="display:flex;"><span>    uintx YoungGenerationSizeIncrement              <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>                                  <span style="color:#f92672">{</span>product<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    uintx YoungGenerationSizeSupplement             <span style="color:#f92672">=</span> <span style="color:#ae81ff">80</span>                                  <span style="color:#f92672">{</span>product<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    uintx YoungGenerationSizeSupplementDecay        <span style="color:#f92672">=</span> <span style="color:#ae81ff">8</span>                                   <span style="color:#f92672">{</span>product<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    uintx YoungPLABSize                             <span style="color:#f92672">=</span> <span style="color:#ae81ff">4096</span>                                <span style="color:#f92672">{</span>product<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>     bool ZeroTLAB                                  <span style="color:#f92672">=</span> false                               <span style="color:#f92672">{</span>product<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>     intx hashCode                                  <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>                                   <span style="color:#f92672">{</span>product<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>java version <span style="color:#e6db74">&#34;1.8.0_271&#34;</span>
+</span></span><span style="display:flex;"><span>Java<span style="color:#f92672">(</span>TM<span style="color:#f92672">)</span> SE Runtime Environment <span style="color:#f92672">(</span>build 1.8.0_271-b09<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Java HotSpot<span style="color:#f92672">(</span>TM<span style="color:#f92672">)</span> 64-Bit Server VM <span style="color:#f92672">(</span>build 25.271-b09, mixed mode<span style="color:#f92672">)</span>
+</span></span></code></pre></div><h2 id="참고링크">참고링크</h2>
+<ul>
+<li><a href="https://foojay.io/today/what-java-version-are-you-running-lets-take-a-look-under-the-hood-of-the-jdk" title="foojay.io">What Java Version Are You Running? Let’s Take a Look Under the Hood of the JDK!</a></li>
+<li><a href="https://sdkman.io/" title="SKDMAN">SKDMAN</a></li>
+<li><a href="https://chriswhocodes.com/" title="VM Options Explorer">VM Options Explorer</a></li>
+</ul>
+
+              
+
+
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://geeksaga.com/tags/jdk/">jdk</a>
+
+  <a class="tag tag--primary tag--small" href="https://geeksaga.com/tags/java/">java</a>
+
+                  </div>
+                
+              
+            
+            
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://geeksaga.com/2023/05/%ED%95%9C-%EB%B2%88%EC%AF%A4-%EC%82%AC%EC%9A%A9%ED%95%B4-%EB%B3%BC-%EB%A7%8C%ED%95%9C-neovim-plugins-%EB%AA%A9%EB%A1%9D/" data-tooltip="한 번쯤 사용해 볼 만한 Neovim Plugins 목록" aria-label="PREVIOUS: 한 번쯤 사용해 볼 만한 Neovim Plugins 목록">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="Leave a comment">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="Back to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+            
+  
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+    <script type="text/javascript">
+      var disqus_config = function() {
+        this.page.url = 'https:\/\/geeksaga.com\/2023\/05\/jdk-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0\/';
+        
+          this.page.identifier = '\/2023\/05\/jdk-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0\/'
+        
+      };
+      (function() {
+        
+        
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+          document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+          return;
+        }
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'geeksaga';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+  
+
+
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2023 GeekSaga. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://geeksaga.com/2023/05/%ED%95%9C-%EB%B2%88%EC%AF%A4-%EC%82%AC%EC%9A%A9%ED%95%B4-%EB%B3%BC-%EB%A7%8C%ED%95%9C-neovim-plugins-%EB%AA%A9%EB%A1%9D/" data-tooltip="한 번쯤 사용해 볼 만한 Neovim Plugins 목록" aria-label="PREVIOUS: 한 번쯤 사용해 볼 만한 Neovim Plugins 목록">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="Leave a comment">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="Back to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+      </div>
+      
+
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-times"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://www.gravatar.com/avatar/b8ad73abceb78e798fab460eb1ae9d95?s=110" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">GeekSaga</h4>
+    
+      <div id="about-card-bio"><strong>.</strong></div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Dreamer
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker-alt"></i>
+        <br/>
+        Korea
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://geeksaga.com/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js" integrity="sha512-z+/WWfyD5tccCukM4VvONpEtLmbAm5LDu7eKiyMQJ9m7OfPEDL7gENyDRL3Yfe8XAuGsS2fS4xSMnl6d30kqGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="https://geeksaga.com/js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js"></script>
+
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-gE8KAQyFIzV1C9+GZ8TKJHZS2s+n7EjNtC+IMRn1l5+WYJTHOODUM6JSjZhFhqXmc7bG8Av6XXpckA4tYhflnw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/apache.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-EWROca+bote+7Oaaar1F6y74iZj1r1F9rm/ly7o+/FwJopbBaWtsFDmaKoZDd3QiGU2pGacBirHJNivmGLYrow==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-GDVzAn0wpx1yVtQsRWmFc6PhJiLBPdUic+h4GWgljBh904O3JU10fk9EKNpVyIoPqkFn54rgL2QBG4BmUTMpiQ==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/http.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-UgZlma8NzkrDb/NWgmLIcTrH7i/CSnLLDRFqCSNF5NGPpjKmzyM25qcoXGOup8+cDakKyaiTDd7N4dyH4YT+IA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/less.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-lot9koe73sfXIrUvIPM/UEhuMciN56RPyBdOyZgfO53P2lkWyyXN7J+njcxIIBRV+nVDQeiWtiXg+bLAJZDTfg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/nginx.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-Zd3e7XxHP00TD0Imr0PIfeM0fl0v95kMWuhyAS3Wn1UTSXTkz0OhtRgBAr4JlmADRgiXr4x7lpeUdqaGN8xIog==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/puppet.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-qtqDO052iXMSP+5d/aE/jMtL9vIIGvONgTJziC2K/ZIB1yEGa55WVxGE9/08rSQ62EoDifS9SWVGZ7ihSLhzMA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/scss.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-1NmkjnEDnwwwcu28KoQF8vs3oaPFokQHbmbtwGhFfeDsQZtVFI8zW2aE9O8yMYdpdyKV/5blE4pSWw4Z/Sv97w==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/stylus.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-B2wSfruPjr8EJL6IIzQr1eAuDwrsfIfccNf/LCEdxELCgC/S/ZMt/Uvk80aD79m7IqOqW+Sw8nbkvha20yZpzg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/swift.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-28oDiQZGKUVN6wQ7PSLPNipOcmkCALXKwOi7bnkyFf8QiMZQxG9EQoy/iiNx6Zxj2cG2SbVa4dXKigQhu7GiFw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/yaml.min.js"></script>
+  
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+
+
+    
+  </body>
+</html>
+

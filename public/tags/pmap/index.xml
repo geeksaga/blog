@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pmap on Try to write anyway</title>
+    <link>https://geeksaga.com/tags/pmap/</link>
+    <description>Recent content in pmap on Try to write anyway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://geeksaga.com/tags/pmap/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>pmap command</title>
+      <link>https://geeksaga.com/2022/04/pmap-command/</link>
+      <pubDate>Fri, 15 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://geeksaga.com/2022/04/pmap-command/</guid>
+      <description>linux의 pmap 명령어를 통해 프로세스의 메모리 맵을 볼 수 있습니다.
+기본 사용법 $&amp;gt; pmap -x 3273049 3273049: /opt/java/bin/java -Djava.util.logging.config.file=/opt/apache-tomcat-8.5.24/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -XX:+UseZGC -XX:ConcGCThreads=4 -XX:NativeMemoryTracking=detail Address Kbytes RSS Dirty Mode Mapping 0000000800000000 11932 11868 3728 rw--- classes_nocoops.jsa 0000000800ba7000 356 0 0 ----- [ anon ] 0000000800c00000 128 128 128 rw--- [ anon ] 0000000800c20000 128 128 128 rw--- [ anon ] ... 응용 프로세스 이름을 통해서 메모리 맵 확인하려면 grep 명령어와 awk 명령어를 사용합니다.</description>
+    </item>
+    
+  </channel>
+</rss>

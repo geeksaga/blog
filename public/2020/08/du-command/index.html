@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <script type="application/ld+json">
+
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "du command",
+  
+  "datePublished": "2020-08-20T00:00:00Z",
+  "dateModified": "2022-01-29T12:55:02+09:00",
+  "author": {
+    "@type": "Person",
+    "name": "GeekSaga",
+    
+    "image": "https://www.gravatar.com/avatar/b8ad73abceb78e798fab460eb1ae9d95"
+    
+  },
+  "mainEntityOfPage": { 
+    "@type": "WebPage",
+    "@id": "https:\/\/geeksaga.com\/2020\/08\/du-command\/" 
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Try to write anyway",
+    
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.gravatar.com/avatar/b8ad73abceb78e798fab460eb1ae9d95"
+    }
+    
+  },
+  "description": "linux의 du 명령어를 통해 디렉토리 별로 디스크 사용량을 확인 할 수 있습니다.\n기본 사용법 $\u0026gt; du /usr/bin 557780\t/usr/bin 출력되는 값은 --block-size 또는 DU_BLCOK_SIZE, BLOCK_SIZE, BLOCKSIZE 환경 변수에서 사용 가능한 첫 번째 SIZE 단위 입니다. 그렇지 않으면 단위는 기본적으로 1024 바이트 (또는 POSIXLY_CORRECT가 설정된 경우 512) 입니다.\nTLDR $\u0026gt; tldr du du Disk usage: estimate and summarize file and directory space usage. - List the sizes of a directory and any subdirectories, in the given unit (B/KB/MB): du -b|k|m path/to/directory - List the sizes of a directory and any subdirectories, in human-readable form (i.",
+  "keywords": []
+}
+
+</script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.115.4 with theme Tranquilpeak 0.5.3-BETA">
+<meta name="author" content="GeekSaga">
+<meta name="keywords" content="">
+<meta name="description" content="du command description">
+
+
+<meta property="og:description" content="du command description">
+<meta property="og:type" content="article">
+<meta property="og:title" content="du command">
+<meta name="twitter:title" content="du command">
+<meta property="og:url" content="https://geeksaga.com/2020/08/du-command/">
+<meta property="twitter:url" content="https://geeksaga.com/2020/08/du-command/">
+<meta property="og:site_name" content="Try to write anyway">
+<meta property="og:description" content="du command description">
+<meta name="twitter:description" content="du command description">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2020-08-20T00:00:00">
+  
+  
+    <meta property="article:modified_time" content="2022-01-29T12:55:02">
+  
+  
+  
+  
+    
+      <meta property="article:tag" content="command">
+    
+      <meta property="article:tag" content="linux">
+    
+      <meta property="article:tag" content="du">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://www.gravatar.com/avatar/b8ad73abceb78e798fab460eb1ae9d95?s=640">
+  <meta property="twitter:image" content="https://www.gravatar.com/avatar/b8ad73abceb78e798fab460eb1ae9d95?s=640">
+
+
+
+
+
+
+    <title>du command</title>
+
+    <link rel="icon" href="https://geeksaga.com/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://geeksaga.com/2020/08/du-command/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    
+    <link rel="stylesheet" href="https://geeksaga.com/css/style-h6ccsoet3mzkbb0wngshlfbaweimexgqcxj0h5hu4h82olsdzz6wmqdkajm.min.css" />
+    
+    
+
+		
+    
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-90851011-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-90851011-1');
+</script>
+	
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4Z8WERK25Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4Z8WERK25Q');
+</script>	
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://geeksaga.com/" aria-label="Go to homepage">Try to write anyway</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://geeksaga.com/#about" aria-label="Open the link: /#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://www.gravatar.com/avatar/b8ad73abceb78e798fab460eb1ae9d95?s=90" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://geeksaga.com/#about" aria-label="Read more about the author">
+          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/b8ad73abceb78e798fab460eb1ae9d95?s=110" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">GeekSaga</h4>
+        
+          <h5 class="sidebar-profile-bio"><strong>.</strong></h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://geeksaga.com/" title="Home">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-home" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://geeksaga.com/categories" title="Categories">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-bookmark" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://geeksaga.com/tags" title="Tags">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-tags" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://geeksaga.com/archives" title="Archives">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-archive" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://geeksaga.com/#about" title="About">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-question" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" id="top">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title">
+      du command
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2020-08-20T00:00:00Z">
+        
+  August 20, 2020
+
+      </time>
+    
+    
+  </div>
+
+</div>
+          
+          <div class="post-content markdown">
+            <div class="main-content-wrap">
+              <p>linux의 <code>du</code> 명령어를 통해 디렉토리 별로 디스크 사용량을 확인 할 수 있습니다.</p>
+<h2 id="기본-사용법">기본 사용법</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$&gt; du /usr/bin
+</span></span><span style="display:flex;"><span>557780	/usr/bin
+</span></span></code></pre></div><p>출력되는 값은 <code>--block-size</code> 또는 <code>DU_BLCOK_SIZE</code>, <code>BLOCK_SIZE</code>, <code>BLOCKSIZE</code> 환경 변수에서 사용 가능한 첫 번째 <code>SIZE</code> 단위 입니다.
+그렇지 않으면 단위는 기본적으로 1024 바이트 (또는 POSIXLY_CORRECT가 설정된 경우 512) 입니다.</p>
+<h2 id="tldr">TLDR</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$&gt; tldr du
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  du
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  Disk usage: estimate and summarize file and directory space usage.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  - List the sizes of a directory and any subdirectories, in the given unit <span style="color:#f92672">(</span>B/KB/MB<span style="color:#f92672">)</span>:
+</span></span><span style="display:flex;"><span>    du -b|k|m path/to/directory
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  - List the sizes of a directory and any subdirectories, in human-readable form <span style="color:#f92672">(</span>i.e. auto-selecting the appropriate unit <span style="color:#66d9ef">for</span> each size<span style="color:#f92672">)</span>:
+</span></span><span style="display:flex;"><span>    du -h path/to/directory
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  - Show the size of a single directory, in human readable units:
+</span></span><span style="display:flex;"><span>    du -sh path/to/directory
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  - List the human-readable sizes of a directory and of all the files and directories within it:
+</span></span><span style="display:flex;"><span>    du -ah path/to/directory
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  - List the human-readable sizes of a directory and any subdirectories, up to N levels deep:
+</span></span><span style="display:flex;"><span>    du -h --max-depth<span style="color:#f92672">=</span>N path/to/directory
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  - List the human-readable size of all .jpg files in subdirectories of the current directory, and show a cumulative total at the end:
+</span></span><span style="display:flex;"><span>    du -ch */*.jpg
+</span></span></code></pre></div><h2 id="help">Help</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$&gt; du --help
+</span></span><span style="display:flex;"><span>Usage: du <span style="color:#f92672">[</span>OPTION<span style="color:#f92672">]</span>... <span style="color:#f92672">[</span>FILE<span style="color:#f92672">]</span>...
+</span></span><span style="display:flex;"><span>  or:  du <span style="color:#f92672">[</span>OPTION<span style="color:#f92672">]</span>... --files0-from<span style="color:#f92672">=</span>F
+</span></span><span style="display:flex;"><span>Summarize disk usage of the set of FILEs, recursively <span style="color:#66d9ef">for</span> directories.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Mandatory arguments to long options are mandatory <span style="color:#66d9ef">for</span> short options too.
+</span></span><span style="display:flex;"><span>  -0, --null            end each output line with NUL, not newline
+</span></span><span style="display:flex;"><span>  -a, --all             write counts <span style="color:#66d9ef">for</span> all files, not just directories
+</span></span><span style="display:flex;"><span>      --apparent-size   print apparent sizes, rather than disk usage; although
+</span></span><span style="display:flex;"><span>                          the apparent size is usually smaller, it may be
+</span></span><span style="display:flex;"><span>                          larger due to holes in <span style="color:#f92672">(</span><span style="color:#e6db74">&#39;sparse&#39;</span><span style="color:#f92672">)</span> files, internal
+</span></span><span style="display:flex;"><span>                          fragmentation, indirect blocks, and the like
+</span></span><span style="display:flex;"><span>  -B, --block-size<span style="color:#f92672">=</span>SIZE  scale sizes by SIZE before printing them; e.g.,
+</span></span><span style="display:flex;"><span>                           <span style="color:#e6db74">&#39;-BM&#39;</span> prints sizes in units of 1,048,576 bytes;
+</span></span><span style="display:flex;"><span>                           see SIZE format below
+</span></span><span style="display:flex;"><span>  -b, --bytes           equivalent to <span style="color:#e6db74">&#39;--apparent-size --block-size=1&#39;</span>
+</span></span><span style="display:flex;"><span>  -c, --total           produce a grand total
+</span></span><span style="display:flex;"><span>  -D, --dereference-args  dereference only symlinks that are listed on the
+</span></span><span style="display:flex;"><span>                          command line
+</span></span><span style="display:flex;"><span>  -d, --max-depth<span style="color:#f92672">=</span>N     print the total <span style="color:#66d9ef">for</span> a directory <span style="color:#f92672">(</span>or file, with --all<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>                          only <span style="color:#66d9ef">if</span> it is N or fewer levels below the command
+</span></span><span style="display:flex;"><span>                          line argument;  --max-depth<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> is the same as
+</span></span><span style="display:flex;"><span>                          --summarize
+</span></span><span style="display:flex;"><span>      --files0-from<span style="color:#f92672">=</span>F   summarize disk usage of the
+</span></span><span style="display:flex;"><span>                          NUL-terminated file names specified in file F;
+</span></span><span style="display:flex;"><span>                          <span style="color:#66d9ef">if</span> F is -, <span style="color:#66d9ef">then</span> read names from standard input
+</span></span><span style="display:flex;"><span>  -H                    equivalent to --dereference-args <span style="color:#f92672">(</span>-D<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  -h, --human-readable  print sizes in human readable format <span style="color:#f92672">(</span>e.g., 1K 234M 2G<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>      --inodes          list inode usage information instead of block usage
+</span></span><span style="display:flex;"><span>  -k                    like --block-size<span style="color:#f92672">=</span>1K
+</span></span><span style="display:flex;"><span>  -L, --dereference     dereference all symbolic links
+</span></span><span style="display:flex;"><span>  -l, --count-links     count sizes many times <span style="color:#66d9ef">if</span> hard linked
+</span></span><span style="display:flex;"><span>  -m                    like --block-size<span style="color:#f92672">=</span>1M
+</span></span><span style="display:flex;"><span>  -P, --no-dereference  don<span style="color:#e6db74">&#39;t follow any symbolic links (this is the default)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  -S, --separate-dirs   for directories do not include size of subdirectories
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      --si              like -h, but use powers of 1000 not 1024
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  -s, --summarize       display only a total for each argument
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  -t, --threshold=SIZE  exclude entries smaller than SIZE if positive,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                          or entries greater than SIZE if negative
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      --time            show time of the last modification of any file in the
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                          directory, or any of its subdirectories
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      --time=WORD       show time as WORD instead of modification time:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                          atime, access, use, ctime or status
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      --time-style=STYLE  show times using STYLE, which can be:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                            full-iso, long-iso, iso, or +FORMAT;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">                            FORMAT is interpreted like in &#39;</span>date<span style="color:#e6db74">&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  -X, --exclude-from=FILE  exclude files that match any pattern in FILE
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      --exclude=PATTERN    exclude files that match PATTERN
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  -x, --one-file-system    skip directories on different file systems
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      --help     display this help and exit
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      --version  output version information and exit
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Display values are in units of the first available SIZE from --block-size,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">and the DU_BLOCK_SIZE, BLOCK_SIZE and BLOCKSIZE environment variables.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Otherwise, units default to 1024 bytes (or 512 if POSIXLY_CORRECT is set).
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">The SIZE argument is an integer and optional unit (example: 10K is 10*1024).
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Units are K,M,G,T,P,E,Z,Y (powers of 1024) or KB,MB,... (powers of 1000).
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">GNU coreutils online help: &lt;http://www.gnu.org/software/coreutils/&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Full documentation at: &lt;http://www.gnu.org/software/coreutils/du&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">or available locally via: info &#39;</span><span style="color:#f92672">(</span>coreutils<span style="color:#f92672">)</span> du invocation<span style="color:#960050;background-color:#1e0010">&#39;</span>
+</span></span></code></pre></div>
+              
+
+
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://geeksaga.com/tags/command/">command</a>
+
+  <a class="tag tag--primary tag--small" href="https://geeksaga.com/tags/linux/">linux</a>
+
+  <a class="tag tag--primary tag--small" href="https://geeksaga.com/tags/du/">du</a>
+
+                  </div>
+                
+              
+            
+            
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://geeksaga.com/2020/08/tmux-plugins/" data-tooltip="tmux plugins" aria-label="NEXT: tmux plugins">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://geeksaga.com/2020/08/df-command/" data-tooltip="df command" aria-label="PREVIOUS: df command">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="Leave a comment">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="Back to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+            
+  
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+    <script type="text/javascript">
+      var disqus_config = function() {
+        this.page.url = 'https:\/\/geeksaga.com\/2020\/08\/du-command\/';
+        
+          this.page.identifier = '\/2020\/08\/du-command\/'
+        
+      };
+      (function() {
+        
+        
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+          document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+          return;
+        }
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'geeksaga';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+  
+
+
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2023 GeekSaga. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://geeksaga.com/2020/08/tmux-plugins/" data-tooltip="tmux plugins" aria-label="NEXT: tmux plugins">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://geeksaga.com/2020/08/df-command/" data-tooltip="df command" aria-label="PREVIOUS: df command">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="Leave a comment">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="Back to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+      </div>
+      
+
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-times"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://www.gravatar.com/avatar/b8ad73abceb78e798fab460eb1ae9d95?s=110" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">GeekSaga</h4>
+    
+      <div id="about-card-bio"><strong>.</strong></div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Dreamer
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker-alt"></i>
+        <br/>
+        Korea
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://geeksaga.com/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js" integrity="sha512-z+/WWfyD5tccCukM4VvONpEtLmbAm5LDu7eKiyMQJ9m7OfPEDL7gENyDRL3Yfe8XAuGsS2fS4xSMnl6d30kqGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="https://geeksaga.com/js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js"></script>
+
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-gE8KAQyFIzV1C9+GZ8TKJHZS2s+n7EjNtC+IMRn1l5+WYJTHOODUM6JSjZhFhqXmc7bG8Av6XXpckA4tYhflnw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/apache.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-EWROca+bote+7Oaaar1F6y74iZj1r1F9rm/ly7o+/FwJopbBaWtsFDmaKoZDd3QiGU2pGacBirHJNivmGLYrow==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-GDVzAn0wpx1yVtQsRWmFc6PhJiLBPdUic+h4GWgljBh904O3JU10fk9EKNpVyIoPqkFn54rgL2QBG4BmUTMpiQ==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/http.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-UgZlma8NzkrDb/NWgmLIcTrH7i/CSnLLDRFqCSNF5NGPpjKmzyM25qcoXGOup8+cDakKyaiTDd7N4dyH4YT+IA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/less.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-lot9koe73sfXIrUvIPM/UEhuMciN56RPyBdOyZgfO53P2lkWyyXN7J+njcxIIBRV+nVDQeiWtiXg+bLAJZDTfg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/nginx.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-Zd3e7XxHP00TD0Imr0PIfeM0fl0v95kMWuhyAS3Wn1UTSXTkz0OhtRgBAr4JlmADRgiXr4x7lpeUdqaGN8xIog==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/puppet.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-qtqDO052iXMSP+5d/aE/jMtL9vIIGvONgTJziC2K/ZIB1yEGa55WVxGE9/08rSQ62EoDifS9SWVGZ7ihSLhzMA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/scss.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-1NmkjnEDnwwwcu28KoQF8vs3oaPFokQHbmbtwGhFfeDsQZtVFI8zW2aE9O8yMYdpdyKV/5blE4pSWw4Z/Sv97w==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/stylus.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-B2wSfruPjr8EJL6IIzQr1eAuDwrsfIfccNf/LCEdxELCgC/S/ZMt/Uvk80aD79m7IqOqW+Sw8nbkvha20yZpzg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/swift.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-28oDiQZGKUVN6wQ7PSLPNipOcmkCALXKwOi7bnkyFf8QiMZQxG9EQoy/iiNx6Zxj2cG2SbVa4dXKigQhu7GiFw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/yaml.min.js"></script>
+  
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+
+
+    
+  </body>
+</html>
+

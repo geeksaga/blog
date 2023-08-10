@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <script type="application/ld+json">
+
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "grep command",
+  
+  "datePublished": "2020-08-03T00:00:00Z",
+  "dateModified": "2022-01-29T12:55:02+09:00",
+  "author": {
+    "@type": "Person",
+    "name": "GeekSaga",
+    
+    "image": "https://www.gravatar.com/avatar/b8ad73abceb78e798fab460eb1ae9d95"
+    
+  },
+  "mainEntityOfPage": { 
+    "@type": "WebPage",
+    "@id": "https:\/\/geeksaga.com\/2020\/08\/grep-command\/" 
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Try to write anyway",
+    
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.gravatar.com/avatar/b8ad73abceb78e798fab460eb1ae9d95"
+    }
+    
+  },
+  "description": "linux의 grep은 파일 또는 표준 입력(Standard input)에 대해서 특정 패턴을 통해 검색 해주는 명령어 입니다.\n패턴에 대해서는 기본값으로 기본 정규 표현식(basic regular expression - BRE)을 지원 합니다.\n기본적인 사용 법은 다음과 같습니다.\n$\u0026gt; grep Usage: grep [OPTION]... PATTERN [FILE]... Try \u0026#39;grep --help\u0026#39; for more information. $\u0026gt; grep Error /var/log/syslog Aug 3 10:20:25 geeksaga org.a11y.Bus[4449]: ** (process:4467): WARNING **: Failed to register client: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .",
+  "keywords": []
+}
+
+</script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.115.4 with theme Tranquilpeak 0.5.3-BETA">
+<meta name="author" content="GeekSaga">
+<meta name="keywords" content="">
+<meta name="description" content="grep command description">
+
+
+<meta property="og:description" content="grep command description">
+<meta property="og:type" content="article">
+<meta property="og:title" content="grep command">
+<meta name="twitter:title" content="grep command">
+<meta property="og:url" content="https://geeksaga.com/2020/08/grep-command/">
+<meta property="twitter:url" content="https://geeksaga.com/2020/08/grep-command/">
+<meta property="og:site_name" content="Try to write anyway">
+<meta property="og:description" content="grep command description">
+<meta name="twitter:description" content="grep command description">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2020-08-03T00:00:00">
+  
+  
+    <meta property="article:modified_time" content="2022-01-29T12:55:02">
+  
+  
+  
+  
+    
+      <meta property="article:tag" content="command">
+    
+      <meta property="article:tag" content="linux">
+    
+      <meta property="article:tag" content="grep">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://www.gravatar.com/avatar/b8ad73abceb78e798fab460eb1ae9d95?s=640">
+  <meta property="twitter:image" content="https://www.gravatar.com/avatar/b8ad73abceb78e798fab460eb1ae9d95?s=640">
+
+
+
+
+
+
+    <title>grep command</title>
+
+    <link rel="icon" href="https://geeksaga.com/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://geeksaga.com/2020/08/grep-command/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    
+    <link rel="stylesheet" href="https://geeksaga.com/css/style-h6ccsoet3mzkbb0wngshlfbaweimexgqcxj0h5hu4h82olsdzz6wmqdkajm.min.css" />
+    
+    
+
+		
+    
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-90851011-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-90851011-1');
+</script>
+	
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4Z8WERK25Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4Z8WERK25Q');
+</script>	
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://geeksaga.com/" aria-label="Go to homepage">Try to write anyway</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://geeksaga.com/#about" aria-label="Open the link: /#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://www.gravatar.com/avatar/b8ad73abceb78e798fab460eb1ae9d95?s=90" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://geeksaga.com/#about" aria-label="Read more about the author">
+          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/b8ad73abceb78e798fab460eb1ae9d95?s=110" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">GeekSaga</h4>
+        
+          <h5 class="sidebar-profile-bio"><strong>.</strong></h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://geeksaga.com/" title="Home">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-home" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://geeksaga.com/categories" title="Categories">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-bookmark" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://geeksaga.com/tags" title="Tags">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-tags" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://geeksaga.com/archives" title="Archives">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-archive" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://geeksaga.com/#about" title="About">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-question" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" id="top">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title">
+      grep command
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2020-08-03T00:00:00Z">
+        
+  August 3, 2020
+
+      </time>
+    
+    
+  </div>
+
+</div>
+          
+          <div class="post-content markdown">
+            <div class="main-content-wrap">
+              <p>linux의 grep은 파일 또는 표준 입력(Standard input)에 대해서 특정 패턴을 통해 검색 해주는 명령어 입니다.</p>
+<p>패턴에 대해서는 기본값으로 기본 정규 표현식(basic regular expression - BRE)을 지원 합니다.</p>
+<p>기본적인 사용 법은 다음과 같습니다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$&gt; grep
+</span></span><span style="display:flex;"><span>Usage: grep <span style="color:#f92672">[</span>OPTION<span style="color:#f92672">]</span>... PATTERN <span style="color:#f92672">[</span>FILE<span style="color:#f92672">]</span>...
+</span></span><span style="display:flex;"><span>Try <span style="color:#e6db74">&#39;grep --help&#39;</span> <span style="color:#66d9ef">for</span> more information.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$&gt; grep Error /var/log/syslog
+</span></span><span style="display:flex;"><span>Aug  <span style="color:#ae81ff">3</span> 10:20:25 geeksaga org.a11y.Bus<span style="color:#f92672">[</span>4449<span style="color:#f92672">]</span>: ** <span style="color:#f92672">(</span>process:4467<span style="color:#f92672">)</span>: WARNING **: Failed to register client: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+</span></span><span style="display:flex;"><span>Aug  <span style="color:#ae81ff">3</span> 10:20:25 geeksaga org.freedesktop.systemd1<span style="color:#f92672">[</span>4449<span style="color:#f92672">]</span>: ** <span style="color:#f92672">(</span>process:4476<span style="color:#f92672">)</span>: WARNING **: cgmanager method call org.linuxcontainers.cgmanager0_0.MovePidAbs failed: GDBus.Error:org.freedesktop.DBus.Error.InvalidArgs: invalid request.  Use G_DBUS_DEBUG<span style="color:#f92672">=</span>message <span style="color:#66d9ef">for</span> more info.
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><p>표준 입력(Standard input)을 이용한 방법</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$&gt; dmesg | grep random
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>    0.000000<span style="color:#f92672">]</span> random: get_random_bytes called from start_kernel+0x99/0x51e with crng_init<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>    1.035100<span style="color:#f92672">]</span> random: systemd-udevd: uninitialized urandom read <span style="color:#f92672">(</span><span style="color:#ae81ff">16</span> bytes read<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>    1.035156<span style="color:#f92672">]</span> random: systemd-udevd: uninitialized urandom read <span style="color:#f92672">(</span><span style="color:#ae81ff">16</span> bytes read<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>    1.035164<span style="color:#f92672">]</span> random: systemd-udevd: uninitialized urandom read <span style="color:#f92672">(</span><span style="color:#ae81ff">16</span> bytes read<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>    1.991103<span style="color:#f92672">]</span> random: fast init <span style="color:#66d9ef">done</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>   45.515726<span style="color:#f92672">]</span> random: crng init <span style="color:#66d9ef">done</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>   45.515727<span style="color:#f92672">]</span> random: <span style="color:#ae81ff">7</span> urandom warning<span style="color:#f92672">(</span>s<span style="color:#f92672">)</span> missed due to ratelimiting
+</span></span></code></pre></div><h2 id="help-grep">help grep</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$&gt; grep --help
+</span></span><span style="display:flex;"><span>Usage: grep <span style="color:#f92672">[</span>OPTION<span style="color:#f92672">]</span>... PATTERN <span style="color:#f92672">[</span>FILE<span style="color:#f92672">]</span>...
+</span></span><span style="display:flex;"><span>Search <span style="color:#66d9ef">for</span> PATTERN in each FILE or standard input.
+</span></span><span style="display:flex;"><span>PATTERN is, by default, a basic regular expression <span style="color:#f92672">(</span>BRE<span style="color:#f92672">)</span>.
+</span></span><span style="display:flex;"><span>Example: grep -i <span style="color:#e6db74">&#39;hello world&#39;</span> menu.h main.c
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Regexp selection and interpretation:
+</span></span><span style="display:flex;"><span>  -E, --extended-regexp     PATTERN is an extended regular expression <span style="color:#f92672">(</span>ERE<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  -F, --fixed-strings       PATTERN is a set of newline-separated strings
+</span></span><span style="display:flex;"><span>  -G, --basic-regexp        PATTERN is a basic regular expression <span style="color:#f92672">(</span>BRE<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  -P, --perl-regexp         PATTERN is a Perl regular expression
+</span></span><span style="display:flex;"><span>  -e, --regexp<span style="color:#f92672">=</span>PATTERN      use PATTERN <span style="color:#66d9ef">for</span> matching
+</span></span><span style="display:flex;"><span>  -f, --file<span style="color:#f92672">=</span>FILE           obtain PATTERN from FILE
+</span></span><span style="display:flex;"><span>  -i, --ignore-case         ignore <span style="color:#66d9ef">case</span> distinctions
+</span></span><span style="display:flex;"><span>  -w, --word-regexp         force PATTERN to match only whole words
+</span></span><span style="display:flex;"><span>  -x, --line-regexp         force PATTERN to match only whole lines
+</span></span><span style="display:flex;"><span>  -z, --null-data           a data line ends in <span style="color:#ae81ff">0</span> byte, not newline
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Miscellaneous:
+</span></span><span style="display:flex;"><span>  -s, --no-messages         suppress error messages
+</span></span><span style="display:flex;"><span>  -v, --invert-match        <span style="color:#66d9ef">select</span> non-matching lines
+</span></span><span style="display:flex;"><span>  -V, --version             display version information and exit
+</span></span><span style="display:flex;"><span>      --help                display this help text and exit
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Output control:
+</span></span><span style="display:flex;"><span>  -m, --max-count<span style="color:#f92672">=</span>NUM       stop after NUM matches
+</span></span><span style="display:flex;"><span>  -b, --byte-offset         print the byte offset with output lines
+</span></span><span style="display:flex;"><span>  -n, --line-number         print line number with output lines
+</span></span><span style="display:flex;"><span>      --line-buffered       flush output on every line
+</span></span><span style="display:flex;"><span>  -H, --with-filename       print the file name <span style="color:#66d9ef">for</span> each match
+</span></span><span style="display:flex;"><span>  -h, --no-filename         suppress the file name prefix on output
+</span></span><span style="display:flex;"><span>      --label<span style="color:#f92672">=</span>LABEL         use LABEL as the standard input file name prefix
+</span></span><span style="display:flex;"><span>  -o, --only-matching       show only the part of a line matching PATTERN
+</span></span><span style="display:flex;"><span>  -q, --quiet, --silent     suppress all normal output
+</span></span><span style="display:flex;"><span>      --binary-files<span style="color:#f92672">=</span>TYPE   assume that binary files are TYPE;
+</span></span><span style="display:flex;"><span>                            TYPE is <span style="color:#e6db74">&#39;binary&#39;</span>, <span style="color:#e6db74">&#39;text&#39;</span>, or <span style="color:#e6db74">&#39;without-match&#39;</span>
+</span></span><span style="display:flex;"><span>  -a, --text                equivalent to --binary-files<span style="color:#f92672">=</span>text
+</span></span><span style="display:flex;"><span>  -I                        equivalent to --binary-files<span style="color:#f92672">=</span>without-match
+</span></span><span style="display:flex;"><span>  -d, --directories<span style="color:#f92672">=</span>ACTION  how to handle directories;
+</span></span><span style="display:flex;"><span>                            ACTION is <span style="color:#e6db74">&#39;read&#39;</span>, <span style="color:#e6db74">&#39;recurse&#39;</span>, or <span style="color:#e6db74">&#39;skip&#39;</span>
+</span></span><span style="display:flex;"><span>  -D, --devices<span style="color:#f92672">=</span>ACTION      how to handle devices, FIFOs and sockets;
+</span></span><span style="display:flex;"><span>                            ACTION is <span style="color:#e6db74">&#39;read&#39;</span> or <span style="color:#e6db74">&#39;skip&#39;</span>
+</span></span><span style="display:flex;"><span>  -r, --recursive           like --directories<span style="color:#f92672">=</span>recurse
+</span></span><span style="display:flex;"><span>  -R, --dereference-recursive  likewise, but follow all symlinks
+</span></span><span style="display:flex;"><span>      --include<span style="color:#f92672">=</span>FILE_PATTERN  search only files that match FILE_PATTERN
+</span></span><span style="display:flex;"><span>      --exclude<span style="color:#f92672">=</span>FILE_PATTERN  skip files and directories matching FILE_PATTERN
+</span></span><span style="display:flex;"><span>      --exclude-from<span style="color:#f92672">=</span>FILE   skip files matching any file pattern from FILE
+</span></span><span style="display:flex;"><span>      --exclude-dir<span style="color:#f92672">=</span>PATTERN  directories that match PATTERN will be skipped.
+</span></span><span style="display:flex;"><span>  -L, --files-without-match  print only names of FILEs containing no match
+</span></span><span style="display:flex;"><span>  -l, --files-with-matches  print only names of FILEs containing matches
+</span></span><span style="display:flex;"><span>  -c, --count               print only a count of matching lines per FILE
+</span></span><span style="display:flex;"><span>  -T, --initial-tab         make tabs line up <span style="color:#f92672">(</span><span style="color:#66d9ef">if</span> needed<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  -Z, --null                print <span style="color:#ae81ff">0</span> byte after FILE name
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Context control:
+</span></span><span style="display:flex;"><span>  -B, --before-context<span style="color:#f92672">=</span>NUM  print NUM lines of leading context
+</span></span><span style="display:flex;"><span>  -A, --after-context<span style="color:#f92672">=</span>NUM   print NUM lines of trailing context
+</span></span><span style="display:flex;"><span>  -C, --context<span style="color:#f92672">=</span>NUM         print NUM lines of output context
+</span></span><span style="display:flex;"><span>  -NUM                      same as --context<span style="color:#f92672">=</span>NUM
+</span></span><span style="display:flex;"><span>      --color<span style="color:#f92672">[=</span>WHEN<span style="color:#f92672">]</span>,
+</span></span><span style="display:flex;"><span>      --colour<span style="color:#f92672">[=</span>WHEN<span style="color:#f92672">]</span>       use markers to highlight the matching strings;
+</span></span><span style="display:flex;"><span>                            WHEN is <span style="color:#e6db74">&#39;always&#39;</span>, <span style="color:#e6db74">&#39;never&#39;</span>, or <span style="color:#e6db74">&#39;auto&#39;</span>
+</span></span><span style="display:flex;"><span>  -U, --binary              <span style="color:#66d9ef">do</span> not strip CR characters at EOL <span style="color:#f92672">(</span>MSDOS/Windows<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  -u, --unix-byte-offsets   report offsets as <span style="color:#66d9ef">if</span> CRs were not there
+</span></span><span style="display:flex;"><span>                            <span style="color:#f92672">(</span>MSDOS/Windows<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;egrep&#39;</span> means <span style="color:#e6db74">&#39;grep -E&#39;</span>.  <span style="color:#e6db74">&#39;fgrep&#39;</span> means <span style="color:#e6db74">&#39;grep -F&#39;</span>.
+</span></span><span style="display:flex;"><span>Direct invocation as either <span style="color:#e6db74">&#39;egrep&#39;</span> or <span style="color:#e6db74">&#39;fgrep&#39;</span> is deprecated.
+</span></span><span style="display:flex;"><span>When FILE is -, read standard input.  With no FILE, read . <span style="color:#66d9ef">if</span> a command-line
+</span></span><span style="display:flex;"><span>-r is given, - otherwise.  If fewer than two FILEs are given, assume -h.
+</span></span><span style="display:flex;"><span>Exit status is <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">if</span> any line is selected, <span style="color:#ae81ff">1</span> otherwise;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> any error occurs and -q is not given, the exit status is 2.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Report bugs to: bug-grep@gnu.org
+</span></span><span style="display:flex;"><span>GNU grep home page: &lt;http://www.gnu.org/software/grep/&gt;
+</span></span><span style="display:flex;"><span>General help using GNU software: &lt;http://www.gnu.org/gethelp/&gt;
+</span></span></code></pre></div><h2 id="tldr-grep">tldr grep</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$&gt; tldr grep
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  grep
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  Matches patterns in input text.
+</span></span><span style="display:flex;"><span>  Supports simple patterns and regular expressions.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  - Search <span style="color:#66d9ef">for</span> an exact string:
+</span></span><span style="display:flex;"><span>    grep search_string path/to/file
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  - Search in <span style="color:#66d9ef">case</span>-insensitive mode:
+</span></span><span style="display:flex;"><span>    grep -i search_string path/to/file
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  - Search recursively <span style="color:#f92672">(</span>ignoring non-text files<span style="color:#f92672">)</span> in current directory <span style="color:#66d9ef">for</span> an exact string:
+</span></span><span style="display:flex;"><span>    grep -RI search_string .
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  - Use extended regular expressions <span style="color:#f92672">(</span>supporting ?, +, <span style="color:#f92672">{}</span>, <span style="color:#f92672">()</span> and |<span style="color:#f92672">)</span>:
+</span></span><span style="display:flex;"><span>    grep -E ^regex$ path/to/file
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  - Print <span style="color:#ae81ff">3</span> lines of <span style="color:#f92672">[</span>C<span style="color:#f92672">]</span>ontext around, <span style="color:#f92672">[</span>B<span style="color:#f92672">]</span>efore, or <span style="color:#f92672">[</span>A<span style="color:#f92672">]</span>fter each match:
+</span></span><span style="display:flex;"><span>    grep -C|B|A <span style="color:#ae81ff">3</span> search_string path/to/file
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  - Print file name with the corresponding line number <span style="color:#66d9ef">for</span> each match:
+</span></span><span style="display:flex;"><span>    grep -Hn search_string path/to/file
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  - Use the standard input instead of a file:
+</span></span><span style="display:flex;"><span>    cat path/to/file | grep search_string
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  - Invert match <span style="color:#66d9ef">for</span> excluding specific strings:
+</span></span><span style="display:flex;"><span>    grep -v search_string
+</span></span></code></pre></div><h2 id="참고-링크">참고 링크</h2>
+<ul>
+<li><a href="https://man7.org/linux/man-pages/man1/grep.1.html" title="grep man-page">man7 man grep</a></li>
+</ul>
+
+              
+
+
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://geeksaga.com/tags/command/">command</a>
+
+  <a class="tag tag--primary tag--small" href="https://geeksaga.com/tags/linux/">linux</a>
+
+  <a class="tag tag--primary tag--small" href="https://geeksaga.com/tags/grep/">grep</a>
+
+                  </div>
+                
+              
+            
+            
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://geeksaga.com/2020/08/awk-gawk-command/" data-tooltip="awk &amp; gawk command" aria-label="NEXT: awk &amp; gawk command">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://geeksaga.com/2020/08/sed-command/" data-tooltip="sed command" aria-label="PREVIOUS: sed command">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="Leave a comment">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="Back to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+            
+  
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+    <script type="text/javascript">
+      var disqus_config = function() {
+        this.page.url = 'https:\/\/geeksaga.com\/2020\/08\/grep-command\/';
+        
+          this.page.identifier = '\/2020\/08\/grep-command\/'
+        
+      };
+      (function() {
+        
+        
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+          document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+          return;
+        }
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'geeksaga';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+  
+
+
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2023 GeekSaga. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://geeksaga.com/2020/08/awk-gawk-command/" data-tooltip="awk &amp; gawk command" aria-label="NEXT: awk &amp; gawk command">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://geeksaga.com/2020/08/sed-command/" data-tooltip="sed command" aria-label="PREVIOUS: sed command">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="Leave a comment">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="Back to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+      </div>
+      
+
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-times"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://www.gravatar.com/avatar/b8ad73abceb78e798fab460eb1ae9d95?s=110" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">GeekSaga</h4>
+    
+      <div id="about-card-bio"><strong>.</strong></div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Dreamer
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker-alt"></i>
+        <br/>
+        Korea
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://geeksaga.com/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js" integrity="sha512-z+/WWfyD5tccCukM4VvONpEtLmbAm5LDu7eKiyMQJ9m7OfPEDL7gENyDRL3Yfe8XAuGsS2fS4xSMnl6d30kqGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="https://geeksaga.com/js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js"></script>
+
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-gE8KAQyFIzV1C9+GZ8TKJHZS2s+n7EjNtC+IMRn1l5+WYJTHOODUM6JSjZhFhqXmc7bG8Av6XXpckA4tYhflnw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/apache.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-EWROca+bote+7Oaaar1F6y74iZj1r1F9rm/ly7o+/FwJopbBaWtsFDmaKoZDd3QiGU2pGacBirHJNivmGLYrow==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-GDVzAn0wpx1yVtQsRWmFc6PhJiLBPdUic+h4GWgljBh904O3JU10fk9EKNpVyIoPqkFn54rgL2QBG4BmUTMpiQ==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/http.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-UgZlma8NzkrDb/NWgmLIcTrH7i/CSnLLDRFqCSNF5NGPpjKmzyM25qcoXGOup8+cDakKyaiTDd7N4dyH4YT+IA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/less.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-lot9koe73sfXIrUvIPM/UEhuMciN56RPyBdOyZgfO53P2lkWyyXN7J+njcxIIBRV+nVDQeiWtiXg+bLAJZDTfg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/nginx.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-Zd3e7XxHP00TD0Imr0PIfeM0fl0v95kMWuhyAS3Wn1UTSXTkz0OhtRgBAr4JlmADRgiXr4x7lpeUdqaGN8xIog==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/puppet.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-qtqDO052iXMSP+5d/aE/jMtL9vIIGvONgTJziC2K/ZIB1yEGa55WVxGE9/08rSQ62EoDifS9SWVGZ7ihSLhzMA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/scss.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-1NmkjnEDnwwwcu28KoQF8vs3oaPFokQHbmbtwGhFfeDsQZtVFI8zW2aE9O8yMYdpdyKV/5blE4pSWw4Z/Sv97w==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/stylus.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-B2wSfruPjr8EJL6IIzQr1eAuDwrsfIfccNf/LCEdxELCgC/S/ZMt/Uvk80aD79m7IqOqW+Sw8nbkvha20yZpzg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/swift.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-28oDiQZGKUVN6wQ7PSLPNipOcmkCALXKwOi7bnkyFf8QiMZQxG9EQoy/iiNx6Zxj2cG2SbVa4dXKigQhu7GiFw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/yaml.min.js"></script>
+  
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+
+
+    
+  </body>
+</html>
+
